@@ -9,11 +9,7 @@ CREATE TABLE IF NOT EXISTS usuario (
 	apellidos VARCHAR(50) NOT NULL,
 	altura DECIMAL(2) NOT NULL,
 	peso DECIMAL(2) NOT NULL,
-	intoLactosa BOOL NOT NULL,
-	intoGluten BOOL NOT NULL,
-	vegano BOOL NOT NULL,
-	vejetariano BOOL NOT NULL,
-	intoFructo BOOL NOT NULL,
+	tipoIntolencia INT NOT NULL,
 	cantActividad INT NOT NULL,
 	objetivo INT NOT NULL,
 	PRIMARY KEY (idUsuario));
