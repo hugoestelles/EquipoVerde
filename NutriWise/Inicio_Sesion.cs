@@ -20,7 +20,10 @@ namespace NutriWise
         private void btnInicio_Sesion_Click(object sender, EventArgs e)
         {
             // Crea una nueva instancia del formulario Form2
-            Perfil form4 = new Perfil();
+            Menu form4 = new Menu();
+
+            // Esconde el formulario 
+            this.Hide();
 
             // Muestra el nuevo formulario
             form4.ShowDialog();
@@ -28,5 +31,27 @@ namespace NutriWise
             // Cierra el formulario 
             this.Close();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            // Crea una nueva instancia del formulario Form2
+            CrearCuenta form3 = new CrearCuenta();
+
+            // Esconde el formulario 
+            this.Hide();
+
+            // Muestra el nuevo formulario
+            form3.ShowDialog();
+
+            // Cierra el formulario 
+            this.Close();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Jaja Pringao");
+        }
+        
+
     }
 }

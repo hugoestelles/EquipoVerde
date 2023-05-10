@@ -60,28 +60,30 @@
             this.panel1.Location = new System.Drawing.Point(651, 209);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(517, 570);
+            this.panel1.Size = new System.Drawing.Size(518, 570);
             this.panel1.TabIndex = 2;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Ivory;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label8.Location = new System.Drawing.Point(383, 543);
+            this.label8.Location = new System.Drawing.Point(382, 542);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 17);
             this.label8.TabIndex = 13;
             this.label8.Text = "Crear cuenta";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Ivory;
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(32, 543);
+            this.label7.Location = new System.Drawing.Point(32, 542);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 16);
@@ -96,7 +98,7 @@
             this.btnInicio_Sesion.Location = new System.Drawing.Point(39, 450);
             this.btnInicio_Sesion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInicio_Sesion.Name = "btnInicio_Sesion";
-            this.btnInicio_Sesion.Size = new System.Drawing.Size(435, 57);
+            this.btnInicio_Sesion.Size = new System.Drawing.Size(435, 58);
             this.btnInicio_Sesion.TabIndex = 11;
             this.btnInicio_Sesion.Text = "Iniciar Sesion";
             this.btnInicio_Sesion.UseVisualStyleBackColor = false;
@@ -106,6 +108,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Ivory;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label6.Location = new System.Drawing.Point(296, 386);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -113,14 +116,16 @@
             this.label6.Size = new System.Drawing.Size(168, 16);
             this.label6.TabIndex = 10;
             this.label6.Text = "He olvidado mi contraseña";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox2.Location = new System.Drawing.Point(37, 336);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.textBox2.Location = new System.Drawing.Point(38, 336);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '♥';
             this.textBox2.Size = new System.Drawing.Size(435, 41);
             this.textBox2.TabIndex = 9;
             // 
@@ -128,7 +133,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 289);
+            this.label5.Location = new System.Drawing.Point(32, 289);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 25);
@@ -139,8 +144,8 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox1.Location = new System.Drawing.Point(36, 207);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.textBox1.Location = new System.Drawing.Point(36, 208);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(436, 41);
             this.textBox1.TabIndex = 7;
@@ -162,7 +167,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Ivory;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(32, 97);
+            this.label3.Location = new System.Drawing.Point(32, 98);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(227, 16);
@@ -185,7 +190,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 36);
+            this.label1.Location = new System.Drawing.Point(28, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(297, 46);
@@ -197,7 +202,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(1827, 922);
+            this.ClientSize = new System.Drawing.Size(1370, 764);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Inicio_Sesion";

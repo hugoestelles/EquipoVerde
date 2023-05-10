@@ -52,6 +52,12 @@
     <Compile Include="CrearCuenta.Designer.cs">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dieta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dieta.Designer.cs">
+      <DependentUpon>Dieta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,8 +70,14 @@
     <Compile Include="Inicio_Sesion.Designer.cs">
       <DependentUpon>Inicio_Sesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Perfil.cs">
+    <Compile Include="Menu.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Perfil.Designer.cs">
       <DependentUpon>Perfil.cs</DependentUpon>
@@ -75,29 +87,35 @@
     <EmbeddedResource Include="CrearCuenta.resx">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dieta.resx">
+      <DependentUpon>Dieta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio_Sesion.resx">
       <DependentUpon>Inicio_Sesion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Perfil.resx">
       <DependentUpon>Perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -109,9 +127,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\-meal_89750 2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ellipse 204.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image 44.png" />
@@ -130,6 +145,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ajustes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lunes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

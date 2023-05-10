@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace NutriWise
 {
-    public partial class Perfil : UserControl
+    public partial class Dieta : UserControl
     {
-        public Perfil()
+        public Dieta()
         {
             InitializeComponent();
         }
-
     }
 }

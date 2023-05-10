@@ -17,6 +17,19 @@ namespace NutriWise
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Crea una nueva instancia del formulario Form2
+            Menu form4 = new Menu();
 
+            // Esconde el formulario 
+            this.Hide();
+
+            // Muestra el nuevo formulario
+            form4.ShowDialog();
+
+            // Cierra el formulario 
+            this.Close();
+        }
     }
 }

@@ -22,12 +22,14 @@ namespace NutriWise
 
             // Crea una nueva instancia del formulario Form2
             Inicio_Sesion form2 = new Inicio_Sesion();
-
+            // Esconde el formulario 
+            this.Hide();
             // Muestra el nuevo formulario
             form2.ShowDialog();
-
             // Cierra el formulario 
             this.Close();
+
+            
 
         }
 
@@ -43,5 +45,7 @@ namespace NutriWise
             // Cierra el formulario 
             this.Close();
         }
+
+
     }
 }
