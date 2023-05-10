@@ -56,6 +56,7 @@ CREATE TABLE IF NOT EXISTS usuario (
 	CREATE TABLE IF NOT EXISTS valoraciones(
 	idValoracion INT AUTO_INCREMENT,
 	numEstrellas INT NOT NULL,
+	comentario VARCHAR(150) NOT NULL,
 	fechaValoracion DATETIME NOT NULL,
 	PRIMARY KEY (idValoracion));
 	
