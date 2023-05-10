@@ -1,0 +1,5 @@
+0  ---> Intolerante a la lactosa.
+1  ---> Intolerante al gluten.
+2  ---> Vegano.
+3  ---> Vegetariano.
+4  ---> Sin intolerancias.
