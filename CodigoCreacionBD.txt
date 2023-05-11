@@ -12,18 +12,19 @@ CREATE TABLE IF NOT EXISTS usuario (
 	tipoIntolencia INT NOT NULL,
 	cantActividad INT NOT NULL,
 	objetivo INT NOT NULL,
+	idDieta INT NOT NULL,
 	PRIMARY KEY (idUsuario));
 	
 	CREATE TABLE IF NOT EXISTS alimentos(
 	idAlimento INT AUTO_INCREMENT,
 	nombre VARCHAR(20) NOT NULL,
-	cantidad INT NOT NULL,
 	valorNutricio DECIMAL(2) NOT NULL,
 	PRIMARY KEY (idAlimento));
 	
 	CREATE TABLE IF NOT EXISTS platos(
 	idPlato INT AUTO_INCREMENT,
 	nombre VARCHAR(40) NOT NULL,
+	idDieta INT NOT NULL,
 	PRIMARY KEY (idPlato));
 	
 	CREATE TABLE IF NOT EXISTS dietas(
@@ -35,23 +36,10 @@ CREATE TABLE IF NOT EXISTS usuario (
 	CREATE TABLE IF NOT EXISTS aliPlato(
 	idAlimentos INT NOT NULL,
 	idPlatos INT NOT NULL,
+	cantida INT NOT NULL,
 	PRIMARY KEY (idAlimentos, idPlatos),
 	FOREIGN KEY (idAlimentos) REFERENCES alimentos (idAlimento),
 	FOREIGN KEY (idPlatos) REFERENCES platos (idPlato));
-	
-	CREATE TABLE IF NOT EXISTS platoDieta(
-	idPlatos INT NOT NULL,
-	idDietas INT NOT NULL,
-	PRIMARY KEY (idPlatos, idDietas),
-	FOREIGN KEY (idPlatos) REFERENCES platos(idPlato),
-	FOREIGN KEY (idDietas) REFERENCES dietas(idDieta));
-	
-	CREATE TABLE IF NOT EXISTS objetivo(
-	objetivoUsuario INT NOT NULL,
-	objetivoDieta INT NOT NULL,
-	PRIMARY KEY(objetivoUsuario, objetivoDieta),
-	FOREIGN KEY (objetivoUsuario) REFERENCES usuario(idUsuario),
-	FOREIGN KEY (objetivoDieta) REFERENCES dietas(idDieta));
 	
 	CREATE TABLE IF NOT EXISTS valoraciones(
 	idValoracion INT AUTO_INCREMENT,
@@ -67,3 +55,6 @@ CREATE TABLE IF NOT EXISTS usuario (
 	idUsuari INT NOT NULL,
 	PRIMARY KEY(idDonativo),
 	FOREIGN KEY(idUsuari) REFERENCES usuario(idUsuario));
+	
+	ALTER TABLE usuario ADD CONSTRAINT fk FOREIGN KEY (idDieta) REFERENCES dietas (idDieta);
+	ALTER TABLE platos ADD CONSTRAINT fkdieta FOREIGN KEY (idDieta) REFERENCES dietas (idDieta);
