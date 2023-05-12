@@ -1,0 +1,203 @@
+Lunes 
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES ('Dieta Lunes', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Desayuno: Tostada de aguacate', 1);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Pan integral', 80), ('Aguacate', 50);
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES (1, 1, 2), (2, 1, 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Comida: Ensalada de quinoa', 1);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Quinoa cocida', 185), ('Garbanzos cocidos', 90), ('Verduras frescas', 60);
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES (3, 2, 1), (4, 2, 1), (5, 2, 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Merienda: Yogur griego con frutas', 1);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Yogur griego natural', 200), ('Frutas frescas de temporada', 80);
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES (6, 3, 1), (7, 3, 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Cena: Tofu al curry con verduras', 1);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Tofu', 100), ('Verduras mixtas', 120);
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES (8, 4, 1), (9, 4, 1);
+
+Martes 
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES ('Dieta Martes', 2);
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Desayuno: Batido de frutas y verduras', 2);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Leche de almendras', 250), ('Espinacas frescas', 30), ('Plátano maduro', 100), ('Mango congelado', 80);
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES (10, 5, 1), (11, 5, 1), (12, 5, 1), (13, 5, 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Comida: Hamburguesa vegetariana', 2);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Hamburguesa vegetariana', 120), ('Pan integral', 50);
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES (14, 6, 1), (15, 6, 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Merienda: Manzana y mantequilla de nueces', 2);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Manzana', 150), ('Mantequilla de nueces', 15);
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES (16, 7, 1), (17, 7, 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Cena: Salteado de arroz integral y verduras', 2);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Arroz integral cocido', 180), ('Verduras mixtas', 120);
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES (18, 8, 1), (19, 8, 1);
+
+Miercoles 
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Desayuno', 1);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Avena cocida', 80), ('Leche de almendras', 250), ('Frutas frescas de temporada', 80), ('Semillas de chía', 15);
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES (1, 1, 1), (2, 1, 1), (3, 1, 1), (4, 1, 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Comida', 1);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Garbanzos cocidos', 170), ('Verduras mixtas', 120);
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES (5, 2, 1), (6, 2, 2);
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Merienda', 1);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Leche de almendras', 250), ('Espinacas frescas', 30), ('Plátano maduro', 50), ('Mantequilla de almendras', 15);
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES (7, 3, 1), (8, 3, 1), (9, 3, 1), (10, 3, 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES ('Cena', 1);
+INSERT INTO alimentos (nombre, valorNutricio) VALUES ('Tofu en cubos', 150), ('Vegetales mixtos',120);
+INSERT INTO aliPlato (idAlimentos,idPlatos,cantida) VALUES(11 ,4 ,1),(12 ,4 ,2);
+
+Jueves 
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('Avena', 80),
+('Plátano', 100),
+('Semillas de lino', 15),
+('Tortilla de trigo integral', 30),
+('Hummus', 30),
+('Verduras frescas', 120),
+('Nueces', 30),
+('Fruta fresca', 150),
+('Lentejas cocidas', 200),
+('Verduras mixtas', 120);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES
+('Dieta ejemplo', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Tortitas de avena y plátano', 1),
+('Wrap de hummus y verduras', 1),
+('Puñado de nueces y frutas', 1),
+('Sopa de lentejas', 1);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(1, 1, 1),
+(2, 1, 1),
+(3, 1, 1),
+(4, 2, 2),
+(5, 2, 2),
+(6, 2, 120),
+(7, 3, 30),
+(8, 3, 150),
+(9, 4, 200),
+(10,4 ,120);
+
+Viernes 
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('Leche de almendras', 250),
+('Proteína en polvo vegetal sabor vainilla', 20),
+('Plátano', 100),
+('Bayas congeladas', 80),
+('Quinoa cocida', 185),
+('Aguacate', 150),
+('Tomates cherry', 100),
+('Espinacas frescas', 60),
+('Almendras', 30),
+('Fruta fresca', 150),
+('Tofu', 150),
+('Vegetales mixtos', 120),
+('Arroz integral cocido', 200);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES
+('Dieta ejemplo 2', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Batido de proteínas y frutas', 2),
+('Ensalada de quinoa y aguacate', 2),
+('Puñado de almendras y fruta', 2),
+('Stir-fry de tofu y vegetales', 2);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(11, 5, 250),
+(12, 5, 20),
+(13, 5, 100),
+(14, 5, 80),
+(15, 6, 185),
+(16, 6, 150),
+(17, 6, 100),
+(18, 6, 60),
+(19,7 ,30),
+(20 ,7 ,150),
+(21 ,8 ,150),
+(22 ,8 ,120),
+(23 ,8 ,200);
+
+Sabado
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('Pan integral', 80),
+('Aguacate', 50),
+('Tomate fresco', 50),
+('Garbanzos cocidos', 170),
+('Vegetales asados', 120),
+('Yogur griego natural', 200),
+('Nueces picadas', 30),
+('Miel', 20),
+('Pasta integral cocida', 180),
+('Vegetales frescos', 120);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES
+('Dieta ejemplo 3', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Tostadas de aguacate y tomate', 3),
+('Bowl de garbanzos y vegetales asados', 3),
+('Yogur griego con nueces y miel', 3),
+('Ensalada de pasta', 3);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(24, 9, 80),
+(25, 9, 50),
+(26, 9, 50),
+(27,10 ,170),
+(28 ,10 ,120),
+(29 ,11 ,200),
+(30 ,11 ,30),
+(31 ,11 ,20),
+(32 ,12 ,180),
+(33 ,12 ,120);
+
+Domingo 
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('Espinacas frescas', 30),
+('Plátano', 100),
+('Leche de almendras', 250),
+('Mantequilla de almendras', 15),
+('Arroz integral cocido', 180),
+('Vegetales salteados', 120),
+('Nueces', 30),
+('Fruta fresca', 150),
+('Garbanzos cocidos', 170),
+('Vegetales mixtos', 120);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES
+('Dieta ejemplo 4', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Batido verde', 4),
+('Bowl de arroz y vegetales salteados', 4),
+('Puñado de nueces y frutas', 4),
+('Curry de garbanzos y vegetales', 4);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(34,13 ,30),
+(35 ,13 ,100),
+(36 ,13 ,250),
+(37 ,13 ,15),
+(38 ,14 ,180),
+(39 ,14 ,120),
+(40 ,15 ,30),
+(41 ,15 ,150),
+(42 ,16 ,170),
+(43 ,16 ,120);
