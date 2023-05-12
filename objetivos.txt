@@ -1,0 +1,3 @@
+0 ---> Ganar peso.
+1 ---> Perder peso.
+2 ---> Comer sano.
