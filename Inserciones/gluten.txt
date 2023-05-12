@@ -1,0 +1,100 @@
+-- Dia 1:
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('espinacas', 2.7),
+('aguacate', 1.8),
+('tomate', 0.8),
+('pollo', 2.6),
+('lechuga', 0.2),
+('zanahoria', 0.7),
+('pepino', 0.4),
+('dorada', 2.9);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES ('Dieta 1', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Tortilla de espinacas con aguacate y tomate', 1),
+('Pollo a la plancha con ensalada de lechuga, zanahoria y pepino', 1),
+('Dorada al horno con ensalada de espinacas, tomate y pepino', 1);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(1, 1, 50),
+(2, 1, 50),
+(3, 1, 50),
+(4, 2, 150),
+(5, 2, 50),
+(6, 2, 50),
+(7, 2, 50),
+(8, 3, 150),
+(1, 3, 50),
+(3, 3, 50),
+(7, 3, 50);
+
+-- Dia 2:
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('leche de coco', 0.5),
+('plátano', 1.2),
+('avena', 0.9),
+('chia', 4.7),
+('atún', 2.3),
+('huevo', 1.2),
+('pimiento', 0.3),
+('calabacín', 0.2);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Batido de proteínas a base de leche de coco, plátano, avena y chía', 1),
+('Ensalada de atún con lechuga, huevo y aguacate', 1),
+('Pollo guisado con verduras', 1);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(9, 4, 250),
+(10, 4, 1),
+(11, 4, 50),
+(12, 4, 10),
+(5, 5, 100),
+(5, 5, 50),
+(6, 5, 50),
+(2, 5, 50),
+(4, 6, 150),
+(6, 6, 50),
+(7, 6, 50),
+(8, 6, 50),
+(5, 6, 50),
+(11, 6, 50),
+(13, 6, 50);
+
+-- Dia 3:
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('leche de almendras', 2),
+('plátano', 3),
+('espinacas', 2),
+('jengibre', 1),
+('salmón', 4),
+('lechuga', 1),
+('tomate', 1),
+('chia', 2),
+('lomo de cerdo', 3),
+('pepino', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Batido de proteínas con leche de almendras y plátano', 1),
+('Ensalada de salmón con lechuga, tomate y chía', 1),
+('Lomo de cerdo a la plancha con ensalada de espinacas, tomate y pepino', 1);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(1, 7, 250),
+(2, 7, 1),
+(3, 7, 30),
+(4, 7, 5),
+(5, 8, 150),
+(6, 8, 50),
+(7, 8, 50),
+(8, 8, 50),
+(9, 9, 150),
+(3, 9, 50),
+(7, 9, 50),
+(10, 9, 50);
+
+-- Dia 4:
+
