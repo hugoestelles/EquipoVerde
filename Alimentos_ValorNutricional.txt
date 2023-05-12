@@ -1,0 +1,70 @@
+Huevos: 155 kcal
+Espinacas: 23 kcal
+Aguacate: 160 kcal
+Tomate: 18 kcal
+Pollo: 165 kcal
+Lechuga: 15 kcal
+Zanahoria: 41 kcal
+Pepino: 16 kcal
+Dorada: 115 kcal
+Leche de coco: 230 kcal
+Plátano: 89 kcal
+Avena: 389 kcal
+Chía: 486 kcal
+Atún: 116 kcal
+Salmón: 208 kcal
+Jengibre: 80 kcal
+Lomo de cerdo: 244 kcal
+Lenguado: 86 kcal
+Lubina: 133 kcal
+Cordero: 282 kcal
+Solomillo de cerdo: 143 kcal
+Arroz blanco cocido: 130 kcal
+Carne de res (magro): 250 kcal
+Pescado (atún en agua): 120 kcal
+Pan blanco: 265 kcal
+Pasta (espaguetis cocidos): 131 kcal
+Leche entera: 65 kcal
+Yogur natural: 61 kcal
+Queso cheddar: 402 kcal
+Manzana: 52 kcal
+Naranja: 47 kcal
+Leche de almendras: 24 kcal
+Filete de ternera: 143 kcal
+Fresas: 33 kcal
+Brócoli: 34 kcal
+Patatas: 77 kcal
+Mango: 60 kcal
+Pechuga de pollo: 165 kcal
+Pimiento: 26 kcal
+Calabacín: 17 kcal
+Arroz integral: 111 kcal
+Quinoa: 120 kcal
+Manzanas: 52 kcal
+Plátanos: 89 kcal
+Zanahorias: 41 kcal
+Lechugas: 15 kcal
+Tomates: 18 kcal
+Papas: 77 kcal
+Pescado: 120 kcal
+Carne roja: 250 kcal
+Pasta: 131 kcal
+Pan integral: 244 kcal
+Huevos: 143 kcal
+Lentejas: 116 kcal
+Garbanzos: 164 kcal
+Nueces: 654 kcal
+Almendras: 579 kcal
+Aceite de oliva: 884 kcal
+Yogur: 61 kcal
+Chocolate negro: 546 kcal
+Frutas (varias): entre 40-90 kcal
+Semillas: entre 450-600 kcal
+Verduras mixtas (varias): entre 20-50 kcal
+Batido de proteína de suero sin lactosa: entre 100-150 kcal
+Pavo: 178 kcal
+Champiñones: 22 kcal
+Filete de pescado: entre 90-200 kcal
+Pera: 57 kcal
+Ensalada de lechuga, tomate y pepino: entre 20-50 kcal
+Hamburguesa casera de ternera: 288 kcal
