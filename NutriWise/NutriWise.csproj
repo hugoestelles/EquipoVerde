@@ -86,88 +86,94 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\ConBD.cs" />
-    <Compile Include="CrearCuenta.cs">
+    <Compile Include="Clases\Alimentos.cs" />
+    <Compile Include="Clases\ConexionBD.cs" />
+    <Compile Include="Clases\Dieta.cs" />
+    <Compile Include="Clases\Donativos.cs" />
+    <Compile Include="Clases\Platos.cs" />
+    <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Clases\Valoraciones.cs" />
+    <Compile Include="Forms\CrearCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CrearCuenta.Designer.cs">
+    <Compile Include="Forms\CrearCuenta.Designer.cs">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dieta.cs">
+    <Compile Include="Forms\Dieta.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Dieta.Designer.cs">
+    <Compile Include="Forms\Dieta.Designer.cs">
       <DependentUpon>Dieta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Donativos.cs">
+    <Compile Include="Forms\Donativos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Donativos.Designer.cs">
+    <Compile Include="Forms\Donativos.Designer.cs">
       <DependentUpon>Donativos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inicio.cs">
+    <Compile Include="Forms\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio.Designer.cs">
+    <Compile Include="Forms\Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inicio_Sesion.cs">
+    <Compile Include="Forms\Inicio_Sesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio_Sesion.Designer.cs">
+    <Compile Include="Forms\Inicio_Sesion.Designer.cs">
       <DependentUpon>Inicio_Sesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="Forms\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
+    <Compile Include="Forms\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Perfil.cs">
+    <Compile Include="Forms\Perfil.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Perfil.Designer.cs">
+    <Compile Include="Forms\Perfil.Designer.cs">
       <DependentUpon>Perfil.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ListaCompra.cs">
+    <Compile Include="Forms\ListaCompra.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ListaCompra.Designer.cs">
+    <Compile Include="Forms\ListaCompra.Designer.cs">
       <DependentUpon>ListaCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ayuda.cs">
+    <Compile Include="Forms\Ayuda.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ayuda.Designer.cs">
+    <Compile Include="Forms\Ayuda.Designer.cs">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Valoraciones.cs">
+    <Compile Include="Forms\Valoraciones.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Valoraciones.Designer.cs">
+    <Compile Include="Forms\Valoraciones.Designer.cs">
       <DependentUpon>Valoraciones.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CrearCuenta.resx">
+    <EmbeddedResource Include="Forms\CrearCuenta.resx">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dieta.resx">
+    <EmbeddedResource Include="Forms\Dieta.resx">
       <DependentUpon>Dieta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Donativos.resx">
+    <EmbeddedResource Include="Forms\Donativos.resx">
       <DependentUpon>Donativos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inicio.resx">
+    <EmbeddedResource Include="Forms\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inicio_Sesion.resx">
+    <EmbeddedResource Include="Forms\Inicio_Sesion.resx">
       <DependentUpon>Inicio_Sesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
+    <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Perfil.resx">
+    <EmbeddedResource Include="Forms\Perfil.resx">
       <DependentUpon>Perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -175,13 +181,13 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListaCompra.resx">
+    <EmbeddedResource Include="Forms\ListaCompra.resx">
       <DependentUpon>ListaCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ayuda.resx">
+    <EmbeddedResource Include="Forms\Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Valoraciones.resx">
+    <EmbeddedResource Include="Forms\Valoraciones.resx">
       <DependentUpon>Valoraciones.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
