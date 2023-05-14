@@ -86,6 +86,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Alimentos.cs" />
     <Compile Include="Clases\ConexionBD.cs" />
     <Compile Include="Clases\Dieta.cs" />
@@ -155,6 +161,9 @@
     <Compile Include="Forms\Valoraciones.Designer.cs">
       <DependentUpon>Valoraciones.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CrearCuenta.resx">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +283,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-color_progress_icon-icons.com_53437.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
