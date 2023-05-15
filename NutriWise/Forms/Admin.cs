@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.Clases;
+using MySql.Data.MySqlClient;
 
 namespace NutriWise
 {
@@ -36,39 +37,46 @@ namespace NutriWise
         {
             try
             {
-
-                int resultado = 0;
-
+                MySqlConnection conect = ConexionBD.Conexion;
                 ConexionBD.AbrirConexion();
                 if (!string.IsNullOrEmpty(txtEliminarUsu.Text))
                 {
                     string nombre = txtEliminarUsu.Text;
-                    if (ConexionBD.Conexion != null)
-                    {
+                    DialogResult confirmacion = MessageBox.Show("Borrado de registro seleccionado. ¿Continuar?",
+                        "Eliminación", MessageBoxButtons.YesNo);
 
-                        DialogResult confirmacion = MessageBox.Show("Borrado de registro seleccionado. ¿Continuar?",
-                                                    "Eliminación", MessageBoxButtons.YesNo);
-                        resultado = Usuario.EliminarUsuario(nombre);
-
-                    }
-                    else
+                    if (confirmacion == DialogResult.Yes)
                     {
-                        MessageBox.Show("No se ha podido abrir la conexión con la Base de Datos");
+                        // Abrir la conexión antes de eliminar el usuario
+
+
+                        // Eliminar el usuario y obtener el número de registros afectados
+                        int registrosAfectados = Usuario.EliminarUsuario(nombre);
+
+                        // Cerrar la conexión después de eliminar el usuario
+                        ConexionBD.CerrarConexion();
+
+                        if (registrosAfectados > 0)
+                        {
+                            MessageBox.Show("El usuario se eliminó correctamente.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontró ningún usuario con el nombre especificado.");
+                        }
                     }
-                    // Cierro la conexión
-                    ConexionBD.CerrarConexion();
                 }
-
+                else
+                {
+                    MessageBox.Show("Ingrese un nombre de usuario válido.");
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                ConexionBD.CerrarConexion();
+                MessageBox.Show("Error al eliminar el usuario: " + ex.Message);
             }
         }
+
 
         private void mnuPlatoAgregar_Click(object sender, EventArgs e)
         {
@@ -97,7 +105,7 @@ namespace NutriWise
 
         private void timerAdmin_Tick(object sender, EventArgs e)
         {
-           // lblAdminReloj = DateTime.Now.ToString("t");
+            // lblAdminReloj = DateTime.Now.ToString("t");
         }
 
         private void btnAdminCerrar_Click(object sender, EventArgs e)
