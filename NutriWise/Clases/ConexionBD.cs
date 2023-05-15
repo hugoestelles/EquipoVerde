@@ -22,7 +22,7 @@ namespace NutriWise
                     {
                         instancia = new MySqlConnection();
                         string server = "server=127.0.0.1;";
-                        string database = "database=aev7;";
+                        string database = "database=nutriwise;";
                         string usuario = "uid=root;";
                         string password = "pwd=;";
                         instancia.ConnectionString = server + database + usuario + password;

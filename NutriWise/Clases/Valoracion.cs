@@ -18,7 +18,7 @@ namespace NutriWise.Clases
         public DateTime Fecha { get { return fecha; } set { fecha = value; } }
         public string Comentario { get { return comentario; } set { comentario = value; } }
 
-
+/*
         public Valoraciones(int id, int nEstrellas, DateTime f, string com)
         {
             this.id = id;
@@ -27,6 +27,6 @@ namespace NutriWise.Clases
             comentario = com;
         }
 
-        public Valoraciones() { }
+        public Valoraciones() { }*/
     }
 }

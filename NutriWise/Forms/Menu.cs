@@ -25,6 +25,7 @@ namespace NutriWise
         bool lista = false;
         bool video = false;
         bool ayuda = false;
+        bool mantenimiento = false;
 
         private void pctCerrar_Click(object sender, EventArgs e)
         {
@@ -41,6 +42,7 @@ namespace NutriWise
             lista = false;
             video = false;
             ayuda = false;
+            mantenimiento = false;
             cambioColor();
             //dieta1.BringToFront();
             valoraciones1.Visible = true;
@@ -61,6 +63,7 @@ namespace NutriWise
             lista = false;
             video = false;
             ayuda = false;
+            mantenimiento = false;
             cambioColor();
             //perfil1.BringToFront();
             dieta1.Visible = false;
@@ -84,7 +87,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
-
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (valoraciones)
                 {
@@ -95,6 +98,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (perfil)
                 {
@@ -105,6 +109,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (donativos)
                 {
@@ -115,6 +120,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (lista)
                 {
@@ -125,6 +131,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.Ivory;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (video)
                 {
@@ -135,6 +142,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.Ivory;
                     btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (ayuda)
                 {
@@ -145,6 +153,18 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.Ivory;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
+                }
+                if (mantenimiento)
+                {
+                    btnValoraciones.BackColor = Color.PaleGreen;
+                    btnDieta.BackColor = Color.PaleGreen;
+                    btnPerfil.BackColor = Color.PaleGreen;
+                    btnDonativos.BackColor = Color.PaleGreen;
+                    btnListaCompra.BackColor = Color.PaleGreen;
+                    btnVideos.BackColor = Color.PaleGreen;
+                    btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.Ivory;
                 }
             }
 
@@ -159,6 +179,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (dieta)
                 {
@@ -169,6 +190,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (valoraciones)
                 {
@@ -179,6 +201,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (donativos)
                 {
@@ -189,6 +212,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (lista)
                 {
@@ -199,6 +223,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.DarkSeaGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (video)
                 {
@@ -209,6 +234,7 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.DarkSeaGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (ayuda)
                 {
@@ -219,6 +245,18 @@ namespace NutriWise
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.DarkSeaGreen;
+                    btnMantenimiento.BackColor = Color.PaleGreen;
+                }
+                if (mantenimiento)
+                {
+                    btnValoraciones.BackColor = Color.PaleGreen;
+                    btnDieta.BackColor = Color.PaleGreen;
+                    btnPerfil.BackColor = Color.PaleGreen;
+                    btnDonativos.BackColor = Color.PaleGreen;
+                    btnListaCompra.BackColor = Color.PaleGreen;
+                    btnVideos.BackColor = Color.PaleGreen;
+                    btnAyuda.BackColor = Color.PaleGreen;
+                    btnMantenimiento.BackColor = Color.DarkSeaGreen;
                 }
             }
 
@@ -257,6 +295,7 @@ namespace NutriWise
             lista = false;
             video = false;
             ayuda = false;
+            mantenimiento = false;
             cambioColor();
             //dieta1.BringToFront();
             valoraciones1.Visible = false;
@@ -276,6 +315,7 @@ namespace NutriWise
             lista = false;
             video = false;
             ayuda = false;
+            mantenimiento = false;
             cambioColor();
             dieta1.Visible = true;
             perfil1.Visible = false;
@@ -294,6 +334,7 @@ namespace NutriWise
             lista = true;
             video = false;
             ayuda = false;
+            mantenimiento = false;
             cambioColor();
             dieta1.Visible = false;
             perfil1.Visible = false;
@@ -312,6 +353,7 @@ namespace NutriWise
             lista = false;
             video = true;
             ayuda = false;
+            mantenimiento = false;
             cambioColor();
             dieta1.Visible = false;
             perfil1.Visible = false;
@@ -330,6 +372,7 @@ namespace NutriWise
             lista = false;
             video = false;
             ayuda = true;
+            mantenimiento = false;
             cambioColor();
             dieta1.Visible = false;
             perfil1.Visible = false;
@@ -362,6 +405,25 @@ namespace NutriWise
             listaCompra1.BackColor = Color.DarkSeaGreen;
             ayuda1.BackColor = Color.DarkSeaGreen;
             cambioColor();
+        }
+
+        private void btnMantenimiento_Click(object sender, EventArgs e)
+        {
+            dieta = false;
+            perfil = false;
+            valoraciones = false;
+            donativos = false;
+            lista = false;
+            video = false;
+            ayuda = false;
+            mantenimiento = true;
+            cambioColor();
+            // Crea una nueva instancia del formulario Form5
+            Admin form5 = new Admin();
+
+            // Muestra el nuevo formulario
+            form5.ShowDialog();
+
         }
     }
 }

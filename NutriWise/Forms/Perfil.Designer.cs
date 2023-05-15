@@ -46,6 +46,10 @@
             this.lblObj = new System.Windows.Forms.Label();
             this.pctPerfil = new System.Windows.Forms.PictureBox();
             this.pctTenedor = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctTenedor)).BeginInit();
             this.SuspendLayout();
@@ -246,7 +250,7 @@
             // 
             this.pctPerfil.Image = global::NutriWise.Properties.Resources.Usuario;
             this.pctPerfil.Location = new System.Drawing.Point(780, 4);
-            this.pctPerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctPerfil.Margin = new System.Windows.Forms.Padding(4);
             this.pctPerfil.Name = "pctPerfil";
             this.pctPerfil.Size = new System.Drawing.Size(205, 238);
             this.pctPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -257,18 +261,64 @@
             // 
             this.pctTenedor.Image = global::NutriWise.Properties.Resources.image_44;
             this.pctTenedor.Location = new System.Drawing.Point(565, 313);
-            this.pctTenedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctTenedor.Margin = new System.Windows.Forms.Padding(4);
             this.pctTenedor.Name = "pctTenedor";
             this.pctTenedor.Size = new System.Drawing.Size(420, 241);
             this.pctTenedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctTenedor.TabIndex = 0;
             this.pctTenedor.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(170, 464);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(447, 16);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "cambiar lbl por text editable false y luego boton de editar y otro de aceptar";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Ivory;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.textBox1.Location = new System.Drawing.Point(478, 202);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 37);
+            this.textBox1.TabIndex = 19;
+            this.textBox1.Text = "Austin";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(486, 86);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(579, 87);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pctPerfil);
             this.Controls.Add(this.lblObjetivo);
             this.Controls.Add(this.lblObj);
@@ -287,7 +337,7 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblNomb);
             this.Controls.Add(this.pctTenedor);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Perfil";
             this.Size = new System.Drawing.Size(1001, 570);
             ((System.ComponentModel.ISupportInitialize)(this.pctPerfil)).EndInit();
@@ -317,5 +367,9 @@
         private System.Windows.Forms.Label lblObjetivo;
         private System.Windows.Forms.Label lblObj;
         private System.Windows.Forms.PictureBox pctPerfil;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

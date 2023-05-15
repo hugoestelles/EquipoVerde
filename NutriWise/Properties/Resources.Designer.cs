@@ -203,6 +203,16 @@ namespace NutriWise.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mantenimiento {
+            get {
+                object obj = ResourceManager.GetObject("Mantenimiento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Nav_item {
             get {
                 object obj = ResourceManager.GetObject("Nav item", resourceCulture);
