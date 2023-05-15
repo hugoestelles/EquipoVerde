@@ -86,6 +86,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Dietas.cs" />
+    <Compile Include="Clases\Donativo.cs" />
+    <Compile Include="Clases\Valoracion.cs" />
     <Compile Include="Forms\Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,11 +97,8 @@
     </Compile>
     <Compile Include="Clases\Alimentos.cs" />
     <Compile Include="Clases\ConexionBD.cs" />
-    <Compile Include="Clases\Dieta.cs" />
-    <Compile Include="Clases\Donativos.cs" />
     <Compile Include="Clases\Platos.cs" />
     <Compile Include="Clases\Usuario.cs" />
-    <Compile Include="Clases\Valoraciones.cs" />
     <Compile Include="Forms\CrearCuenta.cs">
       <SubType>Form</SubType>
     </Compile>

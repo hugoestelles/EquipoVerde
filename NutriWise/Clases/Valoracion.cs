@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NutriWise
+namespace NutriWise.Clases
 {
-    class Valoracion
+    internal class Valoracion
     {
         private int id;
         private int numEstrellas;

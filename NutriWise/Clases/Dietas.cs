@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NutriWise
+namespace NutriWise.Clases
 {
     class Dietas
     {
@@ -17,13 +17,14 @@ namespace NutriWise
         public int Objetivo { get { return objetivo; } set { objetivo = value; } }
 
 
-        public Dieta(int id, string nom, int obj)
+        public Dietas(int id, string nom, int obj)
         {
             this.id = id;
             nombre = nom;
             objetivo = obj;
         }
 
-        public Dieta() { }
+        public Dietas() { }
+
     }
 }

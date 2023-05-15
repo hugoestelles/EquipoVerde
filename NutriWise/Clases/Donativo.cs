@@ -18,7 +18,7 @@ namespace NutriWise
         public string NomUser { get { return nomUser; } }
         public DateTime Fecha { get { return fecha;} }
 
-        public Donativos(int id, double canti, string nom, DateTime fech)
+        public Donativo(int id, double canti, string nom, DateTime fech)
         {
             idDonativo  = id;
             cant = canti;
