@@ -1,12 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
-using NutriWise;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace WindowsFormsApp1.Clases
+namespace NutriWise.Clases
 {
     internal class Usuario
     {
@@ -50,18 +44,75 @@ namespace WindowsFormsApp1.Clases
             administrador = admin;
         }
 
-        public Usuario()
+        public Usuario() { }
+
+
+        public int AgregarUsuario()
         {
+            int retorno;
+            string consulta = string.Format("INSERT INTO usuarios (id,correo,contra,nombre,apellidos,altura,peso,intolerancia,actividad,objetivo,administrador) VALUES " +
+                "(@id,@correo,@contra,@nom,@ape,@alt,@peso,@intolerancia,@act,@obj,@admin);");
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            comando.Parameters.AddWithValue("id", id);
+            comando.Parameters.AddWithValue("correo", correo);
+            comando.Parameters.AddWithValue("contra", contra);
+            comando.Parameters.AddWithValue("nom", nombre);
+            comando.Parameters.AddWithValue("ape", apellidos);
+            comando.Parameters.AddWithValue("alt", altura);
+            comando.Parameters.AddWithValue("peso", peso);
+            comando.Parameters.AddWithValue("intolerancia", intolerancia);
+            comando.Parameters.AddWithValue("act", actividad);
+            comando.Parameters.AddWithValue("obj", objetivo);
+            comando.Parameters.AddWithValue("admin", administrador);
+
+            retorno = comando.ExecuteNonQuery();
+            return retorno;
         }
 
-        public static int EliminarUsuario(string nombre)
+        public int EliminarUsuario()
         {
-            int registrosAfectados;
-            string consulta = string.Format("DELETE FROM usuario WHERE nombre='{0}'", nombre);
+            int retorno;
+            string consulta = string.Format("DELETE FROM usuarios WHERE id='{0}'", id);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            registrosAfectados = comando.ExecuteNonQuery();
 
-            return registrosAfectados;
+            retorno = comando.ExecuteNonQuery();
+            return retorno;
+        }
+
+        public static bool YaEstaUsuario(int id)
+        {
+            string consulta = string.Format("SELECT * FROM usuarios WHERE id='{0}'", id);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows) return true;
+            return false;
+        }
+
+        public static Usuario BuscarUsuario(int id)
+        {
+            Usuario user = new Usuario();
+            string consulta = string.Format("SELECT * FROM usuarios WHERE id='{0}'", id);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                user.id = reader.GetInt32(0);
+                user.correo = reader.GetString(1);
+                user.contra = reader.GetString(2);
+                user.nombre = reader.GetString(3);
+                user.apellidos = reader.GetString(4);
+                user.altura = reader.GetDouble(5);
+                user.peso = reader.GetDouble(6);
+                user.intolerancia = reader.GetInt16(7);
+                user.actividad = reader.GetInt16(8);
+                user.objetivo = reader.GetInt16(9);
+                user.administrador = reader.GetBoolean(10);
+            }
+
+            return user;
         }
     }
 }

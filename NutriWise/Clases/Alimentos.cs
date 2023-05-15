@@ -1,9 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NutriWise
 {
@@ -63,8 +60,12 @@ namespace NutriWise
         public int AgregarAlimento()
         {
             int retorno;
-            string consulta = String.Format("INSERT INTO alimentos (nombre, valorNutricio) VALUES ('{0}', '{1}');", this.nombre, this.valorNutri);
+            string consulta = String.Format("INSERT INTO alimentos (nombre, valorNutricio) VALUES " +
+                "(@nom, @valorNutri);");
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            comando.Parameters.AddWithValue("nom", nombre);
+            comando.Parameters.AddWithValue("valorNutri", valorNutri);
+
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }

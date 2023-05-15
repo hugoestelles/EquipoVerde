@@ -1,11 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace NutriWise.Clases
+namespace NutriWise
 {
     class Dietas
     {
@@ -97,8 +94,15 @@ namespace NutriWise.Clases
         public int AgregarDieta()
         {
             int retorno;
-            string consulta = String.Format("INSERT INTO dietas (nombre, objetivoUsu, tipoDieta, cantidadPlatos, cantidadIngredientes) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}');", this.nombre, this.objetivo, this.tipo, this.cantPlatos, this.cantAlim);
+            string consulta = String.Format("INSERT INTO dietas (nombre, objetivoUsu, tipoDieta, cantidadPlatos, cantidadIngredientes) VALUES " +
+                "(@nom,@objUsu,@tipoDieta,@cantPlatos,@cantIngredientes);");
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            comando.Parameters.AddWithValue("nom", nombre);
+            comando.Parameters.AddWithValue("objUsu", objetivo);
+            comando.Parameters.AddWithValue("tipoDieta", tipo);
+            comando.Parameters.AddWithValue("cantPlatos", cantPlatos);
+            comando.Parameters.AddWithValue("cantIngredientes", cantAlim);
+
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
