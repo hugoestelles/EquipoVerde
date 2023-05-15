@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS usuario (
 	tipoIntolencia INT NOT NULL,
 	cantActividad INT NOT NULL,
 	objetivo INT NOT NULL,
+	administrador BOOL NOT NULL,
 	idDieta INT NOT NULL,
 	PRIMARY KEY (idUsuario));
 	
@@ -31,6 +32,9 @@ CREATE TABLE IF NOT EXISTS usuario (
 	idDieta INT AUTO_INCREMENT,
 	nombre VARCHAR(40) NOT NULL,
 	objetivoUsu INT NOT NULL,
+	tipoDieta VARCHAR(40),
+	cantidadPlatos INT,
+	cantidadIngredientes INT,
 	PRIMARY KEY (idDieta));
 	
 	CREATE TABLE IF NOT EXISTS aliPlato(
