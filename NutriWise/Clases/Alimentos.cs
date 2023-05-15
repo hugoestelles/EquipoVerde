@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Clases.Clases
+namespace NutriWise
 {
     class Alimentos
     {
@@ -25,5 +25,6 @@ namespace Clases.Clases
         }
 
         public Alimentos() { }
+
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp1.Clases
+namespace NutriWise
 {
-    class Donativos
+    class Donativo
     {
         private int idDonativo;
         private double cant;

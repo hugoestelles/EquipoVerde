@@ -1,6 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 
-namespace AEV7
+namespace NutriWise
 {
     // Clase que implementa el patrón Singleton para la conexión a la base de datos
     public class ConexionBD
