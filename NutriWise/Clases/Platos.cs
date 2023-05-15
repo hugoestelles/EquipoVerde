@@ -9,13 +9,13 @@ namespace NutriWise
         private string nombre;
         private int tipo;
         private List<Alimentos> listaAlimentos = new List<Alimentos>();
-        private List<int> listaCantidades = new List<int>();
+        private int[] listaCantidades;
 
         public int Id { get { return id; } set { id = value; } }
         public string Nombre { get { return nombre; } set { nombre = value; } }
         public int Tipo { get { return tipo; } set { tipo = value; } }
         public List<Alimentos> ListaAlimentos { get { return listaAlimentos; } }
-        public List<int> ListaCantidades { get { return listaCantidades; } }
+        public int[] ListaCantidades { get { return listaCantidades; } }
 
 
         public Platos(int id, string nom, int tip)
@@ -83,41 +83,37 @@ namespace NutriWise
         private List<Alimentos> BuscarAlimentos()
         {
             List<Alimentos> lista = new List<Alimentos>();
-            string consulta = "SELECT * FROM alimentos";
+            string consulta = string.Format("SELECT * FROM alimentos a INNER JOIN aliPlato ap ON a.idAlimento = ap.idAlimentos INNER JOIN platos p ON ap.idPlatos = p.idPlato WHERE p.idPlato = '{0}';",this.id);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            int i = 0;
             if (reader.HasRows)
             {
                 while (reader.Read())
                 {
-                    //lista[i] = 
-                    i++;
+                    Alimentos a1 = new Alimentos(reader.GetInt32(0),reader.GetString(1),reader.GetDouble(2));
+                    lista.Add(a1);
+                   
                 }
             }
 
             return lista;
         }
 
-        private List<int> BuscarCantidades()
+        private int[] BuscarCantidades()
         {
-            List<int> lista = new List<int>();
-            string consulta = "SELECT * FROM cantidades";
-            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            MySqlDataReader reader = comando.ExecuteReader();
-
-            int i = 0;
-            if (reader.HasRows)
+            int[] lista = new int[listaAlimentos.Count];
+            for (int i = 0; i < listaAlimentos.Count; i++)
             {
-                while (reader.Read())
+                string consulta = string.Format("SELECT cantida FROM aliPlato WHERE idPlatos = '{0}' AND idAlimentos = '{1}';", this.id, listaAlimentos[i].Id);
+                MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+                MySqlDataReader reader = comando.ExecuteReader();
+                if (reader.HasRows)
                 {
-                    //lista[i] = 
-                    i++;
+                    lista[i] = reader.GetInt16(0);
                 }
             }
-
-            return lista;
+                return lista;
         }
     }
 }
