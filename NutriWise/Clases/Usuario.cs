@@ -162,5 +162,24 @@ namespace NutriWise.Clases
             if (reader.HasRows) return true;
             return false;
         }
+        public int ActualizarUsuario(string correo, string nombre, string apellidos, decimal altura, decimal peso, int intolerancia, decimal actividad, int objetivo)
+        {
+            int retorno;
+            string consulta = string.Format("UPDATE usuario SET correo = @correo,clave = {2}, nombre = @nom, apellidos = @ape, altura = @alt, peso = @peso, tipoIntolencia = @intolerancia, cantActividad = @actividad, objetivo = @objetivo, administrador = '{0}' WHERE idUsuario = '{1}';", this.administrador, this.id, this.contra);
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            comando.Parameters.AddWithValue("correo", correo);
+            comando.Parameters.AddWithValue("nom", nombre);
+            comando.Parameters.AddWithValue("ape", apellidos);
+            comando.Parameters.AddWithValue("alt", altura);
+            comando.Parameters.AddWithValue("peso", peso);
+            comando.Parameters.AddWithValue("intolerancia", intolerancia);
+            comando.Parameters.AddWithValue("act", actividad);
+            comando.Parameters.AddWithValue("obj", objetivo);
+
+            retorno = comando.ExecuteNonQuery();
+            return retorno;
+        }
+
     }
 }
