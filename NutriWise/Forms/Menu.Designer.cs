@@ -30,14 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.pnlAjustes = new System.Windows.Forms.Panel();
-            this.pctIngles = new System.Windows.Forms.PictureBox();
-            this.pctEspalñol = new System.Windows.Forms.PictureBox();
-            this.pctClaro = new System.Windows.Forms.PictureBox();
-            this.pctOscuro = new System.Windows.Forms.PictureBox();
-            this.pctDegradadoAjustes = new System.Windows.Forms.PictureBox();
-            this.pctAjustes = new System.Windows.Forms.PictureBox();
-            this.pctCerrar = new System.Windows.Forms.PictureBox();
             this.btnMantenimiento = new System.Windows.Forms.Button();
             this.btnDieta = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
@@ -47,6 +39,14 @@
             this.btnValoraciones = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
             this.pctLogo = new System.Windows.Forms.PictureBox();
+            this.pnlAjustes = new System.Windows.Forms.Panel();
+            this.pctIngles = new System.Windows.Forms.PictureBox();
+            this.pctEspalñol = new System.Windows.Forms.PictureBox();
+            this.pctClaro = new System.Windows.Forms.PictureBox();
+            this.pctOscuro = new System.Windows.Forms.PictureBox();
+            this.pctDegradadoAjustes = new System.Windows.Forms.PictureBox();
+            this.pctAjustes = new System.Windows.Forms.PictureBox();
+            this.pctCerrar = new System.Windows.Forms.PictureBox();
             this.pctDegradado = new System.Windows.Forms.PictureBox();
             this.perfil1 = new NutriWise.Perfil();
             this.dieta1 = new NutriWise.Dieta();
@@ -55,6 +55,7 @@
             this.listaCompra1 = new NutriWise.ListaCompra();
             this.ayuda1 = new NutriWise.Ayuda();
             this.pnlMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             this.pnlAjustes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctIngles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctEspalñol)).BeginInit();
@@ -63,7 +64,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctDegradadoAjustes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctAjustes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctDegradado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,112 +84,6 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(361, 758);
             this.pnlMenu.TabIndex = 0;
-            // 
-            // pnlAjustes
-            // 
-            this.pnlAjustes.Controls.Add(this.pctIngles);
-            this.pnlAjustes.Controls.Add(this.pctEspalñol);
-            this.pnlAjustes.Controls.Add(this.pctClaro);
-            this.pnlAjustes.Controls.Add(this.pctOscuro);
-            this.pnlAjustes.Controls.Add(this.pctDegradadoAjustes);
-            this.pnlAjustes.Location = new System.Drawing.Point(676, 0);
-            this.pnlAjustes.Name = "pnlAjustes";
-            this.pnlAjustes.Size = new System.Drawing.Size(408, 150);
-            this.pnlAjustes.TabIndex = 15;
-            this.pnlAjustes.Visible = false;
-            // 
-            // pctIngles
-            // 
-            this.pctIngles.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctIngles.BackgroundImage")));
-            this.pctIngles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pctIngles.Image = global::NutriWise.Properties.Resources.Ingles;
-            this.pctIngles.Location = new System.Drawing.Point(98, 20);
-            this.pctIngles.Name = "pctIngles";
-            this.pctIngles.Size = new System.Drawing.Size(60, 60);
-            this.pctIngles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctIngles.TabIndex = 23;
-            this.pctIngles.TabStop = false;
-            // 
-            // pctEspalñol
-            // 
-            this.pctEspalñol.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctEspalñol.BackgroundImage")));
-            this.pctEspalñol.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pctEspalñol.Image = global::NutriWise.Properties.Resources.Español;
-            this.pctEspalñol.Location = new System.Drawing.Point(175, 20);
-            this.pctEspalñol.Name = "pctEspalñol";
-            this.pctEspalñol.Size = new System.Drawing.Size(60, 60);
-            this.pctEspalñol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctEspalñol.TabIndex = 22;
-            this.pctEspalñol.TabStop = false;
-            // 
-            // pctClaro
-            // 
-            this.pctClaro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctClaro.BackgroundImage")));
-            this.pctClaro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pctClaro.Image = global::NutriWise.Properties.Resources.sol;
-            this.pctClaro.Location = new System.Drawing.Point(325, 15);
-            this.pctClaro.Name = "pctClaro";
-            this.pctClaro.Size = new System.Drawing.Size(71, 71);
-            this.pctClaro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctClaro.TabIndex = 20;
-            this.pctClaro.TabStop = false;
-            this.pctClaro.Click += new System.EventHandler(this.pctClaro_Click);
-            // 
-            // pctOscuro
-            // 
-            this.pctOscuro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctOscuro.BackgroundImage")));
-            this.pctOscuro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pctOscuro.Image = global::NutriWise.Properties.Resources.luna;
-            this.pctOscuro.Location = new System.Drawing.Point(252, 20);
-            this.pctOscuro.Name = "pctOscuro";
-            this.pctOscuro.Size = new System.Drawing.Size(60, 60);
-            this.pctOscuro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctOscuro.TabIndex = 21;
-            this.pctOscuro.TabStop = false;
-            this.pctOscuro.Click += new System.EventHandler(this.pctOscuro_Click);
-            // 
-            // pctDegradadoAjustes
-            // 
-            this.pctDegradadoAjustes.BackgroundImage = global::NutriWise.Properties.Resources.Rectangle;
-            this.pctDegradadoAjustes.ErrorImage = null;
-            this.pctDegradadoAjustes.ImageLocation = "";
-            this.pctDegradadoAjustes.InitialImage = global::NutriWise.Properties.Resources.Ajustes;
-            this.pctDegradadoAjustes.Location = new System.Drawing.Point(0, 0);
-            this.pctDegradadoAjustes.Margin = new System.Windows.Forms.Padding(4);
-            this.pctDegradadoAjustes.Name = "pctDegradadoAjustes";
-            this.pctDegradadoAjustes.Size = new System.Drawing.Size(440, 150);
-            this.pctDegradadoAjustes.TabIndex = 15;
-            this.pctDegradadoAjustes.TabStop = false;
-            // 
-            // pctAjustes
-            // 
-            this.pctAjustes.BackgroundImage = global::NutriWise.Properties.Resources.Rectangle;
-            this.pctAjustes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pctAjustes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pctAjustes.Image = global::NutriWise.Properties.Resources.Ajustes;
-            this.pctAjustes.ImageLocation = "";
-            this.pctAjustes.Location = new System.Drawing.Point(1127, 9);
-            this.pctAjustes.Margin = new System.Windows.Forms.Padding(0);
-            this.pctAjustes.Name = "pctAjustes";
-            this.pctAjustes.Size = new System.Drawing.Size(71, 71);
-            this.pctAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctAjustes.TabIndex = 8;
-            this.pctAjustes.TabStop = false;
-            this.pctAjustes.Click += new System.EventHandler(this.pctAjustes_Click_1);
-            // 
-            // pctCerrar
-            // 
-            this.pctCerrar.BackgroundImage = global::NutriWise.Properties.Resources.Rectangle;
-            this.pctCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pctCerrar.Image = global::NutriWise.Properties.Resources.X;
-            this.pctCerrar.Location = new System.Drawing.Point(1214, 9);
-            this.pctCerrar.Margin = new System.Windows.Forms.Padding(0);
-            this.pctCerrar.Name = "pctCerrar";
-            this.pctCerrar.Size = new System.Drawing.Size(71, 71);
-            this.pctCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctCerrar.TabIndex = 9;
-            this.pctCerrar.TabStop = false;
-            this.pctCerrar.Click += new System.EventHandler(this.pctCerrar_Click);
             // 
             // btnMantenimiento
             // 
@@ -313,6 +207,112 @@
             this.pctLogo.TabIndex = 1;
             this.pctLogo.TabStop = false;
             // 
+            // pnlAjustes
+            // 
+            this.pnlAjustes.Controls.Add(this.pctIngles);
+            this.pnlAjustes.Controls.Add(this.pctEspalñol);
+            this.pnlAjustes.Controls.Add(this.pctClaro);
+            this.pnlAjustes.Controls.Add(this.pctOscuro);
+            this.pnlAjustes.Controls.Add(this.pctDegradadoAjustes);
+            this.pnlAjustes.Location = new System.Drawing.Point(676, 0);
+            this.pnlAjustes.Name = "pnlAjustes";
+            this.pnlAjustes.Size = new System.Drawing.Size(408, 150);
+            this.pnlAjustes.TabIndex = 15;
+            this.pnlAjustes.Visible = false;
+            // 
+            // pctIngles
+            // 
+            this.pctIngles.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctIngles.BackgroundImage")));
+            this.pctIngles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctIngles.Image = global::NutriWise.Properties.Resources.Ingles;
+            this.pctIngles.Location = new System.Drawing.Point(98, 20);
+            this.pctIngles.Name = "pctIngles";
+            this.pctIngles.Size = new System.Drawing.Size(60, 60);
+            this.pctIngles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctIngles.TabIndex = 23;
+            this.pctIngles.TabStop = false;
+            // 
+            // pctEspalñol
+            // 
+            this.pctEspalñol.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctEspalñol.BackgroundImage")));
+            this.pctEspalñol.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctEspalñol.Image = global::NutriWise.Properties.Resources.Español;
+            this.pctEspalñol.Location = new System.Drawing.Point(175, 20);
+            this.pctEspalñol.Name = "pctEspalñol";
+            this.pctEspalñol.Size = new System.Drawing.Size(60, 60);
+            this.pctEspalñol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctEspalñol.TabIndex = 22;
+            this.pctEspalñol.TabStop = false;
+            // 
+            // pctClaro
+            // 
+            this.pctClaro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctClaro.BackgroundImage")));
+            this.pctClaro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctClaro.Image = global::NutriWise.Properties.Resources.sol;
+            this.pctClaro.Location = new System.Drawing.Point(325, 15);
+            this.pctClaro.Name = "pctClaro";
+            this.pctClaro.Size = new System.Drawing.Size(71, 71);
+            this.pctClaro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctClaro.TabIndex = 20;
+            this.pctClaro.TabStop = false;
+            this.pctClaro.Click += new System.EventHandler(this.pctClaro_Click);
+            // 
+            // pctOscuro
+            // 
+            this.pctOscuro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctOscuro.BackgroundImage")));
+            this.pctOscuro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctOscuro.Image = global::NutriWise.Properties.Resources.luna;
+            this.pctOscuro.Location = new System.Drawing.Point(252, 20);
+            this.pctOscuro.Name = "pctOscuro";
+            this.pctOscuro.Size = new System.Drawing.Size(60, 60);
+            this.pctOscuro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctOscuro.TabIndex = 21;
+            this.pctOscuro.TabStop = false;
+            this.pctOscuro.Click += new System.EventHandler(this.pctOscuro_Click);
+            // 
+            // pctDegradadoAjustes
+            // 
+            this.pctDegradadoAjustes.BackgroundImage = global::NutriWise.Properties.Resources.Rectangle;
+            this.pctDegradadoAjustes.ErrorImage = null;
+            this.pctDegradadoAjustes.ImageLocation = "";
+            this.pctDegradadoAjustes.InitialImage = global::NutriWise.Properties.Resources.Ajustes;
+            this.pctDegradadoAjustes.Location = new System.Drawing.Point(0, 0);
+            this.pctDegradadoAjustes.Margin = new System.Windows.Forms.Padding(4);
+            this.pctDegradadoAjustes.Name = "pctDegradadoAjustes";
+            this.pctDegradadoAjustes.Size = new System.Drawing.Size(440, 150);
+            this.pctDegradadoAjustes.TabIndex = 15;
+            this.pctDegradadoAjustes.TabStop = false;
+            // 
+            // pctAjustes
+            // 
+            this.pctAjustes.BackgroundImage = global::NutriWise.Properties.Resources.Rectangle;
+            this.pctAjustes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pctAjustes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctAjustes.Image = global::NutriWise.Properties.Resources.Ajustes;
+            this.pctAjustes.ImageLocation = "";
+            this.pctAjustes.Location = new System.Drawing.Point(1127, 9);
+            this.pctAjustes.Margin = new System.Windows.Forms.Padding(0);
+            this.pctAjustes.Name = "pctAjustes";
+            this.pctAjustes.Size = new System.Drawing.Size(71, 71);
+            this.pctAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctAjustes.TabIndex = 8;
+            this.pctAjustes.TabStop = false;
+            this.pctAjustes.Click += new System.EventHandler(this.pctAjustes_Click_1);
+            // 
+            // pctCerrar
+            // 
+            this.pctCerrar.BackgroundImage = global::NutriWise.Properties.Resources.Rectangle;
+            this.pctCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctCerrar.Image = global::NutriWise.Properties.Resources.X;
+            this.pctCerrar.Location = new System.Drawing.Point(1214, 9);
+            this.pctCerrar.Margin = new System.Windows.Forms.Padding(0);
+            this.pctCerrar.Name = "pctCerrar";
+            this.pctCerrar.Size = new System.Drawing.Size(71, 71);
+            this.pctCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctCerrar.TabIndex = 9;
+            this.pctCerrar.TabStop = false;
+            this.pctCerrar.Click += new System.EventHandler(this.pctCerrar_Click);
+            // 
             // pctDegradado
             // 
             this.pctDegradado.BackgroundImage = global::NutriWise.Properties.Resources.Rectangle;
@@ -406,6 +406,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pefil";
             this.pnlMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             this.pnlAjustes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctIngles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctEspalñol)).EndInit();
@@ -414,7 +415,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctDegradadoAjustes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctAjustes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctDegradado)).EndInit();
             this.ResumeLayout(false);
 

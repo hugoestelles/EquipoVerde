@@ -30,15 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearCuenta));
             this.pnlCrear = new System.Windows.Forms.Panel();
+            this.lblIniciar = new System.Windows.Forms.Label();
             this.pctContraseña = new System.Windows.Forms.PictureBox();
             this.lblSemana = new System.Windows.Forms.Label();
-            this.nud = new System.Windows.Forms.NumericUpDown();
+            this.nudActividad = new System.Windows.Forms.NumericUpDown();
             this.lblcm = new System.Windows.Forms.Label();
             this.lblKg = new System.Windows.Forms.Label();
             this.nudAltura = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.cbbObjetivo = new System.Windows.Forms.ComboBox();
+            this.nudPeso = new System.Windows.Forms.NumericUpDown();
+            this.cmbIntolerancias = new System.Windows.Forms.ComboBox();
+            this.cmbObjetivo = new System.Windows.Forms.ComboBox();
             this.btnRegistrarse = new System.Windows.Forms.Button();
             this.lblActividad = new System.Windows.Forms.Label();
             this.lblIntolerancias = new System.Windows.Forms.Label();
@@ -58,12 +59,11 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblCrear = new System.Windows.Forms.Label();
             this.pctCerrar = new System.Windows.Forms.PictureBox();
-            this.lblIniciar = new System.Windows.Forms.Label();
             this.pnlCrear.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudActividad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAltura)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPeso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCerrar)).BeginInit();
             this.SuspendLayout();
@@ -75,13 +75,13 @@
             this.pnlCrear.Controls.Add(this.lblIniciar);
             this.pnlCrear.Controls.Add(this.pctContraseña);
             this.pnlCrear.Controls.Add(this.lblSemana);
-            this.pnlCrear.Controls.Add(this.nud);
+            this.pnlCrear.Controls.Add(this.nudActividad);
             this.pnlCrear.Controls.Add(this.lblcm);
             this.pnlCrear.Controls.Add(this.lblKg);
             this.pnlCrear.Controls.Add(this.nudAltura);
-            this.pnlCrear.Controls.Add(this.numericUpDown1);
-            this.pnlCrear.Controls.Add(this.comboBox1);
-            this.pnlCrear.Controls.Add(this.cbbObjetivo);
+            this.pnlCrear.Controls.Add(this.nudPeso);
+            this.pnlCrear.Controls.Add(this.cmbIntolerancias);
+            this.pnlCrear.Controls.Add(this.cmbObjetivo);
             this.pnlCrear.Controls.Add(this.btnRegistrarse);
             this.pnlCrear.Controls.Add(this.lblActividad);
             this.pnlCrear.Controls.Add(this.lblIntolerancias);
@@ -106,6 +106,21 @@
             this.pnlCrear.Size = new System.Drawing.Size(976, 655);
             this.pnlCrear.TabIndex = 3;
             // 
+            // lblIniciar
+            // 
+            this.lblIniciar.AutoSize = true;
+            this.lblIniciar.BackColor = System.Drawing.Color.Ivory;
+            this.lblIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIniciar.ForeColor = System.Drawing.Color.Goldenrod;
+            this.lblIniciar.Location = new System.Drawing.Point(850, 614);
+            this.lblIniciar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIniciar.Name = "lblIniciar";
+            this.lblIniciar.Size = new System.Drawing.Size(92, 17);
+            this.lblIniciar.TabIndex = 43;
+            this.lblIniciar.Text = "Iniciar Sesion";
+            this.lblIniciar.Click += new System.EventHandler(this.lblIniciar_Click);
+            // 
             // pctContraseña
             // 
             this.pctContraseña.Image = global::NutriWise.Properties.Resources.ojo;
@@ -127,18 +142,18 @@
             this.lblSemana.TabIndex = 41;
             this.lblSemana.Text = "Dias a la semana";
             // 
-            // nud
+            // nudActividad
             // 
-            this.nud.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.nud.Location = new System.Drawing.Point(504, 506);
-            this.nud.Maximum = new decimal(new int[] {
+            this.nudActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.nudActividad.Location = new System.Drawing.Point(504, 506);
+            this.nudActividad.Maximum = new decimal(new int[] {
             7,
             0,
             0,
             0});
-            this.nud.Name = "nud";
-            this.nud.Size = new System.Drawing.Size(120, 41);
-            this.nud.TabIndex = 40;
+            this.nudActividad.Name = "nudActividad";
+            this.nudActividad.Size = new System.Drawing.Size(120, 41);
+            this.nudActividad.TabIndex = 40;
             // 
             // lblcm
             // 
@@ -173,46 +188,46 @@
             this.nudAltura.Size = new System.Drawing.Size(120, 41);
             this.nudAltura.TabIndex = 37;
             // 
-            // numericUpDown1
+            // nudPeso
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.numericUpDown1.Location = new System.Drawing.Point(41, 263);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.nudPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.nudPeso.Location = new System.Drawing.Point(41, 263);
+            this.nudPeso.Maximum = new decimal(new int[] {
             300,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 41);
-            this.numericUpDown1.TabIndex = 36;
+            this.nudPeso.Name = "nudPeso";
+            this.nudPeso.Size = new System.Drawing.Size(120, 41);
+            this.nudPeso.TabIndex = 36;
             // 
-            // comboBox1
+            // cmbIntolerancias
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbIntolerancias.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbIntolerancias.FormattingEnabled = true;
+            this.cmbIntolerancias.Items.AddRange(new object[] {
             "Lactosa",
             "Gluten",
             "Vegano",
             "Vegetariano",
             "Sin Intolerancias"});
-            this.comboBox1.Location = new System.Drawing.Point(38, 505);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(437, 44);
-            this.comboBox1.TabIndex = 35;
+            this.cmbIntolerancias.Location = new System.Drawing.Point(38, 505);
+            this.cmbIntolerancias.Name = "cmbIntolerancias";
+            this.cmbIntolerancias.Size = new System.Drawing.Size(437, 44);
+            this.cmbIntolerancias.TabIndex = 35;
             // 
-            // cbbObjetivo
+            // cmbObjetivo
             // 
-            this.cbbObjetivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.cbbObjetivo.FormattingEnabled = true;
-            this.cbbObjetivo.Items.AddRange(new object[] {
+            this.cmbObjetivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbObjetivo.FormattingEnabled = true;
+            this.cmbObjetivo.Items.AddRange(new object[] {
             "Volumen",
             "Definición",
             "Comer Sano"});
-            this.cbbObjetivo.Location = new System.Drawing.Point(504, 335);
-            this.cbbObjetivo.Name = "cbbObjetivo";
-            this.cbbObjetivo.Size = new System.Drawing.Size(436, 44);
-            this.cbbObjetivo.TabIndex = 34;
+            this.cmbObjetivo.Location = new System.Drawing.Point(504, 335);
+            this.cmbObjetivo.Name = "cmbObjetivo";
+            this.cmbObjetivo.Size = new System.Drawing.Size(436, 44);
+            this.cmbObjetivo.TabIndex = 34;
             // 
             // btnRegistrarse
             // 
@@ -425,21 +440,6 @@
             this.pctCerrar.TabStop = false;
             this.pctCerrar.Click += new System.EventHandler(this.pctCerrar_Click);
             // 
-            // lblIniciar
-            // 
-            this.lblIniciar.AutoSize = true;
-            this.lblIniciar.BackColor = System.Drawing.Color.Ivory;
-            this.lblIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIniciar.ForeColor = System.Drawing.Color.Goldenrod;
-            this.lblIniciar.Location = new System.Drawing.Point(850, 614);
-            this.lblIniciar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblIniciar.Name = "lblIniciar";
-            this.lblIniciar.Size = new System.Drawing.Size(92, 17);
-            this.lblIniciar.TabIndex = 43;
-            this.lblIniciar.Text = "Iniciar Sesion";
-            this.lblIniciar.Click += new System.EventHandler(this.lblIniciar_Click);
-            // 
             // CrearCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -458,9 +458,9 @@
             this.pnlCrear.ResumeLayout(false);
             this.pnlCrear.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudActividad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAltura)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPeso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctIcono)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCerrar)).EndInit();
             this.ResumeLayout(false);
@@ -488,14 +488,14 @@
         private System.Windows.Forms.Label lblConfirmar;
         private System.Windows.Forms.TextBox txtConfirmar;
         private System.Windows.Forms.Label lblObjetivo;
-        private System.Windows.Forms.ComboBox cbbObjetivo;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbObjetivo;
+        private System.Windows.Forms.ComboBox cmbIntolerancias;
         private System.Windows.Forms.Label lblcm;
         private System.Windows.Forms.Label lblKg;
         private System.Windows.Forms.NumericUpDown nudAltura;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nudPeso;
         private System.Windows.Forms.Label lblSemana;
-        private System.Windows.Forms.NumericUpDown nud;
+        private System.Windows.Forms.NumericUpDown nudActividad;
         private System.Windows.Forms.PictureBox pctContraseña;
         private System.Windows.Forms.PictureBox pctCerrar;
         private System.Windows.Forms.Label lblIniciar;

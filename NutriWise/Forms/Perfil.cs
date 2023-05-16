@@ -9,15 +9,48 @@ namespace NutriWise
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, System.EventArgs e)
-        {
-            textBox1.Enabled = true;
-            //textBox1.BorderStyle= FixedSingle;
+
+private void btnEditar_Click(object sender, System.EventArgs e)
+{
+   txtNombre.Enabled = true;
+   txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   txtApellido.Enabled = true;
+   txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+   txtMail.Enabled = true;
+   txtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            nudAltura.Enabled = true;
+            nudAltura.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            nudPeso.Enabled = true;
+            nudPeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            cmbIntolerancias.Enabled = true;
+            cmbIntolerancias.FlatStyle = System.Windows.Forms.FlatStyle.Standard;
+            nudActividad.Enabled = true;
+            nudActividad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            cmbObjetivo.Enabled = true;
+            cmbObjetivo.FlatStyle = System.Windows.Forms.FlatStyle.Standard;
+
         }
 
-        private void button2_Click(object sender, System.EventArgs e)
+        private void btnAceptar_Click(object sender, System.EventArgs e)
         {
-            textBox1.Enabled = false;
+
+txtNombre.Enabled = false;
+txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+txtApellido.Enabled = false;
+txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+txtMail.Enabled = false;
+txtMail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            nudAltura.Enabled = false;
+            nudAltura.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            nudPeso.Enabled = false;
+            nudPeso.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            cmbIntolerancias.Enabled = false;
+            cmbIntolerancias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            nudActividad.Enabled = false;
+            nudActividad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            cmbObjetivo.Enabled = false;
+            cmbObjetivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         }
+
     }
 }
