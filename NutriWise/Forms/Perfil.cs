@@ -28,7 +28,7 @@ private void btnEditar_Click(object sender, System.EventArgs e)
             nudActividad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             cmbObjetivo.Enabled = true;
             cmbObjetivo.FlatStyle = System.Windows.Forms.FlatStyle.Standard;
-
+            btnAceptar.Visible = true;
         }
 
         private void btnAceptar_Click(object sender, System.EventArgs e)
@@ -50,6 +50,7 @@ txtMail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             nudActividad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             cmbObjetivo.Enabled = false;
             cmbObjetivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnAceptar.Visible = false;
         }
 
     }

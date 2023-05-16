@@ -41,7 +41,6 @@
             this.lblObj = new System.Windows.Forms.Label();
             this.pctPerfil = new System.Windows.Forms.PictureBox();
             this.pctTenedor = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
@@ -213,15 +212,6 @@
             this.pctTenedor.TabIndex = 0;
             this.pctTenedor.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(170, 464);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(447, 16);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "cambiar lbl por text editable false y luego boton de editar y otro de aceptar";
-            // 
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.Ivory;
@@ -238,6 +228,7 @@
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.Gold;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.btnEditar.Location = new System.Drawing.Point(41, 505);
             this.btnEditar.Name = "btnEditar";
@@ -250,6 +241,7 @@
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.Gold;
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.btnAceptar.Location = new System.Drawing.Point(274, 505);
             this.btnAceptar.Name = "btnAceptar";
@@ -257,6 +249,7 @@
             this.btnAceptar.TabIndex = 21;
             this.btnAceptar.Text = "Aceptar Cambios";
             this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Visible = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // txtApellido
@@ -396,7 +389,6 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pctPerfil);
             this.Controls.Add(this.lblObj);
             this.Controls.Add(this.lblActividad);
@@ -441,7 +433,6 @@
         private System.Windows.Forms.Label lblAct;
         private System.Windows.Forms.Label lblObj;
         private System.Windows.Forms.PictureBox pctPerfil;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnAceptar;
