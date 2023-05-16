@@ -107,5 +107,20 @@ namespace NutriWise
             return retorno;
         }
 
+        public int ContarCalorias()
+        {
+            int calculo;
+            int retorno = 0;
+            for (int i = 0; i < this.platos.Count; i++)
+            {
+                for (int j = 0; j < this.platos[i].ListaAlimentos.Count; j++)
+                {
+                    calculo = (this.platos[i].ListaCantidades[j] / 100) * (int)this.platos[i].ListaAlimentos[j].ValorNutri;
+                    retorno += calculo;
+                }
+            }
+            return retorno;
+        }
+
     }
 }
