@@ -177,7 +177,7 @@
             this.lblAdminFecha.Location = new System.Drawing.Point(395, 322);
             this.lblAdminFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminFecha.Name = "lblAdminFecha";
-            this.lblAdminFecha.Size = new System.Drawing.Size(148, 52);
+            this.lblAdminFecha.Size = new System.Drawing.Size(149, 52);
             this.lblAdminFecha.TabIndex = 3;
             this.lblAdminFecha.Text = "Fecha";
             // 
@@ -225,7 +225,7 @@
             this.operacionesToolStripMenuItem});
             this.mnuAdmin.Location = new System.Drawing.Point(0, 0);
             this.mnuAdmin.Name = "mnuAdmin";
-            this.mnuAdmin.Size = new System.Drawing.Size(1367, 30);
+            this.mnuAdmin.Size = new System.Drawing.Size(1367, 28);
             this.mnuAdmin.TabIndex = 1;
             this.mnuAdmin.Text = "menuStrip1";
             // 
@@ -449,9 +449,9 @@
             this.lblElimUsuInfo.Location = new System.Drawing.Point(51, 130);
             this.lblElimUsuInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblElimUsuInfo.Name = "lblElimUsuInfo";
-            this.lblElimUsuInfo.Size = new System.Drawing.Size(294, 50);
+            this.lblElimUsuInfo.Size = new System.Drawing.Size(382, 50);
             this.lblElimUsuInfo.TabIndex = 0;
-            this.lblElimUsuInfo.Text = "Introduzca el nombre del usuario\r\nque desea eliminar:\r\n";
+            this.lblElimUsuInfo.Text = "Introduzca el correo electrónico del usuario\r\nque desea eliminar:\r\n";
             // 
             // grbPlato
             // 

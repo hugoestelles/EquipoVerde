@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1.Clases;
 using MySql.Data.MySqlClient;
+using NutriWise.Clases;
 
 namespace NutriWise
 {
@@ -41,7 +41,7 @@ namespace NutriWise
                 ConexionBD.AbrirConexion();
                 if (!string.IsNullOrEmpty(txtEliminarUsu.Text))
                 {
-                    string nombre = txtEliminarUsu.Text;
+                    string correo = txtEliminarUsu.Text;
                     DialogResult confirmacion = MessageBox.Show("Borrado de registro seleccionado. ¿Continuar?",
                         "Eliminación", MessageBoxButtons.YesNo);
 
@@ -51,7 +51,7 @@ namespace NutriWise
 
 
                         // Eliminar el usuario y obtener el número de registros afectados
-                        int registrosAfectados = Usuario.EliminarUsuario(nombre);
+                        int registrosAfectados = Usuario.EliminarUsuario(correo);
 
                         // Cerrar la conexión después de eliminar el usuario
                         ConexionBD.CerrarConexion();

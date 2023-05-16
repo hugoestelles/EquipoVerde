@@ -1,4 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
+using System;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace NutriWise.Clases
 {
@@ -50,11 +53,10 @@ namespace NutriWise.Clases
         public int AgregarUsuario()
         {
             int retorno;
-            string consulta = string.Format("INSERT INTO usuarios (id,correo,contra,nombre,apellidos,altura,peso,intolerancia,actividad,objetivo,administrador) VALUES " +
-                "(@id,@correo,@contra,@nom,@ape,@alt,@peso,@intolerancia,@act,@obj,@admin);");
+            string consulta = string.Format("INSERT INTO usuario (correo,contra,nombre,apellidos,altura,peso,intolerancia,actividad,objetivo,administrador) VALUES " +
+                "(@correo,@contra,@nom,@ape,@alt,@peso,@intolerancia,@act,@obj,@admin);");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            comando.Parameters.AddWithValue("id", id);
             comando.Parameters.AddWithValue("correo", correo);
             comando.Parameters.AddWithValue("contra", contra);
             comando.Parameters.AddWithValue("nom", nombre);
@@ -70,19 +72,19 @@ namespace NutriWise.Clases
             return retorno;
         }
 
-        public int EliminarUsuario()
+        public static int EliminarUsuario(string correo)
         {
             int retorno;
-            string consulta = string.Format("DELETE FROM usuarios WHERE id='{0}'", id);
+            string consulta = string.Format("DELETE FROM usuario WHERE correo='{0}'", correo);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
 
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
 
-        public static bool YaEstaUsuario(int id)
+        public static bool YaEstaUsuario(string correo)
         {
-            string consulta = string.Format("SELECT * FROM usuarios WHERE id='{0}'", id);
+            string consulta = string.Format("SELECT * FROM usuario WHERE correo='{0}'", correo);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
@@ -90,10 +92,10 @@ namespace NutriWise.Clases
             return false;
         }
 
-        public static Usuario BuscarUsuario(int id)
+        public static Usuario BuscarUsuario(string correo)
         {
             Usuario user = new Usuario();
-            string consulta = string.Format("SELECT * FROM usuarios WHERE id='{0}'", id);
+            string consulta = string.Format("SELECT * FROM usuario WHERE correo='{0}'", correo);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
@@ -113,6 +115,52 @@ namespace NutriWise.Clases
             }
 
             return user;
+        }
+
+        public bool ComprobarCorreo()
+        {
+            if (string.IsNullOrWhiteSpace(correo)) return false;
+
+            try
+            {
+                correo = Regex.Replace(correo, @"(@)(.+)$", DomainMapper, RegexOptions.None, TimeSpan.FromMilliseconds(200));
+
+                string DomainMapper(Match match)
+                {
+                    var idn = new IdnMapping();
+                    string domainName = idn.GetAscii(match.Groups[2].Value);
+
+                    return match.Groups[1].Value + domainName;
+                }
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+            catch (ArgumentException)
+            {
+                return false;
+            }
+
+            try
+            {
+                return Regex.IsMatch(correo, @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
+                    RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+        }
+
+        public bool YaEstaCorreo()
+        {
+            string consulta = string.Format("SELECT correo FROM usuario WHERE correo='{0}'", correo);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows) return true;
+            return false;
         }
     }
 }
