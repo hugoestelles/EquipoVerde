@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NutriWise.Clases;
+using System;
 using System.Windows.Forms;
 
 namespace NutriWise
@@ -12,17 +13,56 @@ namespace NutriWise
 
         private void btnInicio_Sesion_Click(object sender, EventArgs e)
         {
+            ////Activar cuando hayan datos
+            //// Comprobamos si el correo es correcto
+            //if (Usuario.ComprobarCorreoEstatico(txtMail.Text))
+            //{
+            //    // Comprobamos si la cuenta existe
+            //    if (Usuario.YaEstaUsuario(txtMail.Text))
+            //    {
+            //        // Comprobamos si la clave es correcta
+            //        if (Usuario.ComprobarClaveEstatica(txtMail.Text, txtContraseña.Text))
+            //        {
+            //            // Crea una nueva instancia del formulario Form2
+            //            Menu form4 = new Menu();
+
+            //            // Esconde el formulario 
+            //            Hide();
+
+            //            // Muestra el nuevo formulario
+            //            form4.ShowDialog();
+
+            //            // Cierra el formulario 
+            //            Close();
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("La clave introducida es incorrecta.", "Clave incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("El usuario introducido no existe.", "Usuario inexistente", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("El correo introducido es incorrecto.", "Correo incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+
+
+            // Eliminar cuando se active lo de arriba
             // Crea una nueva instancia del formulario Form2
             Menu form4 = new Menu();
 
             // Esconde el formulario 
-            this.Hide();
+            Hide();
 
             // Muestra el nuevo formulario
             form4.ShowDialog();
 
             // Cierra el formulario 
-            this.Close();
+            Close();
         }
 
         private void lblCrear_Click(object sender, EventArgs e)

@@ -153,6 +153,52 @@ namespace NutriWise.Clases
             }
         }
 
+        public static bool ComprobarCorreoEstatico(string correo)
+        {
+            if (string.IsNullOrWhiteSpace(correo)) return false;
+
+            try
+            {
+                correo = Regex.Replace(correo, @"(@)(.+)$", DomainMapper, RegexOptions.None, TimeSpan.FromMilliseconds(200));
+
+                string DomainMapper(Match match)
+                {
+                    var idn = new IdnMapping();
+                    string domainName = idn.GetAscii(match.Groups[2].Value);
+
+                    return match.Groups[1].Value + domainName;
+                }
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+            catch (ArgumentException)
+            {
+                return false;
+            }
+
+            try
+            {
+                return Regex.IsMatch(correo, @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
+                    RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+        }
+
+        public static bool ComprobarClaveEstatica(string correo, string clave)
+        {
+            string consulta = string.Format("SELECT clave FROM usuario WHERE correo='{0}' AND clave='{1}'", correo, clave);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows) return true;
+            return false;
+        }
+
         public bool YaEstaCorreo()
         {
             string consulta = string.Format("SELECT correo FROM usuario WHERE correo='{0}'", correo);
