@@ -1,7 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
-using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
+using System;
 
 namespace NutriWise.Clases
 {
@@ -12,10 +12,10 @@ namespace NutriWise.Clases
         private string contra;
         private string nombre;
         private string apellidos;
-        private double altura;
-        private double peso;
+        private decimal altura;
+        private decimal peso;
         private int intolerancia;
-        private int actividad;
+        private decimal actividad;
         private int objetivo;
         private bool administrador;
 
@@ -24,14 +24,14 @@ namespace NutriWise.Clases
         public string Contra { get { return contra; } }
         public string Nombre { get { return nombre; } }
         public string Apellidos { get { return apellidos; } }
-        public double Altura { get { return altura; } }
-        public double Peso { get { return peso; } }
+        public decimal Altura { get { return altura; } }
+        public decimal Peso { get { return peso; } }
         public int Intolerancia { get { return intolerancia; } }
-        public int Actividad { get { return actividad; } }
+        public decimal Actividad { get { return actividad; } }
         public int Objetivo { get { return objetivo; } }
         public bool Administrador { get { return administrador; } }
 
-        public Usuario(int idusu, string mail, string pass, string name, string ape, double alt, double pes, int into, int act, int obj, bool admin)
+        public Usuario(int idusu, string mail, string pass, string name, string ape, decimal alt, decimal pes, int into, decimal act, int obj, bool admin)
         {
             id = idusu;
             correo = mail;
@@ -40,21 +40,48 @@ namespace NutriWise.Clases
             apellidos = ape;
             altura = alt;
             peso = pes;
-            altura = alt;
             intolerancia = into;
             actividad = act;
             objetivo = obj;
             administrador = admin;
         }
+        public Usuario(string mail, string pass, string name, string ape, decimal alt, decimal pes, int into, decimal act, int obj)
+        {
 
+            contra = pass;
+            nombre = name;
+            correo = mail;
+            apellidos = ape;
+            altura = alt;
+            peso = pes;
+            intolerancia = into;
+            actividad = act;
+            objetivo = obj;
+            administrador = false;
+        }
         public Usuario() { }
 
-
-        public int AgregarUsuario()
+        public static int BuscarDieta(int ob, int into)
         {
             int retorno;
-            string consulta = string.Format("INSERT INTO usuario (correo,contra,nombre,apellidos,altura,peso,intolerancia,actividad,objetivo,administrador) VALUES " +
-                "(@correo,@contra,@nom,@ape,@alt,@peso,@intolerancia,@act,@obj,@admin);");
+            string consulta = string.Format("SELECT idDieta FROM dietas WHERE objetivoUsu ='{0}' AND tipoDieta ='{1}'", ob, into);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            object resultado = comando.ExecuteScalar();
+            if (resultado != null && int.TryParse(resultado.ToString(), out retorno))
+            {
+                return retorno;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public int AgregarUsuario(int idDieta)
+        {
+            int retorno;
+            string consulta = string.Format("INSERT INTO usuario (correo,clave,nombre,apellidos,altura,peso,tipoIntolencia,cantActividad,objetivo,administrador,idDieta) VALUES " +
+                "(@correo,@contra,@nom,@ape,@alt,@peso,@intolerancia,@act,@obj,@admin,@idDieta);");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.Parameters.AddWithValue("correo", correo);
@@ -67,6 +94,7 @@ namespace NutriWise.Clases
             comando.Parameters.AddWithValue("act", actividad);
             comando.Parameters.AddWithValue("obj", objetivo);
             comando.Parameters.AddWithValue("admin", administrador);
+            comando.Parameters.AddWithValue("idDieta", idDieta);
 
             retorno = comando.ExecuteNonQuery();
             return retorno;
@@ -88,8 +116,16 @@ namespace NutriWise.Clases
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            if (reader.HasRows) return true;
-            return false;
+            if (reader.HasRows)
+            {
+                reader.Close();
+                return true;
+            }
+            else
+            {
+                reader.Close();
+                return false;
+            }
         }
 
         public static Usuario BuscarUsuario(string correo)
@@ -106,17 +142,16 @@ namespace NutriWise.Clases
                 user.contra = reader.GetString(2);
                 user.nombre = reader.GetString(3);
                 user.apellidos = reader.GetString(4);
-                user.altura = reader.GetDouble(5);
-                user.peso = reader.GetDouble(6);
+                user.altura = (decimal)reader.GetDouble(5);
+                user.peso = (decimal)reader.GetDouble(6);
                 user.intolerancia = reader.GetInt16(7);
                 user.actividad = reader.GetInt16(8);
                 user.objetivo = reader.GetInt16(9);
                 user.administrador = reader.GetBoolean(10);
             }
-
+            reader.Close();
             return user;
         }
-
         public bool ComprobarCorreo()
         {
             if (string.IsNullOrWhiteSpace(correo)) return false;
@@ -197,34 +232,6 @@ namespace NutriWise.Clases
 
             if (reader.HasRows) return true;
             return false;
-        }
-
-        public bool YaEstaCorreo()
-        {
-            string consulta = string.Format("SELECT correo FROM usuario WHERE correo='{0}'", correo);
-            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            MySqlDataReader reader = comando.ExecuteReader();
-
-            if (reader.HasRows) return true;
-            return false;
-        }
-        public int ActualizarUsuario(string correo, string nombre, string apellidos, decimal altura, decimal peso, int intolerancia, decimal actividad, int objetivo)
-        {
-            int retorno;
-            string consulta = string.Format("UPDATE usuario SET correo = @correo,clave = {2}, nombre = @nom, apellidos = @ape, altura = @alt, peso = @peso, tipoIntolencia = @intolerancia, cantActividad = @actividad, objetivo = @objetivo, administrador = '{0}' WHERE idUsuario = '{1}';", this.administrador, this.id, this.contra);
-
-            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            comando.Parameters.AddWithValue("correo", correo);
-            comando.Parameters.AddWithValue("nom", nombre);
-            comando.Parameters.AddWithValue("ape", apellidos);
-            comando.Parameters.AddWithValue("alt", altura);
-            comando.Parameters.AddWithValue("peso", peso);
-            comando.Parameters.AddWithValue("intolerancia", intolerancia);
-            comando.Parameters.AddWithValue("act", actividad);
-            comando.Parameters.AddWithValue("obj", objetivo);
-
-            retorno = comando.ExecuteNonQuery();
-            return retorno;
         }
 
     }

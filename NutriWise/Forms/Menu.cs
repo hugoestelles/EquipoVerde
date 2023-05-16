@@ -31,7 +31,7 @@ namespace NutriWise
         {
             this.Close();
         }
-        
+
         private void btnValoraciones_Click(object sender, EventArgs e)
         {
 
@@ -81,7 +81,7 @@ namespace NutriWise
                 if (dieta)
                 {
                     btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.Ivory; 
+                    btnDieta.BackColor = Color.Ivory;
                     btnPerfil.BackColor = Color.PaleGreen;
                     btnDonativos.BackColor = Color.PaleGreen;
                     btnListaCompra.BackColor = Color.PaleGreen;
@@ -208,7 +208,7 @@ namespace NutriWise
                     btnValoraciones.BackColor = Color.PaleGreen;
                     btnDieta.BackColor = Color.PaleGreen;
                     btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.DarkSeaGreen; 
+                    btnDonativos.BackColor = Color.DarkSeaGreen;
                     btnListaCompra.BackColor = Color.PaleGreen;
                     btnVideos.BackColor = Color.PaleGreen;
                     btnAyuda.BackColor = Color.PaleGreen;
@@ -272,7 +272,7 @@ namespace NutriWise
                 return;
             }
             if (pnlAjustes.Visible == false) { pnlAjustes.Visible = true; }
-        }        
+        }
 
         private void btnClaro_Click_1(object sender, EventArgs e)
         {
@@ -393,6 +393,7 @@ namespace NutriWise
             listaCompra1.BackColor = Color.Ivory;
             ayuda1.BackColor = Color.Ivory;
             cambioColor();
+            perfil1.CambioColorPerdfil();
         }
 
         private void pctOscuro_Click(object sender, EventArgs e)
@@ -405,6 +406,7 @@ namespace NutriWise
             listaCompra1.BackColor = Color.DarkSeaGreen;
             ayuda1.BackColor = Color.DarkSeaGreen;
             cambioColor();
+            perfil1.CambioColorPerdfil();
         }
 
         private void btnMantenimiento_Click(object sender, EventArgs e)

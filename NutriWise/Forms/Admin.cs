@@ -75,6 +75,10 @@ namespace NutriWise
             {
                 MessageBox.Show("Error al eliminar el usuario: " + ex.Message);
             }
+            finally 
+            {
+                ConexionBD.CerrarConexion();
+            }
         }
 
 

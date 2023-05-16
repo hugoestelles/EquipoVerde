@@ -2,6 +2,7 @@
 using NutriWise.Clases;
 using System;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace NutriWise
 {
@@ -19,49 +20,54 @@ namespace NutriWise
             {
                 try
                 {
-                    MySqlConnection conect = ConexionBD.Conexion;
-                    ConexionBD.AbrirConexion();
-                    if (!string.IsNullOrEmpty(txtMail.Text))
+                    using (MySqlConnection conect = ConexionBD.Conexion)
                     {
-                        string correo = txtMail.Text;
-                        if (Usuario.YaEstaUsuario(correo))
+                        ConexionBD.AbrirConexion();
+
+                        if (!string.IsNullOrEmpty(txtMail.Text))
                         {
-                            MessageBox.Show("Correo ya en uso, introduzca otro");
-                            ConexionBD.CerrarConexion();
+                            string correo = txtMail.Text;
+
+                            if (Usuario.YaEstaUsuario(correo))
+                            {
+                                MessageBox.Show("Correo ya en uso, introduzca otro");
+                            }
+                            else
+                            {
+                                Usuario u1 = new Usuario(txtMail.Text, txtContraseña.Text, txtNombre.Text, txtApellido.Text, nudAltura.Value, nudPeso.Value, cmbIntolerancias.SelectedIndex, nudActividad.Value, cmbObjetivo.SelectedIndex);
+                                u1.AgregarUsuario(Usuario.BuscarDieta(cmbObjetivo.SelectedIndex, cmbIntolerancias.SelectedIndex));
+
+                                // Crea una nueva instancia del formulario Form2
+                                Menu form4 = new Menu();
+
+                                // Esconde el formulario
+                                this.Hide();
+
+                                // Muestra el nuevo formulario
+                                form4.ShowDialog();
+
+                                // Cierra el formulario
+                                this.Close();
+                            }
                         }
                         else
                         {
-                            ConexionBD.CerrarConexion();
-                            // Crea una nueva instancia del formulario Form2
-                            Menu form4 = new Menu();
-
-                            // Esconde el formulario 
-                            this.Hide();
-
-                            // Muestra el nuevo formulario
-                            form4.ShowDialog();
-
-                            // Cierra el formulario 
-                            this.Close();
-                            // Cerrar la conexión después de eliminar el usuario
-
+                            MessageBox.Show("Ingrese un correo válido.");
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Ingrese un correo válido.");
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
                     ConexionBD.CerrarConexion();
                 }
             }
             else
             {
                 MessageBox.Show("Contraseñas no coinciden.");
-                ConexionBD.CerrarConexion();
             }
         }
 

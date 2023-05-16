@@ -150,9 +150,9 @@
             this.lblTole.Location = new System.Drawing.Point(35, 276);
             this.lblTole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTole.Name = "lblTole";
-            this.lblTole.Size = new System.Drawing.Size(260, 31);
+            this.lblTole.Size = new System.Drawing.Size(163, 31);
             this.lblTole.TabIndex = 11;
-            this.lblTole.Text = "Alergias/tolerancias:";
+            this.lblTole.Text = "Tolerancias:";
             // 
             // lblActividad
             // 
@@ -333,9 +333,9 @@
             "Vegano",
             "Vegetariano",
             "Sin Intolerancias"});
-            this.cmbIntolerancias.Location = new System.Drawing.Point(302, 276);
+            this.cmbIntolerancias.Location = new System.Drawing.Point(205, 276);
             this.cmbIntolerancias.Name = "cmbIntolerancias";
-            this.cmbIntolerancias.Size = new System.Drawing.Size(214, 38);
+            this.cmbIntolerancias.Size = new System.Drawing.Size(298, 38);
             this.cmbIntolerancias.TabIndex = 36;
             this.cmbIntolerancias.Text = "Lactosa";
             // 
