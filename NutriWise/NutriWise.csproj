@@ -88,6 +88,7 @@
   <ItemGroup>
     <Compile Include="Clases\Dietas.cs" />
     <Compile Include="Clases\Donativo.cs" />
+    <Compile Include="Clases\Utiles.cs" />
     <Compile Include="Clases\Valoracion.cs" />
     <Compile Include="Forms\Admin.cs">
       <SubType>Form</SubType>
