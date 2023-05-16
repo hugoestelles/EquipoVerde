@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio_Sesion));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pctContraseña = new System.Windows.Forms.PictureBox();
             this.lblCrear = new System.Windows.Forms.Label();
             this.lblNoCuenta = new System.Windows.Forms.Label();
             this.btnInicio = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@
             this.lblCredenciales = new System.Windows.Forms.Label();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.lblInicio = new System.Windows.Forms.Label();
-            this.pctContraseña = new System.Windows.Forms.PictureBox();
             this.pctCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).BeginInit();
@@ -68,6 +68,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(518, 570);
             this.panel1.TabIndex = 2;
+            // 
+            // pctContraseña
+            // 
+            this.pctContraseña.Image = global::NutriWise.Properties.Resources.ojo;
+            this.pctContraseña.Location = new System.Drawing.Point(452, 336);
+            this.pctContraseña.Name = "pctContraseña";
+            this.pctContraseña.Size = new System.Drawing.Size(43, 41);
+            this.pctContraseña.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctContraseña.TabIndex = 14;
+            this.pctContraseña.TabStop = false;
+            this.pctContraseña.Click += new System.EventHandler(this.pctContraseña_Click);
             // 
             // lblCrear
             // 
@@ -100,6 +111,7 @@
             // btnInicio
             // 
             this.btnInicio.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInicio.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnInicio.Location = new System.Drawing.Point(39, 450);
@@ -206,17 +218,6 @@
             this.lblInicio.Size = new System.Drawing.Size(297, 46);
             this.lblInicio.TabIndex = 0;
             this.lblInicio.Text = "Inicio de sesión";
-            // 
-            // pctContraseña
-            // 
-            this.pctContraseña.Image = global::NutriWise.Properties.Resources.ojo;
-            this.pctContraseña.Location = new System.Drawing.Point(452, 336);
-            this.pctContraseña.Name = "pctContraseña";
-            this.pctContraseña.Size = new System.Drawing.Size(43, 41);
-            this.pctContraseña.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctContraseña.TabIndex = 14;
-            this.pctContraseña.TabStop = false;
-            this.pctContraseña.Click += new System.EventHandler(this.pctContraseña_Click);
             // 
             // pctCerrar
             // 

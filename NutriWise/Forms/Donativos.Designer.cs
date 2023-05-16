@@ -110,9 +110,9 @@
             // 
             this.btnDonacion.BackColor = System.Drawing.Color.Gold;
             this.btnDonacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDonacion.FlatAppearance.BorderSize = 0;
+            this.btnDonacion.FlatAppearance.BorderSize = 2;
             this.btnDonacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDonacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDonacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDonacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDonacion.Location = new System.Drawing.Point(379, 419);
             this.btnDonacion.Name = "btnDonacion";
