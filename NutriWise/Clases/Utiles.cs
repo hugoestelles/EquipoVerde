@@ -12,13 +12,17 @@ namespace NutriWise.Clases
 {
     class Utiles
     {
-        public static void EnviarCorreoBienvenida(string nombre)
+        /// <summary>
+        /// Funcion para enviar un correo de bienvenida al usario.
+        /// </summary>
+        /// <param name="user">Usuario al que se lo queremos mandar.</param>
+        public static void EnviarCorreoBienvenida(Usuario user)
         {
             MailMessage correo = new MailMessage();
             correo.From = new MailAddress("nutriwiseinformacion@gmail.com", "NutriWise", System.Text.Encoding.UTF8);
-            correo.To.Add("darota@floridauniversitaria.es");
+            correo.To.Add(user.Correo);
             correo.Subject = " ¡Bienvenido/a a Nutriwise! Comienza tu viaje hacia una vida saludable";
-            string body = "Estimado/a  " + nombre +
+            string body = "Estimado/a  " + user.Nombre +
               "<br><br>¡Queremos darte la más cordial bienvenida a Nutriwise! Estamos encantados de que te hayas registrado en nuestra aplicación y hayas decidido embarcarte en un viaje hacia una vida más saludable y equilibrada. Queremos ser tu compañero confiable en esta travesía, proporcionándote las herramientas y recursos necesarios para alcanzar tus metas de bienestar." +
               "<br><br>En Nutriwise, entendemos que la nutrición es un factor fundamental para mantener una buena salud y alcanzar tus objetivos personales. Nuestra aplicación ha sido diseñada pensando en ti y en tus necesidades individuales. A través de ella, tendrás acceso a una amplia variedad de características y beneficios exclusivos que te ayudarán a seguir un estilo de vida saludable." +
               "<br><br>Aquí hay un vistazo de lo que puedes esperar de Nutriwise:" +

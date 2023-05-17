@@ -43,6 +43,10 @@ namespace NutriWise
             cantAlim = ContarAlimentos();
         }
         public Dietas() { }
+        /// <summary>
+        /// Funcion para listar todos los alimentos de una dieta.
+        /// </summary>
+        /// <returns>Una lista de alimentos con todos los alimentos de la dieta.</returns>
         public List<Alimentos> ListaCompra()
         {
             List<Alimentos> lista = new List<Alimentos>();
@@ -59,7 +63,10 @@ namespace NutriWise
             }
             return lista;
         }
-
+        /// <summary>
+        /// Funcion para contar el numero de alimentos de una dieta.
+        /// </summary>
+        /// <returns>El numero de alimentos.</returns>
         public int ContarAlimentos()
         {
             int retorno = 0;
@@ -75,6 +82,10 @@ namespace NutriWise
             }
             return retorno;
         }
+        /// <summary>
+        /// Funccion para obtener todos los platos de una dieta.
+        /// </summary>
+        /// <returns>Una lista de platos que contiene todos los platos de la dieta.</returns>
         public List<Platos> BuscarPlatos()
         {
             List<Platos> lista = new List<Platos>();
@@ -91,6 +102,10 @@ namespace NutriWise
             }
             return lista;
         }
+        /// <summary>
+        /// Funcion para agregar dieta a la base de datos.
+        /// </summary>
+        /// <returns>1 si se añade con exito, 0 si hay algun error.</returns>
         public int AgregarDieta()
         {
             int retorno;
@@ -106,7 +121,10 @@ namespace NutriWise
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
-
+        /// <summary>
+        /// Funcion para calcular el numero total de calorias de una determinada dieta.
+        /// </summary>
+        /// <returns>El numero total de calorias.</returns>
         public int ContarCalorias()
         {
             int calculo;

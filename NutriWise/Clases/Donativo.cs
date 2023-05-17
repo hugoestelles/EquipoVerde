@@ -25,7 +25,10 @@ namespace NutriWise
             fecha = fech;
         }
 
-
+        /// <summary>
+        /// Funcion para realizar donativo.
+        /// </summary>
+        /// <returns>1 si se realiza la donacion con exito, 0 si hay algun problema.</returns>
         public int Donar()
         {
             int retorno;
@@ -41,7 +44,10 @@ namespace NutriWise
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
-
+        /// <summary>
+        /// Funcion para listar todos los donativos de la base de datos.
+        /// </summary>
+        /// <returns>Una List<String> con todos los donativos.</String></returns>
         public static List<string> ListarDonativos()
         {
             List<string> valoraciones = new List<string>();
@@ -61,7 +67,10 @@ namespace NutriWise
 
             return valoraciones;
         }
-
+        /// <summary>
+        /// Funcion para calcular la cantidad total de donativos.
+        /// </summary>
+        /// <returns>La cantidad total de donativos.</returns>
         public static double CantidadRecaudada()
         {
             double cantidad = -1;

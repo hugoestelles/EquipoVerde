@@ -30,7 +30,10 @@ namespace NutriWise
         public Platos() { }
 
 
-
+        /// <summary>
+        /// Funcion para agregar platos a la base de datos.
+        /// </summary>
+        /// <returns>1 se se añade con exito, 0 si hay algun error.</returns>
         public int AgregarPlato()
         {
             int retorno;
@@ -47,7 +50,10 @@ namespace NutriWise
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
-
+        /// <summary>
+        /// Funcion para calcular la cantidad total de platos en la base de datos.
+        /// </summary>
+        /// <returns>El numero total de platos.</returns>
         public static int CantidadPlatos()
         {
             int cantidad = -1;
@@ -59,7 +65,10 @@ namespace NutriWise
 
             return cantidad;
         }
-
+        /// <summary>
+        /// Funcion para listar todos los platos de la base de datos.
+        /// </summary>
+        /// <returns>Una List<String> que contiene informacion sobre todos los platos de la base de datos.</String></returns>
         public static List<string> ListarPlatos()
         {
             List<string> lista = new List<string>();
@@ -79,7 +88,10 @@ namespace NutriWise
 
             return lista;
         }
-
+        /// <summary>
+        /// Funcion para obtener todos los alimentos que contiene un plato.
+        /// </summary>
+        /// <returns>Una lista de alimentos con todos los alimentos del plato.</returns>
         private List<Alimentos> BuscarAlimentos()
         {
             List<Alimentos> lista = new List<Alimentos>();
@@ -99,7 +111,10 @@ namespace NutriWise
 
             return lista;
         }
-
+        /// <summary>
+        /// Funcion para obtener las cantidad de cada ingrediente en un determinado plato.
+        /// </summary>
+        /// <returns>Un array de int con las cantidad en gramos.</returns>
         private int[] BuscarCantidades()
         {
             int[] lista = new int[listaAlimentos.Count];

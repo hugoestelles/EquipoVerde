@@ -21,23 +21,27 @@ namespace NutriWise
                     if (instancia == null)
                     {
                         instancia = new MySqlConnection();
-                        string server = "server=127.0.0.1;";
+                        string server = "server=database-pi.cusxbcc1yr4p.us-east-1.rds.amazonaws.com;";
                         string database = "database=nutriwise;";
-                        string usuario = "uid=root;";
-                        string password = "pwd=;";
+                        string usuario = "uid=admin;";
+                        string password = "pwd=12345678;";
                         instancia.ConnectionString = server + database + usuario + password;
                     }
                     return instancia;
                 }
             }
         }
-
+        /// <summary>
+        /// Funcion para abrir conexion con la base de datos.
+        /// </summary>
         public static void AbrirConexion()
         {
             if (instancia != null)
                 instancia.Open();
         }
-
+        /// <summary>
+        /// Funcion para cerrar la conexion con la base de datos.
+        /// </summary>
         public static void CerrarConexion()
         {
             if (instancia != null)

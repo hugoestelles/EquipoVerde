@@ -60,7 +60,12 @@ namespace NutriWise.Clases
             administrador = false;
         }
         public Usuario() { }
-
+        /// <summary>
+        /// Funcion para buscar la dieta que le corresponde a cada usuario.
+        /// </summary>
+        /// <param name="ob">Objetivo del usuario.</param>
+        /// <param name="into">Intolerancia del usuario.</param>
+        /// <returns>El ID de la dieta en formato int.</returns>
         public static int BuscarDieta(int ob, int into)
         {
             int retorno;
@@ -76,7 +81,11 @@ namespace NutriWise.Clases
                 return 0;
             }
         }
-
+        /// <summary>
+        /// Funcion para agregar usuario a la base de datos.
+        /// </summary>
+        /// <param name="idDieta">id de la dieta que tiene el usuario.</param>
+        /// <returns>1 se se añade con exito, 0 si hay algun error.</returns>
         public int AgregarUsuario(int idDieta)
         {
             int retorno;
@@ -99,7 +108,11 @@ namespace NutriWise.Clases
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
-
+        /// <summary>
+        /// Funcion para eliminar un usuario de la base de datos.
+        /// </summary>
+        /// <param name="correo">Correo del usuario que queremos eliminar.</param>
+        /// <returns>1 se se elimina con exito, 0 si hay algun error.</returns>
         public static int EliminarUsuario(string correo)
         {
             int retorno;
@@ -109,7 +122,11 @@ namespace NutriWise.Clases
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
-
+        /// <summary>
+        /// Funcion para comprobar si un usuario existe en la base de datos.
+        /// </summary>
+        /// <param name="correo">Correo del usuario.</param>
+        /// <returns>True si se encuentra el usuario en la base de datos, false si no lo encuentra.</returns>
         public static bool YaEstaUsuario(string correo)
         {
             string consulta = string.Format("SELECT * FROM usuario WHERE correo='{0}'", correo);
@@ -127,7 +144,11 @@ namespace NutriWise.Clases
                 return false;
             }
         }
-
+        /// <summary>
+        /// Funcion para obtener los datos de un usuario de la base de datos.
+        /// </summary>
+        /// <param name="correo">Correo del usuario.</param>
+        /// <returns>Un usuario con los datos cargados.</returns>
         public static Usuario BuscarUsuario(string correo)
         {
             Usuario user = new Usuario();
@@ -152,6 +173,10 @@ namespace NutriWise.Clases
             reader.Close();
             return user;
         }
+        /// <summary>
+        /// Funcion para comprobar que el correo tiene el formato correcto.
+        /// </summary>
+        /// <returns>True si el correo es correcto, false si es incorrecto.</returns>
         public bool ComprobarCorreo()
         {
             if (string.IsNullOrWhiteSpace(correo)) return false;
@@ -187,7 +212,10 @@ namespace NutriWise.Clases
                 return false;
             }
         }
-
+        /// <summary>
+        /// Funcion para comprobar que el correo tiene el formato correcto.
+        /// </summary>
+        /// <returns>True si el correo es correcto, false si es incorrecto.</returns>
         public static bool ComprobarCorreoEstatico(string correo)
         {
             if (string.IsNullOrWhiteSpace(correo)) return false;
@@ -223,7 +251,12 @@ namespace NutriWise.Clases
                 return false;
             }
         }
-
+        /// <summary>
+        /// Funcion para comprobar que la contraseña coincide con el correo indicado.
+        /// </summary>
+        /// <param name="correo">Correo del usuario.</param>
+        /// <param name="clave">Contraseña del usuario.</param>
+        /// <returns>True si coincide, false si no.</returns>
         public static bool ComprobarClaveEstatica(string correo, string clave)
         {
             string consulta = string.Format("SELECT clave FROM usuario WHERE correo='{0}' AND clave='{1}'", correo, clave);
