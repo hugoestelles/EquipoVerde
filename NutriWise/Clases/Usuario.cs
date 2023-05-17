@@ -18,6 +18,7 @@ namespace NutriWise.Clases
         private decimal actividad;
         private int objetivo;
         private bool administrador;
+        private static Usuario usuarioActual;
 
         public int Id { get { return id; } }
         public string Correo { get { return correo; } }
@@ -30,6 +31,7 @@ namespace NutriWise.Clases
         public decimal Actividad { get { return actividad; } }
         public int Objetivo { get { return objetivo; } }
         public bool Administrador { get { return administrador; } }
+        public static Usuario UsuarioActual { get { return usuarioActual; } set { usuarioActual = value; } }
 
         public Usuario(int idusu, string mail, string pass, string name, string ape, decimal alt, decimal pes, int into, decimal act, int obj, bool admin)
         {
@@ -263,8 +265,17 @@ namespace NutriWise.Clases
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            if (reader.HasRows) return true;
-            return false;
+            if (reader.HasRows)
+            {
+                reader.Close();
+                return true;
+            }
+            else
+            {
+                reader.Close();
+                return false;
+
+            }
         }
 
     }

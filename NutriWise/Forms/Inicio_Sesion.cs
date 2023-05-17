@@ -30,6 +30,11 @@ namespace NutriWise
                             // Comprobamos si la clave es correcta
                             if (Usuario.ComprobarClaveEstatica(correo, contra))
                             {
+                                Usuario user = Usuario.BuscarUsuario(correo);
+                                Usuario.UsuarioActual = user;
+                                MessageBox.Show("Bienvenido " + user.Nombre + " " + user.Apellidos, "Inicio de sesión correcto");
+
+
                                 // Crea una nueva instancia del formulario Form2
                                 Menu form4 = new Menu();
 

@@ -1,4 +1,6 @@
-﻿using System.Windows.Forms;
+﻿using NutriWise.Clases;
+using System;
+using System.Windows.Forms;
 
 namespace NutriWise
 {
@@ -11,10 +13,12 @@ namespace NutriWise
 
         private void btnDonacion_Click(object sender, System.EventArgs e)
         {
+            DateTime fecha = DateTime.Now;
+            Usuario user = Usuario.UsuarioActual;
             //// Falta el nombre del usuario 
-            //Donativo donativo = new Donativo(Convert.ToDouble(nudCantidad.Value), DateTime.Now, );
+            Donativo donacion = new Donativo((double)nudCantidad.Value, fecha, user.Nombre, user.Id);
 
-            //donativo.Donar();
+            donacion.Donar();
         }
     }
 }
