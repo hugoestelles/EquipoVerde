@@ -243,7 +243,6 @@ C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWis
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
@@ -308,3 +307,4 @@ C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.Core
 C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
 C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
 C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources

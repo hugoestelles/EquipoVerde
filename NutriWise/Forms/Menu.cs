@@ -23,7 +23,7 @@ namespace NutriWise
         bool valoraciones = false;
         bool donativos = false;
         bool lista = false;
-        bool video = false;
+        bool videos = false;
         bool ayuda = false;
         bool mantenimiento = false;
 
@@ -40,7 +40,7 @@ namespace NutriWise
             valoraciones = true;
             donativos = false;
             lista = false;
-            video = false;
+            videos = false;
             ayuda = false;
             mantenimiento = false;
             cambioColor();
@@ -61,7 +61,7 @@ namespace NutriWise
             valoraciones = false;
             donativos = false;
             lista = false;
-            video = false;
+            videos = false;
             ayuda = false;
             mantenimiento = false;
             cambioColor();
@@ -133,7 +133,7 @@ namespace NutriWise
                     btnAyuda.BackColor = Color.PaleGreen;
                     btnMantenimiento.BackColor = Color.PaleGreen;
                 }
-                if (video)
+                if (videos)
                 {
                     btnValoraciones.BackColor = Color.PaleGreen;
                     btnDieta.BackColor = Color.PaleGreen;
@@ -225,7 +225,7 @@ namespace NutriWise
                     btnAyuda.BackColor = Color.PaleGreen;
                     btnMantenimiento.BackColor = Color.PaleGreen;
                 }
-                if (video)
+                if (videos)
                 {
                     btnValoraciones.BackColor = Color.PaleGreen;
                     btnDieta.BackColor = Color.PaleGreen;
@@ -293,7 +293,7 @@ namespace NutriWise
             valoraciones = false;
             donativos = true;
             lista = false;
-            video = false;
+            videos = false;
             ayuda = false;
             mantenimiento = false;
             cambioColor();
@@ -313,7 +313,7 @@ namespace NutriWise
             valoraciones = false;
             donativos = false;
             lista = false;
-            video = false;
+            videos = false;
             ayuda = false;
             mantenimiento = false;
             cambioColor();
@@ -332,7 +332,7 @@ namespace NutriWise
             valoraciones = false;
             donativos = false;
             lista = true;
-            video = false;
+            videos = false;
             ayuda = false;
             mantenimiento = false;
             cambioColor();
@@ -351,7 +351,7 @@ namespace NutriWise
             valoraciones = false;
             donativos = false;
             lista = false;
-            video = true;
+            videos = true;
             ayuda = false;
             mantenimiento = false;
             cambioColor();
@@ -370,7 +370,7 @@ namespace NutriWise
             valoraciones = false;
             donativos = false;
             lista = false;
-            video = false;
+            videos = false;
             ayuda = true;
             mantenimiento = false;
             cambioColor();
@@ -392,6 +392,7 @@ namespace NutriWise
             donativos1.BackColor = Color.Ivory;
             listaCompra1.BackColor = Color.Ivory;
             ayuda1.BackColor = Color.Ivory;
+            videos1.BackColor = Color.Ivory;
             cambioColor();
             perfil1.CambioColorPerdfil();
         }
@@ -405,6 +406,7 @@ namespace NutriWise
             donativos1.BackColor = Color.DarkSeaGreen;
             listaCompra1.BackColor = Color.DarkSeaGreen;
             ayuda1.BackColor = Color.DarkSeaGreen;
+            videos1.BackColor = Color.DarkSeaGreen;
             cambioColor();
             perfil1.CambioColorPerdfil();
         }
@@ -416,7 +418,7 @@ namespace NutriWise
             valoraciones = false;
             donativos = false;
             lista = false;
-            video = false;
+            videos = false;
             ayuda = false;
             mantenimiento = true;
             cambioColor();
@@ -427,7 +429,5 @@ namespace NutriWise
             form5.ShowDialog();
 
         }
-
-
     }
 }

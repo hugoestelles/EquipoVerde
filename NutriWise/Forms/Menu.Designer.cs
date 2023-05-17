@@ -48,6 +48,7 @@
             this.pctAjustes = new System.Windows.Forms.PictureBox();
             this.pctCerrar = new System.Windows.Forms.PictureBox();
             this.pctDegradado = new System.Windows.Forms.PictureBox();
+            this.videos1 = new NutriWise.Forms.Videos();
             this.perfil1 = new NutriWise.Perfil();
             this.dieta1 = new NutriWise.Dieta();
             this.valoraciones1 = new NutriWise.Valoraciones();
@@ -326,6 +327,14 @@
             this.pctDegradado.TabIndex = 4;
             this.pctDegradado.TabStop = false;
             // 
+            // videos1
+            // 
+            this.videos1.BackColor = System.Drawing.Color.Ivory;
+            this.videos1.Location = new System.Drawing.Point(362, 161);
+            this.videos1.Name = "videos1";
+            this.videos1.Size = new System.Drawing.Size(930, 588);
+            this.videos1.TabIndex = 20;
+            // 
             // perfil1
             // 
             this.perfil1.BackColor = System.Drawing.Color.Ivory;
@@ -399,6 +408,7 @@
             this.Controls.Add(this.donativos1);
             this.Controls.Add(this.listaCompra1);
             this.Controls.Add(this.ayuda1);
+            this.Controls.Add(this.videos1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -447,5 +457,6 @@
         private System.Windows.Forms.PictureBox pctEspalñol;
         private System.Windows.Forms.PictureBox pctOscuro;
         private System.Windows.Forms.Button btnMantenimiento;
+        private Forms.Videos videos1;
     }
 }
