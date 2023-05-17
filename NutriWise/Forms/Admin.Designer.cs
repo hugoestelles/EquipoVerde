@@ -55,8 +55,6 @@
             this.lblElimApe1 = new System.Windows.Forms.Label();
             this.lblElimNombreR2 = new System.Windows.Forms.Label();
             this.lblElimNombreR1 = new System.Windows.Forms.Label();
-            this.lblElimNom2 = new System.Windows.Forms.Label();
-            this.lblElimNom1 = new System.Windows.Forms.Label();
             this.btnBuscarUsu = new System.Windows.Forms.Button();
             this.txtEliminarUsu = new System.Windows.Forms.TextBox();
             this.lblElimUsuInfo = new System.Windows.Forms.Label();
@@ -177,7 +175,7 @@
             this.lblAdminFecha.Location = new System.Drawing.Point(395, 322);
             this.lblAdminFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminFecha.Name = "lblAdminFecha";
-            this.lblAdminFecha.Size = new System.Drawing.Size(149, 52);
+            this.lblAdminFecha.Size = new System.Drawing.Size(148, 52);
             this.lblAdminFecha.TabIndex = 3;
             this.lblAdminFecha.Text = "Fecha";
             // 
@@ -294,8 +292,6 @@
             this.grbEliminarUsu.Controls.Add(this.lblElimApe1);
             this.grbEliminarUsu.Controls.Add(this.lblElimNombreR2);
             this.grbEliminarUsu.Controls.Add(this.lblElimNombreR1);
-            this.grbEliminarUsu.Controls.Add(this.lblElimNom2);
-            this.grbEliminarUsu.Controls.Add(this.lblElimNom1);
             this.grbEliminarUsu.Controls.Add(this.btnBuscarUsu);
             this.grbEliminarUsu.Controls.Add(this.txtEliminarUsu);
             this.grbEliminarUsu.Controls.Add(this.lblElimUsuInfo);
@@ -399,28 +395,6 @@
             this.lblElimNombreR1.Size = new System.Drawing.Size(94, 25);
             this.lblElimNombreR1.TabIndex = 5;
             this.lblElimNombreR1.Text = "Nombre:";
-            // 
-            // lblElimNom2
-            // 
-            this.lblElimNom2.AutoSize = true;
-            this.lblElimNom2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblElimNom2.Location = new System.Drawing.Point(780, 130);
-            this.lblElimNom2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblElimNom2.Name = "lblElimNom2";
-            this.lblElimNom2.Size = new System.Drawing.Size(95, 25);
-            this.lblElimNom2.TabIndex = 4;
-            this.lblElimNom2.Text = "(Nombre)";
-            // 
-            // lblElimNom1
-            // 
-            this.lblElimNom1.AutoSize = true;
-            this.lblElimNom1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblElimNom1.Location = new System.Drawing.Point(540, 130);
-            this.lblElimNom1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblElimNom1.Name = "lblElimNom1";
-            this.lblElimNom1.Size = new System.Drawing.Size(201, 25);
-            this.lblElimNom1.TabIndex = 3;
-            this.lblElimNom1.Text = "Nombre de usuario:";
             // 
             // btnBuscarUsu
             // 
@@ -1085,8 +1059,6 @@
         private System.Windows.Forms.Label lblElimApe1;
         private System.Windows.Forms.Label lblElimNombreR2;
         private System.Windows.Forms.Label lblElimNombreR1;
-        private System.Windows.Forms.Label lblElimNom2;
-        private System.Windows.Forms.Label lblElimNom1;
         private System.Windows.Forms.Button btnBuscarUsu;
         private System.Windows.Forms.TextBox txtEliminarUsu;
         private System.Windows.Forms.Label lblElimUsuInfo;

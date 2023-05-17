@@ -37,45 +37,53 @@ namespace NutriWise
         {
             try
             {
-                MySqlConnection conect = ConexionBD.Conexion;
-                ConexionBD.AbrirConexion();
-                if (!string.IsNullOrEmpty(txtEliminarUsu.Text))
+                using (MySqlConnection conect = ConexionBD.Conexion)
                 {
-                    string correo = txtEliminarUsu.Text;
-                    DialogResult confirmacion = MessageBox.Show("Borrado de registro seleccionado. ¿Continuar?",
-                        "Eliminación", MessageBoxButtons.YesNo);
-
-                    if (confirmacion == DialogResult.Yes)
+                    ConexionBD.CerrarConexion();
+                    ConexionBD.AbrirConexion();
+                    if (!string.IsNullOrEmpty(txtEliminarUsu.Text))
                     {
-                        // Abrir la conexión antes de eliminar el usuario
-
-
-                        // Eliminar el usuario y obtener el número de registros afectados
-                        int registrosAfectados = Usuario.EliminarUsuario(correo);
-
-                        // Cerrar la conexión después de eliminar el usuario
-                        ConexionBD.CerrarConexion();
-
-                        if (registrosAfectados > 0)
+                        string correo = txtEliminarUsu.Text;
+                        if (Usuario.ComprobarCorreoEstatico(correo))
                         {
-                            MessageBox.Show("El usuario se eliminó correctamente.");
+                            DialogResult confirmacion = MessageBox.Show("Borrado de registro seleccionado. ¿Continuar?",
+                                "Eliminación", MessageBoxButtons.YesNo);
+
+                            if (confirmacion == DialogResult.Yes)
+                            {
+
+                                // Eliminar el usuario y obtener el número de registros afectados
+                                int registrosAfectados = Usuario.EliminarUsuario(correo);
+
+                                // Cerrar la conexión después de eliminar el usuario
+                                ConexionBD.CerrarConexion();
+
+                                if (registrosAfectados > 0)
+                                {
+                                    MessageBox.Show("El usuario se eliminó correctamente.");
+                                }
+                                else
+                                {
+                                    MessageBox.Show("No se encontró ningún usuario con el correo especificado.");
+                                }
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("No se encontró ningún usuario con el nombre especificado.");
+                            MessageBox.Show("Correo introducido erróneo.");
                         }
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Ingrese un nombre de usuario válido.");
+                    else
+                    {
+                        MessageBox.Show("Ingrese un correo.");
+                    }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al eliminar el usuario: " + ex.Message);
             }
-            finally 
+            finally
             {
                 ConexionBD.CerrarConexion();
             }

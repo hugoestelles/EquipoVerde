@@ -153,6 +153,16 @@ namespace NutriWise.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Estrella {
+            get {
+                object obj = ResourceManager.GetObject("Estrella", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_44 {
             get {
                 object obj = ResourceManager.GetObject("image 44", resourceCulture);
@@ -246,6 +256,16 @@ namespace NutriWise.Properties {
         internal static System.Drawing.Bitmap Nav_item__6_ {
             get {
                 object obj = ResourceManager.GetObject("Nav item (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Noestrella {
+            get {
+                object obj = ResourceManager.GetObject("Noestrella", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

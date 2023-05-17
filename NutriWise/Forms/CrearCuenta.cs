@@ -34,25 +34,32 @@ namespace NutriWise
                             }
                             else
                             {
-                                Usuario u1 = new Usuario(txtMail.Text, txtContraseña.Text, txtNombre.Text, txtApellido.Text, nudAltura.Value, nudPeso.Value, cmbIntolerancias.SelectedIndex, nudActividad.Value, cmbObjetivo.SelectedIndex);
-                                u1.AgregarUsuario(Usuario.BuscarDieta(cmbObjetivo.SelectedIndex, cmbIntolerancias.SelectedIndex));
+                                if (Usuario.ComprobarCorreoEstatico(correo))
+                                {
+                                    Usuario u1 = new Usuario(txtMail.Text, txtContraseña.Text, txtNombre.Text, txtApellido.Text, nudAltura.Value, nudPeso.Value, cmbIntolerancias.SelectedIndex, nudActividad.Value, cmbObjetivo.SelectedIndex);
+                                    u1.AgregarUsuario(Usuario.BuscarDieta(cmbObjetivo.SelectedIndex, cmbIntolerancias.SelectedIndex));
 
-                                // Crea una nueva instancia del formulario Form2
-                                Menu form4 = new Menu();
+                                    // Crea una nueva instancia del formulario Form2
+                                    Menu form4 = new Menu();
 
-                                // Esconde el formulario
-                                this.Hide();
+                                    // Esconde el formulario
+                                    this.Hide();
 
-                                // Muestra el nuevo formulario
-                                form4.ShowDialog();
+                                    // Muestra el nuevo formulario
+                                    form4.ShowDialog();
 
-                                // Cierra el formulario
-                                this.Close();
+                                    // Cierra el formulario
+                                    this.Close();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Correo introducido erróneo.");
+                                }
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Ingrese un correo válido.");
+                            MessageBox.Show("Ingrese un correo.");
                         }
                     }
                 }

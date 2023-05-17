@@ -169,7 +169,6 @@
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(436, 41);
             this.txtMail.TabIndex = 7;
-            this.txtMail.Text = " ejemplo@gmail.com";
             // 
             // lblMail
             // 
