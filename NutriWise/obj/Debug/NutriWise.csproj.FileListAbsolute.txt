@@ -308,3 +308,4 @@ C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.Copy
 C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
 C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources

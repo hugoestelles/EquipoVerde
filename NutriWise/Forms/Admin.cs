@@ -19,20 +19,6 @@ namespace NutriWise
             InitializeComponent();
         }
 
-        private void grbInfo_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtEliminarUsu_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-
-
         private void btnAdminEliminar_Click_1(object sender, EventArgs e)
         {
             try
@@ -145,6 +131,62 @@ namespace NutriWise
             grbPlato.Visible = false;
         }
 
+        private void btnBuscarUsu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (MySqlConnection conect = ConexionBD.Conexion)
+                {
+                    ConexionBD.CerrarConexion();
+                    ConexionBD.AbrirConexion();
+                    if (!string.IsNullOrEmpty(txtEliminarUsu.Text))
+                    {
+                        string correo = txtEliminarUsu.Text;
+                        if (Usuario.ComprobarCorreoEstatico(correo))
+                        {
+                            if (Usuario.YaEstaUsuario(correo))
+                            {
+                                DialogResult confirmacion = MessageBox.Show("Desea buscar el registro seleccionado. ¿Continuar?",
+                                    "Buscar", MessageBoxButtons.YesNo);
 
+                                if (confirmacion == DialogResult.Yes)
+                                {
+
+                                    // Buscar el usuario y obtener el número de registros afectados
+                                    Usuario u1 = Usuario.BuscarUsuario(correo);
+
+                                    lblElimNombreR2.Text = u1.Nombre;
+                                    lblElimApe2.Text = u1.Apellidos;
+                                    lblElimCorreo2.Text = u1.Correo;
+                                    // Cerrar la conexión después de eliminar el usuario
+                                    ConexionBD.CerrarConexion();
+
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encontró ningún usuario con el correo especificado.");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Correo introducido erróneo.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ingrese un correo.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al buscar el usuario: " + ex.Message);
+            }
+            finally
+            {
+                ConexionBD.CerrarConexion();
+            }
+        }
     }
 }

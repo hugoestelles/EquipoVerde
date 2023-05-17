@@ -156,7 +156,7 @@ namespace NutriWise.Clases
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            if (reader.HasRows)
+            if (reader.Read() && reader.HasRows)
             {
                 user.id = reader.GetInt32(0);
                 user.correo = reader.GetString(1);

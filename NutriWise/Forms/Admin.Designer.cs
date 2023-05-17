@@ -406,6 +406,7 @@
             this.btnBuscarUsu.TabIndex = 2;
             this.btnBuscarUsu.Text = "Buscar";
             this.btnBuscarUsu.UseVisualStyleBackColor = true;
+            this.btnBuscarUsu.Click += new System.EventHandler(this.btnBuscarUsu_Click);
             // 
             // txtEliminarUsu
             // 
