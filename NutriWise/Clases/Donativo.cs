@@ -8,21 +8,20 @@ namespace NutriWise
     {
         private int idDonativo;
         private double cant;
-        private string nomUser;
         private DateTime fecha;
+        private string nomUser;
 
         public int IdDonativo { get { return idDonativo; } }
         public double Cant { get { return cant; } }
-        public string NomUser { get { return nomUser; } }
         public DateTime Fecha { get { return fecha; } }
+        public string NomUser { get { return nomUser; } }
 
 
-        public Donativo(int id, double canti, string nom, DateTime fech)
+        public Donativo(double canti, DateTime fech, string nom)
         {
-            idDonativo = id;
             cant = canti;
-            nomUser = nom;
             fecha = fech;
+            nomUser = nom;
         }
 
         /// <summary>
@@ -32,14 +31,13 @@ namespace NutriWise
         public int Donar()
         {
             int retorno;
-            string consulta = string.Format("INSERT INTO donativos (idDonativo,cant,nomUser,fecha) VALUES " +
-                "(@id,@cant,@nomUser,@fecha)");
+            string consulta = string.Format("INSERT INTO donativos (cant,fecha,nomUser) VALUES " +
+                "(@cant,@fecha,@nomUser)");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            comando.Parameters.AddWithValue("id", idDonativo);
             comando.Parameters.AddWithValue("cant", cant);
-            comando.Parameters.AddWithValue("nomUser", nomUser);
             comando.Parameters.AddWithValue("fecha", fecha);
+            comando.Parameters.AddWithValue("nomUser", nomUser);
 
             retorno = comando.ExecuteNonQuery();
             return retorno;

@@ -30,8 +30,6 @@
         {
             this.lblDonacion = new System.Windows.Forms.Label();
             this.lblCredenciales = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
             this.btnDonacion = new System.Windows.Forms.Button();
@@ -61,32 +59,12 @@
             this.lblCredenciales.TabIndex = 4;
             this.lblCredenciales.Text = "Porfavor introduzca sus credenciales";
             // 
-            // txtNombre
-            // 
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.txtNombre.Location = new System.Drawing.Point(489, 208);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(207, 37);
-            this.txtNombre.TabIndex = 5;
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblNombre.Location = new System.Drawing.Point(297, 208);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(110, 31);
-            this.lblNombre.TabIndex = 9;
-            this.lblNombre.Text = "Nombre";
-            // 
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidad.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblCantidad.Location = new System.Drawing.Point(297, 317);
+            this.lblCantidad.Location = new System.Drawing.Point(288, 225);
             this.lblCantidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(123, 31);
@@ -96,7 +74,7 @@
             // nudCantidad
             // 
             this.nudCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.nudCantidad.Location = new System.Drawing.Point(489, 311);
+            this.nudCantidad.Location = new System.Drawing.Point(471, 225);
             this.nudCantidad.Maximum = new decimal(new int[] {
             10000000,
             0,
@@ -114,12 +92,13 @@
             this.btnDonacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDonacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDonacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDonacion.Location = new System.Drawing.Point(379, 419);
+            this.btnDonacion.Location = new System.Drawing.Point(339, 397);
             this.btnDonacion.Name = "btnDonacion";
-            this.btnDonacion.Size = new System.Drawing.Size(224, 61);
+            this.btnDonacion.Size = new System.Drawing.Size(259, 92);
             this.btnDonacion.TabIndex = 12;
             this.btnDonacion.Text = "Donar";
             this.btnDonacion.UseVisualStyleBackColor = false;
+            this.btnDonacion.Click += new System.EventHandler(this.btnDonacion_Click);
             // 
             // Donativos
             // 
@@ -129,8 +108,6 @@
             this.Controls.Add(this.btnDonacion);
             this.Controls.Add(this.nudCantidad);
             this.Controls.Add(this.lblCantidad);
-            this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblCredenciales);
             this.Controls.Add(this.lblDonacion);
             this.Name = "Donativos";
@@ -145,8 +122,6 @@
 
         private System.Windows.Forms.Label lblDonacion;
         private System.Windows.Forms.Label lblCredenciales;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.NumericUpDown nudCantidad;
         private System.Windows.Forms.Button btnDonacion;

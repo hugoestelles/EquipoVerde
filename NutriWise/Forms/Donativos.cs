@@ -9,5 +9,12 @@ namespace NutriWise
             InitializeComponent();
         }
 
+        private void btnDonacion_Click(object sender, System.EventArgs e)
+        {
+            //// Falta el nombre del usuario 
+            //Donativo donativo = new Donativo(Convert.ToDouble(nudCantidad.Value), DateTime.Now, );
+
+            //donativo.Donar();
+        }
     }
 }
