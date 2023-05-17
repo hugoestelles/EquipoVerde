@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.lblAgradecimiento = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtValoracion = new System.Windows.Forms.TextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.lblAnonimo = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nupEstrellas = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupEstrellas)).BeginInit();
             this.SuspendLayout();
             // 
             // lblAgradecimiento
@@ -48,14 +48,14 @@
             this.lblAgradecimiento.TabIndex = 2;
             this.lblAgradecimiento.Text = "Agradecemos tus opiniones ♥\r\n";
             // 
-            // textBox1
+            // txtValoracion
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBox1.Location = new System.Drawing.Point(143, 110);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(677, 241);
-            this.textBox1.TabIndex = 8;
+            this.txtValoracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtValoracion.Location = new System.Drawing.Point(143, 110);
+            this.txtValoracion.Multiline = true;
+            this.txtValoracion.Name = "txtValoracion";
+            this.txtValoracion.Size = new System.Drawing.Size(677, 241);
+            this.txtValoracion.TabIndex = 8;
             // 
             // btnEnviar
             // 
@@ -69,6 +69,7 @@
             this.btnEnviar.TabIndex = 9;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = false;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // lblAnonimo
             // 
@@ -82,18 +83,18 @@
             this.lblAnonimo.TabIndex = 10;
             this.lblAnonimo.Text = "Las opiniones son anonimas";
             // 
-            // numericUpDown1
+            // nupEstrellas
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.numericUpDown1.Location = new System.Drawing.Point(205, 405);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.nupEstrellas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nupEstrellas.Location = new System.Drawing.Point(205, 405);
+            this.nupEstrellas.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(66, 30);
-            this.numericUpDown1.TabIndex = 11;
+            this.nupEstrellas.Name = "nupEstrellas";
+            this.nupEstrellas.Size = new System.Drawing.Size(66, 30);
+            this.nupEstrellas.TabIndex = 11;
             // 
             // label1
             // 
@@ -111,14 +112,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.nupEstrellas);
             this.Controls.Add(this.lblAnonimo);
             this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtValoracion);
             this.Controls.Add(this.lblAgradecimiento);
             this.Name = "Valoraciones";
             this.Size = new System.Drawing.Size(1001, 570);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupEstrellas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,10 +127,10 @@
 
         #endregion
         private System.Windows.Forms.Label lblAgradecimiento;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtValoracion;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Label lblAnonimo;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nupEstrellas;
         private System.Windows.Forms.Label label1;
     }
 }

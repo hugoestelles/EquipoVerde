@@ -6,26 +6,23 @@ namespace NutriWise.Clases
 {
     internal class Valoracion
     {
-        private int id;
+        //private int id;
         private int numEstrellas;
         private DateTime fecha;
         private string comentario;
 
-        public int Id { get { return id; } set { id = value; } }
+       // public int Id { get { return id; } set { id = value; } }
         public int NumEstrellas { get { return numEstrellas; } set { numEstrellas = value; } }
         public DateTime Fecha { get { return fecha; } set { fecha = value; } }
         public string Comentario { get { return comentario; } set { comentario = value; } }
 
 
-        public Valoracion(int id, int nEstrellas, DateTime f, string com)
+        public Valoracion(int nEstrellas, DateTime f, string com)
         {
-            this.id = id;
             numEstrellas = nEstrellas;
             fecha = f;
             comentario = com;
         }
-
-        public Valoracion() { }
 
         /// <summary>
         /// Funcion para añadir valoracion a la base de datos.
@@ -33,18 +30,33 @@ namespace NutriWise.Clases
         /// <returns>1 si se añade con exito, 0 si no.</returns>
         public int AgregarValoracion()
         {
-            int retorno;
-            string consulta = string.Format("INSERT INTO valoraciones (id,numEstrellas,fecha,comentario) VALUES " +
-                "(@id,@numEstrellas,@fecha,@comentario)");
+            if (ConexionBD.Conexion != null)
+            {
+                try
+                {
+                    ConexionBD.AbrirConexion();
+                }
+                catch (MySqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
 
-            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            comando.Parameters.AddWithValue("id", id);
-            comando.Parameters.AddWithValue("numEstrellas", numEstrellas);
-            comando.Parameters.AddWithValue("fecha", fecha);
-            comando.Parameters.AddWithValue("comentario", comentario);
+                }
+                int retorno;
+                string consulta = string.Format("INSERT INTO valoraciones (numEstrellas,fechaValoracion,comentario) VALUES " +
+                    "(@numEstrellas,@fecha,@comentario)");
 
-            retorno = comando.ExecuteNonQuery();
-            return retorno;
+                MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+                comando.Parameters.AddWithValue("numEstrellas", numEstrellas);
+                comando.Parameters.AddWithValue("fecha", fecha);
+                comando.Parameters.AddWithValue("comentario", comentario);
+
+                retorno = comando.ExecuteNonQuery();
+                ConexionBD.CerrarConexion();
+                return retorno;
+            } else
+            {
+                return 0;
+            }
         }
         /// <summary>
         /// Funcion para obtener la cantidad de valoraciones en la base de datos.
