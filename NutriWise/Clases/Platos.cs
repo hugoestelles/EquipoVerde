@@ -1,5 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace NutriWise
 {
@@ -37,15 +39,13 @@ namespace NutriWise
         public int AgregarPlato()
         {
             int retorno;
-            string consulta = string.Format("INSERT INTO platos (id,nombre,tipo,listaAlimentos,listaCantidades) VALUES " +
-                "(@id,@nom,@tip,@lAlimentos,@lCantidades)");
+            string consulta = string.Format("INSERT INTO platos (nombre,idDieta,tipo) VALUES " +
+                "(@nom,@tip,@idDieta)");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            comando.Parameters.AddWithValue("id", id);
+            comando.Parameters.AddWithValue("idDieta", BuscarDieta());
             comando.Parameters.AddWithValue("nom", nombre);
             comando.Parameters.AddWithValue("tip", tipo);
-            comando.Parameters.AddWithValue("lAlimentos", listaAlimentos);
-            comando.Parameters.AddWithValue("lCantidades", listaCantidades);
 
             retorno = comando.ExecuteNonQuery();
             return retorno;
@@ -95,7 +95,7 @@ namespace NutriWise
         private List<Alimentos> BuscarAlimentos()
         {
             List<Alimentos> lista = new List<Alimentos>();
-            string consulta = string.Format("SELECT * FROM alimentos a INNER JOIN aliPlato ap ON a.idAlimento = ap.idAlimentos INNER JOIN platos p ON ap.idPlatos = p.idPlato WHERE p.idPlato = '{0}';",this.id);
+            string consulta = string.Format("SELECT a.idAlimento, a.nombre, a.valorNutricio FROM alimentos a INNER JOIN aliPlato ap ON a.idAlimento = ap.idAlimentos INNER JOIN platos p ON ap.idPlatos = p.idPlato WHERE p.idPlato = '{0}';", this.id);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
@@ -103,9 +103,9 @@ namespace NutriWise
             {
                 while (reader.Read())
                 {
-                    Alimentos a1 = new Alimentos(reader.GetInt32(0),reader.GetString(1),reader.GetDouble(2));
+                    Alimentos a1 = new Alimentos(reader.GetInt32(0), reader.GetString(1), reader.GetDouble(2));
                     lista.Add(a1);
-                   
+
                 }
             }
 
@@ -128,7 +128,46 @@ namespace NutriWise
                     lista[i] = reader.GetInt16(0);
                 }
             }
-                return lista;
+            return lista;
+        }
+        /// <summary>
+        /// Funncion para buscar la dieta asignada a un plato.
+        /// </summary>
+        /// <returns>ID de la dieta.</returns>
+        private int BuscarDieta()
+        {
+
+            string consulta = String.Format("SELECT idDieta FROM platos WHERE idPlato = '{0}';", this.id);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows)
+            {
+                return reader.GetInt32(0);
+            }
+            else return 0;
+        }
+        /// <summary>
+        /// Función para insertar en la tabla de relaciones AliPlatos
+        /// </summary>
+        /// <returns>True si hace todas las inserciones con exito, false si no.</returns>
+        public bool InsertarAliPlato()
+        {
+            bool retorno = false;
+            for (int i = 0; i < this.listaAlimentos.Count; i++)
+            {
+                string consulta = string.Format("INSERT INTO aliPlato (idAlimentos,idPlatos,cantida) VALUES " +
+                    "(@idA,@idP,@cant)");
+
+                MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+                comando.Parameters.AddWithValue("idA", this.listaAlimentos[i].Id);
+                comando.Parameters.AddWithValue("idP", this.Id);
+                comando.Parameters.AddWithValue("cant", this.ListaCantidades[i]);
+
+                int aux =  comando.ExecuteNonQuery();
+                if(aux == 1) retorno = true;
+                else retorno = false;
+            }
+            return retorno;
         }
     }
 }
