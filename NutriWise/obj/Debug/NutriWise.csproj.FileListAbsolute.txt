@@ -323,7 +323,6 @@ C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Memor
 C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.xml
 C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
 C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
 C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
@@ -407,3 +406,5 @@ C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\Eq
 C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
 C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
 C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
