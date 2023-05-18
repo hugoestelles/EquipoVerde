@@ -33,8 +33,9 @@ namespace NutriWise
             this.cantPlatos = cantPlatos;
             this.cantAlim = cantAlim;
         }
-        public Dietas(string nom, int obj, string tip)
+        public Dietas(int id, string nom, int obj, string tip)
         {
+            this.id = id;
             nombre = nom;
             objetivo = obj;
             tipo = tip;
@@ -138,6 +139,23 @@ namespace NutriWise
                 }
             }
             return retorno;
+        }
+
+        public static Dietas ObtenerDatosDieta(int idDieta)
+        {
+            Dietas d1; 
+            string consulta = String.Format("SELECT * FROM dietas WHERE idDieta = '{0}';",idDieta);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows)
+            {
+                    d1 = new Dietas(idDieta,reader.GetString(1),reader.GetInt16(2),reader.GetString(3));
+                    return d1;
+            }
+            else
+            {
+                return null;
+            }
         }
 
     }

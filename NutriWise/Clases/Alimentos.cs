@@ -51,11 +51,10 @@ namespace NutriWise
         /// <summary>
         /// Funcion para comprobar si un alimento ya existe en la base de datos.
         /// </summary>
-        /// <param name="nombre">Nombre del alimento.</param>
         /// <returns>True si existe, false si no existe.</returns>
-        public bool ComprobarExistencia(string nombre)
+        public bool ComprobarExistencia()
         {
-            string consulta = String.Format("SELECT * FROM alimentos WHERE nombre = '{0}';", nombre);
+            string consulta = String.Format("SELECT * FROM alimentos WHERE nombre = '{0}';", this.nombre);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
             if (reader.HasRows)
