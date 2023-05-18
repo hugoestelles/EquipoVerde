@@ -312,5 +312,14 @@
   <ItemGroup>
     <None Include="Resources\Estrella.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ComidaSaludable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ComidaVegana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ComidaSinLactosa.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
