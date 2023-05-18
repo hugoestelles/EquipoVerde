@@ -40,7 +40,7 @@ namespace NutriWise
                                     u1.AgregarUsuario(Usuario.BuscarDieta(cmbObjetivo.SelectedIndex, cmbIntolerancias.SelectedIndex));
 
                                     // Crea una nueva instancia del formulario Form2
-                                    Menu form4 = new Menu();
+                                    Inicio_Sesion form4 = new Inicio_Sesion();
 
                                     // Esconde el formulario
                                     this.Hide();
