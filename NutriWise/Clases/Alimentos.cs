@@ -22,7 +22,8 @@ namespace NutriWise
             valorNutri = vNutri;
         }
 
-        public Alimentos() { }
+        public Alimentos() {
+        }
         public Alimentos(string nom, double vNurti)
         {
             nombre = nom;
@@ -78,6 +79,27 @@ namespace NutriWise
 
             retorno = comando.ExecuteNonQuery();
             return retorno;
+        }
+        /// <summary>
+        /// Funcion para obtener los datos de un alimento a partir de su ID.
+        /// </summary>
+        /// <param name="idAlimento">ID del alimento.</param>
+        /// <returns>Un alimento con los datos cargados.</returns>
+        public static Alimentos ObtenerDatosAlimento(int idAlimento)
+        {
+            Alimentos a1;
+            string consulta = String.Format("SELECT * FROM alimentos WHERE idAlimento = '{0}';", idAlimento);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows)
+            {
+                a1 = new Alimentos(idAlimento,reader.GetString(1),reader.GetDouble(2));
+                return a1;
+            }
+            else
+            {
+                return null;
+            }
         }
 
     }

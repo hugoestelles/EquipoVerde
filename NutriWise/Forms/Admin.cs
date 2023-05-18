@@ -192,6 +192,8 @@ namespace NutriWise
         private void btnPlatoAceptar_Click(object sender, EventArgs e)
         {
             bool[] comp = new bool[4] { false, false, false ,false };
+            int[] indices = new int[4] { cmbIngre1.SelectedIndex, cmbIngre2.SelectedIndex, cmbIngre3.SelectedIndex, cmbIngre4.SelectedIndex };
+            List<Alimentos> list = new List<Alimentos>();
             try
             {
                 if (ConexionBD.Conexion != null)
@@ -208,7 +210,7 @@ namespace NutriWise
                             {
                                 if(a1.AgregarAlimento() == 1)
                                 {
-                                    //Mostrar mensaje de alimento agreado con exito.
+                                    list.Add(a1);
                                 }
                                 else
                                 {
@@ -229,7 +231,7 @@ namespace NutriWise
                             {
                                 if (a2.AgregarAlimento() == 1)
                                 {
-                                    //Mostrar mensaje de alimento agreado con exito.
+                                    list.Add(a2);
                                 }
                                 else
                                 {
@@ -250,7 +252,7 @@ namespace NutriWise
                             {
                                 if (a3.AgregarAlimento() == 1)
                                 {
-                                    //Mostrar mensaje de alimento agreado con exito.
+                                    list.Add(a3);
                                 }
                                 else
                                 {
@@ -271,7 +273,7 @@ namespace NutriWise
                             {
                                 if (a4.AgregarAlimento() == 1)
                                 {
-                                    //Mostrar mensaje de alimento agreado con exito.
+                                    list.Add(a4);
                                 }
                                 else
                                 {
@@ -285,7 +287,20 @@ namespace NutriWise
                         }
                         else
                         {
-                            //Comprobar que los alimentos seleccionados en el combo box no se repitan. (No se como hacerlo)
+                            if(Utiles.ComprobarComboBoxes(cmbIngre1.SelectedIndex, cmbIngre2.SelectedIndex, cmbIngre3.SelectedIndex, cmbIngre4.SelectedIndex))
+                            {
+                                for (int i = 0; i < comp.Length; i++)
+                                {
+                                    if (comp[i] == false) {
+                                        Alimentos alim = Alimentos.ObtenerDatosAlimento(indices[i]);
+                                        list.Add(alim);
+                                            }
+                                }
+                            }
+                            else
+                            {
+                                //Mostrar error diciendo que alguno de los alimentos se repite.
+                            }
                         }
                     }
                     else

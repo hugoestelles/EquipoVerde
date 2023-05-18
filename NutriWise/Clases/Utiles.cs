@@ -9,6 +9,7 @@ using System.Net.Mail;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Rectangle = System.Drawing.Rectangle;
 
 namespace NutriWise.Clases
@@ -173,6 +174,31 @@ namespace NutriWise.Clases
             catch (Exception ex)
             {
                 // MessageBox.Show("Error al enviar el correo: " + ex.Message);
+            }
+        }
+        /// <summary>
+        /// Funcion para comprobar que el indice de 4 comboBoxes no coincide, a excepcion del caso -1.
+        /// </summary>
+        /// <param name="selectedIndex1">Indice 1º comboBox</param>
+        /// <param name="selectedIndex2">Indice 2º comboBox</param>
+        /// <param name="selectedIndex3">Indice 3º comboBox</param>
+        /// <param name="selectedIndex4">Indice 4º comboBox</param>
+        /// <returns>True si no hay coincidencias, false si las hay.</returns>
+        public static bool ComprobarComboBoxes(int selectedIndex1, int selectedIndex2, int selectedIndex3, int selectedIndex4)
+        {
+            // Verificar que no haya coincidencias excepto cuando selectedIndex es -1
+            if ((selectedIndex1 != selectedIndex2 || selectedIndex1 == -1 || selectedIndex2 == -1) &&
+                (selectedIndex1 != selectedIndex3 || selectedIndex1 == -1 || selectedIndex3 == -1) &&
+                (selectedIndex1 != selectedIndex4 || selectedIndex1 == -1 || selectedIndex4 == -1) &&
+                (selectedIndex2 != selectedIndex3 || selectedIndex2 == -1 || selectedIndex3 == -1) &&
+                (selectedIndex2 != selectedIndex4 || selectedIndex2 == -1 || selectedIndex4 == -1) &&
+                (selectedIndex3 != selectedIndex4 || selectedIndex3 == -1 || selectedIndex4 == -1))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

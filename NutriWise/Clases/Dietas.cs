@@ -140,7 +140,11 @@ namespace NutriWise
             }
             return retorno;
         }
-
+        /// <summary>
+        /// Funcion para obtener todos los datos de una dieta a partir de su ID.
+        /// </summary>
+        /// <param name="idDieta">ID de la dieta.</param>
+        /// <returns>Una dieta con todos los datos cargados.</returns>
         public static Dietas ObtenerDatosDieta(int idDieta)
         {
             Dietas d1; 
