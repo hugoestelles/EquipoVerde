@@ -90,14 +90,14 @@ namespace NutriWise
         public List<Platos> BuscarPlatos()
         {
             List<Platos> lista = new List<Platos>();
-            string consulta = String.Format("SELECT * FROM platos p INNER JOIN dietas d ON p.idDieta = d.idDieta WHERE d.idDieta = '{0}';", this.id);
+            string consulta = String.Format("SELECT * FROM platos WHERE idDieta = '{0}';", this.id);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
             if (reader.HasRows)
             {
                 while (reader.Read())
                 {
-                    Platos p1 = new Platos();
+                    Platos p1 = new Platos(reader.GetInt32(0),reader.GetString(1),reader.GetInt32(3));
                     lista.Add(p1);
                 }
             }
