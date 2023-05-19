@@ -33,6 +33,11 @@ namespace NutriWise.Clases
         public bool Administrador { get { return administrador; } }
         public static Usuario UsuarioActual { get { return usuarioActual; } set { usuarioActual = value; } }
 
+        public Usuario(string correo)
+        {
+            this.correo = correo;
+        }
+
         public Usuario(int idusu, string mail, string pass, string name, string ape, decimal alt, decimal pes, int into, decimal act, int obj, bool admin)
         {
             id = idusu;
@@ -47,6 +52,7 @@ namespace NutriWise.Clases
             objetivo = obj;
             administrador = admin;
         }
+
         public Usuario(string mail, string pass, string name, string ape, decimal alt, decimal pes, int into, decimal act, int obj)
         {
 

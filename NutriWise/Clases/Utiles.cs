@@ -14,7 +14,7 @@ using Rectangle = System.Drawing.Rectangle;
 
 namespace NutriWise.Clases
 {
-    class Utiles
+    static class Utiles
     {
         /// <summary>
         /// Funcion para enviar un correo de bienvenida al usario.
