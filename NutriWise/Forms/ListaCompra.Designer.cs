@@ -28,36 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lblListaCompra = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // lblListaCompra
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Khaki;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(124, 75);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(813, 448);
-            this.dataGridView1.TabIndex = 0;
+            this.lblListaCompra.AutoSize = true;
+            this.lblListaCompra.BackColor = System.Drawing.Color.Gold;
+            this.lblListaCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListaCompra.Location = new System.Drawing.Point(81, 94);
+            this.lblListaCompra.Name = "lblListaCompra";
+            this.lblListaCompra.Size = new System.Drawing.Size(188, 25);
+            this.lblListaCompra.TabIndex = 0;
+            this.lblListaCompra.Text = "Lista de la compra";
             // 
             // ListaCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lblListaCompra);
             this.Name = "ListaCompra";
             this.Size = new System.Drawing.Size(1001, 570);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblListaCompra;
     }
 }

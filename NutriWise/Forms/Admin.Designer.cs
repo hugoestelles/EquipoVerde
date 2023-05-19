@@ -59,6 +59,18 @@
             this.txtEliminarUsu = new System.Windows.Forms.TextBox();
             this.lblElimUsuInfo = new System.Windows.Forms.Label();
             this.grbPlato = new System.Windows.Forms.GroupBox();
+            this.nudCantidadN4 = new System.Windows.Forms.NumericUpDown();
+            this.nudCantidadN3 = new System.Windows.Forms.NumericUpDown();
+            this.nudCantidadN2 = new System.Windows.Forms.NumericUpDown();
+            this.nudCantidadN1 = new System.Windows.Forms.NumericUpDown();
+            this.lblCantidadN4 = new System.Windows.Forms.Label();
+            this.lblCantidadN3 = new System.Windows.Forms.Label();
+            this.lblCantidadN2 = new System.Windows.Forms.Label();
+            this.lblCantidadN1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblValorN4 = new System.Windows.Forms.Label();
             this.lblValorN3 = new System.Windows.Forms.Label();
             this.lblValorN2 = new System.Windows.Forms.Label();
@@ -146,6 +158,10 @@
             this.mnuAdmin.SuspendLayout();
             this.grbEliminarUsu.SuspendLayout();
             this.grbPlato.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN1)).BeginInit();
             this.grbDieta.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -465,12 +481,24 @@
             // 
             // grbPlato
             // 
-            this.grbPlato.Controls.Add(this.lblValorN4);
-            this.grbPlato.Controls.Add(this.lblValorN3);
-            this.grbPlato.Controls.Add(this.lblValorN2);
             this.grbPlato.Controls.Add(this.txtValorN4);
             this.grbPlato.Controls.Add(this.txtValorN3);
             this.grbPlato.Controls.Add(this.txtValorN2);
+            this.grbPlato.Controls.Add(this.nudCantidadN4);
+            this.grbPlato.Controls.Add(this.nudCantidadN3);
+            this.grbPlato.Controls.Add(this.nudCantidadN2);
+            this.grbPlato.Controls.Add(this.nudCantidadN1);
+            this.grbPlato.Controls.Add(this.lblCantidadN4);
+            this.grbPlato.Controls.Add(this.lblCantidadN3);
+            this.grbPlato.Controls.Add(this.lblCantidadN2);
+            this.grbPlato.Controls.Add(this.lblCantidadN1);
+            this.grbPlato.Controls.Add(this.comboBox1);
+            this.grbPlato.Controls.Add(this.label1);
+            this.grbPlato.Controls.Add(this.comboBox2);
+            this.grbPlato.Controls.Add(this.label2);
+            this.grbPlato.Controls.Add(this.lblValorN4);
+            this.grbPlato.Controls.Add(this.lblValorN3);
+            this.grbPlato.Controls.Add(this.lblValorN2);
             this.grbPlato.Controls.Add(this.txtValorN1);
             this.grbPlato.Controls.Add(this.lblValorN1);
             this.grbPlato.Controls.Add(this.btnPlatoReset);
@@ -505,11 +533,139 @@
             this.grbPlato.Text = "Agregar Platos:";
             this.grbPlato.Visible = false;
             // 
+            // nudCantidadN4
+            // 
+            this.nudCantidadN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudCantidadN4.Location = new System.Drawing.Point(1181, 581);
+            this.nudCantidadN4.Name = "nudCantidadN4";
+            this.nudCantidadN4.Size = new System.Drawing.Size(67, 30);
+            this.nudCantidadN4.TabIndex = 65;
+            // 
+            // nudCantidadN3
+            // 
+            this.nudCantidadN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudCantidadN3.Location = new System.Drawing.Point(1181, 473);
+            this.nudCantidadN3.Name = "nudCantidadN3";
+            this.nudCantidadN3.Size = new System.Drawing.Size(67, 30);
+            this.nudCantidadN3.TabIndex = 64;
+            // 
+            // nudCantidadN2
+            // 
+            this.nudCantidadN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudCantidadN2.Location = new System.Drawing.Point(1181, 367);
+            this.nudCantidadN2.Name = "nudCantidadN2";
+            this.nudCantidadN2.Size = new System.Drawing.Size(67, 30);
+            this.nudCantidadN2.TabIndex = 63;
+            // 
+            // nudCantidadN1
+            // 
+            this.nudCantidadN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudCantidadN1.Location = new System.Drawing.Point(1181, 259);
+            this.nudCantidadN1.Name = "nudCantidadN1";
+            this.nudCantidadN1.Size = new System.Drawing.Size(67, 30);
+            this.nudCantidadN1.TabIndex = 62;
+            // 
+            // lblCantidadN4
+            // 
+            this.lblCantidadN4.AutoSize = true;
+            this.lblCantidadN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadN4.Location = new System.Drawing.Point(1068, 586);
+            this.lblCantidadN4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidadN4.Name = "lblCantidadN4";
+            this.lblCantidadN4.Size = new System.Drawing.Size(97, 25);
+            this.lblCantidadN4.TabIndex = 61;
+            this.lblCantidadN4.Text = "Cantidad:";
+            // 
+            // lblCantidadN3
+            // 
+            this.lblCantidadN3.AutoSize = true;
+            this.lblCantidadN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadN3.Location = new System.Drawing.Point(1068, 475);
+            this.lblCantidadN3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidadN3.Name = "lblCantidadN3";
+            this.lblCantidadN3.Size = new System.Drawing.Size(97, 25);
+            this.lblCantidadN3.TabIndex = 60;
+            this.lblCantidadN3.Text = "Cantidad:";
+            // 
+            // lblCantidadN2
+            // 
+            this.lblCantidadN2.AutoSize = true;
+            this.lblCantidadN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadN2.Location = new System.Drawing.Point(1068, 373);
+            this.lblCantidadN2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidadN2.Name = "lblCantidadN2";
+            this.lblCantidadN2.Size = new System.Drawing.Size(97, 25);
+            this.lblCantidadN2.TabIndex = 59;
+            this.lblCantidadN2.Text = "Cantidad:";
+            // 
+            // lblCantidadN1
+            // 
+            this.lblCantidadN1.AutoSize = true;
+            this.lblCantidadN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadN1.Location = new System.Drawing.Point(1068, 261);
+            this.lblCantidadN1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidadN1.Name = "lblCantidadN1";
+            this.lblCantidadN1.Size = new System.Drawing.Size(97, 25);
+            this.lblCantidadN1.TabIndex = 54;
+            this.lblCantidadN1.Text = "Cantidad:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Lactosa",
+            "Gluten",
+            "Vegano",
+            "Vegetariano",
+            "Sin Intolerancia"});
+            this.comboBox1.Location = new System.Drawing.Point(1027, 136);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(181, 33);
+            this.comboBox1.TabIndex = 53;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(888, 139);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 25);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Intolerancias:";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Volumen",
+            "Definicion",
+            "Comer Sano"});
+            this.comboBox2.Location = new System.Drawing.Point(587, 138);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(181, 33);
+            this.comboBox2.TabIndex = 51;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(493, 142);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 25);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "Objetivo:";
+            // 
             // lblValorN4
             // 
             this.lblValorN4.AutoSize = true;
             this.lblValorN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN4.Location = new System.Drawing.Point(823, 593);
+            this.lblValorN4.Location = new System.Drawing.Point(726, 587);
             this.lblValorN4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValorN4.Name = "lblValorN4";
             this.lblValorN4.Size = new System.Drawing.Size(222, 25);
@@ -520,7 +676,7 @@
             // 
             this.lblValorN3.AutoSize = true;
             this.lblValorN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN3.Location = new System.Drawing.Point(823, 482);
+            this.lblValorN3.Location = new System.Drawing.Point(726, 476);
             this.lblValorN3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValorN3.Name = "lblValorN3";
             this.lblValorN3.Size = new System.Drawing.Size(222, 25);
@@ -531,7 +687,7 @@
             // 
             this.lblValorN2.AutoSize = true;
             this.lblValorN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN2.Location = new System.Drawing.Point(823, 380);
+            this.lblValorN2.Location = new System.Drawing.Point(726, 374);
             this.lblValorN2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValorN2.Name = "lblValorN2";
             this.lblValorN2.Size = new System.Drawing.Size(222, 25);
@@ -541,44 +697,44 @@
             // txtValorN4
             // 
             this.txtValorN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN4.Location = new System.Drawing.Point(1053, 590);
+            this.txtValorN4.Location = new System.Drawing.Point(966, 584);
             this.txtValorN4.Margin = new System.Windows.Forms.Padding(4);
             this.txtValorN4.Name = "txtValorN4";
-            this.txtValorN4.Size = new System.Drawing.Size(219, 30);
+            this.txtValorN4.Size = new System.Drawing.Size(68, 30);
             this.txtValorN4.TabIndex = 28;
             // 
             // txtValorN3
             // 
             this.txtValorN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN3.Location = new System.Drawing.Point(1053, 479);
+            this.txtValorN3.Location = new System.Drawing.Point(966, 473);
             this.txtValorN3.Margin = new System.Windows.Forms.Padding(4);
             this.txtValorN3.Name = "txtValorN3";
-            this.txtValorN3.Size = new System.Drawing.Size(219, 30);
+            this.txtValorN3.Size = new System.Drawing.Size(68, 30);
             this.txtValorN3.TabIndex = 26;
             // 
             // txtValorN2
             // 
             this.txtValorN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN2.Location = new System.Drawing.Point(1053, 374);
+            this.txtValorN2.Location = new System.Drawing.Point(966, 368);
             this.txtValorN2.Margin = new System.Windows.Forms.Padding(4);
             this.txtValorN2.Name = "txtValorN2";
-            this.txtValorN2.Size = new System.Drawing.Size(219, 30);
+            this.txtValorN2.Size = new System.Drawing.Size(68, 30);
             this.txtValorN2.TabIndex = 24;
             // 
             // txtValorN1
             // 
             this.txtValorN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN1.Location = new System.Drawing.Point(1053, 265);
+            this.txtValorN1.Location = new System.Drawing.Point(966, 259);
             this.txtValorN1.Margin = new System.Windows.Forms.Padding(4);
             this.txtValorN1.Name = "txtValorN1";
-            this.txtValorN1.Size = new System.Drawing.Size(219, 30);
+            this.txtValorN1.Size = new System.Drawing.Size(68, 30);
             this.txtValorN1.TabIndex = 22;
             // 
             // lblValorN1
             // 
             this.lblValorN1.AutoSize = true;
             this.lblValorN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN1.Location = new System.Drawing.Point(823, 268);
+            this.lblValorN1.Location = new System.Drawing.Point(726, 262);
             this.lblValorN1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValorN1.Name = "lblValorN1";
             this.lblValorN1.Size = new System.Drawing.Size(222, 25);
@@ -623,17 +779,17 @@
             // txtAgregarIngre4
             // 
             this.txtAgregarIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre4.Location = new System.Drawing.Point(527, 591);
+            this.txtAgregarIngre4.Location = new System.Drawing.Point(521, 590);
             this.txtAgregarIngre4.Margin = new System.Windows.Forms.Padding(4);
             this.txtAgregarIngre4.Name = "txtAgregarIngre4";
-            this.txtAgregarIngre4.Size = new System.Drawing.Size(219, 30);
+            this.txtAgregarIngre4.Size = new System.Drawing.Size(175, 30);
             this.txtAgregarIngre4.TabIndex = 17;
             // 
             // lblAgregarIngre4
             // 
             this.lblAgregarIngre4.AutoSize = true;
             this.lblAgregarIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre4.Location = new System.Drawing.Point(280, 593);
+            this.lblAgregarIngre4.Location = new System.Drawing.Point(264, 592);
             this.lblAgregarIngre4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAgregarIngre4.Name = "lblAgregarIngre4";
             this.lblAgregarIngre4.Size = new System.Drawing.Size(239, 25);
@@ -667,17 +823,17 @@
             // txtAgregarIngre3
             // 
             this.txtAgregarIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre3.Location = new System.Drawing.Point(527, 480);
+            this.txtAgregarIngre3.Location = new System.Drawing.Point(521, 479);
             this.txtAgregarIngre3.Margin = new System.Windows.Forms.Padding(4);
             this.txtAgregarIngre3.Name = "txtAgregarIngre3";
-            this.txtAgregarIngre3.Size = new System.Drawing.Size(219, 30);
+            this.txtAgregarIngre3.Size = new System.Drawing.Size(175, 30);
             this.txtAgregarIngre3.TabIndex = 13;
             // 
             // lblAgregarIngre3
             // 
             this.lblAgregarIngre3.AutoSize = true;
             this.lblAgregarIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre3.Location = new System.Drawing.Point(280, 482);
+            this.lblAgregarIngre3.Location = new System.Drawing.Point(264, 481);
             this.lblAgregarIngre3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAgregarIngre3.Name = "lblAgregarIngre3";
             this.lblAgregarIngre3.Size = new System.Drawing.Size(239, 25);
@@ -711,17 +867,17 @@
             // txtAgregarIngre2
             // 
             this.txtAgregarIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre2.Location = new System.Drawing.Point(527, 375);
+            this.txtAgregarIngre2.Location = new System.Drawing.Point(521, 374);
             this.txtAgregarIngre2.Margin = new System.Windows.Forms.Padding(4);
             this.txtAgregarIngre2.Name = "txtAgregarIngre2";
-            this.txtAgregarIngre2.Size = new System.Drawing.Size(219, 30);
+            this.txtAgregarIngre2.Size = new System.Drawing.Size(175, 30);
             this.txtAgregarIngre2.TabIndex = 9;
             // 
             // lblAgregarIngre2
             // 
             this.lblAgregarIngre2.AutoSize = true;
             this.lblAgregarIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre2.Location = new System.Drawing.Point(280, 377);
+            this.lblAgregarIngre2.Location = new System.Drawing.Point(264, 376);
             this.lblAgregarIngre2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAgregarIngre2.Name = "lblAgregarIngre2";
             this.lblAgregarIngre2.Size = new System.Drawing.Size(239, 25);
@@ -755,17 +911,17 @@
             // txtAgregarIngre1
             // 
             this.txtAgregarIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre1.Location = new System.Drawing.Point(527, 266);
+            this.txtAgregarIngre1.Location = new System.Drawing.Point(521, 265);
             this.txtAgregarIngre1.Margin = new System.Windows.Forms.Padding(4);
             this.txtAgregarIngre1.Name = "txtAgregarIngre1";
-            this.txtAgregarIngre1.Size = new System.Drawing.Size(219, 30);
+            this.txtAgregarIngre1.Size = new System.Drawing.Size(175, 30);
             this.txtAgregarIngre1.TabIndex = 5;
             // 
             // lblAgregarIngre1
             // 
             this.lblAgregarIngre1.AutoSize = true;
             this.lblAgregarIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre1.Location = new System.Drawing.Point(280, 268);
+            this.lblAgregarIngre1.Location = new System.Drawing.Point(264, 267);
             this.lblAgregarIngre1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAgregarIngre1.Name = "lblAgregarIngre1";
             this.lblAgregarIngre1.Size = new System.Drawing.Size(239, 25);
@@ -799,7 +955,7 @@
             // txtNomPlato
             // 
             this.txtNomPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomPlato.Location = new System.Drawing.Point(357, 138);
+            this.txtNomPlato.Location = new System.Drawing.Point(92, 139);
             this.txtNomPlato.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomPlato.Name = "txtNomPlato";
             this.txtNomPlato.Size = new System.Drawing.Size(177, 30);
@@ -809,7 +965,7 @@
             // 
             this.lblNomPlato.AutoSize = true;
             this.lblNomPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomPlato.Location = new System.Drawing.Point(357, 95);
+            this.lblNomPlato.Location = new System.Drawing.Point(92, 96);
             this.lblNomPlato.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNomPlato.Name = "lblNomPlato";
             this.lblNomPlato.Size = new System.Drawing.Size(167, 25);
@@ -1433,10 +1589,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1367, 768);
             this.Controls.Add(this.mnuAdmin);
+            this.Controls.Add(this.grbPlato);
+            this.Controls.Add(this.grbInfo);
             this.Controls.Add(this.grbDieta);
             this.Controls.Add(this.grbEliminarUsu);
-            this.Controls.Add(this.grbInfo);
-            this.Controls.Add(this.grbPlato);
             this.MainMenuStrip = this.mnuAdmin;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin";
@@ -1451,6 +1607,10 @@
             this.grbEliminarUsu.PerformLayout();
             this.grbPlato.ResumeLayout(false);
             this.grbPlato.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN1)).EndInit();
             this.grbDieta.ResumeLayout(false);
             this.grbDieta.PerformLayout();
             this.ResumeLayout(false);
@@ -1571,5 +1731,17 @@
         private System.Windows.Forms.ComboBox cmbPlato8;
         private System.Windows.Forms.Label lblPlato8;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.NumericUpDown nudCantidadN4;
+        private System.Windows.Forms.NumericUpDown nudCantidadN3;
+        private System.Windows.Forms.NumericUpDown nudCantidadN2;
+        private System.Windows.Forms.NumericUpDown nudCantidadN1;
+        private System.Windows.Forms.Label lblCantidadN4;
+        private System.Windows.Forms.Label lblCantidadN3;
+        private System.Windows.Forms.Label lblCantidadN2;
+        private System.Windows.Forms.Label lblCantidadN1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label2;
     }
 }

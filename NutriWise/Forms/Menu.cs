@@ -24,8 +24,9 @@ namespace NutriWise
         bool donativos = false;
         bool lista = false;
         bool videos = false;
-        bool ayuda = false;
+        bool ayuda = true;
         bool mantenimiento = false;
+
 
         private void pctCerrar_Click(object sender, EventArgs e)
         {
@@ -51,7 +52,7 @@ namespace NutriWise
             donativos1.Visible = false;
             listaCompra1.Visible = false;
             ayuda1.Visible = false;
-
+            videos1.Visible = false;
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
@@ -72,6 +73,7 @@ namespace NutriWise
             donativos1.Visible = false;
             listaCompra1.Visible = false;
             ayuda1.Visible = false;
+            videos1.Visible = false;
         }
 
         void cambioColor()
@@ -304,6 +306,7 @@ namespace NutriWise
             donativos1.Visible = true;
             listaCompra1.Visible = false;
             ayuda1.Visible = false;
+            videos1.Visible = false;
         }
 
         private void btnDieta_Click(object sender, EventArgs e)
@@ -323,6 +326,7 @@ namespace NutriWise
             donativos1.Visible = false;
             listaCompra1.Visible = false;
             ayuda1.Visible = false;
+            videos1.Visible = false;
         }
 
         private void btnListaCompra_Click(object sender, EventArgs e)
@@ -342,6 +346,7 @@ namespace NutriWise
             donativos1.Visible = false;
             listaCompra1.Visible = true;
             ayuda1.Visible = false;
+            videos1.Visible = false;
         }
 
         private void btnVideos_Click(object sender, EventArgs e)
@@ -361,6 +366,7 @@ namespace NutriWise
             donativos1.Visible = false;
             listaCompra1.Visible = false;
             ayuda1.Visible = false;
+            videos1.Visible = true;
         }
 
         private void btnAyuda_Click(object sender, EventArgs e)
@@ -380,6 +386,7 @@ namespace NutriWise
             donativos1.Visible = false;
             listaCompra1.Visible = false;
             ayuda1.Visible = true;
+            videos1.Visible = false;
 
         }
 

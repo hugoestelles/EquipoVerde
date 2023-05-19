@@ -62,7 +62,6 @@ namespace NutriWise
             cmbIntolerancias.BackColor = this.BackColor;
             nudActividad.BackColor = this.BackColor;
             cmbObjetivo.BackColor = this.BackColor;
-
         }
 
 
