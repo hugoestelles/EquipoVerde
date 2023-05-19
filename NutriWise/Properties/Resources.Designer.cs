@@ -143,6 +143,16 @@ namespace NutriWise.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ComidaSaludableOscuro {
+            get {
+                object obj = ResourceManager.GetObject("ComidaSaludableOscuro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ComidaSinLactosa {
             get {
                 object obj = ResourceManager.GetObject("ComidaSinLactosa", resourceCulture);
@@ -153,9 +163,29 @@ namespace NutriWise.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ComidaSinLactosaOscuro {
+            get {
+                object obj = ResourceManager.GetObject("ComidaSinLactosaOscuro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ComidaVegana {
             get {
                 object obj = ResourceManager.GetObject("ComidaVegana", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ComidaVeganaOscuro {
+            get {
+                object obj = ResourceManager.GetObject("ComidaVeganaOscuro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -46,6 +46,7 @@ namespace NutriWise.Forms
             this.pctComidaLactosa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctComidaLactosa.TabIndex = 2;
             this.pctComidaLactosa.TabStop = false;
+            this.pctComidaLactosa.Click += new System.EventHandler(this.pctComidaLactosa_Click);
             // 
             // pctComidaVegana
             // 
@@ -56,6 +57,7 @@ namespace NutriWise.Forms
             this.pctComidaVegana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctComidaVegana.TabIndex = 1;
             this.pctComidaVegana.TabStop = false;
+            this.pctComidaVegana.Click += new System.EventHandler(this.pctComidaVegana_Click);
             // 
             // pctComidaSaludable
             // 
@@ -66,6 +68,7 @@ namespace NutriWise.Forms
             this.pctComidaSaludable.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctComidaSaludable.TabIndex = 0;
             this.pctComidaSaludable.TabStop = false;
+            this.pctComidaSaludable.Click += new System.EventHandler(this.pctComidaSaludable_Click);
             // 
             // Videos
             // 

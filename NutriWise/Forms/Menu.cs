@@ -395,6 +395,7 @@ namespace NutriWise
             videos1.BackColor = Color.Ivory;
             cambioColor();
             perfil1.CambioColorPerdfil();
+            videos1.CambioColor();
         }
 
         private void pctOscuro_Click(object sender, EventArgs e)
@@ -409,6 +410,7 @@ namespace NutriWise
             videos1.BackColor = Color.DarkSeaGreen;
             cambioColor();
             perfil1.CambioColorPerdfil();
+            videos1.CambioColor();
         }
 
         private void btnMantenimiento_Click(object sender, EventArgs e)
