@@ -21,6 +21,9 @@ ini_set('display_errors', 1);
   $headers = "From: " . $email . "\r\n";
   $headers .= "Reply-To: " . $email . "\r\n";
   $headers .= "Return-Path: " . $email . "\r\n";
+  echo $cuerpo;
+  echo $email;
+  echo $mensaje;
 
   // Enviar el correo electrónico
   $resultado = mail($destinatario, $asunto, $cuerpo, $headers);
