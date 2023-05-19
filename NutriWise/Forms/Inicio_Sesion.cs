@@ -32,7 +32,7 @@ namespace NutriWise
                             {
                                 Usuario user = Usuario.BuscarUsuario(correo);
                                 Usuario.UsuarioActual = user;
-                                MessageBox.Show("Bienvenido " + user.Nombre + " " + user.Apellidos, "Inicio de sesión correcto");
+                                //MessageBox.Show("Bienvenido " + user.Nombre + " " + user.Apellidos, "Inicio de sesión correcto");
 
 
                                 // Crea una nueva instancia del formulario Form2

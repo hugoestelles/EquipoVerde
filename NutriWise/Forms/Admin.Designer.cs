@@ -32,7 +32,9 @@
             this.grbInfo = new System.Windows.Forms.GroupBox();
             this.btnAdminCerrar = new System.Windows.Forms.Button();
             this.btnAdminSalir = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblAdminFecha = new System.Windows.Forms.Label();
+            this.picAdminInfo = new System.Windows.Forms.PictureBox();
             this.lblAdminReloj = new System.Windows.Forms.Label();
             this.lblAdminInfo = new System.Windows.Forms.Label();
             this.timerAdmin = new System.Windows.Forms.Timer(this.components);
@@ -87,6 +89,7 @@
             this.txtNomPlato = new System.Windows.Forms.TextBox();
             this.lblNomPlato = new System.Windows.Forms.Label();
             this.grbDieta = new System.Windows.Forms.GroupBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.cmbAdminInto = new System.Windows.Forms.ComboBox();
             this.lblAdminInto = new System.Windows.Forms.Label();
             this.cmbAdminObj = new System.Windows.Forms.ComboBox();
@@ -137,15 +140,13 @@
             this.lblPlato1 = new System.Windows.Forms.Label();
             this.txtNomDieta = new System.Windows.Forms.TextBox();
             this.lblNomDieta = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picAdminInfo = new System.Windows.Forms.PictureBox();
             this.grbInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdminInfo)).BeginInit();
             this.mnuAdmin.SuspendLayout();
             this.grbEliminarUsu.SuspendLayout();
             this.grbPlato.SuspendLayout();
             this.grbDieta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdminInfo)).BeginInit();
             this.SuspendLayout();
             // 
             // grbInfo
@@ -189,6 +190,17 @@
             this.btnAdminSalir.UseVisualStyleBackColor = true;
             this.btnAdminSalir.Click += new System.EventHandler(this.btnAdminSalir_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::NutriWise.Properties.Resources.calendario;
+            this.pictureBox1.Location = new System.Drawing.Point(267, 298);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(92, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // lblAdminFecha
             // 
             this.lblAdminFecha.AutoSize = true;
@@ -199,6 +211,17 @@
             this.lblAdminFecha.Size = new System.Drawing.Size(148, 52);
             this.lblAdminFecha.TabIndex = 3;
             this.lblAdminFecha.Text = "Fecha";
+            // 
+            // picAdminInfo
+            // 
+            this.picAdminInfo.Image = global::NutriWise.Properties.Resources.business_color_progress_icon_icons_com_53437;
+            this.picAdminInfo.Location = new System.Drawing.Point(267, 224);
+            this.picAdminInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.picAdminInfo.Name = "picAdminInfo";
+            this.picAdminInfo.Size = new System.Drawing.Size(92, 66);
+            this.picAdminInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdminInfo.TabIndex = 2;
+            this.picAdminInfo.TabStop = false;
             // 
             // lblAdminReloj
             // 
@@ -235,7 +258,7 @@
             this.mnuAdmin.Location = new System.Drawing.Point(0, 0);
             this.mnuAdmin.Name = "mnuAdmin";
             this.mnuAdmin.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.mnuAdmin.Size = new System.Drawing.Size(1367, 30);
+            this.mnuAdmin.Size = new System.Drawing.Size(1367, 28);
             this.mnuAdmin.TabIndex = 1;
             this.mnuAdmin.Text = "menuStrip1";
             // 
@@ -246,7 +269,7 @@
             this.mnuPlato,
             this.mnuDieta});
             this.operacionesToolStripMenuItem.Name = "operacionesToolStripMenuItem";
-            this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(106, 26);
+            this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
             this.operacionesToolStripMenuItem.Text = "Operaciones";
             // 
             // mnuUsuario
@@ -260,8 +283,8 @@
             // mnuEliminarUsuario
             // 
             this.mnuEliminarUsuario.Name = "mnuEliminarUsuario";
-            this.mnuEliminarUsuario.Size = new System.Drawing.Size(146, 26);
-            this.mnuEliminarUsuario.Text = "Eliminar";
+            this.mnuEliminarUsuario.Size = new System.Drawing.Size(195, 26);
+            this.mnuEliminarUsuario.Text = "Eliminar/Buscar";
             this.mnuEliminarUsuario.Click += new System.EventHandler(this.mnuEliminarUsuario_Click);
             // 
             // mnuPlato
@@ -795,6 +818,7 @@
             // 
             // grbDieta
             // 
+            this.grbDieta.Controls.Add(this.btnBuscar);
             this.grbDieta.Controls.Add(this.cmbAdminInto);
             this.grbDieta.Controls.Add(this.lblAdminInto);
             this.grbDieta.Controls.Add(this.cmbAdminObj);
@@ -856,6 +880,17 @@
             this.grbDieta.Text = "Agregar Dieta:";
             this.grbDieta.Visible = false;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(1107, 98);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(133, 46);
+            this.btnBuscar.TabIndex = 50;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // cmbAdminInto
             // 
             this.cmbAdminInto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -866,7 +901,7 @@
             "Vegano",
             "Vegetariano",
             "Sin Intolerancia"});
-            this.cmbAdminInto.Location = new System.Drawing.Point(1017, 564);
+            this.cmbAdminInto.Location = new System.Drawing.Point(878, 104);
             this.cmbAdminInto.Margin = new System.Windows.Forms.Padding(4);
             this.cmbAdminInto.Name = "cmbAdminInto";
             this.cmbAdminInto.Size = new System.Drawing.Size(181, 33);
@@ -876,7 +911,7 @@
             // 
             this.lblAdminInto.AutoSize = true;
             this.lblAdminInto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminInto.Location = new System.Drawing.Point(878, 567);
+            this.lblAdminInto.Location = new System.Drawing.Point(739, 107);
             this.lblAdminInto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminInto.Name = "lblAdminInto";
             this.lblAdminInto.Size = new System.Drawing.Size(128, 25);
@@ -891,7 +926,7 @@
             "Volumen",
             "Definicion",
             "Comer Sano"});
-            this.cmbAdminObj.Location = new System.Drawing.Point(620, 564);
+            this.cmbAdminObj.Location = new System.Drawing.Point(537, 105);
             this.cmbAdminObj.Margin = new System.Windows.Forms.Padding(4);
             this.cmbAdminObj.Name = "cmbAdminObj";
             this.cmbAdminObj.Size = new System.Drawing.Size(181, 33);
@@ -901,7 +936,7 @@
             // 
             this.lblAdminObj.AutoSize = true;
             this.lblAdminObj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminObj.Location = new System.Drawing.Point(526, 568);
+            this.lblAdminObj.Location = new System.Drawing.Point(443, 109);
             this.lblAdminObj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminObj.Name = "lblAdminObj";
             this.lblAdminObj.Size = new System.Drawing.Size(90, 25);
@@ -1375,7 +1410,7 @@
             // txtNomDieta
             // 
             this.txtNomDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomDieta.Location = new System.Drawing.Point(619, 130);
+            this.txtNomDieta.Location = new System.Drawing.Point(172, 105);
             this.txtNomDieta.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomDieta.Name = "txtNomDieta";
             this.txtNomDieta.Size = new System.Drawing.Size(248, 34);
@@ -1385,34 +1420,12 @@
             // 
             this.lblNomDieta.AutoSize = true;
             this.lblNomDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomDieta.Location = new System.Drawing.Point(364, 134);
+            this.lblNomDieta.Location = new System.Drawing.Point(46, 106);
             this.lblNomDieta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNomDieta.Name = "lblNomDieta";
-            this.lblNomDieta.Size = new System.Drawing.Size(228, 29);
+            this.lblNomDieta.Size = new System.Drawing.Size(107, 29);
             this.lblNomDieta.TabIndex = 0;
-            this.lblNomDieta.Text = "Nombre de la Dieta:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::NutriWise.Properties.Resources.calendario;
-            this.pictureBox1.Location = new System.Drawing.Point(267, 298);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // picAdminInfo
-            // 
-            this.picAdminInfo.Image = global::NutriWise.Properties.Resources.business_color_progress_icon_icons_com_53437;
-            this.picAdminInfo.Location = new System.Drawing.Point(267, 224);
-            this.picAdminInfo.Margin = new System.Windows.Forms.Padding(4);
-            this.picAdminInfo.Name = "picAdminInfo";
-            this.picAdminInfo.Size = new System.Drawing.Size(92, 66);
-            this.picAdminInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAdminInfo.TabIndex = 2;
-            this.picAdminInfo.TabStop = false;
+            this.lblNomDieta.Text = "Nombre:";
             // 
             // Admin
             // 
@@ -1420,16 +1433,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1367, 768);
             this.Controls.Add(this.mnuAdmin);
+            this.Controls.Add(this.grbDieta);
             this.Controls.Add(this.grbEliminarUsu);
             this.Controls.Add(this.grbInfo);
             this.Controls.Add(this.grbPlato);
-            this.Controls.Add(this.grbDieta);
             this.MainMenuStrip = this.mnuAdmin;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin";
             this.Text = "Admin";
             this.grbInfo.ResumeLayout(false);
             this.grbInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdminInfo)).EndInit();
             this.mnuAdmin.ResumeLayout(false);
             this.mnuAdmin.PerformLayout();
             this.grbEliminarUsu.ResumeLayout(false);
@@ -1438,8 +1453,6 @@
             this.grbPlato.PerformLayout();
             this.grbDieta.ResumeLayout(false);
             this.grbDieta.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdminInfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1557,5 +1570,6 @@
         private System.Windows.Forms.Label lblPlato9;
         private System.Windows.Forms.ComboBox cmbPlato8;
         private System.Windows.Forms.Label lblPlato8;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
