@@ -21,9 +21,6 @@ ini_set('display_errors', 1);
   $headers = "From: " . $email . "\r\n";
   $headers .= "Reply-To: " . $email . "\r\n";
   $headers .= "Return-Path: " . $email . "\r\n";
-  echo $cuerpo;
-  echo $email;
-  echo $mensaje;
 
   // Enviar el correo electrónico
   $resultado = mail($destinatario, $asunto, $cuerpo, $headers);
@@ -31,6 +28,9 @@ ini_set('display_errors', 1);
   // Verificar si el correo se envió correctamente
   if ($resultado) {
     echo "¡Gracias por contactarnos! Tu mensaje ha sido enviado.";
+    // html par volver a la pagina principal;
+    echo "<a href='pagina_principal_en.php'>Volver a la pagina principal</a>";
+
   } else {
     echo "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.";
   }
