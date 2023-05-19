@@ -30,6 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.pnlAjustes = new System.Windows.Forms.Panel();
+            this.videos1 = new NutriWise.Forms.Videos();
+            this.perfil1 = new NutriWise.Perfil();
+            this.dieta1 = new NutriWise.Dieta();
+            this.valoraciones1 = new NutriWise.Valoraciones();
+            this.donativos1 = new NutriWise.Donativos();
+            this.listaCompra1 = new NutriWise.ListaCompra();
+            this.ayuda1 = new NutriWise.Ayuda();
+            this.pctIngles = new System.Windows.Forms.PictureBox();
+            this.pctEspalñol = new System.Windows.Forms.PictureBox();
+            this.pctClaro = new System.Windows.Forms.PictureBox();
+            this.pctOscuro = new System.Windows.Forms.PictureBox();
+            this.pctDegradadoAjustes = new System.Windows.Forms.PictureBox();
+            this.pctAjustes = new System.Windows.Forms.PictureBox();
+            this.pctCerrar = new System.Windows.Forms.PictureBox();
             this.btnMantenimiento = new System.Windows.Forms.Button();
             this.btnDieta = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
@@ -39,24 +54,8 @@
             this.btnValoraciones = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
             this.pctLogo = new System.Windows.Forms.PictureBox();
-            this.pnlAjustes = new System.Windows.Forms.Panel();
-            this.pctIngles = new System.Windows.Forms.PictureBox();
-            this.pctEspalñol = new System.Windows.Forms.PictureBox();
-            this.pctClaro = new System.Windows.Forms.PictureBox();
-            this.pctOscuro = new System.Windows.Forms.PictureBox();
-            this.pctDegradadoAjustes = new System.Windows.Forms.PictureBox();
-            this.pctAjustes = new System.Windows.Forms.PictureBox();
-            this.pctCerrar = new System.Windows.Forms.PictureBox();
             this.pctDegradado = new System.Windows.Forms.PictureBox();
-            this.videos1 = new NutriWise.Forms.Videos();
-            this.perfil1 = new NutriWise.Perfil();
-            this.dieta1 = new NutriWise.Dieta();
-            this.valoraciones1 = new NutriWise.Valoraciones();
-            this.donativos1 = new NutriWise.Donativos();
-            this.listaCompra1 = new NutriWise.ListaCompra();
-            this.ayuda1 = new NutriWise.Ayuda();
             this.pnlMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             this.pnlAjustes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctIngles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctEspalñol)).BeginInit();
@@ -65,6 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctDegradadoAjustes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctAjustes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctDegradado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,128 +86,6 @@
             this.pnlMenu.Size = new System.Drawing.Size(361, 758);
             this.pnlMenu.TabIndex = 0;
             // 
-            // btnMantenimiento
-            // 
-            this.btnMantenimiento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMantenimiento.FlatAppearance.BorderSize = 0;
-            this.btnMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMantenimiento.Image = global::NutriWise.Properties.Resources.Mantenimiento;
-            this.btnMantenimiento.Location = new System.Drawing.Point(-20, 653);
-            this.btnMantenimiento.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMantenimiento.Name = "btnMantenimiento";
-            this.btnMantenimiento.Size = new System.Drawing.Size(382, 76);
-            this.btnMantenimiento.TabIndex = 13;
-            this.btnMantenimiento.UseVisualStyleBackColor = true;
-            this.btnMantenimiento.Click += new System.EventHandler(this.btnMantenimiento_Click);
-            // 
-            // btnDieta
-            // 
-            this.btnDieta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDieta.FlatAppearance.BorderSize = 0;
-            this.btnDieta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDieta.Image = global::NutriWise.Properties.Resources.Nav_item__1_;
-            this.btnDieta.Location = new System.Drawing.Point(-2, 144);
-            this.btnDieta.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDieta.Name = "btnDieta";
-            this.btnDieta.Size = new System.Drawing.Size(365, 76);
-            this.btnDieta.TabIndex = 12;
-            this.btnDieta.UseVisualStyleBackColor = true;
-            this.btnDieta.Click += new System.EventHandler(this.btnDieta_Click);
-            // 
-            // btnAyuda
-            // 
-            this.btnAyuda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAyuda.FlatAppearance.BorderSize = 0;
-            this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAyuda.Image = global::NutriWise.Properties.Resources.Ayuda;
-            this.btnAyuda.Location = new System.Drawing.Point(-2, 584);
-            this.btnAyuda.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(367, 76);
-            this.btnAyuda.TabIndex = 11;
-            this.btnAyuda.UseVisualStyleBackColor = true;
-            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
-            // 
-            // btnVideos
-            // 
-            this.btnVideos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVideos.FlatAppearance.BorderSize = 0;
-            this.btnVideos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVideos.Image = global::NutriWise.Properties.Resources.Video;
-            this.btnVideos.Location = new System.Drawing.Point(-1, 510);
-            this.btnVideos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnVideos.Name = "btnVideos";
-            this.btnVideos.Size = new System.Drawing.Size(362, 76);
-            this.btnVideos.TabIndex = 10;
-            this.btnVideos.UseVisualStyleBackColor = true;
-            this.btnVideos.Click += new System.EventHandler(this.btnVideos_Click);
-            // 
-            // btnListaCompra
-            // 
-            this.btnListaCompra.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnListaCompra.FlatAppearance.BorderSize = 0;
-            this.btnListaCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListaCompra.Image = global::NutriWise.Properties.Resources.ListaCompra;
-            this.btnListaCompra.Location = new System.Drawing.Point(-1, 437);
-            this.btnListaCompra.Margin = new System.Windows.Forms.Padding(4);
-            this.btnListaCompra.Name = "btnListaCompra";
-            this.btnListaCompra.Size = new System.Drawing.Size(362, 76);
-            this.btnListaCompra.TabIndex = 9;
-            this.btnListaCompra.UseVisualStyleBackColor = true;
-            this.btnListaCompra.Click += new System.EventHandler(this.btnListaCompra_Click);
-            // 
-            // btnDonativos
-            // 
-            this.btnDonativos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDonativos.FlatAppearance.BorderSize = 0;
-            this.btnDonativos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDonativos.Image = global::NutriWise.Properties.Resources.Donativos;
-            this.btnDonativos.Location = new System.Drawing.Point(-1, 363);
-            this.btnDonativos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDonativos.Name = "btnDonativos";
-            this.btnDonativos.Size = new System.Drawing.Size(362, 76);
-            this.btnDonativos.TabIndex = 8;
-            this.btnDonativos.UseVisualStyleBackColor = true;
-            this.btnDonativos.Click += new System.EventHandler(this.btnDonativos_Click);
-            // 
-            // btnValoraciones
-            // 
-            this.btnValoraciones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnValoraciones.FlatAppearance.BorderSize = 0;
-            this.btnValoraciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnValoraciones.Image = global::NutriWise.Properties.Resources.Valoraciones;
-            this.btnValoraciones.Location = new System.Drawing.Point(-2, 290);
-            this.btnValoraciones.Margin = new System.Windows.Forms.Padding(4);
-            this.btnValoraciones.Name = "btnValoraciones";
-            this.btnValoraciones.Size = new System.Drawing.Size(365, 76);
-            this.btnValoraciones.TabIndex = 7;
-            this.btnValoraciones.UseVisualStyleBackColor = true;
-            this.btnValoraciones.Click += new System.EventHandler(this.btnValoraciones_Click);
-            // 
-            // btnPerfil
-            // 
-            this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPerfil.FlatAppearance.BorderSize = 0;
-            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerfil.Image = global::NutriWise.Properties.Resources.Nav_item__6_;
-            this.btnPerfil.Location = new System.Drawing.Point(0, 217);
-            this.btnPerfil.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(362, 76);
-            this.btnPerfil.TabIndex = 6;
-            this.btnPerfil.UseVisualStyleBackColor = true;
-            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
-            // 
-            // pctLogo
-            // 
-            this.pctLogo.Image = global::NutriWise.Properties.Resources._meal_89750_2;
-            this.pctLogo.Location = new System.Drawing.Point(98, 15);
-            this.pctLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.pctLogo.Name = "pctLogo";
-            this.pctLogo.Size = new System.Drawing.Size(129, 121);
-            this.pctLogo.TabIndex = 1;
-            this.pctLogo.TabStop = false;
-            // 
             // pnlAjustes
             // 
             this.pnlAjustes.Controls.Add(this.pctIngles);
@@ -220,6 +98,68 @@
             this.pnlAjustes.Size = new System.Drawing.Size(408, 150);
             this.pnlAjustes.TabIndex = 15;
             this.pnlAjustes.Visible = false;
+            // 
+            // videos1
+            // 
+            this.videos1.BackColor = System.Drawing.Color.Ivory;
+            this.videos1.Location = new System.Drawing.Point(362, 161);
+            this.videos1.Name = "videos1";
+            this.videos1.Size = new System.Drawing.Size(930, 588);
+            this.videos1.TabIndex = 20;
+            // 
+            // perfil1
+            // 
+            this.perfil1.BackColor = System.Drawing.Color.Ivory;
+            this.perfil1.Location = new System.Drawing.Point(369, 170);
+            this.perfil1.Margin = new System.Windows.Forms.Padding(0);
+            this.perfil1.Name = "perfil1";
+            this.perfil1.Size = new System.Drawing.Size(923, 572);
+            this.perfil1.TabIndex = 12;
+            // 
+            // dieta1
+            // 
+            this.dieta1.BackColor = System.Drawing.Color.Ivory;
+            this.dieta1.Location = new System.Drawing.Point(369, 158);
+            this.dieta1.Margin = new System.Windows.Forms.Padding(0);
+            this.dieta1.Name = "dieta1";
+            this.dieta1.Size = new System.Drawing.Size(923, 584);
+            this.dieta1.TabIndex = 13;
+            // 
+            // valoraciones1
+            // 
+            this.valoraciones1.BackColor = System.Drawing.Color.Ivory;
+            this.valoraciones1.Location = new System.Drawing.Point(363, 151);
+            this.valoraciones1.Margin = new System.Windows.Forms.Padding(0);
+            this.valoraciones1.Name = "valoraciones1";
+            this.valoraciones1.Size = new System.Drawing.Size(929, 598);
+            this.valoraciones1.TabIndex = 16;
+            // 
+            // donativos1
+            // 
+            this.donativos1.BackColor = System.Drawing.Color.Ivory;
+            this.donativos1.Location = new System.Drawing.Point(363, 161);
+            this.donativos1.Margin = new System.Windows.Forms.Padding(0);
+            this.donativos1.Name = "donativos1";
+            this.donativos1.Size = new System.Drawing.Size(929, 581);
+            this.donativos1.TabIndex = 17;
+            // 
+            // listaCompra1
+            // 
+            this.listaCompra1.BackColor = System.Drawing.Color.Ivory;
+            this.listaCompra1.Location = new System.Drawing.Point(363, 158);
+            this.listaCompra1.Margin = new System.Windows.Forms.Padding(0);
+            this.listaCompra1.Name = "listaCompra1";
+            this.listaCompra1.Size = new System.Drawing.Size(929, 584);
+            this.listaCompra1.TabIndex = 18;
+            // 
+            // ayuda1
+            // 
+            this.ayuda1.BackColor = System.Drawing.Color.Ivory;
+            this.ayuda1.Location = new System.Drawing.Point(362, 161);
+            this.ayuda1.Margin = new System.Windows.Forms.Padding(0);
+            this.ayuda1.Name = "ayuda1";
+            this.ayuda1.Size = new System.Drawing.Size(930, 581);
+            this.ayuda1.TabIndex = 19;
             // 
             // pctIngles
             // 
@@ -314,6 +254,161 @@
             this.pctCerrar.TabStop = false;
             this.pctCerrar.Click += new System.EventHandler(this.pctCerrar_Click);
             // 
+            // btnMantenimiento
+            // 
+            this.btnMantenimiento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMantenimiento.FlatAppearance.BorderSize = 0;
+            this.btnMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.btnMantenimiento.Image = global::NutriWise.Properties.Resources.IconoMantenimiento;
+            this.btnMantenimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMantenimiento.Location = new System.Drawing.Point(-1, 651);
+            this.btnMantenimiento.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMantenimiento.Name = "btnMantenimiento";
+            this.btnMantenimiento.Size = new System.Drawing.Size(360, 76);
+            this.btnMantenimiento.TabIndex = 13;
+            this.btnMantenimiento.Text = "        Mantenimiento";
+            this.btnMantenimiento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMantenimiento.UseVisualStyleBackColor = true;
+            this.btnMantenimiento.Click += new System.EventHandler(this.btnMantenimiento_Click);
+            // 
+            // btnDieta
+            // 
+            this.btnDieta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDieta.FlatAppearance.BorderSize = 0;
+            this.btnDieta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDieta.Image = global::NutriWise.Properties.Resources.IconoDieta;
+            this.btnDieta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDieta.Location = new System.Drawing.Point(0, 144);
+            this.btnDieta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDieta.Name = "btnDieta";
+            this.btnDieta.Size = new System.Drawing.Size(363, 76);
+            this.btnDieta.TabIndex = 12;
+            this.btnDieta.Text = "        Dieta";
+            this.btnDieta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDieta.UseVisualStyleBackColor = true;
+            this.btnDieta.Click += new System.EventHandler(this.btnDieta_Click);
+            // 
+            // btnAyuda
+            // 
+            this.btnAyuda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAyuda.FlatAppearance.BorderSize = 0;
+            this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAyuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.btnAyuda.Image = global::NutriWise.Properties.Resources.IconoAyuda;
+            this.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAyuda.Location = new System.Drawing.Point(-1, 584);
+            this.btnAyuda.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAyuda.Name = "btnAyuda";
+            this.btnAyuda.Size = new System.Drawing.Size(366, 76);
+            this.btnAyuda.TabIndex = 11;
+            this.btnAyuda.Text = "        Ayuda";
+            this.btnAyuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAyuda.UseVisualStyleBackColor = true;
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
+            // 
+            // btnVideos
+            // 
+            this.btnVideos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVideos.FlatAppearance.BorderSize = 0;
+            this.btnVideos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVideos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.btnVideos.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnVideos.Image = global::NutriWise.Properties.Resources.IconoVideo;
+            this.btnVideos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVideos.Location = new System.Drawing.Point(-1, 510);
+            this.btnVideos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVideos.Name = "btnVideos";
+            this.btnVideos.Size = new System.Drawing.Size(362, 76);
+            this.btnVideos.TabIndex = 10;
+            this.btnVideos.Text = "        Videos";
+            this.btnVideos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVideos.UseVisualStyleBackColor = true;
+            this.btnVideos.Click += new System.EventHandler(this.btnVideos_Click);
+            // 
+            // btnListaCompra
+            // 
+            this.btnListaCompra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListaCompra.FlatAppearance.BorderSize = 0;
+            this.btnListaCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListaCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.btnListaCompra.Image = global::NutriWise.Properties.Resources.IconoLista;
+            this.btnListaCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListaCompra.Location = new System.Drawing.Point(-1, 437);
+            this.btnListaCompra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnListaCompra.Name = "btnListaCompra";
+            this.btnListaCompra.Size = new System.Drawing.Size(362, 76);
+            this.btnListaCompra.TabIndex = 9;
+            this.btnListaCompra.Text = "        Lista de la compra";
+            this.btnListaCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListaCompra.UseVisualStyleBackColor = true;
+            this.btnListaCompra.Click += new System.EventHandler(this.btnListaCompra_Click);
+            // 
+            // btnDonativos
+            // 
+            this.btnDonativos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDonativos.FlatAppearance.BorderSize = 0;
+            this.btnDonativos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDonativos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.btnDonativos.Image = global::NutriWise.Properties.Resources.IconoDonaciones;
+            this.btnDonativos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDonativos.Location = new System.Drawing.Point(-1, 363);
+            this.btnDonativos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDonativos.Name = "btnDonativos";
+            this.btnDonativos.Size = new System.Drawing.Size(362, 76);
+            this.btnDonativos.TabIndex = 8;
+            this.btnDonativos.Text = "        Donativos";
+            this.btnDonativos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDonativos.UseVisualStyleBackColor = true;
+            this.btnDonativos.Click += new System.EventHandler(this.btnDonativos_Click);
+            // 
+            // btnValoraciones
+            // 
+            this.btnValoraciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnValoraciones.FlatAppearance.BorderSize = 0;
+            this.btnValoraciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnValoraciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.btnValoraciones.Image = global::NutriWise.Properties.Resources.IconoValoraciones;
+            this.btnValoraciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnValoraciones.Location = new System.Drawing.Point(0, 290);
+            this.btnValoraciones.Margin = new System.Windows.Forms.Padding(4);
+            this.btnValoraciones.Name = "btnValoraciones";
+            this.btnValoraciones.Size = new System.Drawing.Size(363, 76);
+            this.btnValoraciones.TabIndex = 7;
+            this.btnValoraciones.Text = "        Valoraciones";
+            this.btnValoraciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnValoraciones.UseVisualStyleBackColor = true;
+            this.btnValoraciones.Click += new System.EventHandler(this.btnValoraciones_Click);
+            // 
+            // btnPerfil
+            // 
+            this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPerfil.FlatAppearance.BorderSize = 0;
+            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.btnPerfil.Image = global::NutriWise.Properties.Resources.IconoPerfil;
+            this.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPerfil.Location = new System.Drawing.Point(0, 217);
+            this.btnPerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.Size = new System.Drawing.Size(362, 76);
+            this.btnPerfil.TabIndex = 6;
+            this.btnPerfil.Text = "        Perfil";
+            this.btnPerfil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPerfil.UseVisualStyleBackColor = true;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
+            // 
+            // pctLogo
+            // 
+            this.pctLogo.Image = global::NutriWise.Properties.Resources._meal_89750_2;
+            this.pctLogo.Location = new System.Drawing.Point(98, 15);
+            this.pctLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.pctLogo.Name = "pctLogo";
+            this.pctLogo.Size = new System.Drawing.Size(129, 121);
+            this.pctLogo.TabIndex = 1;
+            this.pctLogo.TabStop = false;
+            // 
             // pctDegradado
             // 
             this.pctDegradado.BackgroundImage = global::NutriWise.Properties.Resources.Rectangle;
@@ -326,68 +421,6 @@
             this.pctDegradado.Size = new System.Drawing.Size(976, 158);
             this.pctDegradado.TabIndex = 4;
             this.pctDegradado.TabStop = false;
-            // 
-            // videos1
-            // 
-            this.videos1.BackColor = System.Drawing.Color.Ivory;
-            this.videos1.Location = new System.Drawing.Point(362, 161);
-            this.videos1.Name = "videos1";
-            this.videos1.Size = new System.Drawing.Size(930, 588);
-            this.videos1.TabIndex = 20;
-            // 
-            // perfil1
-            // 
-            this.perfil1.BackColor = System.Drawing.Color.Ivory;
-            this.perfil1.Location = new System.Drawing.Point(369, 170);
-            this.perfil1.Margin = new System.Windows.Forms.Padding(0);
-            this.perfil1.Name = "perfil1";
-            this.perfil1.Size = new System.Drawing.Size(923, 572);
-            this.perfil1.TabIndex = 12;
-            // 
-            // dieta1
-            // 
-            this.dieta1.BackColor = System.Drawing.Color.Ivory;
-            this.dieta1.Location = new System.Drawing.Point(369, 158);
-            this.dieta1.Margin = new System.Windows.Forms.Padding(0);
-            this.dieta1.Name = "dieta1";
-            this.dieta1.Size = new System.Drawing.Size(923, 584);
-            this.dieta1.TabIndex = 13;
-            // 
-            // valoraciones1
-            // 
-            this.valoraciones1.BackColor = System.Drawing.Color.Ivory;
-            this.valoraciones1.Location = new System.Drawing.Point(363, 151);
-            this.valoraciones1.Margin = new System.Windows.Forms.Padding(0);
-            this.valoraciones1.Name = "valoraciones1";
-            this.valoraciones1.Size = new System.Drawing.Size(929, 598);
-            this.valoraciones1.TabIndex = 16;
-            // 
-            // donativos1
-            // 
-            this.donativos1.BackColor = System.Drawing.Color.Ivory;
-            this.donativos1.Location = new System.Drawing.Point(363, 161);
-            this.donativos1.Margin = new System.Windows.Forms.Padding(0);
-            this.donativos1.Name = "donativos1";
-            this.donativos1.Size = new System.Drawing.Size(929, 581);
-            this.donativos1.TabIndex = 17;
-            // 
-            // listaCompra1
-            // 
-            this.listaCompra1.BackColor = System.Drawing.Color.Ivory;
-            this.listaCompra1.Location = new System.Drawing.Point(363, 158);
-            this.listaCompra1.Margin = new System.Windows.Forms.Padding(0);
-            this.listaCompra1.Name = "listaCompra1";
-            this.listaCompra1.Size = new System.Drawing.Size(929, 584);
-            this.listaCompra1.TabIndex = 18;
-            // 
-            // ayuda1
-            // 
-            this.ayuda1.BackColor = System.Drawing.Color.Ivory;
-            this.ayuda1.Location = new System.Drawing.Point(362, 161);
-            this.ayuda1.Margin = new System.Windows.Forms.Padding(0);
-            this.ayuda1.Name = "ayuda1";
-            this.ayuda1.Size = new System.Drawing.Size(930, 581);
-            this.ayuda1.TabIndex = 19;
             // 
             // Menu
             // 
@@ -416,7 +449,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pefil";
             this.pnlMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             this.pnlAjustes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctIngles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctEspalñol)).EndInit();
@@ -425,6 +457,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctDegradadoAjustes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctAjustes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctDegradado)).EndInit();
             this.ResumeLayout(false);
 

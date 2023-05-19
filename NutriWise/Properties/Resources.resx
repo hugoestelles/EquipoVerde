@@ -121,11 +121,17 @@
   <data name="Donativos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Donativos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IconoDieta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconoDieta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ajustes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ajustes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoValoraciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconoValoraciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="-meal_89750 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\-meal_89750 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Valoraciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Valoraciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,8 +139,8 @@
   <data name="RectangleAyuda1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RectangleAyuda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="-meal_89750 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\-meal_89750 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ComidaSaludableOscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ComidaSaludableOscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ComidaSinLactosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ComidaSinLactosa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,11 +160,20 @@
   <data name="ComidaSaludable" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ComidaSaludable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IconoDonaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconoDonaciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Platos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Platos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IconoAyuda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconoAyuda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Lunes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lunes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ComidaVeganaOscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ComidaVeganaOscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Nav item (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nav item (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -171,6 +186,9 @@
   </data>
   <data name="Ingles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ingles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoPerfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconoPerfil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Atención al cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Atención al cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +226,20 @@
   <data name="ListaCompra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ListaCompra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ajustes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ajustes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ComidaSinLactosaOscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ComidaSinLactosaOscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Nav item (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nav item (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoVideo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconoVideo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoLista" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconoLista.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mantenimiento" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mantenimiento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,13 +253,7 @@
   <data name="ComidaVegana" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ComidaVegana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ComidaSaludableOscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ComidaSaludableOscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ComidaSinLactosaOscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ComidaSinLactosaOscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ComidaVeganaOscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ComidaVeganaOscuro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconoMantenimiento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconoMantenimiento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

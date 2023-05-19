@@ -330,5 +330,29 @@
   <ItemGroup>
     <None Include="Resources\ComidaVeganaOscuro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoDieta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoPerfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoValoraciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoDonaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoLista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoVideo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoAyuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoMantenimiento.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
