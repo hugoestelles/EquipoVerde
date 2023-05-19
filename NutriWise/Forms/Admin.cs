@@ -103,7 +103,8 @@ namespace NutriWise
 
         private void timerAdmin_Tick(object sender, EventArgs e)
         {
-            // lblAdminReloj = DateTime.Now.ToString("t");
+           lblAdminReloj.Text = DateTime.Now.ToString("hh:mm:ss");
+            lblAdminFecha.Text = DateTime.Now.ToString("d");
         }
 
         private void btnAdminCerrar_Click(object sender, EventArgs e)

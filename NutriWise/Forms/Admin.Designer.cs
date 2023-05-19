@@ -224,6 +224,7 @@
             // 
             // timerAdmin
             // 
+            this.timerAdmin.Enabled = true;
             this.timerAdmin.Tick += new System.EventHandler(this.timerAdmin_Tick);
             // 
             // mnuAdmin
