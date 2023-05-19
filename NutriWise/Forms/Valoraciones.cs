@@ -17,6 +17,7 @@ namespace NutriWise
             
             try
             {
+                ConexionBD.CerrarConexion();
                 using (MySqlConnection conect = ConexionBD.Conexion)
                 {
                     DateTime fecha = DateTime.Now;

@@ -118,6 +118,10 @@ namespace NutriWise
 
         private void btnElimVolver_Click(object sender, EventArgs e)
         {
+            lblElimNombreR2.Text = "(Nombre)";
+            lblElimApe2.Text = "(Apellidos)";
+            lblElimCorreo2.Text = "(Correo)";
+            txtEliminarUsu.Clear();
             grbEliminarUsu.Visible = false;
         }
 
