@@ -11,10 +11,10 @@ namespace NutriWise
         {
             InitializeComponent();
         }
-
+        int estrella = 0;
         private void btnEnviar_Click(object sender, System.EventArgs e)
         {
-            int estrella = 0;
+            
             try
             {
                 using (MySqlConnection conect = ConexionBD.Conexion)
@@ -26,8 +26,9 @@ namespace NutriWise
                     {
                         MessageBox.Show("Valoración enviada con éxito", "Valoración enviada");
                         txtValoracion.Text = "";
-                        estrella = 0;
+                        
                         Estrella0();
+                        estrella = 0;
                     }
                     else
                     {
@@ -42,7 +43,7 @@ namespace NutriWise
             
         }
 
-        int estrella = 0;
+      
         private void pctStar1_MouseEnter(object sender, System.EventArgs e)
         {
             Estrella1();

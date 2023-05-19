@@ -39,6 +39,7 @@ namespace NutriWise.Forms
             // 
             // pctComidaLactosa
             // 
+            this.pctComidaLactosa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctComidaLactosa.Image = global::NutriWise.Properties.Resources.ComidaSinLactosa;
             this.pctComidaLactosa.Location = new System.Drawing.Point(79, 375);
             this.pctComidaLactosa.Name = "pctComidaLactosa";
@@ -50,6 +51,7 @@ namespace NutriWise.Forms
             // 
             // pctComidaVegana
             // 
+            this.pctComidaVegana.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctComidaVegana.Image = global::NutriWise.Properties.Resources.ComidaVegana;
             this.pctComidaVegana.Location = new System.Drawing.Point(79, 184);
             this.pctComidaVegana.Name = "pctComidaVegana";
@@ -61,6 +63,7 @@ namespace NutriWise.Forms
             // 
             // pctComidaSaludable
             // 
+            this.pctComidaSaludable.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctComidaSaludable.Image = global::NutriWise.Properties.Resources.ComidaSaludable;
             this.pctComidaSaludable.Location = new System.Drawing.Point(79, 0);
             this.pctComidaSaludable.Name = "pctComidaSaludable";
@@ -75,9 +78,9 @@ namespace NutriWise.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
+            this.Controls.Add(this.pctComidaSaludable);
             this.Controls.Add(this.pctComidaLactosa);
             this.Controls.Add(this.pctComidaVegana);
-            this.Controls.Add(this.pctComidaSaludable);
             this.Name = "Videos";
             this.Size = new System.Drawing.Size(1001, 570);
             ((System.ComponentModel.ISupportInitialize)(this.pctComidaLactosa)).EndInit();
