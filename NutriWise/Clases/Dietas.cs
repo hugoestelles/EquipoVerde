@@ -93,57 +93,50 @@ namespace NutriWise
             return retorno;
         }
 
-        public static Dietas ObtenerDatosDieta(int idDieta)
+        public void ObtenerDatosDieta(int idDieta)
         {
-            Dietas d1 = null;
-            string consulta = String.Format("SELECT * FROM dietas WHERE idDieta = '{0}';", idDieta);
-            using (MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion))
+            
+            string consulta = String.Format("SELECT * FROM dietas WHERE idDieta = {0};", idDieta);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows)
             {
-                using (MySqlDataReader reader = comando.ExecuteReader())
+                while (reader.Read())
                 {
-                    if (reader.Read())
-                    {
-                        d1 = new Dietas(idDieta, reader.GetString(1), reader.GetInt16(2), reader.GetString(3));
-                    }
+                    this.id = reader.GetInt32(0);
+                    this.nombre = reader.GetString(1);
+                    this.objetivo = reader.GetInt32(2);
+                    this.tipo = reader.GetString(3);
+                    this.cantPlatos = reader.GetInt32(4);
+                    this.cantAlim = reader.GetInt32(5);
                 }
+                    reader.Close();
+                    this.platos = BuscarPlatos();                   
             }
-            return d1;
+            reader.Close();
         }
-        /// <summary>
-        /// Funccion para obtener todos los platos de una dieta.
-        /// </summary>
-        /// <returns>Una lista de platos que contiene todos los platos de la dieta.</returns>
-        public List<Platos> BuscarPlatos()
-        {
-            ConexionBD.CerrarConexion();
-            ConexionBD.AbrirConexion();
-            List<Platos> lista = new List<Platos>();
-            string consulta = String.Format("SELECT * FROM platos WHERE idDieta = '{0}';", this.id);
-            using (MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion))
+            /// <summary>
+            /// Funccion para obtener todos los platos de una dieta.
+            /// </summary>
+            /// <returns>Una lista de platos que contiene todos los platos de la dieta.</returns>
+            public List<Platos> BuscarPlatos()
             {
-                using (MySqlDataReader reader = comando.ExecuteReader())
+                List<Platos> lista = new List<Platos>();
+                string consulta = String.Format("SELECT * FROM platos WHERE idDieta = '{0}';", this.id);
+                MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+                MySqlDataReader reader = comando.ExecuteReader();
+                if (reader.HasRows)
                 {
-                    List<object[]> platosData = new List<object[]>();
-                    while (reader.Read())
-                    {
-                        object[] rowData = new object[reader.FieldCount];
-                        reader.GetValues(rowData);
-                        platosData.Add(rowData);
-                    }
-
-                    foreach (object[] rowData in platosData)
-                    {
-                        Platos p1 = new Platos(Convert.ToInt32(rowData[0]), Convert.ToString(rowData[1]), Convert.ToInt32(rowData[3]));
-                        lista.Add(p1);
-                    }
+                while (reader.Read())
+                {
+                     Platos p1 = new Platos(reader.GetInt32(0), reader.GetString(1), reader.GetInt32(3));
+                    lista.Add(p1);
+                    
                 }
+                reader.Close();
+                }
+                    return lista;
             }
-
-            ConexionBD.CerrarConexion();
-
-            return lista;
-
-        }
 
         /// <summary>
         /// Funcion para agregar dieta a la base de datos.

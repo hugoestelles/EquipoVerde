@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.dgvDieta = new System.Windows.Forms.DataGridView();
+            this.desayuno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cena = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -43,26 +46,50 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "En volumen e intolerante a la lactosa";
             // 
-            // pictureBox1
+            // dgvDieta
             // 
-            this.pictureBox1.Image = global::NutriWise.Properties.Resources.Lunes;
-            this.pictureBox1.Location = new System.Drawing.Point(81, 92);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 262);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.dgvDieta.AllowUserToAddRows = false;
+            this.dgvDieta.AllowUserToDeleteRows = false;
+            this.dgvDieta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDieta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDieta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.desayuno,
+            this.comida,
+            this.cena});
+            this.dgvDieta.Location = new System.Drawing.Point(81, 123);
+            this.dgvDieta.Name = "dgvDieta";
+            this.dgvDieta.ReadOnly = true;
+            this.dgvDieta.Size = new System.Drawing.Size(576, 247);
+            this.dgvDieta.TabIndex = 1;
+            // 
+            // desayuno
+            // 
+            this.desayuno.HeaderText = "Desayuno";
+            this.desayuno.Name = "desayuno";
+            this.desayuno.ReadOnly = true;
+            // 
+            // comida
+            // 
+            this.comida.HeaderText = "Comida";
+            this.comida.Name = "comida";
+            this.comida.ReadOnly = true;
+            // 
+            // cena
+            // 
+            this.cena.HeaderText = "Cena";
+            this.cena.Name = "cena";
+            this.cena.ReadOnly = true;
             // 
             // Dieta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dgvDieta);
             this.Controls.Add(this.label1);
             this.Name = "Dieta";
             this.Size = new System.Drawing.Size(751, 463);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -71,6 +98,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dgvDieta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn desayuno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn comida;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cena;
     }
 }
