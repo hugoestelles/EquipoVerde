@@ -150,16 +150,16 @@
             this.lblTole.Location = new System.Drawing.Point(35, 276);
             this.lblTole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTole.Name = "lblTole";
-            this.lblTole.Size = new System.Drawing.Size(163, 31);
+            this.lblTole.Size = new System.Drawing.Size(177, 31);
             this.lblTole.TabIndex = 11;
-            this.lblTole.Text = "Tolerancias:";
+            this.lblTole.Text = "Intolerancias:";
             // 
             // lblActividad
             // 
             this.lblActividad.AutoSize = true;
             this.lblActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActividad.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblActividad.Location = new System.Drawing.Point(406, 332);
+            this.lblActividad.Location = new System.Drawing.Point(461, 332);
             this.lblActividad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblActividad.Name = "lblActividad";
             this.lblActividad.Size = new System.Drawing.Size(64, 31);
@@ -174,9 +174,9 @@
             this.lblAct.Location = new System.Drawing.Point(35, 329);
             this.lblAct.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAct.Name = "lblAct";
-            this.lblAct.Size = new System.Drawing.Size(319, 31);
+            this.lblAct.Size = new System.Drawing.Size(352, 31);
             this.lblAct.TabIndex = 13;
-            this.lblAct.Text = "Actividad fisicax semana:";
+            this.lblAct.Text = "Actividad fisica por semana:";
             // 
             // lblObj
             // 
@@ -333,7 +333,7 @@
             "Vegano",
             "Vegetariano",
             "Sin Intolerancias"});
-            this.cmbIntolerancias.Location = new System.Drawing.Point(205, 276);
+            this.cmbIntolerancias.Location = new System.Drawing.Point(227, 276);
             this.cmbIntolerancias.Name = "cmbIntolerancias";
             this.cmbIntolerancias.Size = new System.Drawing.Size(298, 38);
             this.cmbIntolerancias.TabIndex = 36;
@@ -345,7 +345,7 @@
             this.nudActividad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nudActividad.Enabled = false;
             this.nudActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.nudActividad.Location = new System.Drawing.Point(383, 330);
+            this.nudActividad.Location = new System.Drawing.Point(438, 330);
             this.nudActividad.Maximum = new decimal(new int[] {
             7,
             0,
