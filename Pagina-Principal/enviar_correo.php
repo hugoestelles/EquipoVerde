@@ -28,6 +28,7 @@ ini_set('display_errors', 1);
   // Verificar si el correo se envió correctamente
   if ($resultado) {
     echo "¡Gracias por contactarnos! Tu mensaje ha sido enviado.";
+    echo "<br>";
     // html par volver a la pagina principal;
     echo "<a href='pagina_principal_en.php'>Volver a la pagina principal</a>";
 
