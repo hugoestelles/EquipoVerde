@@ -3,9 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Verificar si se envió el formulario
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST['enviar'])) {
   // Obtener los valores del formulario
-  echo "SSSS";
   $nombre = $_POST['nombre'];
   $email = $_POST['email'];
   $mensaje = $_POST['mensaje'];
