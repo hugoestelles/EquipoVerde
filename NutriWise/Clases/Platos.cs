@@ -61,7 +61,11 @@ namespace NutriWise
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            if (reader.HasRows) cantidad = reader.GetInt32(0);
+            if (reader.HasRows)
+            {
+                cantidad = reader.GetInt32(0);
+                reader.Close();
+            }
 
             return cantidad;
         }
@@ -84,6 +88,7 @@ namespace NutriWise
                     lista[i] = reader.GetInt32(0) + "," + reader.GetString(1) + "," + reader.GetInt16(2);
                     i++;
                 }
+                reader.Close();
             }
 
             return lista;
@@ -107,7 +112,9 @@ namespace NutriWise
                     lista.Add(a1);
 
                 }
+                reader.Close();
             }
+            
 
             return lista;
         }
@@ -126,7 +133,9 @@ namespace NutriWise
                 if (reader.HasRows)
                 {
                     lista[i] = reader.GetInt16(0);
+                    reader.Close();
                 }
+                
             }
             return lista;
         }
@@ -142,9 +151,15 @@ namespace NutriWise
             MySqlDataReader reader = comando.ExecuteReader();
             if (reader.HasRows)
             {
-                return reader.GetInt32(0);
+                int ret = reader.GetInt32(0);
+                reader.Close();
+                return ret;
             }
-            else return 0;
+            else
+            {
+                reader.Close();
+                return 0;
+            }
         }
         /// <summary>
         /// Función para insertar en la tabla de relaciones AliPlatos

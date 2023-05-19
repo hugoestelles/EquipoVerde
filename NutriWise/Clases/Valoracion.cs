@@ -69,7 +69,11 @@ namespace NutriWise.Clases
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            if (reader.HasRows) cantidad = reader.GetInt32(0);
+            if (reader.HasRows)
+            {
+                cantidad = reader.GetInt32(0);
+                reader.Close();
+            }
 
             return cantidad;
         }
@@ -84,7 +88,11 @@ namespace NutriWise.Clases
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            if (reader.HasRows) cantidad = reader.GetInt16(0);
+            if (reader.HasRows)
+            {
+                cantidad = reader.GetInt16(0);
+                reader.Close();
+            }
 
             return cantidad;
         }
@@ -107,6 +115,7 @@ namespace NutriWise.Clases
                     valoraciones[i] = reader.GetInt32(0) + "," + reader.GetInt16(1) + "," + reader.GetDateTime(2) + "," + reader.GetString(3);
                     i++;
                 }
+                reader.Close();
             }
 
             return valoraciones;
@@ -135,6 +144,7 @@ namespace NutriWise.Clases
                     valoraciones[i] = reader.GetInt32(0) + "," + reader.GetInt16(1) + "," + reader.GetDateTime(2) + "," + reader.GetString(3);
                     i++;
                 }
+                reader.Close();
             }
 
             return valoraciones;

@@ -64,6 +64,7 @@ namespace NutriWise
                             Alimentos a1 = new Alimentos(reader.GetInt32(0), reader.GetString(1), reader.GetDouble(2));
                             lista.Add(a1);
                         }
+                        reader.Close();
                     }
                 }
             }
@@ -86,6 +87,7 @@ namespace NutriWise
                         {
                             retorno++;
                         }
+                        reader.Close();
                     }
                 }
             }
