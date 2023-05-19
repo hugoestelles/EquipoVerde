@@ -244,7 +244,7 @@
                     <br><br>
                     
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <input type="text" name="mensaje" id="mensaje" required>
                     <br><br>
                     
                     <input type="submit" value="Enviar">
