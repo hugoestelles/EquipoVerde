@@ -11,7 +11,7 @@ namespace NutriWise.Clases
         private DateTime fecha;
         private string comentario;
 
-       // public int Id { get { return id; } set { id = value; } }
+        // public int Id { get { return id; } set { id = value; } }
         public int NumEstrellas { get { return numEstrellas; } set { numEstrellas = value; } }
         public DateTime Fecha { get { return fecha; } set { fecha = value; } }
         public string Comentario { get { return comentario; } set { comentario = value; } }
@@ -53,7 +53,8 @@ namespace NutriWise.Clases
                 retorno = comando.ExecuteNonQuery();
                 ConexionBD.CerrarConexion();
                 return retorno;
-            } else
+            }
+            else
             {
                 return 0;
             }
@@ -69,8 +70,11 @@ namespace NutriWise.Clases
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            if (reader.HasRows) cantidad = reader.GetInt32(0);
-
+            if (reader.HasRows)
+            {
+                cantidad = reader.GetInt32(0);
+            }
+            reader.Close();
             return cantidad;
         }
         /// <summary>
@@ -84,8 +88,12 @@ namespace NutriWise.Clases
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            if (reader.HasRows) cantidad = reader.GetInt16(0);
+            if (reader.HasRows)
+            {
+                cantidad = reader.GetInt16(0);
+            }
 
+            reader.Close();
             return cantidad;
         }
         /// <summary>
@@ -109,6 +117,7 @@ namespace NutriWise.Clases
                 }
             }
 
+            reader.Close();
             return valoraciones;
         }
         /// <summary>
@@ -137,6 +146,7 @@ namespace NutriWise.Clases
                 }
             }
 
+            reader.Close();
             return valoraciones;
         }
     }

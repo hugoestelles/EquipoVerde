@@ -29,7 +29,7 @@ namespace NutriWise
             this.nombre = nombre;
             this.objetivo = objetivo;
             this.tipo = tipo;
-            platos = BuscarPlatos();
+            platos = new List<Platos>();
             this.cantPlatos = cantPlatos;
             this.cantAlim = cantAlim;
         }
@@ -50,38 +50,72 @@ namespace NutriWise
         /// <returns>Una lista de alimentos con todos los alimentos de la dieta.</returns>
         public List<Alimentos> ListaCompra()
         {
+            ConexionBD.AbrirConexion();
             List<Alimentos> lista = new List<Alimentos>();
             string consulta = String.Format("SELECT a.idAlimento, a.nombre, a.valorNutricio FROM alimentos a INNER JOIN aliPlato ap ON a.idAlimento = ap.idAlimentos INNER JOIN platos p ON ap.idPlatos = p.idPlato INNER JOIN dietas d ON p.idDieta = d.idDieta WHERE d.idDieta = '{0}';", this.id);
-            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            MySqlDataReader reader = comando.ExecuteReader();
-            if (reader.HasRows)
+            using (MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion))
             {
-                while (reader.Read())
+                using (MySqlDataReader reader = comando.ExecuteReader())
                 {
-                    Alimentos a1 = new Alimentos(reader.GetInt32(0), reader.GetString(1), reader.GetDouble(2));
-                    lista.Add(a1);
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            Alimentos a1 = new Alimentos(reader.GetInt32(0), reader.GetString(1), reader.GetDouble(2));
+                            lista.Add(a1);
+                        }
+                    }
+                    reader.Close();
                 }
             }
+
+            ConexionBD.CerrarConexion();
             return lista;
         }
-        /// <summary>
-        /// Funcion para contar el numero de alimentos de una dieta.
-        /// </summary>
-        /// <returns>El numero de alimentos.</returns>
+
         public int ContarAlimentos()
         {
+            ConexionBD.AbrirConexion();
             int retorno = 0;
             string consulta = String.Format("SELECT a.idAlimento, a.nombre, ap.cantida FROM alimentos a INNER JOIN aliPlato ap ON a.idAlimento = ap.idAlimentos INNER JOIN platos p ON ap.idPlatos = p.idPlato INNER JOIN dietas d ON p.idDieta = d.idDieta WHERE d.idDieta = '{0}';", this.id);
+            using (MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion))
+            {
+                using (MySqlDataReader reader = comando.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            retorno++;
+                        }
+                    }
+                    reader.Close();
+                }
+            }
+            ConexionBD.CerrarConexion();
+            return retorno;
+        }
+
+        public void ObtenerDatosDieta(int idDieta)
+        {
+
+            string consulta = String.Format("SELECT * FROM dietas WHERE idDieta = {0};", idDieta);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
             if (reader.HasRows)
             {
                 while (reader.Read())
                 {
-                    retorno++;
+                    this.id = reader.GetInt32(0);
+                    this.nombre = reader.GetString(1);
+                    this.objetivo = reader.GetInt32(2);
+                    this.tipo = reader.GetString(3);
+                    this.cantPlatos = reader.GetInt32(4);
+                    this.cantAlim = reader.GetInt32(5);
                 }
+                this.platos = BuscarPlatos();
             }
-            return retorno;
+            reader.Close();
         }
         /// <summary>
         /// Funccion para obtener todos los platos de una dieta.
@@ -97,12 +131,15 @@ namespace NutriWise
             {
                 while (reader.Read())
                 {
-                    Platos p1 = new Platos(reader.GetInt32(0),reader.GetString(1),reader.GetInt32(3));
+                    Platos p1 = new Platos(reader.GetInt32(0), reader.GetString(1), reader.GetInt32(3));
                     lista.Add(p1);
+
                 }
             }
+            reader.Close();
             return lista;
         }
+
         /// <summary>
         /// Funcion para agregar dieta a la base de datos.
         /// </summary>
@@ -140,27 +177,5 @@ namespace NutriWise
             }
             return retorno;
         }
-        /// <summary>
-        /// Funcion para obtener todos los datos de una dieta a partir de su ID.
-        /// </summary>
-        /// <param name="idDieta">ID de la dieta.</param>
-        /// <returns>Una dieta con todos los datos cargados.</returns>
-        public static Dietas ObtenerDatosDieta(int idDieta)
-        {
-            Dietas d1; 
-            string consulta = String.Format("SELECT * FROM dietas WHERE idDieta = '{0}';",idDieta);
-            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            MySqlDataReader reader = comando.ExecuteReader();
-            if (reader.HasRows)
-            {
-                    d1 = new Dietas(idDieta,reader.GetString(1),reader.GetInt16(2),reader.GetString(3));
-                    return d1;
-            }
-            else
-            {
-                return null;
-            }
-        }
-
     }
 }

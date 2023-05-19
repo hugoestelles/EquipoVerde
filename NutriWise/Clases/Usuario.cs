@@ -70,17 +70,20 @@ namespace NutriWise.Clases
         /// <returns>El ID de la dieta en formato int.</returns>
         public static int BuscarDieta(int ob, int into)
         {
-            int retorno;
-            string consulta = string.Format("SELECT idDieta FROM dietas WHERE objetivoUsu ='{0}' AND tipoDieta ='{1}'", ob, into);
+            string tipo = TipoDieta(into);
+            string consulta = string.Format("SELECT * FROM dietas WHERE objetivoUsu ='{0}' AND tipoDieta ='{1}'", ob, tipo);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            object resultado = comando.ExecuteScalar();
-            if (resultado != null && int.TryParse(resultado.ToString(), out retorno))
+            MySqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows && reader.Read())
             {
-                return retorno;
+                int ret = reader.GetInt32(0);
+                reader.Close();
+                return ret;
             }
             else
             {
-                return 0;
+                reader.Close();
+                return -1;
             }
         }
         /// <summary>
@@ -277,6 +280,56 @@ namespace NutriWise.Clases
 
             }
         }
+        public int ActualizarInfo(string nom, string ape, decimal alt, decimal pes, string correo, int into, int act, int obj)
+        {
+            this.nombre = nom;
+            this.apellidos = ape;
+            this.altura = alt;
+            this.peso = pes;
+            this.correo = correo;
+            this.intolerancia = into;
+            this.actividad = act;
+            this.objetivo = obj;
+            int compro = ActualizarEnBD();
+            return compro;
+        }
+        private int ActualizarEnBD()
+        {
+            int retorno;
+            string consulta = String.Format("UPDATE usuario SET correo = @correo, nombre = @nom, apellidos = @ape, altura = @alt, peso = @peso,  tipoIntolencia = @intolerancia, cantActividad = @act, objetivo = @obj, idDieta = @dieta WHERE idUsuario = @user;");
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            comando.Parameters.AddWithValue("correo", this.correo);
+            comando.Parameters.AddWithValue("nom", this.nombre);
+            comando.Parameters.AddWithValue("ape", this.apellidos);
+            comando.Parameters.AddWithValue("alt", this.altura);
+            comando.Parameters.AddWithValue("peso", this.peso);
+            comando.Parameters.AddWithValue("intolerancia", this.intolerancia);
+            comando.Parameters.AddWithValue("act", this.actividad);
+            comando.Parameters.AddWithValue("obj", this.objetivo);
+            comando.Parameters.AddWithValue("user", this.id);
+            comando.Parameters.AddWithValue("Dieta", BuscarDieta(this.objetivo, this.intolerancia));
+            retorno = comando.ExecuteNonQuery();
+            return retorno;
+        }
 
+        private static string TipoDieta(int indice)
+        {
+            switch (indice)
+            {
+                case 0:
+                    return "Lactosa";
+                case 1:
+                    return "Gluten";
+                case 2:
+                    return "Vegana";
+                case 3:
+                    return "Vegetariano";
+                case 4:
+                    return "Sin_Intolerancia";
+                default:
+                    return "";
+
+            }
+        }
     }
 }

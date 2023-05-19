@@ -68,6 +68,7 @@ namespace NutriWise
                 }
             }
 
+            reader.Close();
             return valoraciones;
         }
         /// <summary>
@@ -81,8 +82,12 @@ namespace NutriWise
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
-            if (reader.HasRows) cantidad = reader.GetDouble(0);
+            if (reader.HasRows)
+            {
+                cantidad = reader.GetDouble(0);
+            }
 
+            reader.Close();
             return cantidad;
         }
     }

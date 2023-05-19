@@ -58,7 +58,7 @@ namespace NutriWise.Clases
                 smtp.Send(correo);
                 // MessageBox.Show("Correo enviado con éxito");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // MessageBox.Show("Error al enviar el correo: " + ex.Message);
             }
@@ -89,7 +89,7 @@ namespace NutriWise.Clases
                 smtp.Send(correo);
                 // MessageBox.Show("Correo enviado con éxito");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // MessageBox.Show("Error al enviar el correo: " + ex.Message);
             }
@@ -171,7 +171,7 @@ namespace NutriWise.Clases
                 smtp.Send(correo);
                 // MessageBox.Show("Correo enviado con éxito");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // MessageBox.Show("Error al enviar el correo: " + ex.Message);
             }
@@ -200,6 +200,19 @@ namespace NutriWise.Clases
             {
                 return false;
             }
+        }
+
+
+        public static bool ComprobarAceptarDieta(System.Windows.Forms.ComboBox[] comboBoxes)
+        {
+            for (int i = 0; i < comboBoxes.Length; i++)
+            {
+                for (int j = i + 1; j < comboBoxes.Length; j++)
+                {
+                    if (comboBoxes[i].SelectedIndex == comboBoxes[j].SelectedIndex && comboBoxes[i].SelectedIndex != -1) return false;
+                }
+            }
+            return true;
         }
     }
 }

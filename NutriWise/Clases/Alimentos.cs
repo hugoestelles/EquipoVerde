@@ -22,7 +22,8 @@ namespace NutriWise
             valorNutri = vNutri;
         }
 
-        public Alimentos() {
+        public Alimentos()
+        {
         }
         public Alimentos(string nom, double vNurti)
         {
@@ -47,6 +48,7 @@ namespace NutriWise
                     lista.Add(a1);
                 }
             }
+            reader.Close();
             return lista;
         }
         /// <summary>
@@ -60,9 +62,15 @@ namespace NutriWise
             MySqlDataReader reader = comando.ExecuteReader();
             if (reader.HasRows)
             {
+                reader.Close();
                 return true;
+
             }
-            else return false;
+            else
+            {
+                reader.Close();
+                return false;
+            }
         }
         /// <summary>
         /// Funcion para agregar alimento a la base de datos.
@@ -93,14 +101,16 @@ namespace NutriWise
             MySqlDataReader reader = comando.ExecuteReader();
             if (reader.HasRows)
             {
-                a1 = new Alimentos(idAlimento,reader.GetString(1),reader.GetDouble(2));
+                a1 = new Alimentos(idAlimento, reader.GetString(1), reader.GetDouble(2));
+                reader.Close();
                 return a1;
+
             }
             else
             {
+                reader.Close();
                 return null;
             }
         }
-
     }
 }
