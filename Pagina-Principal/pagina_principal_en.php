@@ -234,7 +234,7 @@
 
             <div id="contacto-page">
                 <h1 class="title-contacto">Contacta con nosotros</h1>
-                <form action="enviar_correo.php" class="FormContact">
+                <form action="enviar_correo.php" class="FormContact" method="POST">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
                     <br><br>
