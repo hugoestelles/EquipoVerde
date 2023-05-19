@@ -1,5 +1,6 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Verificar si se envió el formulario
+if (isset($_POST['enviar'])) {
   // Obtener los valores del formulario
   $nombre = $_POST['nombre'];
   $email = $_POST['email'];
