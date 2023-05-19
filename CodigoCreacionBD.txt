@@ -27,13 +27,15 @@ CREATE TABLE IF NOT EXISTS usuario (
 	nombre VARCHAR(40) NOT NULL,
 	idDieta INT NOT NULL,
 	tipo INT NOT NULL,
+	Objetivo INT,
+	Intolerancia INT,
 	PRIMARY KEY (idPlato));
 	
 	CREATE TABLE IF NOT EXISTS dietas(
 	idDieta INT AUTO_INCREMENT,
 	nombre VARCHAR(40) NOT NULL,
 	objetivoUsu INT NOT NULL,
-	tipoDieta VARCHAR(40),
+	tipoDieta INT(40),
 	cantidadPlatos INT,
 	cantidadIngredientes INT,
 	PRIMARY KEY (idDieta));
