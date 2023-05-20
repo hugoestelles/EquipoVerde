@@ -354,5 +354,8 @@
   <ItemGroup>
     <None Include="Resources\IconoMantenimiento.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enviarMail.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -35,7 +35,7 @@ namespace NutriWise
                                 Usuario.UsuarioActual = Utiles.CargarUsuarioActual();
                                 MessageBox.Show(Usuario.DietaActual.Nombre);
                                 //MessageBox.Show("Bienvenido " + user.Nombre + " " + user.Apellidos, "Inicio de sesión correcto");
-
+                                ConexionBD.CerrarConexion();
 
                                 // Crea una nueva instancia del formulario Form2
                                 Menu form4 = new Menu();
@@ -52,22 +52,26 @@ namespace NutriWise
                             else
                             {
                                 MessageBox.Show("La clave introducida es incorrecta.", "Clave incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                ConexionBD.CerrarConexion();
                             }
                         }
                         else
                         {
                             MessageBox.Show("El correo introducido no existe.", "Usuario inexistente", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            ConexionBD.CerrarConexion();
                         }
                     }
                     else
                     {
                         MessageBox.Show("El correo introducido es erróneo.", "Correo incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        ConexionBD.CerrarConexion();
                     }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+                ConexionBD.CerrarConexion();
             }
             finally
             {

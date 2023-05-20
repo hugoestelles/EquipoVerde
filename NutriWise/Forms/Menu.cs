@@ -331,6 +331,26 @@ namespace NutriWise
             listaCompra1.Visible = false;
             ayuda1.Visible = false;
             videos1.Visible = false;
+            try
+            {
+                if(ConexionBD.Conexion != null)
+                {
+                    ConexionBD.AbrirConexion();
+                    //dieta1.CargarDataGrid();
+                    ConexionBD.CerrarConexion();
+                }
+                else MessageBox.Show("No existe conexión a la Base de Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ConexionBD.CerrarConexion();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ConexionBD.CerrarConexion();
+            }
+            finally
+            {
+                ConexionBD.CerrarConexion();
+            }
         }
 
         private void btnListaCompra_Click(object sender, EventArgs e)
