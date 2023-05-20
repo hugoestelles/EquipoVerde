@@ -1,6 +1,7 @@
 ﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
@@ -213,6 +214,22 @@ namespace NutriWise.Clases
                 }
             }
             return true;
+        }
+        public static Usuario CargarUsuarioActual()
+        {
+            Usuario user = Usuario.BuscarUsuario(Usuario.UsuarioActual.Correo);
+            int id = Usuario.BuscarDieta(user.Objetivo, user.Intolerancia);
+            Dietas d1 = new Dietas();
+            d1.ObtenerDatosDieta(id);
+            d1.Platos = d1.BuscarPlatos();
+            List<Platos> p1 = d1.Platos;
+            for (int i = 0; i < d1.Platos.Count; i++)
+            {
+                d1.Platos[i].ListaAlimentos = d1.Platos[i].BuscarAlimentos();
+                d1.Platos[i].ListaCantidades = d1.Platos[i].BuscarCantidades();
+            }
+            Usuario.DietaActual= d1;
+            return user;
         }
     }
 }

@@ -16,8 +16,8 @@ namespace NutriWise
         public int Id { get { return id; } set { id = value; } }
         public string Nombre { get { return nombre; } set { nombre = value; } }
         public int Tipo { get { return tipo; } set { tipo = value; } }
-        public List<Alimentos> ListaAlimentos { get { return listaAlimentos; } }
-        public int[] ListaCantidades { get { return listaCantidades; } }
+        public List<Alimentos> ListaAlimentos { get { return listaAlimentos; } set { listaAlimentos = value; } }
+        public int[] ListaCantidades { get { return listaCantidades; } set { listaCantidades = value; } }
 
 
         public Platos(int id, string nom, int tip)
@@ -25,8 +25,6 @@ namespace NutriWise
             this.id = id;
             nombre = nom;
             tipo = tip;
-            listaAlimentos = BuscarAlimentos();
-            listaCantidades = BuscarCantidades();
         }
 
         public Platos() { }
@@ -40,7 +38,7 @@ namespace NutriWise
         {
             int retorno;
             string consulta = string.Format("INSERT INTO platos (nombre,idDieta,tipo) VALUES " +
-                "(@nom,@tip,@idDieta)");
+                "(@nom,@tip,@idDieta);");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.Parameters.AddWithValue("idDieta", BuscarDieta());
@@ -57,7 +55,7 @@ namespace NutriWise
         public static int CantidadPlatos()
         {
             int cantidad = -1;
-            string consulta = "SELECT COUNT(*) FROM platos";
+            string consulta = "SELECT COUNT(*) FROM platos;";
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
@@ -96,8 +94,7 @@ namespace NutriWise
         /// <summary>
         /// Funcion para obtener todos los alimentos que contiene un plato.
         /// </summary>
-        /// <returns>Una lista de alimentos con todos los alimentos del plato.</returns>
-        private List<Alimentos> BuscarAlimentos()
+        public List<Alimentos> BuscarAlimentos()
         {
             List<Alimentos> lista = new List<Alimentos>();
             string consulta = string.Format("SELECT a.idAlimento, a.nombre, a.valorNutricio FROM alimentos a INNER JOIN aliPlato ap ON a.idAlimento = ap.idAlimentos INNER JOIN platos p ON ap.idPlatos = p.idPlato WHERE p.idPlato = '{0}';", this.id);
@@ -121,17 +118,17 @@ namespace NutriWise
         /// Funcion para obtener las cantidad de cada ingrediente en un determinado plato.
         /// </summary>
         /// <returns>Un array de int con las cantidad en gramos.</returns>
-        private int[] BuscarCantidades()
+        public int[] BuscarCantidades()
         {
             int[] lista = new int[listaAlimentos.Count];
             for (int i = 0; i < listaAlimentos.Count; i++)
             {
-                string consulta = string.Format("SELECT cantida FROM aliPlato WHERE idPlatos = '{0}' AND idAlimentos = '{1}';", this.id, listaAlimentos[i].Id);
+                string consulta = string.Format("SELECT * FROM aliPlato WHERE idPlatos = '{0}' AND idAlimentos = '{1}';", this.id, listaAlimentos[i].Id);
                 MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
                 MySqlDataReader reader = comando.ExecuteReader();
-                if (reader.HasRows)
+                if (reader.HasRows && reader.Read())
                 {
-                    lista[i] = reader.GetInt16(0);
+                    lista[i] = reader.GetInt16(2);
                 }
                 reader.Close();
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NutriWise.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,9 @@ namespace NutriWise
         bool videos = false;
         bool ayuda = true;
         bool mantenimiento = false;
+        
+        
+        
 
 
         private void pctCerrar_Click(object sender, EventArgs e)
@@ -438,5 +442,6 @@ namespace NutriWise
             form5.ShowDialog();
 
         }
+
     }
 }

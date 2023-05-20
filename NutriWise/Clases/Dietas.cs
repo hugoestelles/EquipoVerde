@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Relational;
 using System;
 using System.Collections.Generic;
 
@@ -20,7 +21,7 @@ namespace NutriWise
         public string Tipo { get { return tipo; } }
         public int CantPlatos { get { return cantPlatos; } }
         public int CantAlim { get { return cantAlim; } }
-        public List<Platos> Platos { get { return platos; } }
+        public List<Platos> Platos { get { return platos; } set { platos = value; } }
 
 
         public Dietas(int id, string nombre, int objetivo, string tipo, int cantPlatos, int cantAlim)
@@ -102,19 +103,18 @@ namespace NutriWise
             string consulta = String.Format("SELECT * FROM dietas WHERE idDieta = {0};", idDieta);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
-            if (reader.HasRows)
+            if (reader.Read())
             {
-                while (reader.Read())
-                {
                     this.id = reader.GetInt32(0);
                     this.nombre = reader.GetString(1);
                     this.objetivo = reader.GetInt32(2);
                     this.tipo = reader.GetString(3);
                     this.cantPlatos = reader.GetInt32(4);
-                    this.cantAlim = reader.GetInt32(5);
-                }
-                this.platos = BuscarPlatos();
+                    this.cantAlim = reader.GetInt32(5);      
+                
+                reader.Close();
             }
+            //this.platos = BuscarPlatos();
             reader.Close();
         }
         /// <summary>
@@ -133,7 +133,6 @@ namespace NutriWise
                 {
                     Platos p1 = new Platos(reader.GetInt32(0), reader.GetString(1), reader.GetInt32(3));
                     lista.Add(p1);
-
                 }
             }
             reader.Close();

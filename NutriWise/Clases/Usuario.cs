@@ -19,6 +19,7 @@ namespace NutriWise.Clases
         private int objetivo;
         private bool administrador;
         private static Usuario usuarioActual;
+        private static Dietas dietaActual;
 
         public int Id { get { return id; } }
         public string Correo { get { return correo; } }
@@ -32,7 +33,8 @@ namespace NutriWise.Clases
         public int Objetivo { get { return objetivo; } }
         public bool Administrador { get { return administrador; } }
         public static Usuario UsuarioActual { get { return usuarioActual; } set { usuarioActual = value; } }
-
+        public static Dietas DietaActual { get { return dietaActual; } set { dietaActual = value; } }
+        
         public Usuario(string correo)
         {
             this.correo = correo;
