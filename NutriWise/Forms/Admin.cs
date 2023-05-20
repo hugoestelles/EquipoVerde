@@ -325,6 +325,117 @@ namespace NutriWise
             }
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ConexionBD.Conexion != null) ConexionBD.AbrirConexion();
 
+                if (Dietas.CantPlatosEspecificos(cmbAdminObj.SelectedIndex, cmbAdminInto.SelectedIndex))
+                {
+                    EliminarCargaPlatos();
+                    CargarPlatos();
+                }
+                else MessageBox.Show("No hay platos suficientes para crear una dieta.", "Platos insuficientes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception) { MessageBox.Show("No se ha podido establecer conexión.", "Error conexión", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            finally { ConexionBD.CerrarConexion(); }
+        }
+
+        private void btnDietaAceptar_Click(object sender, EventArgs e)
+        {
+            if (txtNomDieta.Text == "" || cmbAdminObj.SelectedIndex == -1 || cmbAdminInto.SelectedIndex == -1)
+            {
+                MessageBox.Show("Debes ingresar un nombre y seleccionar un tipo de objetivo y de intolerancia.", "Datos incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                ComboBox[] platos = new ComboBox[] { cmbPlato1, cmbPlato2, cmbPlato3, cmbPlato4, cmbPlato5, cmbPlato6, cmbPlato7, cmbPlato8, cmbPlato9, cmbPlato10, cmbPlato11, cmbPlato12, cmbPlato13, cmbPlato14, cmbPlato15, cmbPlato16, cmbPlato17, cmbPlato18, cmbPlato19, cmbPlato20, cmbPlato21 };
+                int cantPlatos = Dietas.CantPlatosSeleccionados(platos);
+
+                if (cantPlatos == 0) MessageBox.Show("Debes ingresar como mínimo 1 plato.", "Ningún plato seleccionado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else
+                {
+                    string nombre = txtNomDieta.Text;
+                    int objetivo = cmbAdminObj.SelectedIndex;
+                    string tipo = cmbAdminInto.SelectedItem.ToString();
+                    int cantIngredientes = -1;
+
+                    try
+                    {
+                        if (ConexionBD.Conexion != null) ConexionBD.AbrirConexion();
+                        List<int> idPlatos = Dietas.ObtenerIdPlatos(platos);
+                        cantIngredientes = Dietas.CantAlimentosPlatos(idPlatos);
+                    }
+                    catch (Exception) { MessageBox.Show("No se ha podido establecer conexión.", "Error conexión", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    finally { ConexionBD.CerrarConexion(); }
+
+                    Dietas dieta = new Dietas(nombre, objetivo, tipo, cantPlatos, cantIngredientes);
+                    if (dieta.PlatosRepetidos(platos)) MessageBox.Show("No se puede repetir ningún plato.", "Platos repetidos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                    {
+                        try
+                        {
+                            if (ConexionBD.Conexion != null) ConexionBD.AbrirConexion();
+                            dieta.AgregarDieta();
+                        }
+                        catch (Exception) { MessageBox.Show("No se ha podido establecer conexión.", "Error conexión", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                        finally { ConexionBD.CerrarConexion(); }
+
+                        MessageBox.Show("La dieta ha sido agregada.", "Dieta agregada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        EliminarCargaPlatos();
+                    }
+                }
+            }
+        }
+
+        private void CargarPlatos()
+        {
+            string consulta = string.Format("SELECT nombre FROM platos WHERE objetivo={0} AND intolerancia={1};", cmbAdminObj.SelectedIndex, cmbAdminInto.SelectedIndex);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+
+            try
+            {
+                MySqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    string nombrePlato = reader.GetString(0);
+                    cmbPlato1.Items.Add(nombrePlato);
+                    cmbPlato2.Items.Add(nombrePlato);
+                    cmbPlato3.Items.Add(nombrePlato);
+                    cmbPlato4.Items.Add(nombrePlato);
+                    cmbPlato5.Items.Add(nombrePlato);
+                    cmbPlato6.Items.Add(nombrePlato);
+                    cmbPlato7.Items.Add(nombrePlato);
+                    cmbPlato8.Items.Add(nombrePlato);
+                    cmbPlato9.Items.Add(nombrePlato);
+                    cmbPlato10.Items.Add(nombrePlato);
+                    cmbPlato11.Items.Add(nombrePlato);
+                    cmbPlato12.Items.Add(nombrePlato);
+                    cmbPlato13.Items.Add(nombrePlato);
+                    cmbPlato14.Items.Add(nombrePlato);
+                    cmbPlato15.Items.Add(nombrePlato);
+                    cmbPlato16.Items.Add(nombrePlato);
+                    cmbPlato17.Items.Add(nombrePlato);
+                    cmbPlato18.Items.Add(nombrePlato);
+                    cmbPlato19.Items.Add(nombrePlato);
+                    cmbPlato20.Items.Add(nombrePlato);
+                    cmbPlato21.Items.Add(nombrePlato);
+                }
+                reader.Close();
+            }
+            catch (Exception) { MessageBox.Show("No se ha podido establecer conexión.", "Error conexión", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            finally { ConexionBD.CerrarConexion(); }
+        }
+
+        private void EliminarCargaPlatos()
+        {
+            ComboBox[] comboBoxes = new ComboBox[] { cmbPlato1, cmbPlato2, cmbPlato3, cmbPlato4, cmbPlato5, cmbPlato6, cmbPlato7, cmbPlato8, cmbPlato9, cmbPlato10, cmbPlato11, cmbPlato12, cmbPlato13, cmbPlato14, cmbPlato15, cmbPlato16, cmbPlato17, cmbPlato18, cmbPlato19, cmbPlato20, cmbPlato21 };
+            foreach (ComboBox cmb in comboBoxes)
+            {
+                cmb.Items.Clear();
+                cmb.Text = "";
+            }
+        }
     }
 }

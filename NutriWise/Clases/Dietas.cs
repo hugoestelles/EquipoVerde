@@ -2,6 +2,7 @@
 using MySqlX.XDevAPI.Relational;
 using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace NutriWise
 {
@@ -24,9 +25,8 @@ namespace NutriWise
         public List<Platos> Platos { get { return platos; } set { platos = value; } }
 
 
-        public Dietas(int id, string nombre, int objetivo, string tipo, int cantPlatos, int cantAlim)
+        public Dietas(string nombre, int objetivo, string tipo, int cantPlatos, int cantAlim)
         {
-            this.id = id;
             this.nombre = nombre;
             this.objetivo = objetivo;
             this.tipo = tipo;
@@ -175,6 +175,88 @@ namespace NutriWise
                 }
             }
             return retorno;
+        }
+
+        public bool PlatosRepetidos(ComboBox[] comboBoxes)
+        {
+            for (int i = 0; i < comboBoxes.Length; i++)
+            {
+                for (int j = i + 1; j < comboBoxes.Length; j++)
+                {
+                    if (comboBoxes[i].SelectedIndex == comboBoxes[j].SelectedIndex && comboBoxes[i].SelectedIndex != -1) return true;
+                }
+            }
+            return false;
+        }
+
+        public static bool CantPlatosEspecificos(int obj, int into)
+        {
+            string consulta = string.Format("SELECT COUNT(*) FROM platos WHERE objetivo={0} AND intolerancia={1};", obj, into);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    if (reader.GetInt32(0) >= 21)
+                    {
+                        reader.Close();
+                        return true;
+                    }
+                }
+            }
+            reader.Close();
+            return false;
+        }
+
+        public static int CantPlatosSeleccionados(ComboBox[] comboBoxes)
+        {
+            int cantidad = 0;
+            foreach (ComboBox comboBox in comboBoxes)
+            {
+                if (comboBox.SelectedIndex != -1) cantidad++;
+            }
+            return cantidad;
+        }
+
+        public static List<int> ObtenerIdPlatos(ComboBox[] platos)
+        {
+            List<int> listaId = new List<int>();
+            for (int i = 0; i < platos.Length; i++)
+            {
+                if (platos[i].SelectedIndex != -1)
+                {
+                    string consulta = string.Format("SELECT idPlato FROM platos WHERE nombre='{0}';", platos[i].SelectedItem.ToString());
+                    MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+                    MySqlDataReader reader = comando.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        listaId.Add(reader.GetInt16(0));
+                    }
+                    reader.Close();
+                }
+            }
+
+            return listaId;
+        }
+
+        public static int CantAlimentosPlatos(List<int> idPlatos)
+        {
+            int cantidad = 0;
+            foreach (int id in idPlatos)
+            {
+                string consulta = string.Format("SELECT SUM(cantida) FROM aliPlato WHERE idPlatos = {0};", id);
+                MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+                MySqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    cantidad += reader.GetInt32(0);
+                }
+                reader.Close();
+            }
+
+            return cantidad;
         }
     }
 }

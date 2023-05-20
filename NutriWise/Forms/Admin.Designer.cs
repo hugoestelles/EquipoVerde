@@ -59,6 +59,9 @@
             this.txtEliminarUsu = new System.Windows.Forms.TextBox();
             this.lblElimUsuInfo = new System.Windows.Forms.Label();
             this.grbPlato = new System.Windows.Forms.GroupBox();
+            this.txtValorN4 = new System.Windows.Forms.TextBox();
+            this.txtValorN3 = new System.Windows.Forms.TextBox();
+            this.txtValorN2 = new System.Windows.Forms.TextBox();
             this.nudCantidadN4 = new System.Windows.Forms.NumericUpDown();
             this.nudCantidadN3 = new System.Windows.Forms.NumericUpDown();
             this.nudCantidadN2 = new System.Windows.Forms.NumericUpDown();
@@ -74,9 +77,6 @@
             this.lblValorN4 = new System.Windows.Forms.Label();
             this.lblValorN3 = new System.Windows.Forms.Label();
             this.lblValorN2 = new System.Windows.Forms.Label();
-            this.txtValorN4 = new System.Windows.Forms.TextBox();
-            this.txtValorN3 = new System.Windows.Forms.TextBox();
-            this.txtValorN2 = new System.Windows.Forms.TextBox();
             this.txtValorN1 = new System.Windows.Forms.TextBox();
             this.lblValorN1 = new System.Windows.Forms.Label();
             this.btnPlatoReset = new System.Windows.Forms.Button();
@@ -174,21 +174,18 @@
             this.grbInfo.Controls.Add(this.picAdminInfo);
             this.grbInfo.Controls.Add(this.lblAdminReloj);
             this.grbInfo.Controls.Add(this.lblAdminInfo);
-            this.grbInfo.Location = new System.Drawing.Point(156, 39);
-            this.grbInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.grbInfo.Location = new System.Drawing.Point(117, 32);
             this.grbInfo.Name = "grbInfo";
-            this.grbInfo.Padding = new System.Windows.Forms.Padding(4);
-            this.grbInfo.Size = new System.Drawing.Size(1047, 428);
+            this.grbInfo.Size = new System.Drawing.Size(785, 348);
             this.grbInfo.TabIndex = 0;
             this.grbInfo.TabStop = false;
             // 
             // btnAdminCerrar
             // 
             this.btnAdminCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdminCerrar.Location = new System.Drawing.Point(744, 265);
-            this.btnAdminCerrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdminCerrar.Location = new System.Drawing.Point(558, 215);
             this.btnAdminCerrar.Name = "btnAdminCerrar";
-            this.btnAdminCerrar.Size = new System.Drawing.Size(211, 69);
+            this.btnAdminCerrar.Size = new System.Drawing.Size(158, 56);
             this.btnAdminCerrar.TabIndex = 6;
             this.btnAdminCerrar.Text = "Cerrar";
             this.btnAdminCerrar.UseVisualStyleBackColor = true;
@@ -197,10 +194,9 @@
             // btnAdminSalir
             // 
             this.btnAdminSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdminSalir.Location = new System.Drawing.Point(744, 171);
-            this.btnAdminSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdminSalir.Location = new System.Drawing.Point(558, 139);
             this.btnAdminSalir.Name = "btnAdminSalir";
-            this.btnAdminSalir.Size = new System.Drawing.Size(211, 69);
+            this.btnAdminSalir.Size = new System.Drawing.Size(158, 56);
             this.btnAdminSalir.TabIndex = 5;
             this.btnAdminSalir.Text = "Salir";
             this.btnAdminSalir.UseVisualStyleBackColor = true;
@@ -209,10 +205,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::NutriWise.Properties.Resources.calendario;
-            this.pictureBox1.Location = new System.Drawing.Point(267, 298);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(200, 242);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(69, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -221,20 +216,18 @@
             // 
             this.lblAdminFecha.AutoSize = true;
             this.lblAdminFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminFecha.Location = new System.Drawing.Point(395, 322);
-            this.lblAdminFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdminFecha.Location = new System.Drawing.Point(296, 262);
             this.lblAdminFecha.Name = "lblAdminFecha";
-            this.lblAdminFecha.Size = new System.Drawing.Size(148, 52);
+            this.lblAdminFecha.Size = new System.Drawing.Size(118, 39);
             this.lblAdminFecha.TabIndex = 3;
             this.lblAdminFecha.Text = "Fecha";
             // 
             // picAdminInfo
             // 
             this.picAdminInfo.Image = global::NutriWise.Properties.Resources.business_color_progress_icon_icons_com_53437;
-            this.picAdminInfo.Location = new System.Drawing.Point(267, 224);
-            this.picAdminInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.picAdminInfo.Location = new System.Drawing.Point(200, 182);
             this.picAdminInfo.Name = "picAdminInfo";
-            this.picAdminInfo.Size = new System.Drawing.Size(92, 66);
+            this.picAdminInfo.Size = new System.Drawing.Size(69, 54);
             this.picAdminInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAdminInfo.TabIndex = 2;
             this.picAdminInfo.TabStop = false;
@@ -243,10 +236,9 @@
             // 
             this.lblAdminReloj.AutoSize = true;
             this.lblAdminReloj.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminReloj.Location = new System.Drawing.Point(395, 239);
-            this.lblAdminReloj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdminReloj.Location = new System.Drawing.Point(296, 194);
             this.lblAdminReloj.Name = "lblAdminReloj";
-            this.lblAdminReloj.Size = new System.Drawing.Size(129, 54);
+            this.lblAdminReloj.Size = new System.Drawing.Size(103, 42);
             this.lblAdminReloj.TabIndex = 1;
             this.lblAdminReloj.Text = "Hora";
             // 
@@ -254,10 +246,9 @@
             // 
             this.lblAdminInfo.AutoSize = true;
             this.lblAdminInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminInfo.Location = new System.Drawing.Point(79, 106);
-            this.lblAdminInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdminInfo.Location = new System.Drawing.Point(59, 86);
             this.lblAdminInfo.Name = "lblAdminInfo";
-            this.lblAdminInfo.Size = new System.Drawing.Size(466, 39);
+            this.lblAdminInfo.Size = new System.Drawing.Size(375, 31);
             this.lblAdminInfo.TabIndex = 0;
             this.lblAdminInfo.Text = "Bienvenido Usuario (USER)\r\n";
             // 
@@ -273,8 +264,8 @@
             this.operacionesToolStripMenuItem});
             this.mnuAdmin.Location = new System.Drawing.Point(0, 0);
             this.mnuAdmin.Name = "mnuAdmin";
-            this.mnuAdmin.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.mnuAdmin.Size = new System.Drawing.Size(1367, 28);
+            this.mnuAdmin.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.mnuAdmin.Size = new System.Drawing.Size(1025, 24);
             this.mnuAdmin.TabIndex = 1;
             this.mnuAdmin.Text = "menuStrip1";
             // 
@@ -285,7 +276,7 @@
             this.mnuPlato,
             this.mnuDieta});
             this.operacionesToolStripMenuItem.Name = "operacionesToolStripMenuItem";
-            this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
+            this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.operacionesToolStripMenuItem.Text = "Operaciones";
             // 
             // mnuUsuario
@@ -293,13 +284,13 @@
             this.mnuUsuario.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuEliminarUsuario});
             this.mnuUsuario.Name = "mnuUsuario";
-            this.mnuUsuario.Size = new System.Drawing.Size(142, 26);
+            this.mnuUsuario.Size = new System.Drawing.Size(114, 22);
             this.mnuUsuario.Text = "Usuario";
             // 
             // mnuEliminarUsuario
             // 
             this.mnuEliminarUsuario.Name = "mnuEliminarUsuario";
-            this.mnuEliminarUsuario.Size = new System.Drawing.Size(195, 26);
+            this.mnuEliminarUsuario.Size = new System.Drawing.Size(157, 22);
             this.mnuEliminarUsuario.Text = "Eliminar/Buscar";
             this.mnuEliminarUsuario.Click += new System.EventHandler(this.mnuEliminarUsuario_Click);
             // 
@@ -308,13 +299,13 @@
             this.mnuPlato.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuPlatoAgregar});
             this.mnuPlato.Name = "mnuPlato";
-            this.mnuPlato.Size = new System.Drawing.Size(142, 26);
+            this.mnuPlato.Size = new System.Drawing.Size(114, 22);
             this.mnuPlato.Text = "Plato";
             // 
             // mnuPlatoAgregar
             // 
             this.mnuPlatoAgregar.Name = "mnuPlatoAgregar";
-            this.mnuPlatoAgregar.Size = new System.Drawing.Size(146, 26);
+            this.mnuPlatoAgregar.Size = new System.Drawing.Size(116, 22);
             this.mnuPlatoAgregar.Text = "Agregar";
             this.mnuPlatoAgregar.Click += new System.EventHandler(this.mnuPlatoAgregar_Click);
             // 
@@ -323,13 +314,13 @@
             this.mnuDieta.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuDietaAgregar});
             this.mnuDieta.Name = "mnuDieta";
-            this.mnuDieta.Size = new System.Drawing.Size(142, 26);
+            this.mnuDieta.Size = new System.Drawing.Size(114, 22);
             this.mnuDieta.Text = "Dieta";
             // 
             // mnuDietaAgregar
             // 
             this.mnuDietaAgregar.Name = "mnuDietaAgregar";
-            this.mnuDietaAgregar.Size = new System.Drawing.Size(146, 26);
+            this.mnuDietaAgregar.Size = new System.Drawing.Size(116, 22);
             this.mnuDietaAgregar.Text = "Agregar";
             this.mnuDietaAgregar.Click += new System.EventHandler(this.mnuDietaAgregar_Click);
             // 
@@ -347,11 +338,9 @@
             this.grbEliminarUsu.Controls.Add(this.txtEliminarUsu);
             this.grbEliminarUsu.Controls.Add(this.lblElimUsuInfo);
             this.grbEliminarUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbEliminarUsu.Location = new System.Drawing.Point(37, 47);
-            this.grbEliminarUsu.Margin = new System.Windows.Forms.Padding(4);
+            this.grbEliminarUsu.Location = new System.Drawing.Point(28, 38);
             this.grbEliminarUsu.Name = "grbEliminarUsu";
-            this.grbEliminarUsu.Padding = new System.Windows.Forms.Padding(4);
-            this.grbEliminarUsu.Size = new System.Drawing.Size(1263, 736);
+            this.grbEliminarUsu.Size = new System.Drawing.Size(947, 598);
             this.grbEliminarUsu.TabIndex = 2;
             this.grbEliminarUsu.TabStop = false;
             this.grbEliminarUsu.Text = "Eliminación de Usuarios:";
@@ -360,10 +349,9 @@
             // btnElimVolver
             // 
             this.btnElimVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnElimVolver.Location = new System.Drawing.Point(471, 495);
-            this.btnElimVolver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnElimVolver.Location = new System.Drawing.Point(353, 402);
             this.btnElimVolver.Name = "btnElimVolver";
-            this.btnElimVolver.Size = new System.Drawing.Size(108, 41);
+            this.btnElimVolver.Size = new System.Drawing.Size(81, 33);
             this.btnElimVolver.TabIndex = 12;
             this.btnElimVolver.Text = "Volver";
             this.btnElimVolver.UseVisualStyleBackColor = true;
@@ -372,10 +360,9 @@
             // btnAdminEliminar
             // 
             this.btnAdminEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdminEliminar.Location = new System.Drawing.Point(639, 411);
-            this.btnAdminEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdminEliminar.Location = new System.Drawing.Point(479, 334);
             this.btnAdminEliminar.Name = "btnAdminEliminar";
-            this.btnAdminEliminar.Size = new System.Drawing.Size(140, 42);
+            this.btnAdminEliminar.Size = new System.Drawing.Size(105, 34);
             this.btnAdminEliminar.TabIndex = 11;
             this.btnAdminEliminar.Text = "Eliminar";
             this.btnAdminEliminar.UseVisualStyleBackColor = true;
@@ -385,10 +372,9 @@
             // 
             this.lblElimCorreo2.AutoSize = true;
             this.lblElimCorreo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblElimCorreo2.Location = new System.Drawing.Point(780, 302);
-            this.lblElimCorreo2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblElimCorreo2.Location = new System.Drawing.Point(585, 245);
             this.lblElimCorreo2.Name = "lblElimCorreo2";
-            this.lblElimCorreo2.Size = new System.Drawing.Size(86, 25);
+            this.lblElimCorreo2.Size = new System.Drawing.Size(67, 20);
             this.lblElimCorreo2.TabIndex = 10;
             this.lblElimCorreo2.Text = "(Correo)";
             // 
@@ -396,10 +382,9 @@
             // 
             this.lblElimCorreo1.AutoSize = true;
             this.lblElimCorreo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblElimCorreo1.Location = new System.Drawing.Point(540, 302);
-            this.lblElimCorreo1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblElimCorreo1.Location = new System.Drawing.Point(405, 245);
             this.lblElimCorreo1.Name = "lblElimCorreo1";
-            this.lblElimCorreo1.Size = new System.Drawing.Size(198, 25);
+            this.lblElimCorreo1.Size = new System.Drawing.Size(163, 20);
             this.lblElimCorreo1.TabIndex = 9;
             this.lblElimCorreo1.Text = "Correo Electrónico:";
             // 
@@ -407,10 +392,9 @@
             // 
             this.lblElimApe2.AutoSize = true;
             this.lblElimApe2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblElimApe2.Location = new System.Drawing.Point(780, 249);
-            this.lblElimApe2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblElimApe2.Location = new System.Drawing.Point(585, 202);
             this.lblElimApe2.Name = "lblElimApe2";
-            this.lblElimApe2.Size = new System.Drawing.Size(106, 25);
+            this.lblElimApe2.Size = new System.Drawing.Size(83, 20);
             this.lblElimApe2.TabIndex = 8;
             this.lblElimApe2.Text = "(Apellidos)";
             // 
@@ -418,10 +402,9 @@
             // 
             this.lblElimApe1.AutoSize = true;
             this.lblElimApe1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblElimApe1.Location = new System.Drawing.Point(540, 249);
-            this.lblElimApe1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblElimApe1.Location = new System.Drawing.Point(405, 202);
             this.lblElimApe1.Name = "lblElimApe1";
-            this.lblElimApe1.Size = new System.Drawing.Size(108, 25);
+            this.lblElimApe1.Size = new System.Drawing.Size(87, 20);
             this.lblElimApe1.TabIndex = 7;
             this.lblElimApe1.Text = "Apellidos:";
             // 
@@ -429,10 +412,9 @@
             // 
             this.lblElimNombreR2.AutoSize = true;
             this.lblElimNombreR2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblElimNombreR2.Location = new System.Drawing.Point(780, 196);
-            this.lblElimNombreR2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblElimNombreR2.Location = new System.Drawing.Point(585, 159);
             this.lblElimNombreR2.Name = "lblElimNombreR2";
-            this.lblElimNombreR2.Size = new System.Drawing.Size(95, 25);
+            this.lblElimNombreR2.Size = new System.Drawing.Size(75, 20);
             this.lblElimNombreR2.TabIndex = 6;
             this.lblElimNombreR2.Text = "(Nombre)";
             // 
@@ -440,20 +422,18 @@
             // 
             this.lblElimNombreR1.AutoSize = true;
             this.lblElimNombreR1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblElimNombreR1.Location = new System.Drawing.Point(540, 196);
-            this.lblElimNombreR1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblElimNombreR1.Location = new System.Drawing.Point(405, 159);
             this.lblElimNombreR1.Name = "lblElimNombreR1";
-            this.lblElimNombreR1.Size = new System.Drawing.Size(94, 25);
+            this.lblElimNombreR1.Size = new System.Drawing.Size(76, 20);
             this.lblElimNombreR1.TabIndex = 5;
             this.lblElimNombreR1.Text = "Nombre:";
             // 
             // btnBuscarUsu
             // 
             this.btnBuscarUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarUsu.Location = new System.Drawing.Point(101, 289);
-            this.btnBuscarUsu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscarUsu.Location = new System.Drawing.Point(76, 235);
             this.btnBuscarUsu.Name = "btnBuscarUsu";
-            this.btnBuscarUsu.Size = new System.Drawing.Size(160, 37);
+            this.btnBuscarUsu.Size = new System.Drawing.Size(120, 30);
             this.btnBuscarUsu.TabIndex = 2;
             this.btnBuscarUsu.Text = "Buscar";
             this.btnBuscarUsu.UseVisualStyleBackColor = true;
@@ -462,20 +442,18 @@
             // txtEliminarUsu
             // 
             this.txtEliminarUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEliminarUsu.Location = new System.Drawing.Point(56, 223);
-            this.txtEliminarUsu.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEliminarUsu.Location = new System.Drawing.Point(42, 181);
             this.txtEliminarUsu.Name = "txtEliminarUsu";
-            this.txtEliminarUsu.Size = new System.Drawing.Size(263, 30);
+            this.txtEliminarUsu.Size = new System.Drawing.Size(198, 26);
             this.txtEliminarUsu.TabIndex = 1;
             // 
             // lblElimUsuInfo
             // 
             this.lblElimUsuInfo.AutoSize = true;
             this.lblElimUsuInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblElimUsuInfo.Location = new System.Drawing.Point(51, 130);
-            this.lblElimUsuInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblElimUsuInfo.Location = new System.Drawing.Point(38, 106);
             this.lblElimUsuInfo.Name = "lblElimUsuInfo";
-            this.lblElimUsuInfo.Size = new System.Drawing.Size(382, 50);
+            this.lblElimUsuInfo.Size = new System.Drawing.Size(312, 40);
             this.lblElimUsuInfo.TabIndex = 0;
             this.lblElimUsuInfo.Text = "Introduzca el correo electrónico del usuario\r\nque desea eliminar:\r\n";
             // 
@@ -523,56 +501,81 @@
             this.grbPlato.Controls.Add(this.txtNomPlato);
             this.grbPlato.Controls.Add(this.lblNomPlato);
             this.grbPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbPlato.Location = new System.Drawing.Point(29, 47);
-            this.grbPlato.Margin = new System.Windows.Forms.Padding(4);
+            this.grbPlato.Location = new System.Drawing.Point(22, 38);
             this.grbPlato.Name = "grbPlato";
-            this.grbPlato.Padding = new System.Windows.Forms.Padding(4);
-            this.grbPlato.Size = new System.Drawing.Size(1281, 708);
+            this.grbPlato.Size = new System.Drawing.Size(961, 575);
             this.grbPlato.TabIndex = 3;
             this.grbPlato.TabStop = false;
             this.grbPlato.Text = "Agregar Platos:";
             this.grbPlato.Visible = false;
             // 
+            // txtValorN4
+            // 
+            this.txtValorN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorN4.Location = new System.Drawing.Point(724, 474);
+            this.txtValorN4.Name = "txtValorN4";
+            this.txtValorN4.Size = new System.Drawing.Size(52, 26);
+            this.txtValorN4.TabIndex = 28;
+            // 
+            // txtValorN3
+            // 
+            this.txtValorN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorN3.Location = new System.Drawing.Point(724, 384);
+            this.txtValorN3.Name = "txtValorN3";
+            this.txtValorN3.Size = new System.Drawing.Size(52, 26);
+            this.txtValorN3.TabIndex = 26;
+            // 
+            // txtValorN2
+            // 
+            this.txtValorN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorN2.Location = new System.Drawing.Point(724, 299);
+            this.txtValorN2.Name = "txtValorN2";
+            this.txtValorN2.Size = new System.Drawing.Size(52, 26);
+            this.txtValorN2.TabIndex = 24;
+            // 
             // nudCantidadN4
             // 
             this.nudCantidadN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantidadN4.Location = new System.Drawing.Point(1181, 581);
+            this.nudCantidadN4.Location = new System.Drawing.Point(886, 472);
+            this.nudCantidadN4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nudCantidadN4.Name = "nudCantidadN4";
-            this.nudCantidadN4.Size = new System.Drawing.Size(67, 30);
+            this.nudCantidadN4.Size = new System.Drawing.Size(50, 26);
             this.nudCantidadN4.TabIndex = 65;
             // 
             // nudCantidadN3
             // 
             this.nudCantidadN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantidadN3.Location = new System.Drawing.Point(1181, 473);
+            this.nudCantidadN3.Location = new System.Drawing.Point(886, 384);
+            this.nudCantidadN3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nudCantidadN3.Name = "nudCantidadN3";
-            this.nudCantidadN3.Size = new System.Drawing.Size(67, 30);
+            this.nudCantidadN3.Size = new System.Drawing.Size(50, 26);
             this.nudCantidadN3.TabIndex = 64;
             // 
             // nudCantidadN2
             // 
             this.nudCantidadN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantidadN2.Location = new System.Drawing.Point(1181, 367);
+            this.nudCantidadN2.Location = new System.Drawing.Point(886, 298);
+            this.nudCantidadN2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nudCantidadN2.Name = "nudCantidadN2";
-            this.nudCantidadN2.Size = new System.Drawing.Size(67, 30);
+            this.nudCantidadN2.Size = new System.Drawing.Size(50, 26);
             this.nudCantidadN2.TabIndex = 63;
             // 
             // nudCantidadN1
             // 
             this.nudCantidadN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantidadN1.Location = new System.Drawing.Point(1181, 259);
+            this.nudCantidadN1.Location = new System.Drawing.Point(886, 210);
+            this.nudCantidadN1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nudCantidadN1.Name = "nudCantidadN1";
-            this.nudCantidadN1.Size = new System.Drawing.Size(67, 30);
+            this.nudCantidadN1.Size = new System.Drawing.Size(50, 26);
             this.nudCantidadN1.TabIndex = 62;
             // 
             // lblCantidadN4
             // 
             this.lblCantidadN4.AutoSize = true;
             this.lblCantidadN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadN4.Location = new System.Drawing.Point(1068, 586);
-            this.lblCantidadN4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidadN4.Location = new System.Drawing.Point(801, 476);
             this.lblCantidadN4.Name = "lblCantidadN4";
-            this.lblCantidadN4.Size = new System.Drawing.Size(97, 25);
+            this.lblCantidadN4.Size = new System.Drawing.Size(77, 20);
             this.lblCantidadN4.TabIndex = 61;
             this.lblCantidadN4.Text = "Cantidad:";
             // 
@@ -580,10 +583,9 @@
             // 
             this.lblCantidadN3.AutoSize = true;
             this.lblCantidadN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadN3.Location = new System.Drawing.Point(1068, 475);
-            this.lblCantidadN3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidadN3.Location = new System.Drawing.Point(801, 386);
             this.lblCantidadN3.Name = "lblCantidadN3";
-            this.lblCantidadN3.Size = new System.Drawing.Size(97, 25);
+            this.lblCantidadN3.Size = new System.Drawing.Size(77, 20);
             this.lblCantidadN3.TabIndex = 60;
             this.lblCantidadN3.Text = "Cantidad:";
             // 
@@ -591,10 +593,9 @@
             // 
             this.lblCantidadN2.AutoSize = true;
             this.lblCantidadN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadN2.Location = new System.Drawing.Point(1068, 373);
-            this.lblCantidadN2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidadN2.Location = new System.Drawing.Point(801, 303);
             this.lblCantidadN2.Name = "lblCantidadN2";
-            this.lblCantidadN2.Size = new System.Drawing.Size(97, 25);
+            this.lblCantidadN2.Size = new System.Drawing.Size(77, 20);
             this.lblCantidadN2.TabIndex = 59;
             this.lblCantidadN2.Text = "Cantidad:";
             // 
@@ -602,10 +603,9 @@
             // 
             this.lblCantidadN1.AutoSize = true;
             this.lblCantidadN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadN1.Location = new System.Drawing.Point(1068, 261);
-            this.lblCantidadN1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidadN1.Location = new System.Drawing.Point(801, 212);
             this.lblCantidadN1.Name = "lblCantidadN1";
-            this.lblCantidadN1.Size = new System.Drawing.Size(97, 25);
+            this.lblCantidadN1.Size = new System.Drawing.Size(77, 20);
             this.lblCantidadN1.TabIndex = 54;
             this.lblCantidadN1.Text = "Cantidad:";
             // 
@@ -619,20 +619,18 @@
             "Vegano",
             "Vegetariano",
             "Sin Intolerancia"});
-            this.comboBox1.Location = new System.Drawing.Point(1027, 136);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Location = new System.Drawing.Point(770, 110);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(181, 33);
+            this.comboBox1.Size = new System.Drawing.Size(137, 28);
             this.comboBox1.TabIndex = 53;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(888, 139);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(666, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 25);
+            this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 52;
             this.label1.Text = "Intolerancias:";
             // 
@@ -644,20 +642,18 @@
             "Volumen",
             "Definicion",
             "Comer Sano"});
-            this.comboBox2.Location = new System.Drawing.Point(587, 138);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox2.Location = new System.Drawing.Point(440, 112);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(181, 33);
+            this.comboBox2.Size = new System.Drawing.Size(137, 28);
             this.comboBox2.TabIndex = 51;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(493, 142);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(370, 115);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 25);
+            this.label2.Size = new System.Drawing.Size(70, 20);
             this.label2.TabIndex = 50;
             this.label2.Text = "Objetivo:";
             // 
@@ -665,10 +661,9 @@
             // 
             this.lblValorN4.AutoSize = true;
             this.lblValorN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN4.Location = new System.Drawing.Point(726, 587);
-            this.lblValorN4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblValorN4.Location = new System.Drawing.Point(544, 477);
             this.lblValorN4.Name = "lblValorN4";
-            this.lblValorN4.Size = new System.Drawing.Size(222, 25);
+            this.lblValorN4.Size = new System.Drawing.Size(178, 20);
             this.lblValorN4.TabIndex = 31;
             this.lblValorN4.Text = "Añadir Valor Nutricional:";
             // 
@@ -676,10 +671,9 @@
             // 
             this.lblValorN3.AutoSize = true;
             this.lblValorN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN3.Location = new System.Drawing.Point(726, 476);
-            this.lblValorN3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblValorN3.Location = new System.Drawing.Point(544, 387);
             this.lblValorN3.Name = "lblValorN3";
-            this.lblValorN3.Size = new System.Drawing.Size(222, 25);
+            this.lblValorN3.Size = new System.Drawing.Size(178, 20);
             this.lblValorN3.TabIndex = 30;
             this.lblValorN3.Text = "Añadir Valor Nutricional:";
             // 
@@ -687,67 +681,36 @@
             // 
             this.lblValorN2.AutoSize = true;
             this.lblValorN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN2.Location = new System.Drawing.Point(726, 374);
-            this.lblValorN2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblValorN2.Location = new System.Drawing.Point(544, 304);
             this.lblValorN2.Name = "lblValorN2";
-            this.lblValorN2.Size = new System.Drawing.Size(222, 25);
+            this.lblValorN2.Size = new System.Drawing.Size(178, 20);
             this.lblValorN2.TabIndex = 29;
             this.lblValorN2.Text = "Añadir Valor Nutricional:";
-            // 
-            // txtValorN4
-            // 
-            this.txtValorN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN4.Location = new System.Drawing.Point(966, 584);
-            this.txtValorN4.Margin = new System.Windows.Forms.Padding(4);
-            this.txtValorN4.Name = "txtValorN4";
-            this.txtValorN4.Size = new System.Drawing.Size(68, 30);
-            this.txtValorN4.TabIndex = 28;
-            // 
-            // txtValorN3
-            // 
-            this.txtValorN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN3.Location = new System.Drawing.Point(966, 473);
-            this.txtValorN3.Margin = new System.Windows.Forms.Padding(4);
-            this.txtValorN3.Name = "txtValorN3";
-            this.txtValorN3.Size = new System.Drawing.Size(68, 30);
-            this.txtValorN3.TabIndex = 26;
-            // 
-            // txtValorN2
-            // 
-            this.txtValorN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN2.Location = new System.Drawing.Point(966, 368);
-            this.txtValorN2.Margin = new System.Windows.Forms.Padding(4);
-            this.txtValorN2.Name = "txtValorN2";
-            this.txtValorN2.Size = new System.Drawing.Size(68, 30);
-            this.txtValorN2.TabIndex = 24;
             // 
             // txtValorN1
             // 
             this.txtValorN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN1.Location = new System.Drawing.Point(966, 259);
-            this.txtValorN1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtValorN1.Location = new System.Drawing.Point(724, 210);
             this.txtValorN1.Name = "txtValorN1";
-            this.txtValorN1.Size = new System.Drawing.Size(68, 30);
+            this.txtValorN1.Size = new System.Drawing.Size(52, 26);
             this.txtValorN1.TabIndex = 22;
             // 
             // lblValorN1
             // 
             this.lblValorN1.AutoSize = true;
             this.lblValorN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN1.Location = new System.Drawing.Point(726, 262);
-            this.lblValorN1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblValorN1.Location = new System.Drawing.Point(544, 213);
             this.lblValorN1.Name = "lblValorN1";
-            this.lblValorN1.Size = new System.Drawing.Size(222, 25);
+            this.lblValorN1.Size = new System.Drawing.Size(178, 20);
             this.lblValorN1.TabIndex = 21;
             this.lblValorN1.Text = "Añadir Valor Nutricional:";
             // 
             // btnPlatoReset
             // 
             this.btnPlatoReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlatoReset.Location = new System.Drawing.Point(548, 658);
-            this.btnPlatoReset.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPlatoReset.Location = new System.Drawing.Point(411, 535);
             this.btnPlatoReset.Name = "btnPlatoReset";
-            this.btnPlatoReset.Size = new System.Drawing.Size(156, 42);
+            this.btnPlatoReset.Size = new System.Drawing.Size(117, 34);
             this.btnPlatoReset.TabIndex = 20;
             this.btnPlatoReset.Text = "Restablecer";
             this.btnPlatoReset.UseVisualStyleBackColor = true;
@@ -755,10 +718,9 @@
             // btnPlatoVolver
             // 
             this.btnPlatoVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlatoVolver.Location = new System.Drawing.Point(999, 658);
-            this.btnPlatoVolver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPlatoVolver.Location = new System.Drawing.Point(749, 535);
             this.btnPlatoVolver.Name = "btnPlatoVolver";
-            this.btnPlatoVolver.Size = new System.Drawing.Size(156, 42);
+            this.btnPlatoVolver.Size = new System.Drawing.Size(117, 34);
             this.btnPlatoVolver.TabIndex = 19;
             this.btnPlatoVolver.Text = "Volver";
             this.btnPlatoVolver.UseVisualStyleBackColor = true;
@@ -767,10 +729,9 @@
             // btnPlatoAceptar
             // 
             this.btnPlatoAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlatoAceptar.Location = new System.Drawing.Point(157, 658);
-            this.btnPlatoAceptar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPlatoAceptar.Location = new System.Drawing.Point(118, 535);
             this.btnPlatoAceptar.Name = "btnPlatoAceptar";
-            this.btnPlatoAceptar.Size = new System.Drawing.Size(156, 42);
+            this.btnPlatoAceptar.Size = new System.Drawing.Size(117, 34);
             this.btnPlatoAceptar.TabIndex = 18;
             this.btnPlatoAceptar.Text = "Aceptar";
             this.btnPlatoAceptar.UseVisualStyleBackColor = true;
@@ -779,20 +740,18 @@
             // txtAgregarIngre4
             // 
             this.txtAgregarIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre4.Location = new System.Drawing.Point(521, 590);
-            this.txtAgregarIngre4.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAgregarIngre4.Location = new System.Drawing.Point(391, 479);
             this.txtAgregarIngre4.Name = "txtAgregarIngre4";
-            this.txtAgregarIngre4.Size = new System.Drawing.Size(175, 30);
+            this.txtAgregarIngre4.Size = new System.Drawing.Size(132, 26);
             this.txtAgregarIngre4.TabIndex = 17;
             // 
             // lblAgregarIngre4
             // 
             this.lblAgregarIngre4.AutoSize = true;
             this.lblAgregarIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre4.Location = new System.Drawing.Point(264, 592);
-            this.lblAgregarIngre4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAgregarIngre4.Location = new System.Drawing.Point(198, 481);
             this.lblAgregarIngre4.Name = "lblAgregarIngre4";
-            this.lblAgregarIngre4.Size = new System.Drawing.Size(239, 25);
+            this.lblAgregarIngre4.Size = new System.Drawing.Size(193, 20);
             this.lblAgregarIngre4.TabIndex = 16;
             this.lblAgregarIngre4.Text = "Añadir Ingrediente Nuevo:";
             // 
@@ -803,40 +762,36 @@
             this.cmbIngre4.Items.AddRange(new object[] {
             "Prueba",
             "Prueba 1"});
-            this.cmbIngre4.Location = new System.Drawing.Point(73, 587);
-            this.cmbIngre4.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbIngre4.Location = new System.Drawing.Point(55, 477);
             this.cmbIngre4.Name = "cmbIngre4";
-            this.cmbIngre4.Size = new System.Drawing.Size(160, 33);
+            this.cmbIngre4.Size = new System.Drawing.Size(121, 28);
             this.cmbIngre4.TabIndex = 15;
             // 
             // lblIngre4
             // 
             this.lblIngre4.AutoSize = true;
             this.lblIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngre4.Location = new System.Drawing.Point(75, 535);
-            this.lblIngre4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIngre4.Location = new System.Drawing.Point(56, 435);
             this.lblIngre4.Name = "lblIngre4";
-            this.lblIngre4.Size = new System.Drawing.Size(125, 25);
+            this.lblIngre4.Size = new System.Drawing.Size(103, 20);
             this.lblIngre4.TabIndex = 14;
             this.lblIngre4.Text = "Ingrediente 4";
             // 
             // txtAgregarIngre3
             // 
             this.txtAgregarIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre3.Location = new System.Drawing.Point(521, 479);
-            this.txtAgregarIngre3.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAgregarIngre3.Location = new System.Drawing.Point(391, 389);
             this.txtAgregarIngre3.Name = "txtAgregarIngre3";
-            this.txtAgregarIngre3.Size = new System.Drawing.Size(175, 30);
+            this.txtAgregarIngre3.Size = new System.Drawing.Size(132, 26);
             this.txtAgregarIngre3.TabIndex = 13;
             // 
             // lblAgregarIngre3
             // 
             this.lblAgregarIngre3.AutoSize = true;
             this.lblAgregarIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre3.Location = new System.Drawing.Point(264, 481);
-            this.lblAgregarIngre3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAgregarIngre3.Location = new System.Drawing.Point(198, 391);
             this.lblAgregarIngre3.Name = "lblAgregarIngre3";
-            this.lblAgregarIngre3.Size = new System.Drawing.Size(239, 25);
+            this.lblAgregarIngre3.Size = new System.Drawing.Size(193, 20);
             this.lblAgregarIngre3.TabIndex = 12;
             this.lblAgregarIngre3.Text = "Añadir Ingrediente Nuevo:";
             // 
@@ -847,40 +802,36 @@
             this.cmbIngre3.Items.AddRange(new object[] {
             "Prueba",
             "Prueba 1"});
-            this.cmbIngre3.Location = new System.Drawing.Point(73, 476);
-            this.cmbIngre3.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbIngre3.Location = new System.Drawing.Point(55, 387);
             this.cmbIngre3.Name = "cmbIngre3";
-            this.cmbIngre3.Size = new System.Drawing.Size(160, 33);
+            this.cmbIngre3.Size = new System.Drawing.Size(121, 28);
             this.cmbIngre3.TabIndex = 11;
             // 
             // lblIngre3
             // 
             this.lblIngre3.AutoSize = true;
             this.lblIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngre3.Location = new System.Drawing.Point(75, 425);
-            this.lblIngre3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIngre3.Location = new System.Drawing.Point(56, 345);
             this.lblIngre3.Name = "lblIngre3";
-            this.lblIngre3.Size = new System.Drawing.Size(125, 25);
+            this.lblIngre3.Size = new System.Drawing.Size(103, 20);
             this.lblIngre3.TabIndex = 10;
             this.lblIngre3.Text = "Ingrediente 3";
             // 
             // txtAgregarIngre2
             // 
             this.txtAgregarIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre2.Location = new System.Drawing.Point(521, 374);
-            this.txtAgregarIngre2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAgregarIngre2.Location = new System.Drawing.Point(391, 304);
             this.txtAgregarIngre2.Name = "txtAgregarIngre2";
-            this.txtAgregarIngre2.Size = new System.Drawing.Size(175, 30);
+            this.txtAgregarIngre2.Size = new System.Drawing.Size(132, 26);
             this.txtAgregarIngre2.TabIndex = 9;
             // 
             // lblAgregarIngre2
             // 
             this.lblAgregarIngre2.AutoSize = true;
             this.lblAgregarIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre2.Location = new System.Drawing.Point(264, 376);
-            this.lblAgregarIngre2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAgregarIngre2.Location = new System.Drawing.Point(198, 306);
             this.lblAgregarIngre2.Name = "lblAgregarIngre2";
-            this.lblAgregarIngre2.Size = new System.Drawing.Size(239, 25);
+            this.lblAgregarIngre2.Size = new System.Drawing.Size(193, 20);
             this.lblAgregarIngre2.TabIndex = 8;
             this.lblAgregarIngre2.Text = "Añadir Ingrediente Nuevo:";
             // 
@@ -891,40 +842,36 @@
             this.cmbIngre2.Items.AddRange(new object[] {
             "Prueba",
             "Prueba 1"});
-            this.cmbIngre2.Location = new System.Drawing.Point(73, 372);
-            this.cmbIngre2.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbIngre2.Location = new System.Drawing.Point(55, 302);
             this.cmbIngre2.Name = "cmbIngre2";
-            this.cmbIngre2.Size = new System.Drawing.Size(160, 33);
+            this.cmbIngre2.Size = new System.Drawing.Size(121, 28);
             this.cmbIngre2.TabIndex = 7;
             // 
             // lblIngre2
             // 
             this.lblIngre2.AutoSize = true;
             this.lblIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngre2.Location = new System.Drawing.Point(75, 320);
-            this.lblIngre2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIngre2.Location = new System.Drawing.Point(56, 260);
             this.lblIngre2.Name = "lblIngre2";
-            this.lblIngre2.Size = new System.Drawing.Size(125, 25);
+            this.lblIngre2.Size = new System.Drawing.Size(103, 20);
             this.lblIngre2.TabIndex = 6;
             this.lblIngre2.Text = "Ingrediente 2";
             // 
             // txtAgregarIngre1
             // 
             this.txtAgregarIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre1.Location = new System.Drawing.Point(521, 265);
-            this.txtAgregarIngre1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAgregarIngre1.Location = new System.Drawing.Point(391, 215);
             this.txtAgregarIngre1.Name = "txtAgregarIngre1";
-            this.txtAgregarIngre1.Size = new System.Drawing.Size(175, 30);
+            this.txtAgregarIngre1.Size = new System.Drawing.Size(132, 26);
             this.txtAgregarIngre1.TabIndex = 5;
             // 
             // lblAgregarIngre1
             // 
             this.lblAgregarIngre1.AutoSize = true;
             this.lblAgregarIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre1.Location = new System.Drawing.Point(264, 267);
-            this.lblAgregarIngre1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAgregarIngre1.Location = new System.Drawing.Point(198, 217);
             this.lblAgregarIngre1.Name = "lblAgregarIngre1";
-            this.lblAgregarIngre1.Size = new System.Drawing.Size(239, 25);
+            this.lblAgregarIngre1.Size = new System.Drawing.Size(193, 20);
             this.lblAgregarIngre1.TabIndex = 4;
             this.lblAgregarIngre1.Text = "Añadir Ingrediente Nuevo:";
             // 
@@ -935,40 +882,36 @@
             this.cmbIngre1.Items.AddRange(new object[] {
             "Prueba",
             "Prueba 1"});
-            this.cmbIngre1.Location = new System.Drawing.Point(73, 262);
-            this.cmbIngre1.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbIngre1.Location = new System.Drawing.Point(55, 213);
             this.cmbIngre1.Name = "cmbIngre1";
-            this.cmbIngre1.Size = new System.Drawing.Size(160, 33);
+            this.cmbIngre1.Size = new System.Drawing.Size(121, 28);
             this.cmbIngre1.TabIndex = 3;
             // 
             // lblIngre1
             // 
             this.lblIngre1.AutoSize = true;
             this.lblIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngre1.Location = new System.Drawing.Point(75, 210);
-            this.lblIngre1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIngre1.Location = new System.Drawing.Point(56, 171);
             this.lblIngre1.Name = "lblIngre1";
-            this.lblIngre1.Size = new System.Drawing.Size(125, 25);
+            this.lblIngre1.Size = new System.Drawing.Size(103, 20);
             this.lblIngre1.TabIndex = 2;
             this.lblIngre1.Text = "Ingrediente 1";
             // 
             // txtNomPlato
             // 
             this.txtNomPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomPlato.Location = new System.Drawing.Point(92, 139);
-            this.txtNomPlato.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNomPlato.Location = new System.Drawing.Point(69, 113);
             this.txtNomPlato.Name = "txtNomPlato";
-            this.txtNomPlato.Size = new System.Drawing.Size(177, 30);
+            this.txtNomPlato.Size = new System.Drawing.Size(134, 26);
             this.txtNomPlato.TabIndex = 1;
             // 
             // lblNomPlato
             // 
             this.lblNomPlato.AutoSize = true;
             this.lblNomPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomPlato.Location = new System.Drawing.Point(92, 96);
-            this.lblNomPlato.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNomPlato.Location = new System.Drawing.Point(69, 78);
             this.lblNomPlato.Name = "lblNomPlato";
-            this.lblNomPlato.Size = new System.Drawing.Size(167, 25);
+            this.lblNomPlato.Size = new System.Drawing.Size(134, 20);
             this.lblNomPlato.TabIndex = 0;
             this.lblNomPlato.Text = "Nombre del Plato:";
             // 
@@ -1026,11 +969,9 @@
             this.grbDieta.Controls.Add(this.txtNomDieta);
             this.grbDieta.Controls.Add(this.lblNomDieta);
             this.grbDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDieta.Location = new System.Drawing.Point(16, 39);
-            this.grbDieta.Margin = new System.Windows.Forms.Padding(4);
+            this.grbDieta.Location = new System.Drawing.Point(12, 32);
             this.grbDieta.Name = "grbDieta";
-            this.grbDieta.Padding = new System.Windows.Forms.Padding(4);
-            this.grbDieta.Size = new System.Drawing.Size(1323, 729);
+            this.grbDieta.Size = new System.Drawing.Size(992, 592);
             this.grbDieta.TabIndex = 4;
             this.grbDieta.TabStop = false;
             this.grbDieta.Text = "Agregar Dieta:";
@@ -1039,13 +980,13 @@
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(1107, 98);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscar.Location = new System.Drawing.Point(830, 80);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(133, 46);
+            this.btnBuscar.Size = new System.Drawing.Size(100, 37);
             this.btnBuscar.TabIndex = 50;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // cmbAdminInto
             // 
@@ -1057,20 +998,18 @@
             "Vegano",
             "Vegetariano",
             "Sin Intolerancia"});
-            this.cmbAdminInto.Location = new System.Drawing.Point(878, 104);
-            this.cmbAdminInto.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbAdminInto.Location = new System.Drawing.Point(658, 84);
             this.cmbAdminInto.Name = "cmbAdminInto";
-            this.cmbAdminInto.Size = new System.Drawing.Size(181, 33);
+            this.cmbAdminInto.Size = new System.Drawing.Size(137, 28);
             this.cmbAdminInto.TabIndex = 49;
             // 
             // lblAdminInto
             // 
             this.lblAdminInto.AutoSize = true;
             this.lblAdminInto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminInto.Location = new System.Drawing.Point(739, 107);
-            this.lblAdminInto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdminInto.Location = new System.Drawing.Point(554, 87);
             this.lblAdminInto.Name = "lblAdminInto";
-            this.lblAdminInto.Size = new System.Drawing.Size(128, 25);
+            this.lblAdminInto.Size = new System.Drawing.Size(104, 20);
             this.lblAdminInto.TabIndex = 48;
             this.lblAdminInto.Text = "Intolerancias:";
             // 
@@ -1082,20 +1021,18 @@
             "Volumen",
             "Definicion",
             "Comer Sano"});
-            this.cmbAdminObj.Location = new System.Drawing.Point(537, 105);
-            this.cmbAdminObj.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbAdminObj.Location = new System.Drawing.Point(403, 85);
             this.cmbAdminObj.Name = "cmbAdminObj";
-            this.cmbAdminObj.Size = new System.Drawing.Size(181, 33);
+            this.cmbAdminObj.Size = new System.Drawing.Size(137, 28);
             this.cmbAdminObj.TabIndex = 47;
             // 
             // lblAdminObj
             // 
             this.lblAdminObj.AutoSize = true;
             this.lblAdminObj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminObj.Location = new System.Drawing.Point(443, 109);
-            this.lblAdminObj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdminObj.Location = new System.Drawing.Point(332, 89);
             this.lblAdminObj.Name = "lblAdminObj";
-            this.lblAdminObj.Size = new System.Drawing.Size(90, 25);
+            this.lblAdminObj.Size = new System.Drawing.Size(70, 20);
             this.lblAdminObj.TabIndex = 46;
             this.lblAdminObj.Text = "Objetivo:";
             // 
@@ -1103,20 +1040,18 @@
             // 
             this.cmbPlato21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato21.FormattingEnabled = true;
-            this.cmbPlato21.Location = new System.Drawing.Point(134, 565);
-            this.cmbPlato21.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato21.Location = new System.Drawing.Point(100, 459);
             this.cmbPlato21.Name = "cmbPlato21";
-            this.cmbPlato21.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato21.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato21.TabIndex = 45;
             // 
             // lblPlato21
             // 
             this.lblPlato21.AutoSize = true;
             this.lblPlato21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato21.Location = new System.Drawing.Point(40, 569);
-            this.lblPlato21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato21.Location = new System.Drawing.Point(30, 462);
             this.lblPlato21.Name = "lblPlato21";
-            this.lblPlato21.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato21.Size = new System.Drawing.Size(71, 20);
             this.lblPlato21.TabIndex = 44;
             this.lblPlato21.Text = "Plato 21:";
             // 
@@ -1124,20 +1059,18 @@
             // 
             this.cmbPlato20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato20.FormattingEnabled = true;
-            this.cmbPlato20.Location = new System.Drawing.Point(1107, 490);
-            this.cmbPlato20.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato20.Location = new System.Drawing.Point(830, 398);
             this.cmbPlato20.Name = "cmbPlato20";
-            this.cmbPlato20.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato20.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato20.TabIndex = 43;
             // 
             // lblPlato20
             // 
             this.lblPlato20.AutoSize = true;
             this.lblPlato20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato20.Location = new System.Drawing.Point(1012, 494);
-            this.lblPlato20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato20.Location = new System.Drawing.Point(759, 401);
             this.lblPlato20.Name = "lblPlato20";
-            this.lblPlato20.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato20.Size = new System.Drawing.Size(71, 20);
             this.lblPlato20.TabIndex = 42;
             this.lblPlato20.Text = "Plato 20:";
             // 
@@ -1145,20 +1078,18 @@
             // 
             this.cmbPlato19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato19.FormattingEnabled = true;
-            this.cmbPlato19.Location = new System.Drawing.Point(786, 490);
-            this.cmbPlato19.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato19.Location = new System.Drawing.Point(590, 398);
             this.cmbPlato19.Name = "cmbPlato19";
-            this.cmbPlato19.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato19.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato19.TabIndex = 41;
             // 
             // lblPlato19
             // 
             this.lblPlato19.AutoSize = true;
             this.lblPlato19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato19.Location = new System.Drawing.Point(692, 493);
-            this.lblPlato19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato19.Location = new System.Drawing.Point(519, 401);
             this.lblPlato19.Name = "lblPlato19";
-            this.lblPlato19.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato19.Size = new System.Drawing.Size(71, 20);
             this.lblPlato19.TabIndex = 40;
             this.lblPlato19.Text = "Plato 19:";
             // 
@@ -1166,20 +1097,18 @@
             // 
             this.cmbPlato18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato18.FormattingEnabled = true;
-            this.cmbPlato18.Location = new System.Drawing.Point(453, 490);
-            this.cmbPlato18.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato18.Location = new System.Drawing.Point(340, 398);
             this.cmbPlato18.Name = "cmbPlato18";
-            this.cmbPlato18.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato18.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato18.TabIndex = 39;
             // 
             // lblPlato18
             // 
             this.lblPlato18.AutoSize = true;
             this.lblPlato18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato18.Location = new System.Drawing.Point(359, 494);
-            this.lblPlato18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato18.Location = new System.Drawing.Point(269, 401);
             this.lblPlato18.Name = "lblPlato18";
-            this.lblPlato18.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato18.Size = new System.Drawing.Size(71, 20);
             this.lblPlato18.TabIndex = 38;
             this.lblPlato18.Text = "Plato 18:";
             // 
@@ -1187,20 +1116,18 @@
             // 
             this.cmbPlato17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato17.FormattingEnabled = true;
-            this.cmbPlato17.Location = new System.Drawing.Point(135, 490);
-            this.cmbPlato17.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato17.Location = new System.Drawing.Point(101, 398);
             this.cmbPlato17.Name = "cmbPlato17";
-            this.cmbPlato17.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato17.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato17.TabIndex = 37;
             // 
             // lblPlato17
             // 
             this.lblPlato17.AutoSize = true;
             this.lblPlato17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato17.Location = new System.Drawing.Point(40, 494);
-            this.lblPlato17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato17.Location = new System.Drawing.Point(30, 401);
             this.lblPlato17.Name = "lblPlato17";
-            this.lblPlato17.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato17.Size = new System.Drawing.Size(71, 20);
             this.lblPlato17.TabIndex = 36;
             this.lblPlato17.Text = "Plato 17:";
             // 
@@ -1208,20 +1135,18 @@
             // 
             this.cmbPlato16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato16.FormattingEnabled = true;
-            this.cmbPlato16.Location = new System.Drawing.Point(1106, 424);
-            this.cmbPlato16.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato16.Location = new System.Drawing.Point(830, 344);
             this.cmbPlato16.Name = "cmbPlato16";
-            this.cmbPlato16.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato16.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato16.TabIndex = 35;
             // 
             // lblPlato16
             // 
             this.lblPlato16.AutoSize = true;
             this.lblPlato16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato16.Location = new System.Drawing.Point(1012, 428);
-            this.lblPlato16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato16.Location = new System.Drawing.Point(759, 348);
             this.lblPlato16.Name = "lblPlato16";
-            this.lblPlato16.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato16.Size = new System.Drawing.Size(71, 20);
             this.lblPlato16.TabIndex = 34;
             this.lblPlato16.Text = "Plato 16:";
             // 
@@ -1229,20 +1154,18 @@
             // 
             this.cmbPlato15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato15.FormattingEnabled = true;
-            this.cmbPlato15.Location = new System.Drawing.Point(786, 423);
-            this.cmbPlato15.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato15.Location = new System.Drawing.Point(590, 344);
             this.cmbPlato15.Name = "cmbPlato15";
-            this.cmbPlato15.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato15.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato15.TabIndex = 33;
             // 
             // lblPlato15
             // 
             this.lblPlato15.AutoSize = true;
             this.lblPlato15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato15.Location = new System.Drawing.Point(692, 427);
-            this.lblPlato15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato15.Location = new System.Drawing.Point(519, 347);
             this.lblPlato15.Name = "lblPlato15";
-            this.lblPlato15.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato15.Size = new System.Drawing.Size(71, 20);
             this.lblPlato15.TabIndex = 32;
             this.lblPlato15.Text = "Plato 15:";
             // 
@@ -1250,20 +1173,18 @@
             // 
             this.cmbPlato14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato14.FormattingEnabled = true;
-            this.cmbPlato14.Location = new System.Drawing.Point(453, 424);
-            this.cmbPlato14.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato14.Location = new System.Drawing.Point(340, 344);
             this.cmbPlato14.Name = "cmbPlato14";
-            this.cmbPlato14.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato14.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato14.TabIndex = 31;
             // 
             // lblPlato14
             // 
             this.lblPlato14.AutoSize = true;
             this.lblPlato14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato14.Location = new System.Drawing.Point(359, 428);
-            this.lblPlato14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato14.Location = new System.Drawing.Point(269, 348);
             this.lblPlato14.Name = "lblPlato14";
-            this.lblPlato14.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato14.Size = new System.Drawing.Size(71, 20);
             this.lblPlato14.TabIndex = 30;
             this.lblPlato14.Text = "Plato 14:";
             // 
@@ -1271,20 +1192,18 @@
             // 
             this.cmbPlato13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato13.FormattingEnabled = true;
-            this.cmbPlato13.Location = new System.Drawing.Point(134, 424);
-            this.cmbPlato13.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato13.Location = new System.Drawing.Point(100, 344);
             this.cmbPlato13.Name = "cmbPlato13";
-            this.cmbPlato13.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato13.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato13.TabIndex = 29;
             // 
             // lblPlato13
             // 
             this.lblPlato13.AutoSize = true;
             this.lblPlato13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato13.Location = new System.Drawing.Point(40, 428);
-            this.lblPlato13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato13.Location = new System.Drawing.Point(30, 348);
             this.lblPlato13.Name = "lblPlato13";
-            this.lblPlato13.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato13.Size = new System.Drawing.Size(71, 20);
             this.lblPlato13.TabIndex = 28;
             this.lblPlato13.Text = "Plato 13:";
             // 
@@ -1292,20 +1211,18 @@
             // 
             this.cmbPlato12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato12.FormattingEnabled = true;
-            this.cmbPlato12.Location = new System.Drawing.Point(1107, 349);
-            this.cmbPlato12.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato12.Location = new System.Drawing.Point(830, 284);
             this.cmbPlato12.Name = "cmbPlato12";
-            this.cmbPlato12.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato12.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato12.TabIndex = 27;
             // 
             // lblPlato12
             // 
             this.lblPlato12.AutoSize = true;
             this.lblPlato12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato12.Location = new System.Drawing.Point(1012, 353);
-            this.lblPlato12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato12.Location = new System.Drawing.Point(759, 287);
             this.lblPlato12.Name = "lblPlato12";
-            this.lblPlato12.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato12.Size = new System.Drawing.Size(71, 20);
             this.lblPlato12.TabIndex = 26;
             this.lblPlato12.Text = "Plato 12:";
             // 
@@ -1313,20 +1230,18 @@
             // 
             this.cmbPlato11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato11.FormattingEnabled = true;
-            this.cmbPlato11.Location = new System.Drawing.Point(786, 349);
-            this.cmbPlato11.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato11.Location = new System.Drawing.Point(590, 284);
             this.cmbPlato11.Name = "cmbPlato11";
-            this.cmbPlato11.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato11.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato11.TabIndex = 25;
             // 
             // lblPlato11
             // 
             this.lblPlato11.AutoSize = true;
             this.lblPlato11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato11.Location = new System.Drawing.Point(692, 352);
-            this.lblPlato11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato11.Location = new System.Drawing.Point(519, 286);
             this.lblPlato11.Name = "lblPlato11";
-            this.lblPlato11.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato11.Size = new System.Drawing.Size(71, 20);
             this.lblPlato11.TabIndex = 24;
             this.lblPlato11.Text = "Plato 11:";
             // 
@@ -1334,20 +1249,18 @@
             // 
             this.cmbPlato10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato10.FormattingEnabled = true;
-            this.cmbPlato10.Location = new System.Drawing.Point(453, 349);
-            this.cmbPlato10.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato10.Location = new System.Drawing.Point(340, 284);
             this.cmbPlato10.Name = "cmbPlato10";
-            this.cmbPlato10.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato10.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato10.TabIndex = 23;
             // 
             // lblPlato10
             // 
             this.lblPlato10.AutoSize = true;
             this.lblPlato10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato10.Location = new System.Drawing.Point(359, 353);
-            this.lblPlato10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato10.Location = new System.Drawing.Point(269, 287);
             this.lblPlato10.Name = "lblPlato10";
-            this.lblPlato10.Size = new System.Drawing.Size(89, 25);
+            this.lblPlato10.Size = new System.Drawing.Size(71, 20);
             this.lblPlato10.TabIndex = 22;
             this.lblPlato10.Text = "Plato 10:";
             // 
@@ -1355,20 +1268,18 @@
             // 
             this.cmbPlato9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato9.FormattingEnabled = true;
-            this.cmbPlato9.Location = new System.Drawing.Point(135, 349);
-            this.cmbPlato9.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato9.Location = new System.Drawing.Point(101, 284);
             this.cmbPlato9.Name = "cmbPlato9";
-            this.cmbPlato9.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato9.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato9.TabIndex = 21;
             // 
             // lblPlato9
             // 
             this.lblPlato9.AutoSize = true;
             this.lblPlato9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato9.Location = new System.Drawing.Point(40, 353);
-            this.lblPlato9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato9.Location = new System.Drawing.Point(30, 287);
             this.lblPlato9.Name = "lblPlato9";
-            this.lblPlato9.Size = new System.Drawing.Size(78, 25);
+            this.lblPlato9.Size = new System.Drawing.Size(62, 20);
             this.lblPlato9.TabIndex = 20;
             this.lblPlato9.Text = "Plato 9:";
             // 
@@ -1376,30 +1287,27 @@
             // 
             this.cmbPlato8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato8.FormattingEnabled = true;
-            this.cmbPlato8.Location = new System.Drawing.Point(1106, 272);
-            this.cmbPlato8.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato8.Location = new System.Drawing.Point(830, 221);
             this.cmbPlato8.Name = "cmbPlato8";
-            this.cmbPlato8.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato8.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato8.TabIndex = 19;
             // 
             // lblPlato8
             // 
             this.lblPlato8.AutoSize = true;
             this.lblPlato8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato8.Location = new System.Drawing.Point(1012, 276);
-            this.lblPlato8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato8.Location = new System.Drawing.Point(759, 224);
             this.lblPlato8.Name = "lblPlato8";
-            this.lblPlato8.Size = new System.Drawing.Size(78, 25);
+            this.lblPlato8.Size = new System.Drawing.Size(62, 20);
             this.lblPlato8.TabIndex = 18;
             this.lblPlato8.Text = "Plato 8:";
             // 
             // btnDietaVolver
             // 
             this.btnDietaVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDietaVolver.Location = new System.Drawing.Point(632, 644);
-            this.btnDietaVolver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDietaVolver.Location = new System.Drawing.Point(474, 523);
             this.btnDietaVolver.Name = "btnDietaVolver";
-            this.btnDietaVolver.Size = new System.Drawing.Size(133, 46);
+            this.btnDietaVolver.Size = new System.Drawing.Size(100, 37);
             this.btnDietaVolver.TabIndex = 17;
             this.btnDietaVolver.Text = "Volver";
             this.btnDietaVolver.UseVisualStyleBackColor = true;
@@ -1408,32 +1316,30 @@
             // btnDietaAceptar
             // 
             this.btnDietaAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDietaAceptar.Location = new System.Drawing.Point(407, 644);
-            this.btnDietaAceptar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDietaAceptar.Location = new System.Drawing.Point(305, 523);
             this.btnDietaAceptar.Name = "btnDietaAceptar";
-            this.btnDietaAceptar.Size = new System.Drawing.Size(133, 46);
+            this.btnDietaAceptar.Size = new System.Drawing.Size(100, 37);
             this.btnDietaAceptar.TabIndex = 16;
             this.btnDietaAceptar.Text = "Aceptar";
             this.btnDietaAceptar.UseVisualStyleBackColor = true;
+            this.btnDietaAceptar.Click += new System.EventHandler(this.btnDietaAceptar_Click);
             // 
             // cmbPlato7
             // 
             this.cmbPlato7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato7.FormattingEnabled = true;
-            this.cmbPlato7.Location = new System.Drawing.Point(786, 271);
-            this.cmbPlato7.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato7.Location = new System.Drawing.Point(590, 220);
             this.cmbPlato7.Name = "cmbPlato7";
-            this.cmbPlato7.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato7.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato7.TabIndex = 15;
             // 
             // lblPlato7
             // 
             this.lblPlato7.AutoSize = true;
             this.lblPlato7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato7.Location = new System.Drawing.Point(692, 275);
-            this.lblPlato7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato7.Location = new System.Drawing.Point(519, 223);
             this.lblPlato7.Name = "lblPlato7";
-            this.lblPlato7.Size = new System.Drawing.Size(78, 25);
+            this.lblPlato7.Size = new System.Drawing.Size(62, 20);
             this.lblPlato7.TabIndex = 14;
             this.lblPlato7.Text = "Plato 7:";
             // 
@@ -1441,20 +1347,18 @@
             // 
             this.cmbPlato6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato6.FormattingEnabled = true;
-            this.cmbPlato6.Location = new System.Drawing.Point(453, 272);
-            this.cmbPlato6.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato6.Location = new System.Drawing.Point(340, 221);
             this.cmbPlato6.Name = "cmbPlato6";
-            this.cmbPlato6.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato6.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato6.TabIndex = 13;
             // 
             // lblPlato6
             // 
             this.lblPlato6.AutoSize = true;
             this.lblPlato6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato6.Location = new System.Drawing.Point(359, 276);
-            this.lblPlato6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato6.Location = new System.Drawing.Point(269, 224);
             this.lblPlato6.Name = "lblPlato6";
-            this.lblPlato6.Size = new System.Drawing.Size(78, 25);
+            this.lblPlato6.Size = new System.Drawing.Size(62, 20);
             this.lblPlato6.TabIndex = 12;
             this.lblPlato6.Text = "Plato 6:";
             // 
@@ -1462,20 +1366,18 @@
             // 
             this.cmbPlato5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato5.FormattingEnabled = true;
-            this.cmbPlato5.Location = new System.Drawing.Point(134, 272);
-            this.cmbPlato5.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato5.Location = new System.Drawing.Point(100, 221);
             this.cmbPlato5.Name = "cmbPlato5";
-            this.cmbPlato5.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato5.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato5.TabIndex = 11;
             // 
             // lblPlato5
             // 
             this.lblPlato5.AutoSize = true;
             this.lblPlato5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato5.Location = new System.Drawing.Point(40, 276);
-            this.lblPlato5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato5.Location = new System.Drawing.Point(30, 224);
             this.lblPlato5.Name = "lblPlato5";
-            this.lblPlato5.Size = new System.Drawing.Size(78, 25);
+            this.lblPlato5.Size = new System.Drawing.Size(62, 20);
             this.lblPlato5.TabIndex = 10;
             this.lblPlato5.Text = "Plato 5:";
             // 
@@ -1483,20 +1385,18 @@
             // 
             this.cmbPlato4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato4.FormattingEnabled = true;
-            this.cmbPlato4.Location = new System.Drawing.Point(1107, 197);
-            this.cmbPlato4.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato4.Location = new System.Drawing.Point(830, 160);
             this.cmbPlato4.Name = "cmbPlato4";
-            this.cmbPlato4.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato4.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato4.TabIndex = 9;
             // 
             // lblPlato4
             // 
             this.lblPlato4.AutoSize = true;
             this.lblPlato4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato4.Location = new System.Drawing.Point(1012, 201);
-            this.lblPlato4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato4.Location = new System.Drawing.Point(759, 163);
             this.lblPlato4.Name = "lblPlato4";
-            this.lblPlato4.Size = new System.Drawing.Size(78, 25);
+            this.lblPlato4.Size = new System.Drawing.Size(62, 20);
             this.lblPlato4.TabIndex = 8;
             this.lblPlato4.Text = "Plato 4:";
             // 
@@ -1504,20 +1404,18 @@
             // 
             this.cmbPlato3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato3.FormattingEnabled = true;
-            this.cmbPlato3.Location = new System.Drawing.Point(786, 197);
-            this.cmbPlato3.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato3.Location = new System.Drawing.Point(590, 160);
             this.cmbPlato3.Name = "cmbPlato3";
-            this.cmbPlato3.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato3.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato3.TabIndex = 7;
             // 
             // lblPlato3
             // 
             this.lblPlato3.AutoSize = true;
             this.lblPlato3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato3.Location = new System.Drawing.Point(692, 200);
-            this.lblPlato3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato3.Location = new System.Drawing.Point(519, 162);
             this.lblPlato3.Name = "lblPlato3";
-            this.lblPlato3.Size = new System.Drawing.Size(78, 25);
+            this.lblPlato3.Size = new System.Drawing.Size(62, 20);
             this.lblPlato3.TabIndex = 6;
             this.lblPlato3.Text = "Plato 3:";
             // 
@@ -1525,20 +1423,18 @@
             // 
             this.cmbPlato2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato2.FormattingEnabled = true;
-            this.cmbPlato2.Location = new System.Drawing.Point(453, 197);
-            this.cmbPlato2.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato2.Location = new System.Drawing.Point(340, 160);
             this.cmbPlato2.Name = "cmbPlato2";
-            this.cmbPlato2.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato2.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato2.TabIndex = 5;
             // 
             // lblPlato2
             // 
             this.lblPlato2.AutoSize = true;
             this.lblPlato2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato2.Location = new System.Drawing.Point(359, 201);
-            this.lblPlato2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato2.Location = new System.Drawing.Point(269, 163);
             this.lblPlato2.Name = "lblPlato2";
-            this.lblPlato2.Size = new System.Drawing.Size(78, 25);
+            this.lblPlato2.Size = new System.Drawing.Size(62, 20);
             this.lblPlato2.TabIndex = 4;
             this.lblPlato2.Text = "Plato 2:";
             // 
@@ -1546,55 +1442,50 @@
             // 
             this.cmbPlato1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato1.FormattingEnabled = true;
-            this.cmbPlato1.Location = new System.Drawing.Point(135, 197);
-            this.cmbPlato1.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPlato1.Location = new System.Drawing.Point(101, 160);
             this.cmbPlato1.Name = "cmbPlato1";
-            this.cmbPlato1.Size = new System.Drawing.Size(181, 33);
+            this.cmbPlato1.Size = new System.Drawing.Size(137, 28);
             this.cmbPlato1.TabIndex = 3;
             // 
             // lblPlato1
             // 
             this.lblPlato1.AutoSize = true;
             this.lblPlato1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlato1.Location = new System.Drawing.Point(40, 201);
-            this.lblPlato1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlato1.Location = new System.Drawing.Point(30, 163);
             this.lblPlato1.Name = "lblPlato1";
-            this.lblPlato1.Size = new System.Drawing.Size(78, 25);
+            this.lblPlato1.Size = new System.Drawing.Size(62, 20);
             this.lblPlato1.TabIndex = 2;
             this.lblPlato1.Text = "Plato 1:";
             // 
             // txtNomDieta
             // 
             this.txtNomDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomDieta.Location = new System.Drawing.Point(172, 105);
-            this.txtNomDieta.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNomDieta.Location = new System.Drawing.Point(129, 85);
             this.txtNomDieta.Name = "txtNomDieta";
-            this.txtNomDieta.Size = new System.Drawing.Size(248, 34);
+            this.txtNomDieta.Size = new System.Drawing.Size(187, 29);
             this.txtNomDieta.TabIndex = 1;
             // 
             // lblNomDieta
             // 
             this.lblNomDieta.AutoSize = true;
             this.lblNomDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomDieta.Location = new System.Drawing.Point(46, 106);
-            this.lblNomDieta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNomDieta.Location = new System.Drawing.Point(34, 86);
             this.lblNomDieta.Name = "lblNomDieta";
-            this.lblNomDieta.Size = new System.Drawing.Size(107, 29);
+            this.lblNomDieta.Size = new System.Drawing.Size(84, 24);
             this.lblNomDieta.TabIndex = 0;
             this.lblNomDieta.Text = "Nombre:";
             // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1367, 768);
+            this.ClientSize = new System.Drawing.Size(1025, 624);
             this.Controls.Add(this.mnuAdmin);
-            this.Controls.Add(this.grbPlato);
-            this.Controls.Add(this.grbInfo);
             this.Controls.Add(this.grbDieta);
             this.Controls.Add(this.grbEliminarUsu);
+            this.Controls.Add(this.grbPlato);
+            this.Controls.Add(this.grbInfo);
             this.MainMenuStrip = this.mnuAdmin;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin";
             this.Text = "Admin";
             this.grbInfo.ResumeLayout(false);
