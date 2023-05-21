@@ -5,9 +5,6 @@ Batido de proteínas a base de leche de almendras (250 ml), plátano (1 unidad),
 Comida: 
 Filete de ternera (150 gramos) a la plancha con ensalada de lechuga (50 gramos), zanahoria (50 gramos) y pepino (50 gramos).
 
-Merienda: 
-Batido de proteínas a base de leche de almendras (250 ml) y fresas (100 gramos).
-
 Cena: 
 Salmón (150 gramos) al horno con brócoli (100 gramos) y patatas (150 gramos).
 
@@ -17,9 +14,6 @@ Batido de proteínas a base de leche de coco (250 ml), piña (100 gramos), espin
 
 Comida: 
 Pechuga de pollo (150 gramos) a la plancha con ensalada de espinacas (50 gramos), tomate (50 gramos) y aguacate (50 gramos). 
-
-Merienda: 
-Batido de proteínas a base de leche de coco (250 ml) y mango (100 gramos).
 
 Cena: 
 Lomo de cerdo (150 gramos) a la plancha con ensalada de lechuga (50 gramos), zanahoria (50 gramos) y pepino (50 gramos). 
@@ -31,9 +25,6 @@ Batido de proteínas a base de leche de almendras (250 ml), plátano (1 unidad),
 Comida: 
 Ensalada de atún (100 gramos), lechuga (50 gramos), tomate (50 gramos) y aguacate (50 gramos).
 
-Merienda: 
-Batido de proteínas a base de leche de almendras (250 ml) y arándanos (100 gramos).
-
 Cena: 
 Filete de ternera (150 gramos) a la plancha con brócoli (100 gramos) y patatas (150 gramos).
 
@@ -43,9 +34,6 @@ Batido de proteínas a base de leche de almendras (250 ml), piña (100 gramos), 
 
 Comida: 
 Solomillo de cerdo (150 gramos) a la plancha con ensalada de lechuga (50 gramos), zanahoria (50 gramos) y pepino (50 gramos).
-
-Merienda: 
-Batido de proteínas a base de leche de almendras (250 ml) y fresas (100 gramos).
 
 Cena: 
 Salmón (150 gramos) al horno con ensalada de espinacas (50 gramos), tomate (50 gramos) y aguacate (50 gramos).
@@ -57,9 +45,6 @@ Batido de proteínas a base de leche de coco (250 ml), plátano (1 unidad), aven
 Comida: 
 Pollo (150 gramos) guisado con verduras (50 gramos de zanahoria, 50 gramos de pimiento y 50 gramos de calabacín). Una porción de arroz integral (60 gramos).
 
-Merienda: 
-Batido de proteínas a base de leche de coco (250 ml) y mango (100 gramos).
-
 Cena: 
 Filete de ternera (150 gramos) a la plancha con ensalada de lechuga (50 gramos), tomate (50 gramos) y aguacate (50 gramos).
 
@@ -69,9 +54,6 @@ Batido de proteínas a base de leche de almendras (250 ml), piña (100 gramos), 
 
 Comida: 
 Ensalada de atún (100 gramos), lechuga (50 gramos), tomate (50 gramos) y aguacate (50 gramos). Una porción de quinoa (60 gramos).
-
-Merienda: 
-Batido de proteínas a base de leche de almendras (250 ml) y fresas (100 gramos).
 
 Cena: 
 Lomo de cerdo (150 gramos) a la plancha con ensalada de espinacas (50 gramos).
