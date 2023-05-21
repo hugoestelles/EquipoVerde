@@ -19,6 +19,28 @@ namespace NutriWise
             InitializeComponent();
         }
 
+        #region Validaciones
+        private void ValidarAgregarDieta()
+        {
+            errorDatos.Clear();
+
+            if (txtNomDieta.Text == "")
+            {
+                errorDatos.SetError(txtNomDieta, "Ingresa nombre");
+            }
+
+            if (cmbAdminDietObj.SelectedIndex == -1)
+            {
+                errorDatos.SetError(cmbAdminDietObj, "Selecciona objetivo");
+            }
+
+            if (cmbAdminDietInto.SelectedIndex == -1)
+            {
+                errorDatos.SetError(cmbAdminDietInto, "Selecciona intolerancia");
+            }
+        }
+        #endregion
+
         private void btnAdminEliminar_Click_1(object sender, EventArgs e)
         {
             try
@@ -87,6 +109,7 @@ namespace NutriWise
 
         private void mnuDietaAgregar_Click(object sender, EventArgs e)
         {
+            errorDatos.Clear();
             grbPlato.Visible = false;
             grbDieta.Visible = true;
             grbDieta.BringToFront();
@@ -374,6 +397,7 @@ namespace NutriWise
 
         private void btnDietaAceptar_Click(object sender, EventArgs e)
         {
+            ValidarAgregarDieta();
             if (txtNomDieta.Text == "" || cmbAdminDietObj.SelectedIndex == -1 || cmbAdminDietInto.SelectedIndex == -1)
             {
                 MessageBox.Show("Debes ingresar un nombre y seleccionar un tipo de objetivo y de intolerancia.", "Datos incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Warning);

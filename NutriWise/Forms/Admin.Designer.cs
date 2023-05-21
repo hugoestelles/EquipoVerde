@@ -59,6 +59,8 @@
             this.txtEliminarUsu = new System.Windows.Forms.TextBox();
             this.lblElimUsuInfo = new System.Windows.Forms.Label();
             this.grbPlato = new System.Windows.Forms.GroupBox();
+            this.cmbAdminPlatosTipo = new System.Windows.Forms.ComboBox();
+            this.lblPlatosTipo = new System.Windows.Forms.Label();
             this.txtValorN4 = new System.Windows.Forms.TextBox();
             this.txtValorN3 = new System.Windows.Forms.TextBox();
             this.txtValorN2 = new System.Windows.Forms.TextBox();
@@ -152,8 +154,7 @@
             this.lblPlato1 = new System.Windows.Forms.Label();
             this.txtNomDieta = new System.Windows.Forms.TextBox();
             this.lblNomDieta = new System.Windows.Forms.Label();
-            this.cmbAdminPlatosTipo = new System.Windows.Forms.ComboBox();
-            this.lblPlatosTipo = new System.Windows.Forms.Label();
+            this.errorDatos = new System.Windows.Forms.ErrorProvider(this.components);
             this.grbInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAdminInfo)).BeginInit();
@@ -165,6 +166,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN1)).BeginInit();
             this.grbDieta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // grbInfo
@@ -512,6 +514,29 @@
             this.grbPlato.TabStop = false;
             this.grbPlato.Text = "Agregar Platos:";
             this.grbPlato.Visible = false;
+            // 
+            // cmbAdminPlatosTipo
+            // 
+            this.cmbAdminPlatosTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbAdminPlatosTipo.FormattingEnabled = true;
+            this.cmbAdminPlatosTipo.Items.AddRange(new object[] {
+            "Desayuno",
+            "Comida",
+            "Cena"});
+            this.cmbAdminPlatosTipo.Location = new System.Drawing.Point(798, 113);
+            this.cmbAdminPlatosTipo.Name = "cmbAdminPlatosTipo";
+            this.cmbAdminPlatosTipo.Size = new System.Drawing.Size(137, 28);
+            this.cmbAdminPlatosTipo.TabIndex = 67;
+            // 
+            // lblPlatosTipo
+            // 
+            this.lblPlatosTipo.AutoSize = true;
+            this.lblPlatosTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlatosTipo.Location = new System.Drawing.Point(749, 116);
+            this.lblPlatosTipo.Name = "lblPlatosTipo";
+            this.lblPlatosTipo.Size = new System.Drawing.Size(43, 20);
+            this.lblPlatosTipo.TabIndex = 66;
+            this.lblPlatosTipo.Text = "Tipo:";
             // 
             // txtValorN4
             // 
@@ -1479,28 +1504,10 @@
             this.lblNomDieta.TabIndex = 0;
             this.lblNomDieta.Text = "Nombre:";
             // 
-            // cmbAdminPlatosTipo
+            // errorDatos
             // 
-            this.cmbAdminPlatosTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbAdminPlatosTipo.FormattingEnabled = true;
-            this.cmbAdminPlatosTipo.Items.AddRange(new object[] {
-            "Desayuno",
-            "Comida",
-            "Cena"});
-            this.cmbAdminPlatosTipo.Location = new System.Drawing.Point(798, 113);
-            this.cmbAdminPlatosTipo.Name = "cmbAdminPlatosTipo";
-            this.cmbAdminPlatosTipo.Size = new System.Drawing.Size(137, 28);
-            this.cmbAdminPlatosTipo.TabIndex = 67;
-            // 
-            // lblPlatosTipo
-            // 
-            this.lblPlatosTipo.AutoSize = true;
-            this.lblPlatosTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlatosTipo.Location = new System.Drawing.Point(749, 116);
-            this.lblPlatosTipo.Name = "lblPlatosTipo";
-            this.lblPlatosTipo.Size = new System.Drawing.Size(43, 20);
-            this.lblPlatosTipo.TabIndex = 66;
-            this.lblPlatosTipo.Text = "Tipo:";
+            this.errorDatos.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorDatos.ContainerControl = this;
             // 
             // Admin
             // 
@@ -1508,10 +1515,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1025, 624);
             this.Controls.Add(this.mnuAdmin);
-            this.Controls.Add(this.grbPlato);
-            this.Controls.Add(this.grbInfo);
             this.Controls.Add(this.grbDieta);
             this.Controls.Add(this.grbEliminarUsu);
+            this.Controls.Add(this.grbPlato);
+            this.Controls.Add(this.grbInfo);
             this.MainMenuStrip = this.mnuAdmin;
             this.Name = "Admin";
             this.Text = "Admin";
@@ -1531,6 +1538,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN1)).EndInit();
             this.grbDieta.ResumeLayout(false);
             this.grbDieta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1663,5 +1671,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbAdminPlatosTipo;
         private System.Windows.Forms.Label lblPlatosTipo;
+        private System.Windows.Forms.ErrorProvider errorDatos;
     }
 }
