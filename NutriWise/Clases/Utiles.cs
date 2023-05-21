@@ -226,5 +226,32 @@ namespace NutriWise.Clases
                     return "";
             }
         }
+        public static string FormatearListaCompra(Dietas dietaActual)
+        {
+            string retorno = "";
+            List<Platos> p1 = dietaActual.Platos;
+            List<Alimentos> lista = new List<Alimentos>();
+            for (int i = 0; i < p1.Count; i++)
+            {
+                List<Alimentos> provisional = p1[i].ListaAlimentos;
+                for (int j = 0; j < provisional.Count; j++)
+                {
+                    bool compro = false;
+                    for (int k = 0; k < lista.Count; k++)
+                    {
+                        if (provisional[j].Nombre == lista[k].Nombre) compro= true;
+                    }
+                    if (!compro) 
+                    { 
+                        lista.Add(provisional[j]);
+                        retorno += "\t" + provisional[j].Nombre;
+                    }
+                }
+                retorno += "\n";
+
+            }
+            return retorno;
+
+        }
     }
 }
