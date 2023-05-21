@@ -103,6 +103,7 @@ namespace NutriWise
             grbPlato.Visible = true;
             grbPlato.BringToFront();
             grbDieta.Visible = false;
+            grbIngredientes.Visible = false;
             grbEliminarUsu.Visible = false;
             try
             {
@@ -136,12 +137,14 @@ namespace NutriWise
             grbDieta.Visible = true;
             grbDieta.BringToFront();
             grbEliminarUsu.Visible = false;
+            grbIngredientes.Visible = false;
 
         }
         private void mnuEliminarUsuario_Click(object sender, EventArgs e)
         {
             grbPlato.Visible = false;
             grbDieta.Visible = false;
+            grbIngredientes.Visible=false;
             grbEliminarUsu.Visible = true;
             grbEliminarUsu.BringToFront();
         }
@@ -179,6 +182,7 @@ namespace NutriWise
         private void btnPlatoVolver_Click(object sender, EventArgs e)
         {
             grbPlato.Visible = false;
+            ResetPlatos();
         }
 
         private void btnBuscarUsu_Click(object sender, EventArgs e)
@@ -241,8 +245,7 @@ namespace NutriWise
 
         private void btnPlatoAceptar_Click(object sender, EventArgs e)
         {
-            bool[] comp = new bool[4] { false, false, false ,false };
-            //int[] indices = new int[4] { cmbIngre1.SelectedIndex, cmbIngre2.SelectedIndex, cmbIngre3.SelectedIndex, cmbIngre4.SelectedIndex };
+
             string[] nombres = new string[4] { cmbIngre1.Text, cmbIngre2.Text, cmbIngre3.Text, cmbIngre4.Text };
             List<Alimentos> list = new List<Alimentos>();
             try
@@ -250,151 +253,12 @@ namespace NutriWise
                 if (ConexionBD.Conexion != null)
                 {
                     ConexionBD.AbrirConexion();
-                    if (txtNomPlato.Text != "") // Compruebo que el nombre del plato no este vacio.
-                    {
-                        //Comprobaciones 1 alimento.
-                        if (cmbIngre1.SelectedIndex == -1 && txtAgregarIngre1.Text != "" && txtValorN1.Text != "")
-                        {
-                            comp[0] = true;
-                            Alimentos a1 = new Alimentos(txtAgregarIngre1.Text, double.Parse(txtValorN1.Text));
-                            if (!a1.ComprobarExistencia())
-                            {
-                                if (a1.AgregarAlimento() == 1)
-                                {
-                                    list.Add(a1);
-                                }
-                                else
-                                {
-                                    //Mostrar mensaje indicando que ha ocurrido un error inesperado.
-                                }
-                            }
-                            else
-                            {
-                                //Mostrar error diciendo que ya hay un alimento con ese nombre en la bd.
-                            }
-                        }
-                        //Comprobaciones 2 alimento.
-                        if (cmbIngre2.SelectedIndex == -1 && txtAgregarIngre2.Text != "" && txtValorN2.Text != "")
-                        {
-                            comp[1] = true;
-                            Alimentos a2 = new Alimentos(txtAgregarIngre2.Text, double.Parse(txtValorN2.Text));
-                            if (!a2.ComprobarExistencia())
-                            {
-                                if (a2.AgregarAlimento() == 1)
-                                {
-                                    list.Add(a2);
-                                }
-                                else
-                                {
-                                    //Mostrar mensaje indicando que ha ocurrido un error inesperado.
-                                }
-                            }
-                            else
-                            {
-                                //Mostrar error diciendo que ya hay un alimento con ese nombre en la bd.
-                            }
-                        }
-                        //Comprobaciones 3 alimento.
-                        if (cmbIngre3.SelectedIndex == -1 && txtAgregarIngre3.Text != "" && txtValorN3.Text != "")
-                        {
-                            comp[2] = true;
-                            Alimentos a3 = new Alimentos(txtAgregarIngre3.Text, double.Parse(txtValorN3.Text));
-                            if (!a3.ComprobarExistencia())
-                            {
-                                if (a3.AgregarAlimento() == 1)
-                                {
-                                    list.Add(a3);
-                                }
-                                else
-                                {
-                                    //Mostrar mensaje indicando que ha ocurrido un error inesperado.
-                                }
-                            }
-                            else
-                            {
-                                //Mostrar error diciendo que ya hay un alimento con ese nombre en la bd.
-                            }
-                        }
-                        //Comprobaciones 4 alimento.
-                        if (cmbIngre4.SelectedIndex == -1 && txtAgregarIngre4.Text != "" && txtValorN4.Text != "")
-                        {
-                            comp[3] = true;
-                            Alimentos a4 = new Alimentos(txtAgregarIngre4.Text, double.Parse(txtValorN4.Text));
-                            if (!a4.ComprobarExistencia())
-                            {
-                                if (a4.AgregarAlimento() == 1)
-                                {
-                                    list.Add(a4);
-                                }
-                                else
-                                {
-                                    //Mostrar mensaje indicando que ha ocurrido un error inesperado.
-                                }
-                            }
-                            else
-                            {
-                                //Mostrar error diciendo que ya hay un alimento con ese nombre en la bd.
-                            }
-                        }
-                    
-                        else
-                        {
-                            if (Utiles.ComprobarComboBoxes(cmbIngre1.SelectedIndex, cmbIngre2.SelectedIndex, cmbIngre3.SelectedIndex, cmbIngre4.SelectedIndex))
-                            {
-                                for (int i = 0; i < comp.Length; i++)
-                                {
-                                    if (comp[i] == false)
-                                    {
-                                        Alimentos alim = Alimentos.ObtenerDatosAlimento(nombres[i]);
-                                        list.Add(alim);
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                //Mostrar error diciendo que alguno de los alimentos se repite.
-                            }
-                        }
-                        if(cmbAdminPlatosObj.SelectedIndex != -1 && cmbAdminPlatosInto.SelectedIndex != -1 && cmbAdminPlatosTipo.SelectedIndex!= -1)
-                        {
-                            Platos p1 = new Platos(txtNomPlato.Text, cmbAdminPlatosTipo.SelectedIndex, cmbAdminPlatosObj.SelectedIndex, cmbAdminPlatosInto.SelectedIndex);
-                            if (!p1.ComprobarExistencia())
-                            {
-                                p1.ListaAlimentos = list;
-                                p1.ListaCantidades = p1.BuscarCantidades();
-                                if (p1.AgregarPlato() == 1)
-                                {
-                                    MessageBox.Show("Plato introducido en la base de datos correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    if (p1.BuscarID())
-                                    {
-                                        for (int i = 0; i < p1.ListaAlimentos.Count; i++)
-                                        {
-                                            p1.ListaAlimentos[i].BuscarID();
-                                        }
-                                        if (p1.InsertarAliPlato()) MessageBox.Show("AliPlato introducido en la base de datos correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                        else MessageBox.Show("Error: \nAliPlato introducido en la base de datos incorrectamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    }
-                                }
-                                else
-                                {
-                                    MessageBox.Show("Error: \nPlato introducido en la base de datos incorrectamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show("Error: \nYa hay un plato con ese nombre en la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
-                        }
-                        else
-                        {
-                            //Mostrar error por pantalla diciendo que no ha introducido los datos correctamente.
-                        }
-                    }
-                    else
-                    {
-                        //Mostrar error por pantalla de que el nombre del plato esta vacio. (error provider o messagebox).
-                    }
+
                     ConexionBD.CerrarConexion();
+                }
+                else
+                {
+
                 }
             }
             catch (Exception ex)
@@ -534,6 +398,110 @@ namespace NutriWise
                 cmbIngre3.Items.Add(list[i].Nombre);
                 cmbIngre4.Items.Add(list[i].Nombre);
             }
+        }
+
+        private void btnPlatoReset_Click(object sender, EventArgs e)
+        {
+            ResetPlatos();
+        }
+        private void ResetPlatos()
+        {
+            /*txtNomPlato.Text = string.Empty;
+            cmbAdminPlatosInto.SelectedIndex = -1;
+            cmbAdminPlatosObj.SelectedIndex = -1;
+            cmbAdminPlatosTipo.SelectedIndex = -1;
+            cmbIngre1.SelectedIndex = -1;
+            cmbIngre2.SelectedIndex = -1;
+            cmbIngre3.SelectedIndex = -1;
+            cmbIngre4.SelectedIndex = -1;
+            txtAgregarIngre1.Text = string.Empty;
+            txtAgregarIngre2.Text = string.Empty;
+            txtAgregarIngre3.Text = string.Empty;
+            txtAgregarIngre4.Text = string.Empty;
+            txtValorN1.Text = string.Empty;
+            txtValorN2.Text = string.Empty;
+            txtValorN3.Text = string.Empty;
+            txtValorN4.Text = string.Empty;
+            nudCantidadN1.Value= 0;
+            nudCantidadN2.Value= 0;
+            nudCantidadN3.Value= 0;
+            nudCantidadN4.Value= 0;*/
+
+        }
+
+
+        private void btnAceptarIngre_Click(object sender, EventArgs e)
+        {
+            string[] nombres = new string[4] {txtNomIngre1.Text, txtNomIngre2.Text, txtNomIngre3.Text, txtNomIngre4.Text};
+            decimal[] valoresNutri = new decimal[4] {nudVN1.Value, nudVN2.Value, nudVN3.Value, nudVN4.Value };
+            try
+            {
+                if (ConexionBD.Conexion != null)
+                {
+                    ConexionBD.AbrirConexion();
+                    for (int i = 0; i < nombres.Length; i++)
+                    {
+                        if (nombres[i] != "" && valoresNutri[i] != 0) 
+                        {
+                            
+                            Alimentos a = new Alimentos(nombres[i], (double)valoresNutri[i]);
+                            if (!a.ComprobarExistencia())
+                            { 
+                                a.AgregarAlimento();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Ya hay un alimento con ese nombre en la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        } 
+                    }
+                    ConexionBD.CerrarConexion();
+                }
+                else
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                ConexionBD.CerrarConexion();
+            }
+        }
+
+        private void btnRestIngre_Click(object sender, EventArgs e)
+        {
+            ResetIngredientes();
+        }
+
+        private void btnVolverIngre_Click(object sender, EventArgs e)
+        {
+            grbIngredientes.Visible = false;
+            ResetIngredientes();
+        }
+        private void ResetIngredientes()
+        {
+            txtNomIngre1.Text = String.Empty;
+            txtNomIngre2.Text = String.Empty;
+            txtNomIngre3.Text = String.Empty;
+            txtNomIngre4.Text = String.Empty;
+
+            nudVN1.Value= 0;
+            nudVN2.Value= 0;
+            nudVN3.Value= 0;
+            nudVN4.Value= 0;
+        }
+
+        private void mnuAgregarIngrediente_Click(object sender, EventArgs e)
+        {
+            grbDieta.Visible = false;
+            grbEliminarUsu.Visible = false;
+            grbPlato.Visible = false;
+            grbIngredientes.Visible = true;
+            grbIngredientes.BringToFront();
         }
     }
 }

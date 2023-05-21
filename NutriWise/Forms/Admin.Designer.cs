@@ -42,6 +42,8 @@
             this.operacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuUsuario = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuEliminarUsuario = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuIngrediente = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAgregarIngrediente = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPlato = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPlatoAgregar = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuDieta = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,45 +61,30 @@
             this.txtEliminarUsu = new System.Windows.Forms.TextBox();
             this.lblElimUsuInfo = new System.Windows.Forms.Label();
             this.grbPlato = new System.Windows.Forms.GroupBox();
+            this.nudCantIngre4 = new System.Windows.Forms.NumericUpDown();
+            this.nudCantIngre3 = new System.Windows.Forms.NumericUpDown();
+            this.nudCantIngre2 = new System.Windows.Forms.NumericUpDown();
+            this.nudCantIngre1 = new System.Windows.Forms.NumericUpDown();
+            this.lblCantIngre4 = new System.Windows.Forms.Label();
+            this.lblCantIngre3 = new System.Windows.Forms.Label();
+            this.lblCantIngre2 = new System.Windows.Forms.Label();
+            this.lblCantIngre1 = new System.Windows.Forms.Label();
+            this.btnAgregarIngre = new System.Windows.Forms.Button();
             this.cmbAdminPlatosTipo = new System.Windows.Forms.ComboBox();
             this.lblPlatosTipo = new System.Windows.Forms.Label();
-            this.txtValorN4 = new System.Windows.Forms.TextBox();
-            this.txtValorN3 = new System.Windows.Forms.TextBox();
-            this.txtValorN2 = new System.Windows.Forms.TextBox();
-            this.nudCantidadN4 = new System.Windows.Forms.NumericUpDown();
-            this.nudCantidadN3 = new System.Windows.Forms.NumericUpDown();
-            this.nudCantidadN2 = new System.Windows.Forms.NumericUpDown();
-            this.nudCantidadN1 = new System.Windows.Forms.NumericUpDown();
-            this.lblCantidadN4 = new System.Windows.Forms.Label();
-            this.lblCantidadN3 = new System.Windows.Forms.Label();
-            this.lblCantidadN2 = new System.Windows.Forms.Label();
-            this.lblCantidadN1 = new System.Windows.Forms.Label();
             this.cmbAdminPlatosInto = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbAdminPlatosObj = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblValorN4 = new System.Windows.Forms.Label();
-            this.lblValorN3 = new System.Windows.Forms.Label();
-            this.lblValorN2 = new System.Windows.Forms.Label();
-            this.txtValorN1 = new System.Windows.Forms.TextBox();
-            this.lblValorN1 = new System.Windows.Forms.Label();
             this.btnPlatoReset = new System.Windows.Forms.Button();
             this.btnPlatoVolver = new System.Windows.Forms.Button();
             this.btnPlatoAceptar = new System.Windows.Forms.Button();
-            this.txtAgregarIngre4 = new System.Windows.Forms.TextBox();
-            this.lblAgregarIngre4 = new System.Windows.Forms.Label();
             this.cmbIngre4 = new System.Windows.Forms.ComboBox();
             this.lblIngre4 = new System.Windows.Forms.Label();
-            this.txtAgregarIngre3 = new System.Windows.Forms.TextBox();
-            this.lblAgregarIngre3 = new System.Windows.Forms.Label();
             this.cmbIngre3 = new System.Windows.Forms.ComboBox();
             this.lblIngre3 = new System.Windows.Forms.Label();
-            this.txtAgregarIngre2 = new System.Windows.Forms.TextBox();
-            this.lblAgregarIngre2 = new System.Windows.Forms.Label();
             this.cmbIngre2 = new System.Windows.Forms.ComboBox();
             this.lblIngre2 = new System.Windows.Forms.Label();
-            this.txtAgregarIngre1 = new System.Windows.Forms.TextBox();
-            this.lblAgregarIngre1 = new System.Windows.Forms.Label();
             this.cmbIngre1 = new System.Windows.Forms.ComboBox();
             this.lblIngre1 = new System.Windows.Forms.Label();
             this.txtNomPlato = new System.Windows.Forms.TextBox();
@@ -155,18 +142,51 @@
             this.txtNomDieta = new System.Windows.Forms.TextBox();
             this.lblNomDieta = new System.Windows.Forms.Label();
             this.errorDatos = new System.Windows.Forms.ErrorProvider(this.components);
+            this.grbIngredientes = new System.Windows.Forms.GroupBox();
+            this.lblKcalIngr4 = new System.Windows.Forms.Label();
+            this.lblKcalIngr3 = new System.Windows.Forms.Label();
+            this.lblKcalIngr2 = new System.Windows.Forms.Label();
+            this.lblKcalIngr1 = new System.Windows.Forms.Label();
+            this.nudVN4 = new System.Windows.Forms.NumericUpDown();
+            this.nudVN3 = new System.Windows.Forms.NumericUpDown();
+            this.nudVN2 = new System.Windows.Forms.NumericUpDown();
+            this.nudVN1 = new System.Windows.Forms.NumericUpDown();
+            this.lblValorN4 = new System.Windows.Forms.Label();
+            this.lblValorN3 = new System.Windows.Forms.Label();
+            this.lblValorN2 = new System.Windows.Forms.Label();
+            this.lblValorN1 = new System.Windows.Forms.Label();
+            this.btnRestIngre = new System.Windows.Forms.Button();
+            this.btnVolverIngre = new System.Windows.Forms.Button();
+            this.btnAceptarIngre = new System.Windows.Forms.Button();
+            this.txtNomIngre4 = new System.Windows.Forms.TextBox();
+            this.lblNomIngre4 = new System.Windows.Forms.Label();
+            this.lblIng4 = new System.Windows.Forms.Label();
+            this.txtNomIngre3 = new System.Windows.Forms.TextBox();
+            this.lblNomIngre3 = new System.Windows.Forms.Label();
+            this.lblIng3 = new System.Windows.Forms.Label();
+            this.txtNomIngre2 = new System.Windows.Forms.TextBox();
+            this.lblNomIngre2 = new System.Windows.Forms.Label();
+            this.lblIng2 = new System.Windows.Forms.Label();
+            this.txtNomIngre1 = new System.Windows.Forms.TextBox();
+            this.lblNomIngre1 = new System.Windows.Forms.Label();
+            this.lblIng1 = new System.Windows.Forms.Label();
             this.grbInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAdminInfo)).BeginInit();
             this.mnuAdmin.SuspendLayout();
             this.grbEliminarUsu.SuspendLayout();
             this.grbPlato.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantIngre4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantIngre3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantIngre2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantIngre1)).BeginInit();
             this.grbDieta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorDatos)).BeginInit();
+            this.grbIngredientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVN4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVN3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVN2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVN1)).BeginInit();
             this.SuspendLayout();
             // 
             // grbInfo
@@ -277,6 +297,7 @@
             // 
             this.operacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuUsuario,
+            this.mnuIngrediente,
             this.mnuPlato,
             this.mnuDieta});
             this.operacionesToolStripMenuItem.Name = "operacionesToolStripMenuItem";
@@ -288,7 +309,7 @@
             this.mnuUsuario.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuEliminarUsuario});
             this.mnuUsuario.Name = "mnuUsuario";
-            this.mnuUsuario.Size = new System.Drawing.Size(114, 22);
+            this.mnuUsuario.Size = new System.Drawing.Size(180, 22);
             this.mnuUsuario.Text = "Usuario";
             // 
             // mnuEliminarUsuario
@@ -298,18 +319,33 @@
             this.mnuEliminarUsuario.Text = "Eliminar/Buscar";
             this.mnuEliminarUsuario.Click += new System.EventHandler(this.mnuEliminarUsuario_Click);
             // 
+            // mnuIngrediente
+            // 
+            this.mnuIngrediente.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuAgregarIngrediente});
+            this.mnuIngrediente.Name = "mnuIngrediente";
+            this.mnuIngrediente.Size = new System.Drawing.Size(180, 22);
+            this.mnuIngrediente.Text = "Ingrediente";
+            // 
+            // mnuAgregarIngrediente
+            // 
+            this.mnuAgregarIngrediente.Name = "mnuAgregarIngrediente";
+            this.mnuAgregarIngrediente.Size = new System.Drawing.Size(180, 22);
+            this.mnuAgregarIngrediente.Text = "Agregar";
+            this.mnuAgregarIngrediente.Click += new System.EventHandler(this.mnuAgregarIngrediente_Click);
+            // 
             // mnuPlato
             // 
             this.mnuPlato.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuPlatoAgregar});
             this.mnuPlato.Name = "mnuPlato";
-            this.mnuPlato.Size = new System.Drawing.Size(114, 22);
+            this.mnuPlato.Size = new System.Drawing.Size(180, 22);
             this.mnuPlato.Text = "Plato";
             // 
             // mnuPlatoAgregar
             // 
             this.mnuPlatoAgregar.Name = "mnuPlatoAgregar";
-            this.mnuPlatoAgregar.Size = new System.Drawing.Size(116, 22);
+            this.mnuPlatoAgregar.Size = new System.Drawing.Size(180, 22);
             this.mnuPlatoAgregar.Text = "Agregar";
             this.mnuPlatoAgregar.Click += new System.EventHandler(this.mnuPlatoAgregar_Click);
             // 
@@ -318,13 +354,13 @@
             this.mnuDieta.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuDietaAgregar});
             this.mnuDieta.Name = "mnuDieta";
-            this.mnuDieta.Size = new System.Drawing.Size(114, 22);
+            this.mnuDieta.Size = new System.Drawing.Size(180, 22);
             this.mnuDieta.Text = "Dieta";
             // 
             // mnuDietaAgregar
             // 
             this.mnuDietaAgregar.Name = "mnuDietaAgregar";
-            this.mnuDietaAgregar.Size = new System.Drawing.Size(116, 22);
+            this.mnuDietaAgregar.Size = new System.Drawing.Size(180, 22);
             this.mnuDietaAgregar.Text = "Agregar";
             this.mnuDietaAgregar.Click += new System.EventHandler(this.mnuDietaAgregar_Click);
             // 
@@ -463,45 +499,30 @@
             // 
             // grbPlato
             // 
+            this.grbPlato.Controls.Add(this.nudCantIngre4);
+            this.grbPlato.Controls.Add(this.nudCantIngre3);
+            this.grbPlato.Controls.Add(this.nudCantIngre2);
+            this.grbPlato.Controls.Add(this.nudCantIngre1);
+            this.grbPlato.Controls.Add(this.lblCantIngre4);
+            this.grbPlato.Controls.Add(this.lblCantIngre3);
+            this.grbPlato.Controls.Add(this.lblCantIngre2);
+            this.grbPlato.Controls.Add(this.lblCantIngre1);
+            this.grbPlato.Controls.Add(this.btnAgregarIngre);
             this.grbPlato.Controls.Add(this.cmbAdminPlatosTipo);
             this.grbPlato.Controls.Add(this.lblPlatosTipo);
-            this.grbPlato.Controls.Add(this.txtValorN4);
-            this.grbPlato.Controls.Add(this.txtValorN3);
-            this.grbPlato.Controls.Add(this.txtValorN2);
-            this.grbPlato.Controls.Add(this.nudCantidadN4);
-            this.grbPlato.Controls.Add(this.nudCantidadN3);
-            this.grbPlato.Controls.Add(this.nudCantidadN2);
-            this.grbPlato.Controls.Add(this.nudCantidadN1);
-            this.grbPlato.Controls.Add(this.lblCantidadN4);
-            this.grbPlato.Controls.Add(this.lblCantidadN3);
-            this.grbPlato.Controls.Add(this.lblCantidadN2);
-            this.grbPlato.Controls.Add(this.lblCantidadN1);
             this.grbPlato.Controls.Add(this.cmbAdminPlatosInto);
             this.grbPlato.Controls.Add(this.label1);
             this.grbPlato.Controls.Add(this.cmbAdminPlatosObj);
             this.grbPlato.Controls.Add(this.label2);
-            this.grbPlato.Controls.Add(this.lblValorN4);
-            this.grbPlato.Controls.Add(this.lblValorN3);
-            this.grbPlato.Controls.Add(this.lblValorN2);
-            this.grbPlato.Controls.Add(this.txtValorN1);
-            this.grbPlato.Controls.Add(this.lblValorN1);
             this.grbPlato.Controls.Add(this.btnPlatoReset);
             this.grbPlato.Controls.Add(this.btnPlatoVolver);
             this.grbPlato.Controls.Add(this.btnPlatoAceptar);
-            this.grbPlato.Controls.Add(this.txtAgregarIngre4);
-            this.grbPlato.Controls.Add(this.lblAgregarIngre4);
             this.grbPlato.Controls.Add(this.cmbIngre4);
             this.grbPlato.Controls.Add(this.lblIngre4);
-            this.grbPlato.Controls.Add(this.txtAgregarIngre3);
-            this.grbPlato.Controls.Add(this.lblAgregarIngre3);
             this.grbPlato.Controls.Add(this.cmbIngre3);
             this.grbPlato.Controls.Add(this.lblIngre3);
-            this.grbPlato.Controls.Add(this.txtAgregarIngre2);
-            this.grbPlato.Controls.Add(this.lblAgregarIngre2);
             this.grbPlato.Controls.Add(this.cmbIngre2);
             this.grbPlato.Controls.Add(this.lblIngre2);
-            this.grbPlato.Controls.Add(this.txtAgregarIngre1);
-            this.grbPlato.Controls.Add(this.lblAgregarIngre1);
             this.grbPlato.Controls.Add(this.cmbIngre1);
             this.grbPlato.Controls.Add(this.lblIngre1);
             this.grbPlato.Controls.Add(this.txtNomPlato);
@@ -515,6 +536,92 @@
             this.grbPlato.Text = "Agregar Platos:";
             this.grbPlato.Visible = false;
             // 
+            // nudCantIngre4
+            // 
+            this.nudCantIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudCantIngre4.Location = new System.Drawing.Point(796, 387);
+            this.nudCantIngre4.Margin = new System.Windows.Forms.Padding(2);
+            this.nudCantIngre4.Name = "nudCantIngre4";
+            this.nudCantIngre4.Size = new System.Drawing.Size(50, 26);
+            this.nudCantIngre4.TabIndex = 76;
+            // 
+            // nudCantIngre3
+            // 
+            this.nudCantIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudCantIngre3.Location = new System.Drawing.Point(584, 387);
+            this.nudCantIngre3.Margin = new System.Windows.Forms.Padding(2);
+            this.nudCantIngre3.Name = "nudCantIngre3";
+            this.nudCantIngre3.Size = new System.Drawing.Size(50, 26);
+            this.nudCantIngre3.TabIndex = 75;
+            // 
+            // nudCantIngre2
+            // 
+            this.nudCantIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudCantIngre2.Location = new System.Drawing.Point(395, 386);
+            this.nudCantIngre2.Margin = new System.Windows.Forms.Padding(2);
+            this.nudCantIngre2.Name = "nudCantIngre2";
+            this.nudCantIngre2.Size = new System.Drawing.Size(50, 26);
+            this.nudCantIngre2.TabIndex = 74;
+            // 
+            // nudCantIngre1
+            // 
+            this.nudCantIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudCantIngre1.Location = new System.Drawing.Point(184, 389);
+            this.nudCantIngre1.Margin = new System.Windows.Forms.Padding(2);
+            this.nudCantIngre1.Name = "nudCantIngre1";
+            this.nudCantIngre1.Size = new System.Drawing.Size(50, 26);
+            this.nudCantIngre1.TabIndex = 73;
+            // 
+            // lblCantIngre4
+            // 
+            this.lblCantIngre4.AutoSize = true;
+            this.lblCantIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantIngre4.Location = new System.Drawing.Point(711, 391);
+            this.lblCantIngre4.Name = "lblCantIngre4";
+            this.lblCantIngre4.Size = new System.Drawing.Size(77, 20);
+            this.lblCantIngre4.TabIndex = 72;
+            this.lblCantIngre4.Text = "Cantidad:";
+            // 
+            // lblCantIngre3
+            // 
+            this.lblCantIngre3.AutoSize = true;
+            this.lblCantIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantIngre3.Location = new System.Drawing.Point(499, 389);
+            this.lblCantIngre3.Name = "lblCantIngre3";
+            this.lblCantIngre3.Size = new System.Drawing.Size(77, 20);
+            this.lblCantIngre3.TabIndex = 71;
+            this.lblCantIngre3.Text = "Cantidad:";
+            // 
+            // lblCantIngre2
+            // 
+            this.lblCantIngre2.AutoSize = true;
+            this.lblCantIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantIngre2.Location = new System.Drawing.Point(310, 391);
+            this.lblCantIngre2.Name = "lblCantIngre2";
+            this.lblCantIngre2.Size = new System.Drawing.Size(77, 20);
+            this.lblCantIngre2.TabIndex = 70;
+            this.lblCantIngre2.Text = "Cantidad:";
+            // 
+            // lblCantIngre1
+            // 
+            this.lblCantIngre1.AutoSize = true;
+            this.lblCantIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantIngre1.Location = new System.Drawing.Point(99, 391);
+            this.lblCantIngre1.Name = "lblCantIngre1";
+            this.lblCantIngre1.Size = new System.Drawing.Size(77, 20);
+            this.lblCantIngre1.TabIndex = 69;
+            this.lblCantIngre1.Text = "Cantidad:";
+            // 
+            // btnAgregarIngre
+            // 
+            this.btnAgregarIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarIngre.Location = new System.Drawing.Point(527, 470);
+            this.btnAgregarIngre.Name = "btnAgregarIngre";
+            this.btnAgregarIngre.Size = new System.Drawing.Size(117, 54);
+            this.btnAgregarIngre.TabIndex = 68;
+            this.btnAgregarIngre.Text = "Añadir Ingredientes";
+            this.btnAgregarIngre.UseVisualStyleBackColor = true;
+            // 
             // cmbAdminPlatosTipo
             // 
             this.cmbAdminPlatosTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -523,7 +630,7 @@
             "Desayuno",
             "Comida",
             "Cena"});
-            this.cmbAdminPlatosTipo.Location = new System.Drawing.Point(798, 113);
+            this.cmbAdminPlatosTipo.Location = new System.Drawing.Point(665, 232);
             this.cmbAdminPlatosTipo.Name = "cmbAdminPlatosTipo";
             this.cmbAdminPlatosTipo.Size = new System.Drawing.Size(137, 28);
             this.cmbAdminPlatosTipo.TabIndex = 67;
@@ -532,111 +639,11 @@
             // 
             this.lblPlatosTipo.AutoSize = true;
             this.lblPlatosTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlatosTipo.Location = new System.Drawing.Point(749, 116);
+            this.lblPlatosTipo.Location = new System.Drawing.Point(616, 235);
             this.lblPlatosTipo.Name = "lblPlatosTipo";
             this.lblPlatosTipo.Size = new System.Drawing.Size(43, 20);
             this.lblPlatosTipo.TabIndex = 66;
             this.lblPlatosTipo.Text = "Tipo:";
-            // 
-            // txtValorN4
-            // 
-            this.txtValorN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN4.Location = new System.Drawing.Point(724, 474);
-            this.txtValorN4.Name = "txtValorN4";
-            this.txtValorN4.Size = new System.Drawing.Size(52, 26);
-            this.txtValorN4.TabIndex = 28;
-            // 
-            // txtValorN3
-            // 
-            this.txtValorN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN3.Location = new System.Drawing.Point(724, 384);
-            this.txtValorN3.Name = "txtValorN3";
-            this.txtValorN3.Size = new System.Drawing.Size(52, 26);
-            this.txtValorN3.TabIndex = 26;
-            // 
-            // txtValorN2
-            // 
-            this.txtValorN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN2.Location = new System.Drawing.Point(724, 299);
-            this.txtValorN2.Name = "txtValorN2";
-            this.txtValorN2.Size = new System.Drawing.Size(52, 26);
-            this.txtValorN2.TabIndex = 24;
-            // 
-            // nudCantidadN4
-            // 
-            this.nudCantidadN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantidadN4.Location = new System.Drawing.Point(886, 472);
-            this.nudCantidadN4.Margin = new System.Windows.Forms.Padding(2);
-            this.nudCantidadN4.Name = "nudCantidadN4";
-            this.nudCantidadN4.Size = new System.Drawing.Size(50, 26);
-            this.nudCantidadN4.TabIndex = 65;
-            // 
-            // nudCantidadN3
-            // 
-            this.nudCantidadN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantidadN3.Location = new System.Drawing.Point(886, 384);
-            this.nudCantidadN3.Margin = new System.Windows.Forms.Padding(2);
-            this.nudCantidadN3.Name = "nudCantidadN3";
-            this.nudCantidadN3.Size = new System.Drawing.Size(50, 26);
-            this.nudCantidadN3.TabIndex = 64;
-            // 
-            // nudCantidadN2
-            // 
-            this.nudCantidadN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantidadN2.Location = new System.Drawing.Point(886, 298);
-            this.nudCantidadN2.Margin = new System.Windows.Forms.Padding(2);
-            this.nudCantidadN2.Name = "nudCantidadN2";
-            this.nudCantidadN2.Size = new System.Drawing.Size(50, 26);
-            this.nudCantidadN2.TabIndex = 63;
-            // 
-            // nudCantidadN1
-            // 
-            this.nudCantidadN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantidadN1.Location = new System.Drawing.Point(886, 210);
-            this.nudCantidadN1.Margin = new System.Windows.Forms.Padding(2);
-            this.nudCantidadN1.Name = "nudCantidadN1";
-            this.nudCantidadN1.Size = new System.Drawing.Size(50, 26);
-            this.nudCantidadN1.TabIndex = 62;
-            // 
-            // lblCantidadN4
-            // 
-            this.lblCantidadN4.AutoSize = true;
-            this.lblCantidadN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadN4.Location = new System.Drawing.Point(801, 476);
-            this.lblCantidadN4.Name = "lblCantidadN4";
-            this.lblCantidadN4.Size = new System.Drawing.Size(77, 20);
-            this.lblCantidadN4.TabIndex = 61;
-            this.lblCantidadN4.Text = "Cantidad:";
-            // 
-            // lblCantidadN3
-            // 
-            this.lblCantidadN3.AutoSize = true;
-            this.lblCantidadN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadN3.Location = new System.Drawing.Point(801, 386);
-            this.lblCantidadN3.Name = "lblCantidadN3";
-            this.lblCantidadN3.Size = new System.Drawing.Size(77, 20);
-            this.lblCantidadN3.TabIndex = 60;
-            this.lblCantidadN3.Text = "Cantidad:";
-            // 
-            // lblCantidadN2
-            // 
-            this.lblCantidadN2.AutoSize = true;
-            this.lblCantidadN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadN2.Location = new System.Drawing.Point(801, 303);
-            this.lblCantidadN2.Name = "lblCantidadN2";
-            this.lblCantidadN2.Size = new System.Drawing.Size(77, 20);
-            this.lblCantidadN2.TabIndex = 59;
-            this.lblCantidadN2.Text = "Cantidad:";
-            // 
-            // lblCantidadN1
-            // 
-            this.lblCantidadN1.AutoSize = true;
-            this.lblCantidadN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadN1.Location = new System.Drawing.Point(801, 212);
-            this.lblCantidadN1.Name = "lblCantidadN1";
-            this.lblCantidadN1.Size = new System.Drawing.Size(77, 20);
-            this.lblCantidadN1.TabIndex = 54;
-            this.lblCantidadN1.Text = "Cantidad:";
             // 
             // cmbAdminPlatosInto
             // 
@@ -648,7 +655,7 @@
             "Vegano",
             "Vegetariano",
             "Sin Intolerancia"});
-            this.cmbAdminPlatosInto.Location = new System.Drawing.Point(580, 113);
+            this.cmbAdminPlatosInto.Location = new System.Drawing.Point(447, 232);
             this.cmbAdminPlatosInto.Name = "cmbAdminPlatosInto";
             this.cmbAdminPlatosInto.Size = new System.Drawing.Size(137, 28);
             this.cmbAdminPlatosInto.TabIndex = 53;
@@ -657,7 +664,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(476, 116);
+            this.label1.Location = new System.Drawing.Point(343, 235);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 52;
@@ -671,7 +678,7 @@
             "Volumen",
             "Definicion",
             "Comer Sano"});
-            this.cmbAdminPlatosObj.Location = new System.Drawing.Point(306, 113);
+            this.cmbAdminPlatosObj.Location = new System.Drawing.Point(173, 232);
             this.cmbAdminPlatosObj.Name = "cmbAdminPlatosObj";
             this.cmbAdminPlatosObj.Size = new System.Drawing.Size(137, 28);
             this.cmbAdminPlatosObj.TabIndex = 51;
@@ -680,76 +687,29 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(236, 116);
+            this.label2.Location = new System.Drawing.Point(103, 235);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 20);
             this.label2.TabIndex = 50;
             this.label2.Text = "Objetivo:";
             // 
-            // lblValorN4
-            // 
-            this.lblValorN4.AutoSize = true;
-            this.lblValorN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN4.Location = new System.Drawing.Point(544, 477);
-            this.lblValorN4.Name = "lblValorN4";
-            this.lblValorN4.Size = new System.Drawing.Size(178, 20);
-            this.lblValorN4.TabIndex = 31;
-            this.lblValorN4.Text = "Añadir Valor Nutricional:";
-            // 
-            // lblValorN3
-            // 
-            this.lblValorN3.AutoSize = true;
-            this.lblValorN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN3.Location = new System.Drawing.Point(544, 387);
-            this.lblValorN3.Name = "lblValorN3";
-            this.lblValorN3.Size = new System.Drawing.Size(178, 20);
-            this.lblValorN3.TabIndex = 30;
-            this.lblValorN3.Text = "Añadir Valor Nutricional:";
-            // 
-            // lblValorN2
-            // 
-            this.lblValorN2.AutoSize = true;
-            this.lblValorN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN2.Location = new System.Drawing.Point(544, 304);
-            this.lblValorN2.Name = "lblValorN2";
-            this.lblValorN2.Size = new System.Drawing.Size(178, 20);
-            this.lblValorN2.TabIndex = 29;
-            this.lblValorN2.Text = "Añadir Valor Nutricional:";
-            // 
-            // txtValorN1
-            // 
-            this.txtValorN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorN1.Location = new System.Drawing.Point(724, 210);
-            this.txtValorN1.Name = "txtValorN1";
-            this.txtValorN1.Size = new System.Drawing.Size(52, 26);
-            this.txtValorN1.TabIndex = 22;
-            // 
-            // lblValorN1
-            // 
-            this.lblValorN1.AutoSize = true;
-            this.lblValorN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorN1.Location = new System.Drawing.Point(544, 213);
-            this.lblValorN1.Name = "lblValorN1";
-            this.lblValorN1.Size = new System.Drawing.Size(178, 20);
-            this.lblValorN1.TabIndex = 21;
-            this.lblValorN1.Text = "Añadir Valor Nutricional:";
-            // 
             // btnPlatoReset
             // 
             this.btnPlatoReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlatoReset.Location = new System.Drawing.Point(411, 535);
+            this.btnPlatoReset.Location = new System.Drawing.Point(350, 470);
             this.btnPlatoReset.Name = "btnPlatoReset";
-            this.btnPlatoReset.Size = new System.Drawing.Size(117, 34);
+            this.btnPlatoReset.Size = new System.Drawing.Size(117, 54);
             this.btnPlatoReset.TabIndex = 20;
             this.btnPlatoReset.Text = "Restablecer";
             this.btnPlatoReset.UseVisualStyleBackColor = true;
+            this.btnPlatoReset.Click += new System.EventHandler(this.btnPlatoReset_Click);
             // 
             // btnPlatoVolver
             // 
             this.btnPlatoVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlatoVolver.Location = new System.Drawing.Point(749, 535);
+            this.btnPlatoVolver.Location = new System.Drawing.Point(703, 470);
             this.btnPlatoVolver.Name = "btnPlatoVolver";
-            this.btnPlatoVolver.Size = new System.Drawing.Size(117, 34);
+            this.btnPlatoVolver.Size = new System.Drawing.Size(117, 54);
             this.btnPlatoVolver.TabIndex = 19;
             this.btnPlatoVolver.Text = "Volver";
             this.btnPlatoVolver.UseVisualStyleBackColor = true;
@@ -758,31 +718,13 @@
             // btnPlatoAceptar
             // 
             this.btnPlatoAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlatoAceptar.Location = new System.Drawing.Point(118, 535);
+            this.btnPlatoAceptar.Location = new System.Drawing.Point(160, 470);
             this.btnPlatoAceptar.Name = "btnPlatoAceptar";
-            this.btnPlatoAceptar.Size = new System.Drawing.Size(117, 34);
+            this.btnPlatoAceptar.Size = new System.Drawing.Size(117, 54);
             this.btnPlatoAceptar.TabIndex = 18;
             this.btnPlatoAceptar.Text = "Aceptar";
             this.btnPlatoAceptar.UseVisualStyleBackColor = true;
             this.btnPlatoAceptar.Click += new System.EventHandler(this.btnPlatoAceptar_Click);
-            // 
-            // txtAgregarIngre4
-            // 
-            this.txtAgregarIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre4.Location = new System.Drawing.Point(391, 479);
-            this.txtAgregarIngre4.Name = "txtAgregarIngre4";
-            this.txtAgregarIngre4.Size = new System.Drawing.Size(132, 26);
-            this.txtAgregarIngre4.TabIndex = 17;
-            // 
-            // lblAgregarIngre4
-            // 
-            this.lblAgregarIngre4.AutoSize = true;
-            this.lblAgregarIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre4.Location = new System.Drawing.Point(198, 481);
-            this.lblAgregarIngre4.Name = "lblAgregarIngre4";
-            this.lblAgregarIngre4.Size = new System.Drawing.Size(193, 20);
-            this.lblAgregarIngre4.TabIndex = 16;
-            this.lblAgregarIngre4.Text = "Añadir Ingrediente Nuevo:";
             // 
             // cmbIngre4
             // 
@@ -791,7 +733,7 @@
             this.cmbIngre4.Items.AddRange(new object[] {
             "Prueba",
             "Prueba 1"});
-            this.cmbIngre4.Location = new System.Drawing.Point(55, 477);
+            this.cmbIngre4.Location = new System.Drawing.Point(715, 340);
             this.cmbIngre4.Name = "cmbIngre4";
             this.cmbIngre4.Size = new System.Drawing.Size(121, 28);
             this.cmbIngre4.TabIndex = 15;
@@ -800,29 +742,11 @@
             // 
             this.lblIngre4.AutoSize = true;
             this.lblIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngre4.Location = new System.Drawing.Point(56, 435);
+            this.lblIngre4.Location = new System.Drawing.Point(716, 298);
             this.lblIngre4.Name = "lblIngre4";
             this.lblIngre4.Size = new System.Drawing.Size(103, 20);
             this.lblIngre4.TabIndex = 14;
             this.lblIngre4.Text = "Ingrediente 4";
-            // 
-            // txtAgregarIngre3
-            // 
-            this.txtAgregarIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre3.Location = new System.Drawing.Point(391, 389);
-            this.txtAgregarIngre3.Name = "txtAgregarIngre3";
-            this.txtAgregarIngre3.Size = new System.Drawing.Size(132, 26);
-            this.txtAgregarIngre3.TabIndex = 13;
-            // 
-            // lblAgregarIngre3
-            // 
-            this.lblAgregarIngre3.AutoSize = true;
-            this.lblAgregarIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre3.Location = new System.Drawing.Point(198, 391);
-            this.lblAgregarIngre3.Name = "lblAgregarIngre3";
-            this.lblAgregarIngre3.Size = new System.Drawing.Size(193, 20);
-            this.lblAgregarIngre3.TabIndex = 12;
-            this.lblAgregarIngre3.Text = "Añadir Ingrediente Nuevo:";
             // 
             // cmbIngre3
             // 
@@ -831,7 +755,7 @@
             this.cmbIngre3.Items.AddRange(new object[] {
             "Prueba",
             "Prueba 1"});
-            this.cmbIngre3.Location = new System.Drawing.Point(55, 387);
+            this.cmbIngre3.Location = new System.Drawing.Point(504, 340);
             this.cmbIngre3.Name = "cmbIngre3";
             this.cmbIngre3.Size = new System.Drawing.Size(121, 28);
             this.cmbIngre3.TabIndex = 11;
@@ -840,29 +764,11 @@
             // 
             this.lblIngre3.AutoSize = true;
             this.lblIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngre3.Location = new System.Drawing.Point(56, 345);
+            this.lblIngre3.Location = new System.Drawing.Point(505, 298);
             this.lblIngre3.Name = "lblIngre3";
             this.lblIngre3.Size = new System.Drawing.Size(103, 20);
             this.lblIngre3.TabIndex = 10;
             this.lblIngre3.Text = "Ingrediente 3";
-            // 
-            // txtAgregarIngre2
-            // 
-            this.txtAgregarIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre2.Location = new System.Drawing.Point(391, 304);
-            this.txtAgregarIngre2.Name = "txtAgregarIngre2";
-            this.txtAgregarIngre2.Size = new System.Drawing.Size(132, 26);
-            this.txtAgregarIngre2.TabIndex = 9;
-            // 
-            // lblAgregarIngre2
-            // 
-            this.lblAgregarIngre2.AutoSize = true;
-            this.lblAgregarIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre2.Location = new System.Drawing.Point(198, 306);
-            this.lblAgregarIngre2.Name = "lblAgregarIngre2";
-            this.lblAgregarIngre2.Size = new System.Drawing.Size(193, 20);
-            this.lblAgregarIngre2.TabIndex = 8;
-            this.lblAgregarIngre2.Text = "Añadir Ingrediente Nuevo:";
             // 
             // cmbIngre2
             // 
@@ -871,7 +777,7 @@
             this.cmbIngre2.Items.AddRange(new object[] {
             "Prueba",
             "Prueba 1"});
-            this.cmbIngre2.Location = new System.Drawing.Point(55, 302);
+            this.cmbIngre2.Location = new System.Drawing.Point(298, 340);
             this.cmbIngre2.Name = "cmbIngre2";
             this.cmbIngre2.Size = new System.Drawing.Size(121, 28);
             this.cmbIngre2.TabIndex = 7;
@@ -880,29 +786,11 @@
             // 
             this.lblIngre2.AutoSize = true;
             this.lblIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngre2.Location = new System.Drawing.Point(56, 260);
+            this.lblIngre2.Location = new System.Drawing.Point(299, 298);
             this.lblIngre2.Name = "lblIngre2";
             this.lblIngre2.Size = new System.Drawing.Size(103, 20);
             this.lblIngre2.TabIndex = 6;
             this.lblIngre2.Text = "Ingrediente 2";
-            // 
-            // txtAgregarIngre1
-            // 
-            this.txtAgregarIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgregarIngre1.Location = new System.Drawing.Point(391, 215);
-            this.txtAgregarIngre1.Name = "txtAgregarIngre1";
-            this.txtAgregarIngre1.Size = new System.Drawing.Size(132, 26);
-            this.txtAgregarIngre1.TabIndex = 5;
-            // 
-            // lblAgregarIngre1
-            // 
-            this.lblAgregarIngre1.AutoSize = true;
-            this.lblAgregarIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarIngre1.Location = new System.Drawing.Point(198, 217);
-            this.lblAgregarIngre1.Name = "lblAgregarIngre1";
-            this.lblAgregarIngre1.Size = new System.Drawing.Size(193, 20);
-            this.lblAgregarIngre1.TabIndex = 4;
-            this.lblAgregarIngre1.Text = "Añadir Ingrediente Nuevo:";
             // 
             // cmbIngre1
             // 
@@ -911,7 +799,7 @@
             this.cmbIngre1.Items.AddRange(new object[] {
             "Prueba",
             "Prueba 1"});
-            this.cmbIngre1.Location = new System.Drawing.Point(55, 213);
+            this.cmbIngre1.Location = new System.Drawing.Point(106, 340);
             this.cmbIngre1.Name = "cmbIngre1";
             this.cmbIngre1.Size = new System.Drawing.Size(121, 28);
             this.cmbIngre1.TabIndex = 3;
@@ -920,7 +808,7 @@
             // 
             this.lblIngre1.AutoSize = true;
             this.lblIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngre1.Location = new System.Drawing.Point(56, 171);
+            this.lblIngre1.Location = new System.Drawing.Point(107, 298);
             this.lblIngre1.Name = "lblIngre1";
             this.lblIngre1.Size = new System.Drawing.Size(103, 20);
             this.lblIngre1.TabIndex = 2;
@@ -929,7 +817,7 @@
             // txtNomPlato
             // 
             this.txtNomPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomPlato.Location = new System.Drawing.Point(69, 113);
+            this.txtNomPlato.Location = new System.Drawing.Point(400, 129);
             this.txtNomPlato.Name = "txtNomPlato";
             this.txtNomPlato.Size = new System.Drawing.Size(134, 26);
             this.txtNomPlato.TabIndex = 1;
@@ -938,7 +826,7 @@
             // 
             this.lblNomPlato.AutoSize = true;
             this.lblNomPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomPlato.Location = new System.Drawing.Point(69, 78);
+            this.lblNomPlato.Location = new System.Drawing.Point(400, 94);
             this.lblNomPlato.Name = "lblNomPlato";
             this.lblNomPlato.Size = new System.Drawing.Size(134, 20);
             this.lblNomPlato.TabIndex = 0;
@@ -998,9 +886,9 @@
             this.grbDieta.Controls.Add(this.txtNomDieta);
             this.grbDieta.Controls.Add(this.lblNomDieta);
             this.grbDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDieta.Location = new System.Drawing.Point(12, 32);
+            this.grbDieta.Location = new System.Drawing.Point(12, 38);
             this.grbDieta.Name = "grbDieta";
-            this.grbDieta.Size = new System.Drawing.Size(992, 592);
+            this.grbDieta.Size = new System.Drawing.Size(984, 586);
             this.grbDieta.TabIndex = 4;
             this.grbDieta.TabStop = false;
             this.grbDieta.Text = "Agregar Dieta:";
@@ -1509,16 +1397,316 @@
             this.errorDatos.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.errorDatos.ContainerControl = this;
             // 
+            // grbIngredientes
+            // 
+            this.grbIngredientes.Controls.Add(this.lblKcalIngr4);
+            this.grbIngredientes.Controls.Add(this.lblKcalIngr3);
+            this.grbIngredientes.Controls.Add(this.lblKcalIngr2);
+            this.grbIngredientes.Controls.Add(this.lblKcalIngr1);
+            this.grbIngredientes.Controls.Add(this.nudVN4);
+            this.grbIngredientes.Controls.Add(this.nudVN3);
+            this.grbIngredientes.Controls.Add(this.nudVN2);
+            this.grbIngredientes.Controls.Add(this.nudVN1);
+            this.grbIngredientes.Controls.Add(this.lblValorN4);
+            this.grbIngredientes.Controls.Add(this.lblValorN3);
+            this.grbIngredientes.Controls.Add(this.lblValorN2);
+            this.grbIngredientes.Controls.Add(this.lblValorN1);
+            this.grbIngredientes.Controls.Add(this.btnRestIngre);
+            this.grbIngredientes.Controls.Add(this.btnVolverIngre);
+            this.grbIngredientes.Controls.Add(this.btnAceptarIngre);
+            this.grbIngredientes.Controls.Add(this.txtNomIngre4);
+            this.grbIngredientes.Controls.Add(this.lblNomIngre4);
+            this.grbIngredientes.Controls.Add(this.lblIng4);
+            this.grbIngredientes.Controls.Add(this.txtNomIngre3);
+            this.grbIngredientes.Controls.Add(this.lblNomIngre3);
+            this.grbIngredientes.Controls.Add(this.lblIng3);
+            this.grbIngredientes.Controls.Add(this.txtNomIngre2);
+            this.grbIngredientes.Controls.Add(this.lblNomIngre2);
+            this.grbIngredientes.Controls.Add(this.lblIng2);
+            this.grbIngredientes.Controls.Add(this.txtNomIngre1);
+            this.grbIngredientes.Controls.Add(this.lblNomIngre1);
+            this.grbIngredientes.Controls.Add(this.lblIng1);
+            this.grbIngredientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbIngredientes.Location = new System.Drawing.Point(32, 25);
+            this.grbIngredientes.Name = "grbIngredientes";
+            this.grbIngredientes.Size = new System.Drawing.Size(961, 575);
+            this.grbIngredientes.TabIndex = 5;
+            this.grbIngredientes.TabStop = false;
+            this.grbIngredientes.Text = "Agregar Ingredientes:";
+            this.grbIngredientes.Visible = false;
+            // 
+            // lblKcalIngr4
+            // 
+            this.lblKcalIngr4.AutoSize = true;
+            this.lblKcalIngr4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKcalIngr4.Location = new System.Drawing.Point(868, 386);
+            this.lblKcalIngr4.Name = "lblKcalIngr4";
+            this.lblKcalIngr4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblKcalIngr4.Size = new System.Drawing.Size(39, 20);
+            this.lblKcalIngr4.TabIndex = 39;
+            this.lblKcalIngr4.Text = "Kcal";
+            // 
+            // lblKcalIngr3
+            // 
+            this.lblKcalIngr3.AutoSize = true;
+            this.lblKcalIngr3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKcalIngr3.Location = new System.Drawing.Point(868, 296);
+            this.lblKcalIngr3.Name = "lblKcalIngr3";
+            this.lblKcalIngr3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblKcalIngr3.Size = new System.Drawing.Size(39, 20);
+            this.lblKcalIngr3.TabIndex = 38;
+            this.lblKcalIngr3.Text = "Kcal";
+            // 
+            // lblKcalIngr2
+            // 
+            this.lblKcalIngr2.AutoSize = true;
+            this.lblKcalIngr2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKcalIngr2.Location = new System.Drawing.Point(868, 211);
+            this.lblKcalIngr2.Name = "lblKcalIngr2";
+            this.lblKcalIngr2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblKcalIngr2.Size = new System.Drawing.Size(39, 20);
+            this.lblKcalIngr2.TabIndex = 37;
+            this.lblKcalIngr2.Text = "Kcal";
+            // 
+            // lblKcalIngr1
+            // 
+            this.lblKcalIngr1.AutoSize = true;
+            this.lblKcalIngr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKcalIngr1.Location = new System.Drawing.Point(868, 122);
+            this.lblKcalIngr1.Name = "lblKcalIngr1";
+            this.lblKcalIngr1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblKcalIngr1.Size = new System.Drawing.Size(39, 20);
+            this.lblKcalIngr1.TabIndex = 36;
+            this.lblKcalIngr1.Text = "Kcal";
+            // 
+            // nudVN4
+            // 
+            this.nudVN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudVN4.Location = new System.Drawing.Point(766, 383);
+            this.nudVN4.Name = "nudVN4";
+            this.nudVN4.Size = new System.Drawing.Size(70, 26);
+            this.nudVN4.TabIndex = 35;
+            // 
+            // nudVN3
+            // 
+            this.nudVN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudVN3.Location = new System.Drawing.Point(766, 292);
+            this.nudVN3.Name = "nudVN3";
+            this.nudVN3.Size = new System.Drawing.Size(70, 26);
+            this.nudVN3.TabIndex = 34;
+            // 
+            // nudVN2
+            // 
+            this.nudVN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudVN2.Location = new System.Drawing.Point(766, 211);
+            this.nudVN2.Name = "nudVN2";
+            this.nudVN2.Size = new System.Drawing.Size(70, 26);
+            this.nudVN2.TabIndex = 33;
+            // 
+            // nudVN1
+            // 
+            this.nudVN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudVN1.Location = new System.Drawing.Point(766, 120);
+            this.nudVN1.Name = "nudVN1";
+            this.nudVN1.Size = new System.Drawing.Size(70, 26);
+            this.nudVN1.TabIndex = 32;
+            // 
+            // lblValorN4
+            // 
+            this.lblValorN4.AutoSize = true;
+            this.lblValorN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorN4.Location = new System.Drawing.Point(621, 386);
+            this.lblValorN4.Name = "lblValorN4";
+            this.lblValorN4.Size = new System.Drawing.Size(128, 20);
+            this.lblValorN4.TabIndex = 31;
+            this.lblValorN4.Text = "Valor Nutricional:";
+            // 
+            // lblValorN3
+            // 
+            this.lblValorN3.AutoSize = true;
+            this.lblValorN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorN3.Location = new System.Drawing.Point(621, 296);
+            this.lblValorN3.Name = "lblValorN3";
+            this.lblValorN3.Size = new System.Drawing.Size(128, 20);
+            this.lblValorN3.TabIndex = 30;
+            this.lblValorN3.Text = "Valor Nutricional:";
+            // 
+            // lblValorN2
+            // 
+            this.lblValorN2.AutoSize = true;
+            this.lblValorN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorN2.Location = new System.Drawing.Point(621, 213);
+            this.lblValorN2.Name = "lblValorN2";
+            this.lblValorN2.Size = new System.Drawing.Size(128, 20);
+            this.lblValorN2.TabIndex = 29;
+            this.lblValorN2.Text = "Valor Nutricional:";
+            // 
+            // lblValorN1
+            // 
+            this.lblValorN1.AutoSize = true;
+            this.lblValorN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorN1.Location = new System.Drawing.Point(621, 122);
+            this.lblValorN1.Name = "lblValorN1";
+            this.lblValorN1.Size = new System.Drawing.Size(128, 20);
+            this.lblValorN1.TabIndex = 21;
+            this.lblValorN1.Text = "Valor Nutricional:";
+            // 
+            // btnRestIngre
+            // 
+            this.btnRestIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestIngre.Location = new System.Drawing.Point(394, 472);
+            this.btnRestIngre.Name = "btnRestIngre";
+            this.btnRestIngre.Size = new System.Drawing.Size(117, 34);
+            this.btnRestIngre.TabIndex = 20;
+            this.btnRestIngre.Text = "Restablecer";
+            this.btnRestIngre.UseVisualStyleBackColor = true;
+            this.btnRestIngre.Click += new System.EventHandler(this.btnRestIngre_Click);
+            // 
+            // btnVolverIngre
+            // 
+            this.btnVolverIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolverIngre.Location = new System.Drawing.Point(732, 472);
+            this.btnVolverIngre.Name = "btnVolverIngre";
+            this.btnVolverIngre.Size = new System.Drawing.Size(117, 34);
+            this.btnVolverIngre.TabIndex = 19;
+            this.btnVolverIngre.Text = "Volver";
+            this.btnVolverIngre.UseVisualStyleBackColor = true;
+            this.btnVolverIngre.Click += new System.EventHandler(this.btnVolverIngre_Click);
+            // 
+            // btnAceptarIngre
+            // 
+            this.btnAceptarIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptarIngre.Location = new System.Drawing.Point(101, 472);
+            this.btnAceptarIngre.Name = "btnAceptarIngre";
+            this.btnAceptarIngre.Size = new System.Drawing.Size(117, 34);
+            this.btnAceptarIngre.TabIndex = 18;
+            this.btnAceptarIngre.Text = "Aceptar";
+            this.btnAceptarIngre.UseVisualStyleBackColor = true;
+            this.btnAceptarIngre.Click += new System.EventHandler(this.btnAceptarIngre_Click);
+            // 
+            // txtNomIngre4
+            // 
+            this.txtNomIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomIngre4.Location = new System.Drawing.Point(417, 381);
+            this.txtNomIngre4.Name = "txtNomIngre4";
+            this.txtNomIngre4.Size = new System.Drawing.Size(132, 26);
+            this.txtNomIngre4.TabIndex = 17;
+            // 
+            // lblNomIngre4
+            // 
+            this.lblNomIngre4.AutoSize = true;
+            this.lblNomIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomIngre4.Location = new System.Drawing.Point(328, 384);
+            this.lblNomIngre4.Name = "lblNomIngre4";
+            this.lblNomIngre4.Size = new System.Drawing.Size(69, 20);
+            this.lblNomIngre4.TabIndex = 16;
+            this.lblNomIngre4.Text = "Nombre:";
+            // 
+            // lblIng4
+            // 
+            this.lblIng4.AutoSize = true;
+            this.lblIng4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIng4.Location = new System.Drawing.Point(134, 380);
+            this.lblIng4.Name = "lblIng4";
+            this.lblIng4.Size = new System.Drawing.Size(133, 24);
+            this.lblIng4.TabIndex = 14;
+            this.lblIng4.Text = "Ingrediente 4";
+            // 
+            // txtNomIngre3
+            // 
+            this.txtNomIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomIngre3.Location = new System.Drawing.Point(417, 291);
+            this.txtNomIngre3.Name = "txtNomIngre3";
+            this.txtNomIngre3.Size = new System.Drawing.Size(132, 26);
+            this.txtNomIngre3.TabIndex = 13;
+            // 
+            // lblNomIngre3
+            // 
+            this.lblNomIngre3.AutoSize = true;
+            this.lblNomIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomIngre3.Location = new System.Drawing.Point(328, 294);
+            this.lblNomIngre3.Name = "lblNomIngre3";
+            this.lblNomIngre3.Size = new System.Drawing.Size(69, 20);
+            this.lblNomIngre3.TabIndex = 12;
+            this.lblNomIngre3.Text = "Nombre:";
+            // 
+            // lblIng3
+            // 
+            this.lblIng3.AutoSize = true;
+            this.lblIng3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIng3.Location = new System.Drawing.Point(134, 290);
+            this.lblIng3.Name = "lblIng3";
+            this.lblIng3.Size = new System.Drawing.Size(133, 24);
+            this.lblIng3.TabIndex = 10;
+            this.lblIng3.Text = "Ingrediente 3";
+            // 
+            // txtNomIngre2
+            // 
+            this.txtNomIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomIngre2.Location = new System.Drawing.Point(417, 206);
+            this.txtNomIngre2.Name = "txtNomIngre2";
+            this.txtNomIngre2.Size = new System.Drawing.Size(132, 26);
+            this.txtNomIngre2.TabIndex = 9;
+            // 
+            // lblNomIngre2
+            // 
+            this.lblNomIngre2.AutoSize = true;
+            this.lblNomIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomIngre2.Location = new System.Drawing.Point(328, 209);
+            this.lblNomIngre2.Name = "lblNomIngre2";
+            this.lblNomIngre2.Size = new System.Drawing.Size(69, 20);
+            this.lblNomIngre2.TabIndex = 8;
+            this.lblNomIngre2.Text = "Nombre:";
+            // 
+            // lblIng2
+            // 
+            this.lblIng2.AutoSize = true;
+            this.lblIng2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIng2.Location = new System.Drawing.Point(134, 205);
+            this.lblIng2.Name = "lblIng2";
+            this.lblIng2.Size = new System.Drawing.Size(133, 24);
+            this.lblIng2.TabIndex = 6;
+            this.lblIng2.Text = "Ingrediente 2";
+            // 
+            // txtNomIngre1
+            // 
+            this.txtNomIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomIngre1.Location = new System.Drawing.Point(417, 117);
+            this.txtNomIngre1.Name = "txtNomIngre1";
+            this.txtNomIngre1.Size = new System.Drawing.Size(132, 26);
+            this.txtNomIngre1.TabIndex = 5;
+            // 
+            // lblNomIngre1
+            // 
+            this.lblNomIngre1.AutoSize = true;
+            this.lblNomIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomIngre1.Location = new System.Drawing.Point(328, 120);
+            this.lblNomIngre1.Name = "lblNomIngre1";
+            this.lblNomIngre1.Size = new System.Drawing.Size(69, 20);
+            this.lblNomIngre1.TabIndex = 4;
+            this.lblNomIngre1.Text = "Nombre:";
+            // 
+            // lblIng1
+            // 
+            this.lblIng1.AutoSize = true;
+            this.lblIng1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIng1.Location = new System.Drawing.Point(134, 116);
+            this.lblIng1.Name = "lblIng1";
+            this.lblIng1.Size = new System.Drawing.Size(133, 24);
+            this.lblIng1.TabIndex = 2;
+            this.lblIng1.Text = "Ingrediente 1";
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1025, 624);
             this.Controls.Add(this.mnuAdmin);
-            this.Controls.Add(this.grbDieta);
-            this.Controls.Add(this.grbEliminarUsu);
+            this.Controls.Add(this.grbIngredientes);
             this.Controls.Add(this.grbPlato);
             this.Controls.Add(this.grbInfo);
+            this.Controls.Add(this.grbDieta);
+            this.Controls.Add(this.grbEliminarUsu);
             this.MainMenuStrip = this.mnuAdmin;
             this.Name = "Admin";
             this.Text = "Admin";
@@ -1532,13 +1720,19 @@
             this.grbEliminarUsu.PerformLayout();
             this.grbPlato.ResumeLayout(false);
             this.grbPlato.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadN1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantIngre4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantIngre3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantIngre2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantIngre1)).EndInit();
             this.grbDieta.ResumeLayout(false);
             this.grbDieta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorDatos)).EndInit();
+            this.grbIngredientes.ResumeLayout(false);
+            this.grbIngredientes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVN4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVN3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVN2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVN1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1580,20 +1774,12 @@
         private System.Windows.Forms.Button btnPlatoReset;
         private System.Windows.Forms.Button btnPlatoVolver;
         private System.Windows.Forms.Button btnPlatoAceptar;
-        private System.Windows.Forms.TextBox txtAgregarIngre4;
-        private System.Windows.Forms.Label lblAgregarIngre4;
         private System.Windows.Forms.ComboBox cmbIngre4;
         private System.Windows.Forms.Label lblIngre4;
-        private System.Windows.Forms.TextBox txtAgregarIngre3;
-        private System.Windows.Forms.Label lblAgregarIngre3;
         private System.Windows.Forms.ComboBox cmbIngre3;
         private System.Windows.Forms.Label lblIngre3;
-        private System.Windows.Forms.TextBox txtAgregarIngre2;
-        private System.Windows.Forms.Label lblAgregarIngre2;
         private System.Windows.Forms.ComboBox cmbIngre2;
         private System.Windows.Forms.Label lblIngre2;
-        private System.Windows.Forms.TextBox txtAgregarIngre1;
-        private System.Windows.Forms.Label lblAgregarIngre1;
         private System.Windows.Forms.ComboBox cmbIngre1;
         private System.Windows.Forms.Label lblIngre1;
         private System.Windows.Forms.TextBox txtNomPlato;
@@ -1616,14 +1802,6 @@
         private System.Windows.Forms.Label lblPlato7;
         private System.Windows.Forms.Button btnDietaVolver;
         private System.Windows.Forms.Button btnDietaAceptar;
-        private System.Windows.Forms.TextBox txtValorN4;
-        private System.Windows.Forms.TextBox txtValorN3;
-        private System.Windows.Forms.TextBox txtValorN2;
-        private System.Windows.Forms.TextBox txtValorN1;
-        private System.Windows.Forms.Label lblValorN1;
-        private System.Windows.Forms.Label lblValorN4;
-        private System.Windows.Forms.Label lblValorN3;
-        private System.Windows.Forms.Label lblValorN2;
         private System.Windows.Forms.ComboBox cmbAdminDietInto;
         private System.Windows.Forms.Label lblAdminInto;
         private System.Windows.Forms.ComboBox cmbAdminDietObj;
@@ -1657,14 +1835,6 @@
         private System.Windows.Forms.ComboBox cmbPlato8;
         private System.Windows.Forms.Label lblPlato8;
         private System.Windows.Forms.Button btnDietaBuscar;
-        private System.Windows.Forms.NumericUpDown nudCantidadN4;
-        private System.Windows.Forms.NumericUpDown nudCantidadN3;
-        private System.Windows.Forms.NumericUpDown nudCantidadN2;
-        private System.Windows.Forms.NumericUpDown nudCantidadN1;
-        private System.Windows.Forms.Label lblCantidadN4;
-        private System.Windows.Forms.Label lblCantidadN3;
-        private System.Windows.Forms.Label lblCantidadN2;
-        private System.Windows.Forms.Label lblCantidadN1;
         private System.Windows.Forms.ComboBox cmbAdminPlatosInto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbAdminPlatosObj;
@@ -1672,5 +1842,44 @@
         private System.Windows.Forms.ComboBox cmbAdminPlatosTipo;
         private System.Windows.Forms.Label lblPlatosTipo;
         private System.Windows.Forms.ErrorProvider errorDatos;
+        private System.Windows.Forms.GroupBox grbIngredientes;
+        private System.Windows.Forms.Label lblValorN4;
+        private System.Windows.Forms.Label lblValorN3;
+        private System.Windows.Forms.Label lblValorN2;
+        private System.Windows.Forms.Label lblValorN1;
+        private System.Windows.Forms.Button btnRestIngre;
+        private System.Windows.Forms.Button btnVolverIngre;
+        private System.Windows.Forms.Button btnAceptarIngre;
+        private System.Windows.Forms.TextBox txtNomIngre4;
+        private System.Windows.Forms.Label lblNomIngre4;
+        private System.Windows.Forms.Label lblIng4;
+        private System.Windows.Forms.TextBox txtNomIngre3;
+        private System.Windows.Forms.Label lblNomIngre3;
+        private System.Windows.Forms.Label lblIng3;
+        private System.Windows.Forms.TextBox txtNomIngre2;
+        private System.Windows.Forms.Label lblNomIngre2;
+        private System.Windows.Forms.Label lblIng2;
+        private System.Windows.Forms.TextBox txtNomIngre1;
+        private System.Windows.Forms.Label lblNomIngre1;
+        private System.Windows.Forms.Label lblIng1;
+        private System.Windows.Forms.Button btnAgregarIngre;
+        private System.Windows.Forms.ToolStripMenuItem mnuIngrediente;
+        private System.Windows.Forms.ToolStripMenuItem mnuAgregarIngrediente;
+        private System.Windows.Forms.NumericUpDown nudCantIngre4;
+        private System.Windows.Forms.NumericUpDown nudCantIngre3;
+        private System.Windows.Forms.NumericUpDown nudCantIngre2;
+        private System.Windows.Forms.NumericUpDown nudCantIngre1;
+        private System.Windows.Forms.Label lblCantIngre4;
+        private System.Windows.Forms.Label lblCantIngre3;
+        private System.Windows.Forms.Label lblCantIngre2;
+        private System.Windows.Forms.Label lblCantIngre1;
+        private System.Windows.Forms.Label lblKcalIngr4;
+        private System.Windows.Forms.Label lblKcalIngr3;
+        private System.Windows.Forms.Label lblKcalIngr2;
+        private System.Windows.Forms.Label lblKcalIngr1;
+        private System.Windows.Forms.NumericUpDown nudVN4;
+        private System.Windows.Forms.NumericUpDown nudVN3;
+        private System.Windows.Forms.NumericUpDown nudVN2;
+        private System.Windows.Forms.NumericUpDown nudVN1;
     }
 }

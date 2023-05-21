@@ -141,10 +141,10 @@ namespace NutriWise.Clases
         /// <param name="selectedIndex3">Indice 3º comboBox</param>
         /// <param name="selectedIndex4">Indice 4º comboBox</param>
         /// <returns>True si no hay coincidencias, false si las hay.</returns>
-        public static bool ComprobarComboBoxes(int selectedIndex1, int selectedIndex2, int selectedIndex3, int selectedIndex4)
+        /*public static bool ComprobarComboBoxes(int selectedIndex1, int selectedIndex2, int selectedIndex3, int selectedIndex4)
         {
             // Verificar que no haya coincidencias excepto cuando selectedIndex es -1
-            if ((selectedIndex1 != selectedIndex2 || selectedIndex1 == -1 || selectedIndex2 == -1) &&
+            /*if ((selectedIndex1 != selectedIndex2 || selectedIndex1 == -1 || selectedIndex2 == -1) &&
                 (selectedIndex1 != selectedIndex3 || selectedIndex1 == -1 || selectedIndex3 == -1) &&
                 (selectedIndex1 != selectedIndex4 || selectedIndex1 == -1 || selectedIndex4 == -1) &&
                 (selectedIndex2 != selectedIndex3 || selectedIndex2 == -1 || selectedIndex3 == -1) &&
@@ -157,7 +157,91 @@ namespace NutriWise.Clases
             {
                 return false;
             }
-        }
+
+            int i1 = selectedIndex1;
+            int i2 = selectedIndex2;
+            int i3 = selectedIndex3;
+            int i4 = selectedIndex4;
+            /*
+            if(i1 == -1 && i2 == -1 && i3 == -1 && i4 == -1)
+            {
+                return true;
+            }
+            else if((i1 == -1 && i2 == -1 && i3 == -1) || (i2 == -1 && i3 == -1 && i4 == -1) || (i1 == -1 && i3 == -1 && i4 == -1) || (i1 == -1 && i2 == -1 && i4 == -1))
+            {
+                return true;
+            }
+            else if((i1 == -1 && i2 == -1 && i3 != i4) || (i2 == -1 && i3 == -1 && i1 != i4) || (i3 == -1 && i4 == -1 && i1 != i2) || (i2 == -1 && i4 == -1 && i3 != i1) || (i3 == -1 && i1 == -1 && i4 != i1) || (i4 == -1 && i1 == -1 && i2 != i3))
+            {
+                return true;
+            }
+            else if((i1 == -1 && i2 != i3 && i3 != i4) || (i2 == -1 && i1 != i3 && i3 != i4) || (i3 == -1 && i1 != i2 && i2 != i4) || (i4 == -1 && i1 != i2 && i2 != i3))
+            {
+                return true;
+            }
+            else if(i1 == i2 && i2 == i3 && i3 == i4 && i1 == i4)
+            {
+                return true;
+            }
+            else { return false; }
+
+
+
+            if (i1 == -1 && i2 == -1 && i3 == -1 && i4 == -1)
+            {
+                return true;
+            }
+            else if (i1 == -1 && i2 == -1 && i3 != i4)
+            {
+                return true;
+            }
+            else if (i2 == -1 && i3 == -1 && i1 != i4)
+            {
+                return true;
+            }
+            else if (i3 == -1 && i4 == -1 && i1 != i2)
+            {
+                return true;
+            }
+            else if (i2 == -1 && i4 == -1 && i3 != i1)
+            {
+                return true;
+            }
+            else if (i3 == -1 && i1 == -1 && i4 != i2)
+            {
+                return true;
+            }
+            else if (i4 == -1 && i1 == -1 && i2 != i3)
+            {
+                return true;
+            }
+            else if (i1 == -1 && i2 != i3 && i3 != i4)
+            {
+                return true;
+            }
+            else if (i2 == -1 && i1 != i3 && i3 != i4)
+            {
+                return true;
+            }
+            else if (i3 == -1 && i1 != i2 && i2 != i4)
+            {
+                return true;
+            }
+            else if (i4 == -1 && i1 != i2 && i2 != i3)
+            {
+                return true;
+            }
+            else if (i1 == i2 && i2 == i3 && i3 == i4)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
+
+        }*/
 
 
         public static bool ComprobarAceptarDieta(System.Windows.Forms.ComboBox[] comboBoxes)
