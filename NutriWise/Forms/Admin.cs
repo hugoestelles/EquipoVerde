@@ -463,6 +463,7 @@ namespace NutriWise
                         {
                             if (ConexionBD.Conexion != null) ConexionBD.AbrirConexion();
                             dieta.AgregarDieta();
+                            dieta.AnyadirPlatos(platos);
                             ConexionBD.CerrarConexion();
                         }
                         catch (Exception) { MessageBox.Show("No se ha podido establecer conexión.", "Error conexión", MessageBoxButtons.OK, MessageBoxIcon.Error); }

@@ -177,6 +177,11 @@ namespace NutriWise
             return retorno;
         }
 
+        /// <summary>
+        /// Comprueba si a la hora de agregar dieta se han seleccionado platos repetidos (lo cual no se puede).
+        /// </summary>
+        /// <param name="comboBoxes">Los comboBoxes a recibir.</param>
+        /// <returns>Si se repiten o no.</returns>
         public bool PlatosRepetidos(ComboBox[] comboBoxes)
         {
             for (int i = 0; i < comboBoxes.Length; i++)
@@ -189,6 +194,12 @@ namespace NutriWise
             return false;
         }
 
+        /// <summary>
+        /// Busca la cantidad de platos que hay en la BD según el tipo de objetivo y el tipo de intolerancia.
+        /// </summary>
+        /// <param name="obj">El objetivo del usuario.</param>
+        /// <param name="into">La intolerancia del usuario.</param>
+        /// <returns>La cantidad de platos específicos.</returns>
         public static bool CantPlatosEspecificos(int obj, int into)
         {
             string consulta = string.Format("SELECT COUNT(*) FROM platos WHERE objetivo={0} AND intolerancia={1};", obj, into);
@@ -210,6 +221,11 @@ namespace NutriWise
             return false;
         }
 
+        /// <summary>
+        /// Cuenta la cantidad de platos que se han seleccionado para crear la dieta.
+        /// </summary>
+        /// <param name="comboBoxes">Los comboBoxes a recibir.</param>
+        /// <returns>La cantidad de platos seleccionados.</returns>
         public static int CantPlatosSeleccionados(ComboBox[] comboBoxes)
         {
             int cantidad = 0;
@@ -220,6 +236,11 @@ namespace NutriWise
             return cantidad;
         }
 
+        /// <summary>
+        /// A partir del nombre de un plato, devuelve su id.
+        /// </summary>
+        /// <param name="platos">Los platos a recibir.</param>
+        /// <returns>Una lista de enteros(int) con el id de cada plato.</returns>
         public static List<int> ObtenerIdPlatos(ComboBox[] platos)
         {
             List<int> listaId = new List<int>();
@@ -241,6 +262,11 @@ namespace NutriWise
             return listaId;
         }
 
+        /// <summary>
+        /// Cuenta el total de alimentos/ingredientes que contiene una lista de platos.
+        /// </summary>
+        /// <param name="idPlatos">Los id de los platos a buscar.</param>
+        /// <returns>La cantidad total de alimentos.</returns>
         public static int CantAlimentosPlatos(List<int> idPlatos)
         {
             int cantidad = 0;
@@ -257,6 +283,25 @@ namespace NutriWise
             }
 
             return cantidad;
+        }
+
+        /// <summary>
+        /// Modifica el campo idDieta de todos los platos que se encuentran en una lista.
+        /// </summary>
+        /// <param name="platos">Los platos a modificar.</param>
+        /// <returns>Los platos modificados al id de la dieta que llama al método.</returns>
+        public int AnyadirPlatos(ComboBox[] platos)
+        {
+            int retorno = -1;
+            List<int> listaId = ObtenerIdPlatos(platos);
+            foreach (int idPlato in listaId)
+            {
+                string consulta = string.Format("UPDATE platos SET idDieta = {0} WHERE idPlato = {1}", id, idPlato);
+                MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+                retorno = comando.ExecuteNonQuery();
+            }
+
+            return retorno;
         }
     }
 }
