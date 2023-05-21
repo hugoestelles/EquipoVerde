@@ -337,6 +337,7 @@ namespace NutriWise
                     CargarPlatos();
                 }
                 else MessageBox.Show("No hay platos suficientes para crear una dieta.", "Platos insuficientes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                ConexionBD.CerrarConexion();
             }
             catch (Exception) { MessageBox.Show("No se ha podido establecer conexión.", "Error conexión", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             finally { ConexionBD.CerrarConexion(); }
@@ -366,6 +367,7 @@ namespace NutriWise
                         if (ConexionBD.Conexion != null) ConexionBD.AbrirConexion();
                         List<int> idPlatos = Dietas.ObtenerIdPlatos(platos);
                         cantIngredientes = Dietas.CantAlimentosPlatos(idPlatos);
+                        ConexionBD.CerrarConexion();
                     }
                     catch (Exception) { MessageBox.Show("No se ha podido establecer conexión.", "Error conexión", MessageBoxButtons.OK, MessageBoxIcon.Error); }
                     finally { ConexionBD.CerrarConexion(); }
@@ -378,6 +380,7 @@ namespace NutriWise
                         {
                             if (ConexionBD.Conexion != null) ConexionBD.AbrirConexion();
                             dieta.AgregarDieta();
+                            ConexionBD.CerrarConexion();
                         }
                         catch (Exception) { MessageBox.Show("No se ha podido establecer conexión.", "Error conexión", MessageBoxButtons.OK, MessageBoxIcon.Error); }
                         finally { ConexionBD.CerrarConexion(); }
