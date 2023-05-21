@@ -49,5 +49,10 @@ namespace NutriWise
             }
             dgvDieta.ClearSelection();
         }
+
+        private void btnEditar_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,6 +34,7 @@
             this.desayuno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cena = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEnviar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,11 +109,29 @@
             this.cena.ReadOnly = true;
             this.cena.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
+            // btnEnviar
+            // 
+            this.btnEnviar.BackColor = System.Drawing.Color.Gold;
+            this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnEnviar.Image = global::NutriWise.Properties.Resources.enviarCorreo;
+            this.btnEnviar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEnviar.Location = new System.Drawing.Point(295, 384);
+            this.btnEnviar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(136, 40);
+            this.btnEnviar.TabIndex = 21;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEnviar.UseVisualStyleBackColor = false;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // Dieta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
+            this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.dgvDieta);
             this.Controls.Add(this.label1);
             this.Name = "Dieta";
@@ -131,5 +150,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn desayuno;
         private System.Windows.Forms.DataGridViewTextBoxColumn comida;
         private System.Windows.Forms.DataGridViewTextBoxColumn cena;
+        private System.Windows.Forms.Button btnEnviar;
     }
 }

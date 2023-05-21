@@ -137,7 +137,6 @@ C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Memory
 C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.xml
 C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
 C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
 C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
@@ -602,3 +601,7 @@ C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\Equi
 C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
 C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
 C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources

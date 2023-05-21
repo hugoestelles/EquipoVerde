@@ -357,5 +357,8 @@
   <ItemGroup>
     <None Include="Resources\enviarMail.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enviarCorreo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
