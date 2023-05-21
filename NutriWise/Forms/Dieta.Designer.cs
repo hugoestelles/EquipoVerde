@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDieta = new System.Windows.Forms.DataGridView();
-            this.btnMailDieta = new System.Windows.Forms.Button();
             this.dia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.desayuno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comida = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,6 +54,7 @@
             this.dgvDieta.AllowUserToResizeColumns = false;
             this.dgvDieta.AllowUserToResizeRows = false;
             this.dgvDieta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDieta.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvDieta.BackgroundColor = System.Drawing.Color.Khaki;
             this.dgvDieta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDieta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -62,23 +62,19 @@
             this.desayuno,
             this.comida,
             this.cena});
-            this.dgvDieta.Location = new System.Drawing.Point(55, 89);
+            this.dgvDieta.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.dgvDieta.Location = new System.Drawing.Point(20, 139);
             this.dgvDieta.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDieta.Name = "dgvDieta";
             this.dgvDieta.ReadOnly = true;
+            this.dgvDieta.RowHeadersVisible = false;
             this.dgvDieta.RowHeadersWidth = 51;
+            this.dgvDieta.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvDieta.RowTemplate.Height = 24;
-            this.dgvDieta.Size = new System.Drawing.Size(592, 344);
+            this.dgvDieta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgvDieta.ShowEditingIcon = false;
+            this.dgvDieta.Size = new System.Drawing.Size(700, 163);
             this.dgvDieta.TabIndex = 1;
-            // 
-            // btnMailDieta
-            // 
-            this.btnMailDieta.Location = new System.Drawing.Point(665, 221);
-            this.btnMailDieta.Name = "btnMailDieta";
-            this.btnMailDieta.Size = new System.Drawing.Size(69, 62);
-            this.btnMailDieta.TabIndex = 2;
-            this.btnMailDieta.Text = "button1";
-            this.btnMailDieta.UseVisualStyleBackColor = true;
             // 
             // dia
             // 
@@ -86,6 +82,7 @@
             this.dia.HeaderText = "";
             this.dia.Name = "dia";
             this.dia.ReadOnly = true;
+            this.dia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // desayuno
             // 
@@ -93,6 +90,7 @@
             this.desayuno.HeaderText = "Desayuno";
             this.desayuno.Name = "desayuno";
             this.desayuno.ReadOnly = true;
+            this.desayuno.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // comida
             // 
@@ -100,6 +98,7 @@
             this.comida.HeaderText = "Comida";
             this.comida.Name = "comida";
             this.comida.ReadOnly = true;
+            this.comida.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // cena
             // 
@@ -107,13 +106,13 @@
             this.cena.HeaderText = "Cena";
             this.cena.Name = "cena";
             this.cena.ReadOnly = true;
+            this.cena.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Dieta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.Controls.Add(this.btnMailDieta);
             this.Controls.Add(this.dgvDieta);
             this.Controls.Add(this.label1);
             this.Name = "Dieta";
@@ -128,7 +127,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvDieta;
-        private System.Windows.Forms.Button btnMailDieta;
         private System.Windows.Forms.DataGridViewTextBoxColumn dia;
         private System.Windows.Forms.DataGridViewTextBoxColumn desayuno;
         private System.Windows.Forms.DataGridViewTextBoxColumn comida;

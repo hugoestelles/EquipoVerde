@@ -8,6 +8,7 @@ using System.IO;
 using System.Net;
 using System.Net.Mail;
 using System.Net.Security;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -97,41 +98,15 @@ namespace NutriWise.Clases
         }
         public static void EnviarDieta(Usuario user)
         {
+            //NO FUNCIONA.
+            Directory.CreateDirectory(@"C:\NutriWise");
+            string ruta = System.IO.Path.Combine(Application.StartupPath, "Resources");
 
-
-
-            // Calcular las dimensiones del rectángulo en base al área deseada
-            double ancho = 800;
-            double alto = 500;
-
-            // Obtener el tamaño de la pantalla
-            Screen screen = Screen.PrimaryScreen;
-            int screenWidth = screen.Bounds.Width;
-            int screenHeight = screen.Bounds.Height;
-
-            // Calcular las coordenadas para el rectángulo centrado en la pantalla
-            int rectX = (screenWidth - (int)ancho);
-            int rectY = (screenHeight - (int)alto);
-
-            //Point p1 = new Point(1294,751);
-            //Point p2 = new Point(108,113);
-            Point p1 = new Point(rectX, rectY);
-            Point p2 = new Point(108, 113);
-            Size s1 = new Size(800, 300);
-            // Crear el rectángulo usando la clase Rectangle de System.Drawing
-            Rectangle rectangulo = new Rectangle(p1, s1);
             Document documento = new Document();
-            //Creamos la instancia para generar el archivo PDF
-            //Le pasamos el documento creado arriba y con capacidad para abrir o Crear y de nombre Mi_Primer_PDF
-            PdfWriter.GetInstance(documento, new FileStream(@"C:\Dieta.pdf", FileMode.Create));
+            PdfWriter.GetInstance(documento, new FileStream(@"C:\NutriWise\Dieta.pdf", FileMode.Create));
             documento.Open();
-            Bitmap objBitmap = new Bitmap(700, 300);
+            iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance(ruta);
 
-            //Rectangle r1 = new Rectangle(X, Y, ancho, largo);
-            Graphics g1 = Graphics.FromImage(objBitmap);
-            g1.CopyFromScreen(p1, Point.Empty, rectangulo.Size);
-            objBitmap.Save(@"C:\Dieta.png", ImageFormat.Png);
-            iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance(@"C:\Dieta.png");
             imagen.BorderWidth = 0;
             imagen.Alignment = Element.ALIGN_CENTER;
             float percentage = 0.0f;
@@ -140,8 +115,7 @@ namespace NutriWise.Clases
             documento.Add(new Paragraph($"Aqui tienes tu dieta {user.Nombre}:\n\n\n\n"));
             documento.Add(new Paragraph($""));
             documento.Add(new Paragraph($""));
-            //int id = Usuario.BuscarDieta(user.Objetivo, user.Intolerancia);
-            //documento.Add(new Paragraph($"Id de la dieta: {id}"));
+
             documento.Add(imagen);
             documento.Close();
 
@@ -154,7 +128,7 @@ namespace NutriWise.Clases
             correo.Priority = MailPriority.Normal;
             MemoryStream m1 = new MemoryStream();
             m1.Position = 0;
-            correo.Attachments.Add(new Attachment(@"C:\Dieta.pdf"));
+            correo.Attachments.Add(new Attachment(@"C:\NutriWise\Dieta.pdf"));
 
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
             smtp.EnableSsl = true;

@@ -335,6 +335,7 @@ namespace NutriWise
             {
                 if(ConexionBD.Conexion != null)
                 {
+                    ConexionBD.CerrarConexion();
                     ConexionBD.AbrirConexion();
                     //dieta1.CargarDataGrid();
                     ConexionBD.CerrarConexion();

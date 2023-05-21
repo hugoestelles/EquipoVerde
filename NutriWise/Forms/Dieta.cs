@@ -10,7 +10,7 @@ namespace NutriWise
         {
             InitializeComponent();
         }
-        /*public void CargarDataGrid()
+        public void CargarDataGrid()
         {
             Dietas d1 = Usuario.DietaActual;
             string[] dias = new string[7] { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo" };
@@ -42,11 +42,12 @@ namespace NutriWise
                 // Añadir un plato de cada tipo al día
 
                 platosDia.Add(comidas[0][i]);
-                //platosDia.Add(comidas[1][i]);
-                //platosDia.Add(comidas[2][i]);
+                platosDia.Add(comidas[1][i]);
+                platosDia.Add(comidas[2][i]);
 
-                dgvDieta.Rows.Add(dias[i], platosDia[0].Nombre);//, platosDia[1].Nombre, platosDia[2].Nombre);
+                dgvDieta.Rows.Add(dias[i], platosDia[0].Nombre, platosDia[1].Nombre, platosDia[2].Nombre);
             }
-        }*/
+            dgvDieta.ClearSelection();
+        }
     }
 }
