@@ -34,7 +34,7 @@ namespace NutriWise
         /// Funcion para listar todos los alimentos de la base de datos.
         /// </summary>
         /// <returns>Una lista de alimentos.</returns>
-        public List<Alimentos> ListarAlimentos()
+        public static List<Alimentos> ListarAlimentos()
         {
             List<Alimentos> lista = new List<Alimentos>();
             string consulta = String.Format("SELECT * FROM alimentos;");
@@ -88,20 +88,16 @@ namespace NutriWise
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
-        /// <summary>
-        /// Funcion para obtener los datos de un alimento a partir de su ID.
-        /// </summary>
-        /// <param name="idAlimento">ID del alimento.</param>
-        /// <returns>Un alimento con los datos cargados.</returns>
-        public static Alimentos ObtenerDatosAlimento(int idAlimento)
+
+        public static Alimentos ObtenerDatosAlimento(string nombre)
         {
             Alimentos a1;
-            string consulta = String.Format("SELECT * FROM alimentos WHERE idAlimento = '{0}';", idAlimento);
+            string consulta = String.Format("SELECT * FROM alimentos WHERE nombre = '{0}';", nombre);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
-            if (reader.HasRows)
+            if (reader.HasRows && reader.Read())
             {
-                a1 = new Alimentos(idAlimento, reader.GetString(1), reader.GetDouble(2));
+                a1 = new Alimentos(reader.GetInt32(0), reader.GetString(1), reader.GetDouble(2));
                 reader.Close();
                 return a1;
 

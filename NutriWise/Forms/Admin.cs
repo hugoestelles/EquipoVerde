@@ -104,6 +104,28 @@ namespace NutriWise
             grbPlato.BringToFront();
             grbDieta.Visible = false;
             grbEliminarUsu.Visible = false;
+            try
+            {
+                if(ConexionBD.Conexion != null)
+                {
+                    ConexionBD.AbrirConexion();
+                    CargarAlimentos();
+                    ConexionBD.CerrarConexion();
+                }
+                else
+                {
+                    MessageBox.Show("No hay platos suficientes para crear una dieta.", "Platos insuficientes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    ConexionBD.CerrarConexion();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al eliminar el usuario: " + ex.Message);
+            }
+            finally
+            {
+                ConexionBD.CerrarConexion();
+            }
 
         }
 
@@ -220,7 +242,8 @@ namespace NutriWise
         private void btnPlatoAceptar_Click(object sender, EventArgs e)
         {
             bool[] comp = new bool[4] { false, false, false ,false };
-            int[] indices = new int[4] { cmbIngre1.SelectedIndex, cmbIngre2.SelectedIndex, cmbIngre3.SelectedIndex, cmbIngre4.SelectedIndex };
+            //int[] indices = new int[4] { cmbIngre1.SelectedIndex, cmbIngre2.SelectedIndex, cmbIngre3.SelectedIndex, cmbIngre4.SelectedIndex };
+            string[] nombres = new string[4] { cmbIngre1.Text, cmbIngre2.Text, cmbIngre3.Text, cmbIngre4.Text };
             List<Alimentos> list = new List<Alimentos>();
             try
             {
@@ -322,7 +345,7 @@ namespace NutriWise
                                 {
                                     if (comp[i] == false)
                                     {
-                                        Alimentos alim = Alimentos.ObtenerDatosAlimento(indices[i]);
+                                        Alimentos alim = Alimentos.ObtenerDatosAlimento(nombres[i]);
                                         list.Add(alim);
                                     }
                                 }
@@ -331,28 +354,35 @@ namespace NutriWise
                             {
                                 //Mostrar error diciendo que alguno de los alimentos se repite.
                             }
-                    }
+                        }
                         if(cmbAdminPlatosObj.SelectedIndex != -1 && cmbAdminPlatosInto.SelectedIndex != -1 && cmbAdminPlatosTipo.SelectedIndex!= -1)
                         {
                             Platos p1 = new Platos(txtNomPlato.Text, cmbAdminPlatosTipo.SelectedIndex, cmbAdminPlatosObj.SelectedIndex, cmbAdminPlatosInto.SelectedIndex);
-                            p1.ListaAlimentos = list;
-                            p1.ListaCantidades = p1.BuscarCantidades();
-                            if(p1.AgregarPlato() == 1)
+                            if (!p1.ComprobarExistencia())
                             {
-                                MessageBox.Show("Plato introducido en la base de datos correctamente.","Información",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                if (p1.BuscarID())
+                                p1.ListaAlimentos = list;
+                                p1.ListaCantidades = p1.BuscarCantidades();
+                                if (p1.AgregarPlato() == 1)
                                 {
-                                    for (int i = 0; i < p1.ListaAlimentos.Count; i++)
+                                    MessageBox.Show("Plato introducido en la base de datos correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    if (p1.BuscarID())
                                     {
-                                        p1.ListaAlimentos[i].BuscarID();
+                                        for (int i = 0; i < p1.ListaAlimentos.Count; i++)
+                                        {
+                                            p1.ListaAlimentos[i].BuscarID();
+                                        }
+                                        if (p1.InsertarAliPlato()) MessageBox.Show("AliPlato introducido en la base de datos correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        else MessageBox.Show("Error: \nAliPlato introducido en la base de datos incorrectamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     }
-                                    if (p1.InsertarAliPlato()) MessageBox.Show("AliPlato introducido en la base de datos correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    else MessageBox.Show("Error: \nAliPlato introducido en la base de datos incorrectamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Error: \nPlato introducido en la base de datos incorrectamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                             }
                             else
                             {
-                                MessageBox.Show("Error: \nPlato introducido en la base de datos incorrectamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Error: \nYa hay un plato con ese nombre en la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                         else
@@ -491,6 +521,17 @@ namespace NutriWise
             {
                 cmb.Items.Clear();
                 cmb.Text = "";
+            }
+        }
+        private void CargarAlimentos()
+        {
+            List<Alimentos> list = Alimentos.ListarAlimentos();
+            for (int i = 0; i < list.Count; i++)
+            {
+                cmbIngre1.Items.Add(list[i].Nombre);
+                cmbIngre2.Items.Add(list[i].Nombre);
+                cmbIngre3.Items.Add(list[i].Nombre);
+                cmbIngre4.Items.Add(list[i].Nombre);
             }
         }
     }
