@@ -338,6 +338,8 @@ namespace NutriWise
                     ConexionBD.CerrarConexion();
                     ConexionBD.AbrirConexion();
                     //dieta1.CargarDataGrid();
+                    //string ruta = Utiles.SeleccionarPDF(Usuario.UsuarioActual);
+                    //Utiles.EnviarDieta(Usuario.UsuarioActual,ruta);
                     ConexionBD.CerrarConexion();
                 }
                 else MessageBox.Show("No existe conexión a la Base de Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

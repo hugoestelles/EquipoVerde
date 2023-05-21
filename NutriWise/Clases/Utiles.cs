@@ -96,28 +96,10 @@ namespace NutriWise.Clases
                 // MessageBox.Show("Error al enviar el correo: " + ex.Message);
             }
         }
-        public static void EnviarDieta(Usuario user)
+        public static void EnviarDieta(Usuario user, string ruta)
         {
-            //NO FUNCIONA.
+            
             Directory.CreateDirectory(@"C:\NutriWise");
-            string ruta = System.IO.Path.Combine(Application.StartupPath, "Resources");
-
-            Document documento = new Document();
-            PdfWriter.GetInstance(documento, new FileStream(@"C:\NutriWise\Dieta.pdf", FileMode.Create));
-            documento.Open();
-            iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance(ruta);
-
-            imagen.BorderWidth = 0;
-            imagen.Alignment = Element.ALIGN_CENTER;
-            float percentage = 0.0f;
-            percentage = 500 / imagen.Width;
-            imagen.ScalePercent(percentage * 100);
-            documento.Add(new Paragraph($"Aqui tienes tu dieta {user.Nombre}:\n\n\n\n"));
-            documento.Add(new Paragraph($""));
-            documento.Add(new Paragraph($""));
-
-            documento.Add(imagen);
-            documento.Close();
 
             MailMessage correo = new MailMessage();
             correo.From = new MailAddress("nutriwiseinformacion@gmail.com", "NutriWise", System.Text.Encoding.UTF8);
@@ -128,7 +110,7 @@ namespace NutriWise.Clases
             correo.Priority = MailPriority.Normal;
             MemoryStream m1 = new MemoryStream();
             m1.Position = 0;
-            correo.Attachments.Add(new Attachment(@"C:\NutriWise\Dieta.pdf"));
+            correo.Attachments.Add(new Attachment(ruta));
 
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
             smtp.EnableSsl = true;
@@ -204,6 +186,45 @@ namespace NutriWise.Clases
             }
             Usuario.DietaActual= d1;
             return user;
+        }
+        public static string SeleccionarPDF(Usuario user)
+        {
+            int id = user.Id;
+            switch (id)
+            {
+                case 1:
+                    return "Ruta 1 dieta";
+                case 2:
+                    return "Ruta 2 dieta";
+                case 3:
+                    return "Ruta 3 dieta";
+                case 4:
+                    return "Ruta 4 dieta";
+                case 5:
+                    return "Ruta 5 dieta";
+                case 6:
+                    return "Ruta 6 dieta";
+                case 7:
+                    return "Ruta 7 dieta";
+                case 8:
+                    return "Ruta 8 dieta";
+                case 9:
+                    return "Ruta 9 dieta";
+                case 10:
+                    return "Ruta 10 dieta";
+                case 11:
+                    return "Ruta 11 dieta";
+                case 12:
+                    return "Ruta 12 dieta";
+                case 13:
+                    return "Ruta 13 dieta";
+                case 14:
+                    return "Ruta 14 dieta";
+                case 15:
+                    return "Ruta 15 dieta";
+                default:
+                    return "";
+            }
         }
     }
 }
