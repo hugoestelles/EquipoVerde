@@ -17,6 +17,7 @@ namespace NutriWise
         public Menu()
         {
             InitializeComponent();
+            btnAyuda.BackColor = Color.Ivory;
         }
 
         bool dieta = false;
@@ -27,57 +28,10 @@ namespace NutriWise
         bool videos = false;
         bool ayuda = true;
         bool mantenimiento = false;
-        
-        
-        
-
 
         private void pctCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void btnValoraciones_Click(object sender, EventArgs e)
-        {
-
-            perfil = false;
-            dieta = false;
-            valoraciones = true;
-            donativos = false;
-            lista = false;
-            videos = false;
-            ayuda = false;
-            mantenimiento = false;
-            cambioColor();
-            //dieta1.BringToFront();
-            valoraciones1.Visible = true;
-            perfil1.Visible = false;
-            dieta1.Visible = false;
-            donativos1.Visible = false;
-            listaCompra1.Visible = false;
-            ayuda1.Visible = false;
-            videos1.Visible = false;
-        }
-
-        private void btnPerfil_Click(object sender, EventArgs e)
-        {
-            perfil = true;
-            dieta = false;
-            valoraciones = false;
-            donativos = false;
-            lista = false;
-            videos = false;
-            ayuda = false;
-            mantenimiento = false;
-            cambioColor();
-            //perfil1.BringToFront();
-            dieta1.Visible = false;
-            perfil1.Visible = true;
-            valoraciones1.Visible = false;
-            donativos1.Visible = false;
-            listaCompra1.Visible = false;
-            ayuda1.Visible = false;
-            videos1.Visible = false;
         }
 
         void cambioColor()
@@ -86,90 +40,42 @@ namespace NutriWise
             {
                 if (dieta)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnDieta.BackColor = Color.Ivory;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (valoraciones)
                 {
+                    LimpiarBotones();
                     btnValoraciones.BackColor = Color.Ivory;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (perfil)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnPerfil.BackColor = Color.Ivory;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (donativos)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnDonativos.BackColor = Color.Ivory;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (lista)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnListaCompra.BackColor = Color.Ivory;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (videos)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnVideos.BackColor = Color.Ivory;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (ayuda)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnAyuda.BackColor = Color.Ivory;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (mantenimiento)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnMantenimiento.BackColor = Color.Ivory;
                 }
             }
@@ -178,265 +84,185 @@ namespace NutriWise
             {
                 if (perfil)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnPerfil.BackColor = Color.DarkSeaGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (dieta)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnDieta.BackColor = Color.DarkSeaGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (valoraciones)
                 {
+                    LimpiarBotones();
                     btnValoraciones.BackColor = Color.DarkSeaGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (donativos)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnDonativos.BackColor = Color.DarkSeaGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (lista)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnListaCompra.BackColor = Color.DarkSeaGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (videos)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnVideos.BackColor = Color.DarkSeaGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (ayuda)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnAyuda.BackColor = Color.DarkSeaGreen;
-                    btnMantenimiento.BackColor = Color.PaleGreen;
                 }
                 if (mantenimiento)
                 {
-                    btnValoraciones.BackColor = Color.PaleGreen;
-                    btnDieta.BackColor = Color.PaleGreen;
-                    btnPerfil.BackColor = Color.PaleGreen;
-                    btnDonativos.BackColor = Color.PaleGreen;
-                    btnListaCompra.BackColor = Color.PaleGreen;
-                    btnVideos.BackColor = Color.PaleGreen;
-                    btnAyuda.BackColor = Color.PaleGreen;
+                    LimpiarBotones();
                     btnMantenimiento.BackColor = Color.DarkSeaGreen;
                 }
             }
-
+            perfil1.CambioColorPerdfil();
+            videos1.CambioColor();
         }
         private void pctAjustes_Click_1(object sender, EventArgs e)
         {
-            if (pnlAjustes.Visible == true)
+            if (pnlAjustes.Visible)
             {
                 pnlAjustes.Visible = false;
-                pnlAjustes.BringToFront();
-                pctAjustes.BringToFront();
-                pctCerrar.BringToFront();
                 return;
             }
-            if (pnlAjustes.Visible == false) { pnlAjustes.Visible = true; }
-        }
-
-        private void btnClaro_Click_1(object sender, EventArgs e)
-        {
-            this.BackColor = Color.Ivory;
-            perfil1.BackColor = Color.Ivory;
-            dieta1.BackColor = Color.Ivory;
-            valoraciones1.BackColor = Color.Ivory;
-            donativos1.BackColor = Color.Ivory;
-            listaCompra1.BackColor = Color.Ivory;
-            ayuda1.BackColor = Color.Ivory;
-            cambioColor();
+            else { pnlAjustes.Visible = true; }
         }
 
         private void btnDonativos_Click(object sender, EventArgs e)
         {
-            dieta = false;
-            perfil = false;
-            valoraciones = false;
-            donativos = true;
-            lista = false;
-            videos = false;
-            ayuda = false;
-            mantenimiento = false;
-            cambioColor();
-            //dieta1.BringToFront();
-            valoraciones1.Visible = false;
-            perfil1.Visible = false;
-            dieta1.Visible = false;
-            donativos1.Visible = true;
-            listaCompra1.Visible = false;
-            ayuda1.Visible = false;
-            videos1.Visible = false;
+            if (!donativos)
+            {
+                CambiarMenu();
+                donativos = true;
+                donativos1.Visible = true;
+                cambioColor();
+                btnTitulo.Text = ("Donativos");
+            }
         }
 
         private void btnDieta_Click(object sender, EventArgs e)
         {
-            dieta = true;
-            perfil = false;
-            valoraciones = false;
-            donativos = false;
-            lista = false;
-            videos = false;
-            ayuda = false;
-            mantenimiento = false;
-            cambioColor();
-            dieta1.Visible = true;
-            perfil1.Visible = false;
-            valoraciones1.Visible = false;
-            donativos1.Visible = false;
-            listaCompra1.Visible = false;
-            ayuda1.Visible = false;
-            videos1.Visible = false;
-            try
+            if (!donativos)
             {
-                if(ConexionBD.Conexion != null)
+                CambiarMenu();
+                dieta = true;
+                dieta1.Visible = true;
+                cambioColor();
+                btnTitulo.Text = ("Dieta");
+
+                try
                 {
-                    ConexionBD.CerrarConexion();
-                    ConexionBD.AbrirConexion();
-                    //dieta1.CargarDataGrid();
-                    //string ruta = Utiles.SeleccionarPDF(Usuario.UsuarioActual);
-                    //Utiles.EnviarDieta(Usuario.UsuarioActual,ruta);
+                    if (ConexionBD.Conexion != null)
+                    {
+                        ConexionBD.CerrarConexion();
+                        ConexionBD.AbrirConexion();
+                        //dieta1.CargarDataGrid();
+                        //string ruta = Utiles.SeleccionarPDF(Usuario.UsuarioActual);
+                        //Utiles.EnviarDieta(Usuario.UsuarioActual,ruta);
+                        ConexionBD.CerrarConexion();
+                    }
+                    else MessageBox.Show("No existe conexión a la Base de Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     ConexionBD.CerrarConexion();
                 }
-                else MessageBox.Show("No existe conexión a la Base de Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                ConexionBD.CerrarConexion();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"{ex}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                ConexionBD.CerrarConexion();
-            }
-            finally
-            {
-                ConexionBD.CerrarConexion();
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"{ex}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ConexionBD.CerrarConexion();
+                }
+                finally
+                {
+                    ConexionBD.CerrarConexion();
+                }
             }
         }
 
         private void btnListaCompra_Click(object sender, EventArgs e)
         {
-            dieta = false;
-            perfil = false;
-            valoraciones = false;
-            donativos = false;
-            lista = true;
-            videos = false;
-            ayuda = false;
-            mantenimiento = false;
-            cambioColor();
-            dieta1.Visible = false;
-            perfil1.Visible = false;
-            valoraciones1.Visible = false;
-            donativos1.Visible = false;
-            listaCompra1.Visible = true;
-            ayuda1.Visible = false;
-            videos1.Visible = false;
-            try
+            if (!lista)
             {
-                if (ConexionBD.Conexion != null)
+                CambiarMenu();
+                lista = true;
+                listaCompra1.Visible = true;
+                cambioColor();
+                btnTitulo.Text = ("Lista");
+                try
                 {
-                    ConexionBD.CerrarConexion();
-                    ConexionBD.AbrirConexion();
-                    listaCompra1.CargarLista();
+                    if (ConexionBD.Conexion != null)
+                    {
+                        ConexionBD.CerrarConexion();
+                        ConexionBD.AbrirConexion();
+                        listaCompra1.CargarLista();
 
+                        ConexionBD.CerrarConexion();
+                    }
+                    else MessageBox.Show("No existe conexión a la Base de Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     ConexionBD.CerrarConexion();
                 }
-                else MessageBox.Show("No existe conexión a la Base de Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                ConexionBD.CerrarConexion();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"{ex}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                ConexionBD.CerrarConexion();
-            }
-            finally
-            {
-                ConexionBD.CerrarConexion();
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"{ex}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ConexionBD.CerrarConexion();
+                }
+                finally
+                {
+                    ConexionBD.CerrarConexion();
+                }
             }
         }
 
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            if (!perfil)
+            {
+                CambiarMenu();
+                perfil = true;
+                perfil1.Visible = true;
+                cambioColor();
+                btnTitulo.Text = ("Perfil");
+            }
+        }
+
+        private void btnValoraciones_Click(object sender, EventArgs e)
+        {
+            if (!valoraciones)
+            {
+                CambiarMenu();
+                valoraciones = true;
+                valoraciones1.Visible = true;
+                cambioColor();
+                btnTitulo.Text = ("Valoraciones");
+            }
+        }
         private void btnVideos_Click(object sender, EventArgs e)
         {
-            dieta = false;
-            perfil = false;
-            valoraciones = false;
-            donativos = false;
-            lista = false;
-            videos = true;
-            ayuda = false;
-            mantenimiento = false;
-            cambioColor();
-            dieta1.Visible = false;
-            perfil1.Visible = false;
-            valoraciones1.Visible = false;
-            donativos1.Visible = false;
-            listaCompra1.Visible = false;
-            ayuda1.Visible = false;
-            videos1.Visible = true;
+            if (!videos)
+            {
+                CambiarMenu();
+                videos = true;
+                videos1.Visible = true;
+                cambioColor();
+                btnTitulo.Text = ("Videos");
+            }
         }
 
         private void btnAyuda_Click(object sender, EventArgs e)
         {
-            dieta = false;
-            perfil = false;
-            valoraciones = false;
-            donativos = false;
-            lista = false;
-            videos = false;
-            ayuda = true;
-            mantenimiento = false;
-            cambioColor();
-            dieta1.Visible = false;
-            perfil1.Visible = false;
-            valoraciones1.Visible = false;
-            donativos1.Visible = false;
-            listaCompra1.Visible = false;
-            ayuda1.Visible = true;
-            videos1.Visible = false;
-
+            if (!ayuda)
+            {
+                CambiarMenu();
+                ayuda = true;
+                ayuda1.Visible = true;
+                cambioColor();
+                btnTitulo.Text = ("Ayuda");
+            }
         }
 
         private void pctClaro_Click(object sender, EventArgs e)
@@ -450,8 +276,6 @@ namespace NutriWise
             ayuda1.BackColor = Color.Ivory;
             videos1.BackColor = Color.Ivory;
             cambioColor();
-            perfil1.CambioColorPerdfil();
-            videos1.CambioColor();
         }
 
         private void pctOscuro_Click(object sender, EventArgs e)
@@ -465,11 +289,20 @@ namespace NutriWise
             ayuda1.BackColor = Color.DarkSeaGreen;
             videos1.BackColor = Color.DarkSeaGreen;
             cambioColor();
-            perfil1.CambioColorPerdfil();
-            videos1.CambioColor();
         }
 
         private void btnMantenimiento_Click(object sender, EventArgs e)
+        {
+            CambiarOpcion();
+            mantenimiento = true;
+            cambioColor();
+
+            Admin form5 = new Admin();
+
+            form5.ShowDialog();
+        }
+
+        private void CambiarOpcion()
         {
             dieta = false;
             perfil = false;
@@ -478,14 +311,30 @@ namespace NutriWise
             lista = false;
             videos = false;
             ayuda = false;
-            mantenimiento = true;
-            cambioColor();
-            // Crea una nueva instancia del formulario Form5
-            Admin form5 = new Admin();
+            mantenimiento = false;
+        }
+        private void CambiarMenu()
+        {
+            dieta1.Visible = false;
+            perfil1.Visible = false;
+            valoraciones1.Visible = false;
+            donativos1.Visible = false;
+            listaCompra1.Visible = false;
+            ayuda1.Visible = false;
+            videos1.Visible = false;
+            CambiarOpcion();
+        }
 
-            // Muestra el nuevo formulario
-            form5.ShowDialog();
-
+        private void LimpiarBotones()
+        {
+            btnValoraciones.BackColor = Color.PaleGreen;
+            btnDieta.BackColor = Color.PaleGreen;
+            btnPerfil.BackColor = Color.PaleGreen;
+            btnDonativos.BackColor = Color.PaleGreen;
+            btnListaCompra.BackColor = Color.PaleGreen;
+            btnVideos.BackColor = Color.PaleGreen;
+            btnAyuda.BackColor = Color.PaleGreen;
+            btnMantenimiento.BackColor = Color.PaleGreen;
         }
 
     }
