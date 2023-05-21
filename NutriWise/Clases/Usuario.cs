@@ -18,6 +18,7 @@ namespace NutriWise.Clases
         private decimal actividad;
         private int objetivo;
         private bool administrador;
+        private int idDieta;
         private static Usuario usuarioActual;
         private static Dietas dietaActual;
 
@@ -32,6 +33,7 @@ namespace NutriWise.Clases
         public decimal Actividad { get { return actividad; } }
         public int Objetivo { get { return objetivo; } }
         public bool Administrador { get { return administrador; } }
+        public int IdDieta { get { return idDieta; } }
         public static Usuario UsuarioActual { get { return usuarioActual; } set { usuarioActual = value; } }
         public static Dietas DietaActual { get { return dietaActual; } set { dietaActual = value; } }
         
@@ -182,6 +184,7 @@ namespace NutriWise.Clases
                 user.actividad = reader.GetInt16(8);
                 user.objetivo = reader.GetInt16(9);
                 user.administrador = reader.GetBoolean(10);
+                user.idDieta= reader.GetInt32(11);
             }
             reader.Close();
             return user;

@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using NutriWise.Clases;
+using System.Windows.Forms;
 
 namespace NutriWise
 {
@@ -7,6 +8,11 @@ namespace NutriWise
         public ListaCompra()
         {
             InitializeComponent();
+        }
+
+        public void CargarLista()
+        {
+            lblListaCompra.Text = Utiles.FormatearListaCompra(Usuario.DietaActual);
         }
     }
 }

@@ -174,11 +174,10 @@ namespace NutriWise.Clases
         public static Usuario CargarUsuarioActual()
         {
             Usuario user = Usuario.BuscarUsuario(Usuario.UsuarioActual.Correo);
-            int id = Usuario.BuscarDieta(user.Objetivo, user.Intolerancia);
+            int id = user.IdDieta;
             Dietas d1 = new Dietas();
             d1.ObtenerDatosDieta(id);
             d1.Platos = d1.BuscarPlatos();
-            List<Platos> p1 = d1.Platos;
             for (int i = 0; i < d1.Platos.Count; i++)
             {
                 d1.Platos[i].ListaAlimentos = d1.Platos[i].BuscarAlimentos();
@@ -244,11 +243,11 @@ namespace NutriWise.Clases
                     if (!compro) 
                     { 
                         lista.Add(provisional[j]);
-                        retorno += "\t" + provisional[j].Nombre;
+                        
+                        retorno += "    -" + provisional[j].Nombre + "              ";
                     }
                 }
-                retorno += "\n";
-
+                retorno += "\n \n";
             }
             return retorno;
 

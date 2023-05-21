@@ -12,6 +12,8 @@ namespace NutriWise
         private int tipo;
         private List<Alimentos> listaAlimentos = new List<Alimentos>();
         private int[] listaCantidades;
+        private int objetivo;
+        private int intolerancia;
 
         public int Id { get { return id; } set { id = value; } }
         public string Nombre { get { return nombre; } set { nombre = value; } }
@@ -26,8 +28,31 @@ namespace NutriWise
             nombre = nom;
             tipo = tip;
         }
-
+        public Platos(string nom, int tip, int obj, int into)
+        {
+            nombre = nom;
+            tipo = tip;
+            objetivo = obj;
+            intolerancia= into;
+        }
         public Platos() { }
+        public bool ComprobarExistencia()
+        {
+            string consulta = String.Format("SELECT * FROM platos WHERE nombre = '{0}';", this.nombre);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows)
+            {
+                reader.Close();
+                return true;
+
+            }
+            else
+            {
+                reader.Close();
+                return false;
+            }
+        }
 
 
         /// <summary>
@@ -37,13 +62,15 @@ namespace NutriWise
         public int AgregarPlato()
         {
             int retorno;
-            string consulta = string.Format("INSERT INTO platos (nombre,idDieta,tipo) VALUES " +
-                "(@nom,@tip,@idDieta);");
+            string consulta = string.Format("INSERT INTO platos (nombre,idDieta,tipo,Objetivo,Intolerancia) VALUES " +
+                "(@nom,@tip,@idDieta,@obj,@into);");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            comando.Parameters.AddWithValue("idDieta", BuscarDieta());
-            comando.Parameters.AddWithValue("nom", nombre);
-            comando.Parameters.AddWithValue("tip", tipo);
+            comando.Parameters.AddWithValue("@idDieta", 0);
+            comando.Parameters.AddWithValue("@nom", nombre);
+            comando.Parameters.AddWithValue("@tip", tipo);
+            comando.Parameters.AddWithValue("@obj", objetivo);
+            comando.Parameters.AddWithValue("@into", intolerancia);
 
             retorno = comando.ExecuteNonQuery();
             return retorno;
@@ -180,6 +207,23 @@ namespace NutriWise
                 comando.Dispose();
             }
             return retorno;
+        }
+        public bool BuscarID()
+        {
+            string consulta = String.Format("SELECT * FROM platos WHERE nombre = '{0}';", this.Nombre);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows && reader.Read())
+            {
+                id = reader.GetInt32(0);
+                reader.Close();
+                return true;
+            }
+            else
+            {
+                reader.Close();
+                return false;
+            }
         }
     }
 }

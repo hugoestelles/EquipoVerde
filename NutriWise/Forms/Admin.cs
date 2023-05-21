@@ -213,7 +213,7 @@ namespace NutriWise
                             Alimentos a1 = new Alimentos(txtAgregarIngre1.Text, double.Parse(txtValorN1.Text));
                             if (!a1.ComprobarExistencia())
                             {
-                                if(a1.AgregarAlimento() == 1)
+                                if (a1.AgregarAlimento() == 1)
                                 {
                                     list.Add(a1);
                                 }
@@ -228,7 +228,7 @@ namespace NutriWise
                             }
                         }
                         //Comprobaciones 2 alimento.
-                        else if (cmbIngre2.SelectedIndex == -1 && txtAgregarIngre2.Text != "" && txtValorN2.Text != "")
+                        if (cmbIngre2.SelectedIndex == -1 && txtAgregarIngre2.Text != "" && txtValorN2.Text != "")
                         {
                             comp[1] = true;
                             Alimentos a2 = new Alimentos(txtAgregarIngre2.Text, double.Parse(txtValorN2.Text));
@@ -249,7 +249,7 @@ namespace NutriWise
                             }
                         }
                         //Comprobaciones 3 alimento.
-                        else if (cmbIngre3.SelectedIndex == -1 && txtAgregarIngre3.Text != "" && txtValorN3.Text != "")
+                        if (cmbIngre3.SelectedIndex == -1 && txtAgregarIngre3.Text != "" && txtValorN3.Text != "")
                         {
                             comp[2] = true;
                             Alimentos a3 = new Alimentos(txtAgregarIngre3.Text, double.Parse(txtValorN3.Text));
@@ -270,7 +270,7 @@ namespace NutriWise
                             }
                         }
                         //Comprobaciones 4 alimento.
-                        else if (cmbIngre4.SelectedIndex == -1 && txtAgregarIngre4.Text != "" && txtValorN4.Text != "")
+                        if (cmbIngre4.SelectedIndex == -1 && txtAgregarIngre4.Text != "" && txtValorN4.Text != "")
                         {
                             comp[3] = true;
                             Alimentos a4 = new Alimentos(txtAgregarIngre4.Text, double.Parse(txtValorN4.Text));
@@ -290,22 +290,51 @@ namespace NutriWise
                                 //Mostrar error diciendo que ya hay un alimento con ese nombre en la bd.
                             }
                         }
+                    
                         else
                         {
-                            if(Utiles.ComprobarComboBoxes(cmbIngre1.SelectedIndex, cmbIngre2.SelectedIndex, cmbIngre3.SelectedIndex, cmbIngre4.SelectedIndex))
+                            if (Utiles.ComprobarComboBoxes(cmbIngre1.SelectedIndex, cmbIngre2.SelectedIndex, cmbIngre3.SelectedIndex, cmbIngre4.SelectedIndex))
                             {
                                 for (int i = 0; i < comp.Length; i++)
                                 {
-                                    if (comp[i] == false) {
+                                    if (comp[i] == false)
+                                    {
                                         Alimentos alim = Alimentos.ObtenerDatosAlimento(indices[i]);
                                         list.Add(alim);
-                                            }
+                                    }
                                 }
                             }
                             else
                             {
                                 //Mostrar error diciendo que alguno de los alimentos se repite.
                             }
+                    }
+                        if(cmbAdminPlatosObj.SelectedIndex != -1 && cmbAdminPlatosInto.SelectedIndex != -1 && cmbAdminPlatosTipo.SelectedIndex!= -1)
+                        {
+                            Platos p1 = new Platos(txtNomPlato.Text, cmbAdminPlatosTipo.SelectedIndex, cmbAdminPlatosObj.SelectedIndex, cmbAdminPlatosInto.SelectedIndex);
+                            p1.ListaAlimentos = list;
+                            p1.ListaCantidades = p1.BuscarCantidades();
+                            if(p1.AgregarPlato() == 1)
+                            {
+                                MessageBox.Show("Plato introducido en la base de datos correctamente.","Información",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                if (p1.BuscarID())
+                                {
+                                    for (int i = 0; i < p1.ListaAlimentos.Count; i++)
+                                    {
+                                        p1.ListaAlimentos[i].BuscarID();
+                                    }
+                                    if (p1.InsertarAliPlato()) MessageBox.Show("AliPlato introducido en la base de datos correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    else MessageBox.Show("Error: \nAliPlato introducido en la base de datos incorrectamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error: \nPlato introducido en la base de datos incorrectamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                        else
+                        {
+                            //Mostrar error por pantalla diciendo que no ha introducido los datos correctamente.
                         }
                     }
                     else
@@ -331,7 +360,7 @@ namespace NutriWise
             {
                 if (ConexionBD.Conexion != null) ConexionBD.AbrirConexion();
 
-                if (Dietas.CantPlatosEspecificos(cmbAdminObj.SelectedIndex, cmbAdminInto.SelectedIndex))
+                if (Dietas.CantPlatosEspecificos(cmbAdminDietObj.SelectedIndex, cmbAdminDietInto.SelectedIndex))
                 {
                     EliminarCargaPlatos();
                     CargarPlatos();
@@ -345,7 +374,7 @@ namespace NutriWise
 
         private void btnDietaAceptar_Click(object sender, EventArgs e)
         {
-            if (txtNomDieta.Text == "" || cmbAdminObj.SelectedIndex == -1 || cmbAdminInto.SelectedIndex == -1)
+            if (txtNomDieta.Text == "" || cmbAdminDietObj.SelectedIndex == -1 || cmbAdminDietInto.SelectedIndex == -1)
             {
                 MessageBox.Show("Debes ingresar un nombre y seleccionar un tipo de objetivo y de intolerancia.", "Datos incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -358,8 +387,8 @@ namespace NutriWise
                 else
                 {
                     string nombre = txtNomDieta.Text;
-                    int objetivo = cmbAdminObj.SelectedIndex;
-                    string tipo = cmbAdminInto.SelectedItem.ToString();
+                    int objetivo = cmbAdminDietObj.SelectedIndex;
+                    string tipo = cmbAdminDietInto.SelectedItem.ToString();
                     int cantIngredientes = -1;
 
                     try
@@ -394,7 +423,7 @@ namespace NutriWise
 
         private void CargarPlatos()
         {
-            string consulta = string.Format("SELECT nombre FROM platos WHERE objetivo={0} AND intolerancia={1};", cmbAdminObj.SelectedIndex, cmbAdminInto.SelectedIndex);
+            string consulta = string.Format("SELECT nombre FROM platos WHERE objetivo={0} AND intolerancia={1};", cmbAdminDietObj.SelectedIndex, cmbAdminDietInto.SelectedIndex);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
 
             try

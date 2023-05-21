@@ -112,5 +112,22 @@ namespace NutriWise
                 return null;
             }
         }
+        public bool BuscarID()
+        {
+            string consulta = String.Format("SELECT * FROM alimentos WHERE nombre = '{0}';", this.Nombre);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows && reader.Read())
+            {
+                id = reader.GetInt32(0);
+                reader.Close();
+                return true;
+            }
+            else
+            {
+                reader.Close();
+                return false;
+            }
+        }
     }
 }
