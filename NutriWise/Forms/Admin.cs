@@ -377,9 +377,9 @@ namespace NutriWise
             {
                 if (ConexionBD.Conexion != null) ConexionBD.AbrirConexion();
 
+                EliminarCargaPlatos();
                 if (Dietas.CantPlatosEspecificos(cmbAdminDietObj.SelectedIndex, cmbAdminDietInto.SelectedIndex))
                 {
-                    EliminarCargaPlatos();
                     CargarPlatos();
                 }
                 else MessageBox.Show("No hay platos suficientes para crear una dieta.", "Platos insuficientes", MessageBoxButtons.OK, MessageBoxIcon.Warning);

@@ -199,9 +199,9 @@
             this.grbInfo.Controls.Add(this.lblAdminReloj);
             this.grbInfo.Controls.Add(this.lblAdminInfo);
             this.grbInfo.Location = new System.Drawing.Point(156, 39);
-            this.grbInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbInfo.Margin = new System.Windows.Forms.Padding(4);
             this.grbInfo.Name = "grbInfo";
-            this.grbInfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbInfo.Padding = new System.Windows.Forms.Padding(4);
             this.grbInfo.Size = new System.Drawing.Size(1047, 428);
             this.grbInfo.TabIndex = 0;
             this.grbInfo.TabStop = false;
@@ -210,7 +210,7 @@
             // 
             this.btnAdminCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdminCerrar.Location = new System.Drawing.Point(744, 265);
-            this.btnAdminCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdminCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdminCerrar.Name = "btnAdminCerrar";
             this.btnAdminCerrar.Size = new System.Drawing.Size(211, 69);
             this.btnAdminCerrar.TabIndex = 6;
@@ -222,7 +222,7 @@
             // 
             this.btnAdminSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdminSalir.Location = new System.Drawing.Point(744, 171);
-            this.btnAdminSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdminSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdminSalir.Name = "btnAdminSalir";
             this.btnAdminSalir.Size = new System.Drawing.Size(211, 69);
             this.btnAdminSalir.TabIndex = 5;
@@ -234,7 +234,7 @@
             // 
             this.pictureBox1.Image = global::NutriWise.Properties.Resources.calendario;
             this.pictureBox1.Location = new System.Drawing.Point(267, 298);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(92, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -248,7 +248,7 @@
             this.lblAdminFecha.Location = new System.Drawing.Point(395, 322);
             this.lblAdminFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminFecha.Name = "lblAdminFecha";
-            this.lblAdminFecha.Size = new System.Drawing.Size(148, 52);
+            this.lblAdminFecha.Size = new System.Drawing.Size(149, 52);
             this.lblAdminFecha.TabIndex = 3;
             this.lblAdminFecha.Text = "Fecha";
             // 
@@ -256,7 +256,7 @@
             // 
             this.picAdminInfo.Image = global::NutriWise.Properties.Resources.business_color_progress_icon_icons_com_53437;
             this.picAdminInfo.Location = new System.Drawing.Point(267, 224);
-            this.picAdminInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picAdminInfo.Margin = new System.Windows.Forms.Padding(4);
             this.picAdminInfo.Name = "picAdminInfo";
             this.picAdminInfo.Size = new System.Drawing.Size(92, 66);
             this.picAdminInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -298,7 +298,7 @@
             this.mnuAdmin.Location = new System.Drawing.Point(0, 0);
             this.mnuAdmin.Name = "mnuAdmin";
             this.mnuAdmin.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.mnuAdmin.Size = new System.Drawing.Size(1367, 30);
+            this.mnuAdmin.Size = new System.Drawing.Size(1367, 28);
             this.mnuAdmin.TabIndex = 1;
             this.mnuAdmin.Text = "menuStrip1";
             // 
@@ -310,7 +310,7 @@
             this.mnuPlato,
             this.mnuDieta});
             this.operacionesToolStripMenuItem.Name = "operacionesToolStripMenuItem";
-            this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(106, 26);
+            this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
             this.operacionesToolStripMenuItem.Text = "Operaciones";
             // 
             // mnuUsuario
@@ -388,9 +388,9 @@
             this.grbEliminarUsu.Controls.Add(this.lblElimUsuInfo);
             this.grbEliminarUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbEliminarUsu.Location = new System.Drawing.Point(37, 47);
-            this.grbEliminarUsu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbEliminarUsu.Margin = new System.Windows.Forms.Padding(4);
             this.grbEliminarUsu.Name = "grbEliminarUsu";
-            this.grbEliminarUsu.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbEliminarUsu.Padding = new System.Windows.Forms.Padding(4);
             this.grbEliminarUsu.Size = new System.Drawing.Size(1263, 736);
             this.grbEliminarUsu.TabIndex = 2;
             this.grbEliminarUsu.TabStop = false;
@@ -401,7 +401,7 @@
             // 
             this.btnElimVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnElimVolver.Location = new System.Drawing.Point(471, 495);
-            this.btnElimVolver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnElimVolver.Margin = new System.Windows.Forms.Padding(4);
             this.btnElimVolver.Name = "btnElimVolver";
             this.btnElimVolver.Size = new System.Drawing.Size(108, 41);
             this.btnElimVolver.TabIndex = 12;
@@ -413,7 +413,7 @@
             // 
             this.btnAdminEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdminEliminar.Location = new System.Drawing.Point(639, 411);
-            this.btnAdminEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdminEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdminEliminar.Name = "btnAdminEliminar";
             this.btnAdminEliminar.Size = new System.Drawing.Size(140, 42);
             this.btnAdminEliminar.TabIndex = 11;
@@ -491,7 +491,7 @@
             // 
             this.btnBuscarUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarUsu.Location = new System.Drawing.Point(101, 289);
-            this.btnBuscarUsu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarUsu.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarUsu.Name = "btnBuscarUsu";
             this.btnBuscarUsu.Size = new System.Drawing.Size(160, 37);
             this.btnBuscarUsu.TabIndex = 2;
@@ -503,7 +503,7 @@
             // 
             this.txtEliminarUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEliminarUsu.Location = new System.Drawing.Point(56, 223);
-            this.txtEliminarUsu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEliminarUsu.Margin = new System.Windows.Forms.Padding(4);
             this.txtEliminarUsu.Name = "txtEliminarUsu";
             this.txtEliminarUsu.Size = new System.Drawing.Size(263, 30);
             this.txtEliminarUsu.TabIndex = 1;
@@ -551,9 +551,9 @@
             this.grbPlato.Controls.Add(this.lblNomPlato);
             this.grbPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbPlato.Location = new System.Drawing.Point(29, 47);
-            this.grbPlato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbPlato.Margin = new System.Windows.Forms.Padding(4);
             this.grbPlato.Name = "grbPlato";
-            this.grbPlato.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbPlato.Padding = new System.Windows.Forms.Padding(4);
             this.grbPlato.Size = new System.Drawing.Size(1281, 708);
             this.grbPlato.TabIndex = 3;
             this.grbPlato.TabStop = false;
@@ -664,7 +664,7 @@
             // 
             this.btnAgregarIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarIngre.Location = new System.Drawing.Point(703, 578);
-            this.btnAgregarIngre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarIngre.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarIngre.Name = "btnAgregarIngre";
             this.btnAgregarIngre.Size = new System.Drawing.Size(156, 66);
             this.btnAgregarIngre.TabIndex = 68;
@@ -681,7 +681,7 @@
             "Comida",
             "Cena"});
             this.cmbAdminPlatosTipo.Location = new System.Drawing.Point(887, 286);
-            this.cmbAdminPlatosTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbAdminPlatosTipo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbAdminPlatosTipo.Name = "cmbAdminPlatosTipo";
             this.cmbAdminPlatosTipo.Size = new System.Drawing.Size(181, 33);
             this.cmbAdminPlatosTipo.TabIndex = 67;
@@ -708,7 +708,7 @@
             "Vegetariano",
             "Sin Intolerancia"});
             this.cmbAdminPlatosInto.Location = new System.Drawing.Point(596, 286);
-            this.cmbAdminPlatosInto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbAdminPlatosInto.Margin = new System.Windows.Forms.Padding(4);
             this.cmbAdminPlatosInto.Name = "cmbAdminPlatosInto";
             this.cmbAdminPlatosInto.Size = new System.Drawing.Size(181, 33);
             this.cmbAdminPlatosInto.TabIndex = 53;
@@ -733,7 +733,7 @@
             "Definicion",
             "Comer Sano"});
             this.cmbAdminPlatosObj.Location = new System.Drawing.Point(231, 286);
-            this.cmbAdminPlatosObj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbAdminPlatosObj.Margin = new System.Windows.Forms.Padding(4);
             this.cmbAdminPlatosObj.Name = "cmbAdminPlatosObj";
             this.cmbAdminPlatosObj.Size = new System.Drawing.Size(181, 33);
             this.cmbAdminPlatosObj.TabIndex = 51;
@@ -753,7 +753,7 @@
             // 
             this.btnPlatoReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlatoReset.Location = new System.Drawing.Point(467, 578);
-            this.btnPlatoReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPlatoReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnPlatoReset.Name = "btnPlatoReset";
             this.btnPlatoReset.Size = new System.Drawing.Size(156, 66);
             this.btnPlatoReset.TabIndex = 20;
@@ -765,7 +765,7 @@
             // 
             this.btnPlatoVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlatoVolver.Location = new System.Drawing.Point(937, 578);
-            this.btnPlatoVolver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPlatoVolver.Margin = new System.Windows.Forms.Padding(4);
             this.btnPlatoVolver.Name = "btnPlatoVolver";
             this.btnPlatoVolver.Size = new System.Drawing.Size(156, 66);
             this.btnPlatoVolver.TabIndex = 19;
@@ -777,7 +777,7 @@
             // 
             this.btnPlatoAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlatoAceptar.Location = new System.Drawing.Point(213, 578);
-            this.btnPlatoAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPlatoAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnPlatoAceptar.Name = "btnPlatoAceptar";
             this.btnPlatoAceptar.Size = new System.Drawing.Size(156, 66);
             this.btnPlatoAceptar.TabIndex = 18;
@@ -793,7 +793,7 @@
             "Prueba",
             "Prueba 1"});
             this.cmbIngre4.Location = new System.Drawing.Point(953, 418);
-            this.cmbIngre4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbIngre4.Margin = new System.Windows.Forms.Padding(4);
             this.cmbIngre4.Name = "cmbIngre4";
             this.cmbIngre4.Size = new System.Drawing.Size(160, 33);
             this.cmbIngre4.TabIndex = 15;
@@ -817,7 +817,7 @@
             "Prueba",
             "Prueba 1"});
             this.cmbIngre3.Location = new System.Drawing.Point(672, 418);
-            this.cmbIngre3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbIngre3.Margin = new System.Windows.Forms.Padding(4);
             this.cmbIngre3.Name = "cmbIngre3";
             this.cmbIngre3.Size = new System.Drawing.Size(160, 33);
             this.cmbIngre3.TabIndex = 11;
@@ -841,7 +841,7 @@
             "Prueba",
             "Prueba 1"});
             this.cmbIngre2.Location = new System.Drawing.Point(397, 418);
-            this.cmbIngre2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbIngre2.Margin = new System.Windows.Forms.Padding(4);
             this.cmbIngre2.Name = "cmbIngre2";
             this.cmbIngre2.Size = new System.Drawing.Size(160, 33);
             this.cmbIngre2.TabIndex = 7;
@@ -865,7 +865,7 @@
             "Prueba",
             "Prueba 1"});
             this.cmbIngre1.Location = new System.Drawing.Point(141, 418);
-            this.cmbIngre1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbIngre1.Margin = new System.Windows.Forms.Padding(4);
             this.cmbIngre1.Name = "cmbIngre1";
             this.cmbIngre1.Size = new System.Drawing.Size(160, 33);
             this.cmbIngre1.TabIndex = 3;
@@ -885,7 +885,7 @@
             // 
             this.txtNomPlato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomPlato.Location = new System.Drawing.Point(533, 159);
-            this.txtNomPlato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomPlato.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomPlato.Name = "txtNomPlato";
             this.txtNomPlato.Size = new System.Drawing.Size(177, 30);
             this.txtNomPlato.TabIndex = 1;
@@ -956,9 +956,9 @@
             this.grbDieta.Controls.Add(this.lblNomDieta);
             this.grbDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbDieta.Location = new System.Drawing.Point(16, 47);
-            this.grbDieta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbDieta.Margin = new System.Windows.Forms.Padding(4);
             this.grbDieta.Name = "grbDieta";
-            this.grbDieta.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbDieta.Padding = new System.Windows.Forms.Padding(4);
             this.grbDieta.Size = new System.Drawing.Size(1312, 721);
             this.grbDieta.TabIndex = 4;
             this.grbDieta.TabStop = false;
@@ -969,7 +969,7 @@
             // 
             this.btnDietaBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDietaBuscar.Location = new System.Drawing.Point(1107, 98);
-            this.btnDietaBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDietaBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnDietaBuscar.Name = "btnDietaBuscar";
             this.btnDietaBuscar.Size = new System.Drawing.Size(133, 46);
             this.btnDietaBuscar.TabIndex = 50;
@@ -988,7 +988,7 @@
             "Vegetariano",
             "Sin Intolerancia"});
             this.cmbAdminDietInto.Location = new System.Drawing.Point(877, 103);
-            this.cmbAdminDietInto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbAdminDietInto.Margin = new System.Windows.Forms.Padding(4);
             this.cmbAdminDietInto.Name = "cmbAdminDietInto";
             this.cmbAdminDietInto.Size = new System.Drawing.Size(181, 33);
             this.cmbAdminDietInto.TabIndex = 49;
@@ -1013,7 +1013,7 @@
             "Definicion",
             "Comer Sano"});
             this.cmbAdminDietObj.Location = new System.Drawing.Point(537, 105);
-            this.cmbAdminDietObj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbAdminDietObj.Margin = new System.Windows.Forms.Padding(4);
             this.cmbAdminDietObj.Name = "cmbAdminDietObj";
             this.cmbAdminDietObj.Size = new System.Drawing.Size(181, 33);
             this.cmbAdminDietObj.TabIndex = 47;
@@ -1034,7 +1034,7 @@
             this.cmbPlato21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato21.FormattingEnabled = true;
             this.cmbPlato21.Location = new System.Drawing.Point(133, 565);
-            this.cmbPlato21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato21.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato21.Name = "cmbPlato21";
             this.cmbPlato21.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato21.TabIndex = 45;
@@ -1055,7 +1055,7 @@
             this.cmbPlato20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato20.FormattingEnabled = true;
             this.cmbPlato20.Location = new System.Drawing.Point(1107, 490);
-            this.cmbPlato20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato20.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato20.Name = "cmbPlato20";
             this.cmbPlato20.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato20.TabIndex = 43;
@@ -1076,7 +1076,7 @@
             this.cmbPlato19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato19.FormattingEnabled = true;
             this.cmbPlato19.Location = new System.Drawing.Point(787, 490);
-            this.cmbPlato19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato19.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato19.Name = "cmbPlato19";
             this.cmbPlato19.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato19.TabIndex = 41;
@@ -1097,7 +1097,7 @@
             this.cmbPlato18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato18.FormattingEnabled = true;
             this.cmbPlato18.Location = new System.Drawing.Point(453, 490);
-            this.cmbPlato18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato18.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato18.Name = "cmbPlato18";
             this.cmbPlato18.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato18.TabIndex = 39;
@@ -1118,7 +1118,7 @@
             this.cmbPlato17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato17.FormattingEnabled = true;
             this.cmbPlato17.Location = new System.Drawing.Point(135, 490);
-            this.cmbPlato17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato17.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato17.Name = "cmbPlato17";
             this.cmbPlato17.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato17.TabIndex = 37;
@@ -1139,7 +1139,7 @@
             this.cmbPlato16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato16.FormattingEnabled = true;
             this.cmbPlato16.Location = new System.Drawing.Point(1107, 423);
-            this.cmbPlato16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato16.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato16.Name = "cmbPlato16";
             this.cmbPlato16.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato16.TabIndex = 35;
@@ -1160,7 +1160,7 @@
             this.cmbPlato15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato15.FormattingEnabled = true;
             this.cmbPlato15.Location = new System.Drawing.Point(787, 423);
-            this.cmbPlato15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato15.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato15.Name = "cmbPlato15";
             this.cmbPlato15.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato15.TabIndex = 33;
@@ -1181,7 +1181,7 @@
             this.cmbPlato14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato14.FormattingEnabled = true;
             this.cmbPlato14.Location = new System.Drawing.Point(453, 423);
-            this.cmbPlato14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato14.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato14.Name = "cmbPlato14";
             this.cmbPlato14.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato14.TabIndex = 31;
@@ -1202,7 +1202,7 @@
             this.cmbPlato13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato13.FormattingEnabled = true;
             this.cmbPlato13.Location = new System.Drawing.Point(133, 423);
-            this.cmbPlato13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato13.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato13.Name = "cmbPlato13";
             this.cmbPlato13.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato13.TabIndex = 29;
@@ -1223,7 +1223,7 @@
             this.cmbPlato12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato12.FormattingEnabled = true;
             this.cmbPlato12.Location = new System.Drawing.Point(1107, 350);
-            this.cmbPlato12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato12.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato12.Name = "cmbPlato12";
             this.cmbPlato12.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato12.TabIndex = 27;
@@ -1244,7 +1244,7 @@
             this.cmbPlato11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato11.FormattingEnabled = true;
             this.cmbPlato11.Location = new System.Drawing.Point(787, 350);
-            this.cmbPlato11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato11.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato11.Name = "cmbPlato11";
             this.cmbPlato11.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato11.TabIndex = 25;
@@ -1265,7 +1265,7 @@
             this.cmbPlato10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato10.FormattingEnabled = true;
             this.cmbPlato10.Location = new System.Drawing.Point(453, 350);
-            this.cmbPlato10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato10.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato10.Name = "cmbPlato10";
             this.cmbPlato10.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato10.TabIndex = 23;
@@ -1286,7 +1286,7 @@
             this.cmbPlato9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato9.FormattingEnabled = true;
             this.cmbPlato9.Location = new System.Drawing.Point(135, 350);
-            this.cmbPlato9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato9.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato9.Name = "cmbPlato9";
             this.cmbPlato9.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato9.TabIndex = 21;
@@ -1307,7 +1307,7 @@
             this.cmbPlato8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato8.FormattingEnabled = true;
             this.cmbPlato8.Location = new System.Drawing.Point(1107, 272);
-            this.cmbPlato8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato8.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato8.Name = "cmbPlato8";
             this.cmbPlato8.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato8.TabIndex = 19;
@@ -1327,7 +1327,7 @@
             // 
             this.btnDietaVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDietaVolver.Location = new System.Drawing.Point(632, 644);
-            this.btnDietaVolver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDietaVolver.Margin = new System.Windows.Forms.Padding(4);
             this.btnDietaVolver.Name = "btnDietaVolver";
             this.btnDietaVolver.Size = new System.Drawing.Size(133, 46);
             this.btnDietaVolver.TabIndex = 17;
@@ -1339,7 +1339,7 @@
             // 
             this.btnDietaAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDietaAceptar.Location = new System.Drawing.Point(407, 644);
-            this.btnDietaAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDietaAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnDietaAceptar.Name = "btnDietaAceptar";
             this.btnDietaAceptar.Size = new System.Drawing.Size(133, 46);
             this.btnDietaAceptar.TabIndex = 16;
@@ -1352,7 +1352,7 @@
             this.cmbPlato7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato7.FormattingEnabled = true;
             this.cmbPlato7.Location = new System.Drawing.Point(787, 271);
-            this.cmbPlato7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato7.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato7.Name = "cmbPlato7";
             this.cmbPlato7.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato7.TabIndex = 15;
@@ -1373,7 +1373,7 @@
             this.cmbPlato6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato6.FormattingEnabled = true;
             this.cmbPlato6.Location = new System.Drawing.Point(453, 272);
-            this.cmbPlato6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato6.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato6.Name = "cmbPlato6";
             this.cmbPlato6.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato6.TabIndex = 13;
@@ -1394,7 +1394,7 @@
             this.cmbPlato5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato5.FormattingEnabled = true;
             this.cmbPlato5.Location = new System.Drawing.Point(133, 272);
-            this.cmbPlato5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato5.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato5.Name = "cmbPlato5";
             this.cmbPlato5.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato5.TabIndex = 11;
@@ -1415,7 +1415,7 @@
             this.cmbPlato4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato4.FormattingEnabled = true;
             this.cmbPlato4.Location = new System.Drawing.Point(1107, 197);
-            this.cmbPlato4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato4.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato4.Name = "cmbPlato4";
             this.cmbPlato4.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato4.TabIndex = 9;
@@ -1436,7 +1436,7 @@
             this.cmbPlato3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato3.FormattingEnabled = true;
             this.cmbPlato3.Location = new System.Drawing.Point(787, 197);
-            this.cmbPlato3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato3.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato3.Name = "cmbPlato3";
             this.cmbPlato3.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato3.TabIndex = 7;
@@ -1457,7 +1457,7 @@
             this.cmbPlato2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato2.FormattingEnabled = true;
             this.cmbPlato2.Location = new System.Drawing.Point(453, 197);
-            this.cmbPlato2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato2.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato2.Name = "cmbPlato2";
             this.cmbPlato2.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato2.TabIndex = 5;
@@ -1478,7 +1478,7 @@
             this.cmbPlato1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlato1.FormattingEnabled = true;
             this.cmbPlato1.Location = new System.Drawing.Point(135, 197);
-            this.cmbPlato1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlato1.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlato1.Name = "cmbPlato1";
             this.cmbPlato1.Size = new System.Drawing.Size(181, 33);
             this.cmbPlato1.TabIndex = 3;
@@ -1498,7 +1498,7 @@
             // 
             this.txtNomDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomDieta.Location = new System.Drawing.Point(172, 105);
-            this.txtNomDieta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomDieta.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomDieta.Name = "txtNomDieta";
             this.txtNomDieta.Size = new System.Drawing.Size(248, 34);
             this.txtNomDieta.TabIndex = 1;
@@ -1550,9 +1550,9 @@
             this.grbIngredientes.Controls.Add(this.lblIng1);
             this.grbIngredientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbIngredientes.Location = new System.Drawing.Point(43, 31);
-            this.grbIngredientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbIngredientes.Margin = new System.Windows.Forms.Padding(4);
             this.grbIngredientes.Name = "grbIngredientes";
-            this.grbIngredientes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbIngredientes.Padding = new System.Windows.Forms.Padding(4);
             this.grbIngredientes.Size = new System.Drawing.Size(1281, 708);
             this.grbIngredientes.TabIndex = 5;
             this.grbIngredientes.TabStop = false;
@@ -1611,7 +1611,7 @@
             // 
             this.nudVN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudVN4.Location = new System.Drawing.Point(1021, 471);
-            this.nudVN4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudVN4.Margin = new System.Windows.Forms.Padding(4);
             this.nudVN4.Name = "nudVN4";
             this.nudVN4.Size = new System.Drawing.Size(93, 30);
             this.nudVN4.TabIndex = 35;
@@ -1620,7 +1620,7 @@
             // 
             this.nudVN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudVN3.Location = new System.Drawing.Point(1021, 359);
-            this.nudVN3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudVN3.Margin = new System.Windows.Forms.Padding(4);
             this.nudVN3.Name = "nudVN3";
             this.nudVN3.Size = new System.Drawing.Size(93, 30);
             this.nudVN3.TabIndex = 34;
@@ -1629,7 +1629,7 @@
             // 
             this.nudVN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudVN2.Location = new System.Drawing.Point(1021, 260);
-            this.nudVN2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudVN2.Margin = new System.Windows.Forms.Padding(4);
             this.nudVN2.Name = "nudVN2";
             this.nudVN2.Size = new System.Drawing.Size(93, 30);
             this.nudVN2.TabIndex = 33;
@@ -1638,7 +1638,7 @@
             // 
             this.nudVN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudVN1.Location = new System.Drawing.Point(1021, 148);
-            this.nudVN1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudVN1.Margin = new System.Windows.Forms.Padding(4);
             this.nudVN1.Name = "nudVN1";
             this.nudVN1.Size = new System.Drawing.Size(93, 30);
             this.nudVN1.TabIndex = 32;
@@ -1691,7 +1691,7 @@
             // 
             this.btnRestIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRestIngre.Location = new System.Drawing.Point(525, 581);
-            this.btnRestIngre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRestIngre.Margin = new System.Windows.Forms.Padding(4);
             this.btnRestIngre.Name = "btnRestIngre";
             this.btnRestIngre.Size = new System.Drawing.Size(156, 42);
             this.btnRestIngre.TabIndex = 20;
@@ -1703,7 +1703,7 @@
             // 
             this.btnVolverIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolverIngre.Location = new System.Drawing.Point(976, 581);
-            this.btnVolverIngre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVolverIngre.Margin = new System.Windows.Forms.Padding(4);
             this.btnVolverIngre.Name = "btnVolverIngre";
             this.btnVolverIngre.Size = new System.Drawing.Size(156, 42);
             this.btnVolverIngre.TabIndex = 19;
@@ -1715,7 +1715,7 @@
             // 
             this.btnAceptarIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptarIngre.Location = new System.Drawing.Point(135, 581);
-            this.btnAceptarIngre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAceptarIngre.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptarIngre.Name = "btnAceptarIngre";
             this.btnAceptarIngre.Size = new System.Drawing.Size(156, 42);
             this.btnAceptarIngre.TabIndex = 18;
@@ -1727,7 +1727,7 @@
             // 
             this.txtNomIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomIngre4.Location = new System.Drawing.Point(556, 469);
-            this.txtNomIngre4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomIngre4.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomIngre4.Name = "txtNomIngre4";
             this.txtNomIngre4.Size = new System.Drawing.Size(175, 30);
             this.txtNomIngre4.TabIndex = 17;
@@ -1758,7 +1758,7 @@
             // 
             this.txtNomIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomIngre3.Location = new System.Drawing.Point(556, 358);
-            this.txtNomIngre3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomIngre3.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomIngre3.Name = "txtNomIngre3";
             this.txtNomIngre3.Size = new System.Drawing.Size(175, 30);
             this.txtNomIngre3.TabIndex = 13;
@@ -1789,7 +1789,7 @@
             // 
             this.txtNomIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomIngre2.Location = new System.Drawing.Point(556, 254);
-            this.txtNomIngre2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomIngre2.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomIngre2.Name = "txtNomIngre2";
             this.txtNomIngre2.Size = new System.Drawing.Size(175, 30);
             this.txtNomIngre2.TabIndex = 9;
@@ -1820,7 +1820,7 @@
             // 
             this.txtNomIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomIngre1.Location = new System.Drawing.Point(556, 144);
-            this.txtNomIngre1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomIngre1.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomIngre1.Name = "txtNomIngre1";
             this.txtNomIngre1.Size = new System.Drawing.Size(175, 30);
             this.txtNomIngre1.TabIndex = 5;
@@ -1853,13 +1853,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1367, 768);
             this.Controls.Add(this.mnuAdmin);
+            this.Controls.Add(this.grbDieta);
+            this.Controls.Add(this.grbEliminarUsu);
             this.Controls.Add(this.grbIngredientes);
             this.Controls.Add(this.grbPlato);
             this.Controls.Add(this.grbInfo);
-            this.Controls.Add(this.grbDieta);
-            this.Controls.Add(this.grbEliminarUsu);
             this.MainMenuStrip = this.mnuAdmin;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin";
             this.Text = "Admin";
             this.grbInfo.ResumeLayout(false);
