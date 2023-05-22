@@ -290,7 +290,7 @@ namespace NutriWise
         /// </summary>
         /// <param name="platos">Los platos a modificar.</param>
         /// <returns>Los platos modificados al id de la dieta que llama al método.</returns>
-        public int AnyadirPlatos(ComboBox[] platos)
+        public int AnyadirPlatos(ComboBox[] platos, int id)
         {
             int retorno = -1;
             List<int> listaId = ObtenerIdPlatos(platos);
@@ -302,6 +302,23 @@ namespace NutriWise
             }
 
             return retorno;
+        }
+
+        public static int BuscarMaximoID()
+        {
+            int id = -1;
+
+            string consulta = "SELECT MAX(idDieta) FROM dietas;";
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows && reader.Read())
+            {
+                id = reader.GetInt32(0);
+                reader.Close();
+            }
+            reader.Close();
+            return id;
         }
     }
 }
