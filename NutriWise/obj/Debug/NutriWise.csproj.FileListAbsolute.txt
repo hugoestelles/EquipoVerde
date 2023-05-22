@@ -228,7 +228,6 @@ C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWis
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.xml
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
@@ -654,3 +653,6 @@ C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\Equi
 C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
 C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
 C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache

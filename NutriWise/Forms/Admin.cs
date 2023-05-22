@@ -400,7 +400,7 @@ namespace NutriWise
                 ComboBox[] platos = new ComboBox[] { cmbPlato1, cmbPlato2, cmbPlato3, cmbPlato4, cmbPlato5, cmbPlato6, cmbPlato7, cmbPlato8, cmbPlato9, cmbPlato10, cmbPlato11, cmbPlato12, cmbPlato13, cmbPlato14, cmbPlato15, cmbPlato16, cmbPlato17, cmbPlato18, cmbPlato19, cmbPlato20, cmbPlato21 };
                 int cantPlatos = Dietas.CantPlatosSeleccionados(platos);
 
-                if (cantPlatos == 0) MessageBox.Show("Debes ingresar como mínimo 1 plato.", "Ningún plato seleccionado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (cantPlatos != 21) MessageBox.Show("Debes seleccionar 21 platos (distintos).", "Ningún plato seleccionado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
                     string nombre = txtNomDieta.Text;
