@@ -36,10 +36,11 @@
             // 
             this.lblListaCompra.AutoSize = true;
             this.lblListaCompra.BackColor = System.Drawing.Color.Gold;
-            this.lblListaCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListaCompra.Location = new System.Drawing.Point(81, 94);
+            this.lblListaCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListaCompra.Location = new System.Drawing.Point(78, 22);
+            this.lblListaCompra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblListaCompra.Name = "lblListaCompra";
-            this.lblListaCompra.Size = new System.Drawing.Size(188, 25);
+            this.lblListaCompra.Size = new System.Drawing.Size(135, 16);
             this.lblListaCompra.TabIndex = 0;
             this.lblListaCompra.Text = "Lista de la compra";
             // 
@@ -50,24 +51,26 @@
             this.btnEnviarListaCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.btnEnviarListaCompra.Image = global::NutriWise.Properties.Resources.enviarCorreo;
             this.btnEnviarListaCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnviarListaCompra.Location = new System.Drawing.Point(409, 486);
-            this.btnEnviarListaCompra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEnviarListaCompra.Location = new System.Drawing.Point(307, 395);
+            this.btnEnviarListaCompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEnviarListaCompra.Name = "btnEnviarListaCompra";
-            this.btnEnviarListaCompra.Size = new System.Drawing.Size(181, 49);
+            this.btnEnviarListaCompra.Size = new System.Drawing.Size(136, 40);
             this.btnEnviarListaCompra.TabIndex = 22;
             this.btnEnviarListaCompra.Text = "Enviar";
             this.btnEnviarListaCompra.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEnviarListaCompra.UseVisualStyleBackColor = false;
+            this.btnEnviarListaCompra.Click += new System.EventHandler(this.btnEnviarListaCompra_Click);
             // 
             // ListaCompra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
             this.Controls.Add(this.btnEnviarListaCompra);
             this.Controls.Add(this.lblListaCompra);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ListaCompra";
-            this.Size = new System.Drawing.Size(1001, 570);
+            this.Size = new System.Drawing.Size(751, 463);
             this.ResumeLayout(false);
             this.PerformLayout();
 

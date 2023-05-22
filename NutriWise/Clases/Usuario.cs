@@ -291,7 +291,7 @@ namespace NutriWise.Clases
 
             }
         }
-        public int ActualizarInfo(string nom, string ape, decimal alt, decimal pes, string correo, int into, int act, int obj)
+        public int ActualizarInfo(string nom, string ape, decimal alt, decimal pes, string correo, int into, int act, int obj, int idDieta)
         {
             this.nombre = nom;
             this.apellidos = ape;
@@ -301,24 +301,24 @@ namespace NutriWise.Clases
             this.intolerancia = into;
             this.actividad = act;
             this.objetivo = obj;
-            int compro = ActualizarEnBD();
+            int compro = ActualizarEnBD(idDieta);
             return compro;
         }
-        private int ActualizarEnBD()
+        private int ActualizarEnBD(int idDieta)
         {
             int retorno;
             string consulta = String.Format("UPDATE usuario SET correo = @correo, nombre = @nom, apellidos = @ape, altura = @alt, peso = @peso,  tipoIntolencia = @intolerancia, cantActividad = @act, objetivo = @obj, idDieta = @dieta WHERE idUsuario = @user;");
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
-            comando.Parameters.AddWithValue("correo", this.correo);
-            comando.Parameters.AddWithValue("nom", this.nombre);
-            comando.Parameters.AddWithValue("ape", this.apellidos);
-            comando.Parameters.AddWithValue("alt", this.altura);
-            comando.Parameters.AddWithValue("peso", this.peso);
-            comando.Parameters.AddWithValue("intolerancia", this.intolerancia);
-            comando.Parameters.AddWithValue("act", this.actividad);
-            comando.Parameters.AddWithValue("obj", this.objetivo);
-            comando.Parameters.AddWithValue("user", this.id);
-            comando.Parameters.AddWithValue("Dieta", BuscarDieta(this.objetivo, this.intolerancia));
+            comando.Parameters.AddWithValue("@correo", this.correo);
+            comando.Parameters.AddWithValue("@nom", this.nombre);
+            comando.Parameters.AddWithValue("@ape", this.apellidos);
+            comando.Parameters.AddWithValue("@alt", this.altura);
+            comando.Parameters.AddWithValue("@peso", this.peso);
+            comando.Parameters.AddWithValue("@intolerancia", this.intolerancia);
+            comando.Parameters.AddWithValue("@act", this.actividad);
+            comando.Parameters.AddWithValue("@obj", this.objetivo);
+            comando.Parameters.AddWithValue("@user", this.id);
+            comando.Parameters.AddWithValue("@Dieta", idDieta);
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }

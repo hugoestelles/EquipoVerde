@@ -14,5 +14,11 @@ namespace NutriWise
         {
             lblListaCompra.Text = Utiles.FormatearListaCompra(Usuario.DietaActual);
         }
+
+        private void btnEnviarListaCompra_Click(object sender, System.EventArgs e)
+        {
+            Utiles.EnviarListaCompra(Usuario.UsuarioActual, Utiles.FormatearListaCompraCorreo(Usuario.DietaActual));
+            MessageBox.Show("Correo enviado con exito!", "Información.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

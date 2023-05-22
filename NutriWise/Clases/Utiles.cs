@@ -133,116 +133,6 @@ namespace NutriWise.Clases
                 // MessageBox.Show("Error al enviar el correo: " + ex.Message);
             }
         }
-        /// <summary>
-        /// Funcion para comprobar que el indice de 4 comboBoxes no coincide, a excepcion del caso -1.
-        /// </summary>
-        /// <param name="selectedIndex1">Indice 1º comboBox</param>
-        /// <param name="selectedIndex2">Indice 2º comboBox</param>
-        /// <param name="selectedIndex3">Indice 3º comboBox</param>
-        /// <param name="selectedIndex4">Indice 4º comboBox</param>
-        /// <returns>True si no hay coincidencias, false si las hay.</returns>
-        /*public static bool ComprobarComboBoxes(int selectedIndex1, int selectedIndex2, int selectedIndex3, int selectedIndex4)
-        {
-            // Verificar que no haya coincidencias excepto cuando selectedIndex es -1
-            /*if ((selectedIndex1 != selectedIndex2 || selectedIndex1 == -1 || selectedIndex2 == -1) &&
-                (selectedIndex1 != selectedIndex3 || selectedIndex1 == -1 || selectedIndex3 == -1) &&
-                (selectedIndex1 != selectedIndex4 || selectedIndex1 == -1 || selectedIndex4 == -1) &&
-                (selectedIndex2 != selectedIndex3 || selectedIndex2 == -1 || selectedIndex3 == -1) &&
-                (selectedIndex2 != selectedIndex4 || selectedIndex2 == -1 || selectedIndex4 == -1) &&
-                (selectedIndex3 != selectedIndex4 || selectedIndex3 == -1 || selectedIndex4 == -1))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-            int i1 = selectedIndex1;
-            int i2 = selectedIndex2;
-            int i3 = selectedIndex3;
-            int i4 = selectedIndex4;
-            /*
-            if(i1 == -1 && i2 == -1 && i3 == -1 && i4 == -1)
-            {
-                return true;
-            }
-            else if((i1 == -1 && i2 == -1 && i3 == -1) || (i2 == -1 && i3 == -1 && i4 == -1) || (i1 == -1 && i3 == -1 && i4 == -1) || (i1 == -1 && i2 == -1 && i4 == -1))
-            {
-                return true;
-            }
-            else if((i1 == -1 && i2 == -1 && i3 != i4) || (i2 == -1 && i3 == -1 && i1 != i4) || (i3 == -1 && i4 == -1 && i1 != i2) || (i2 == -1 && i4 == -1 && i3 != i1) || (i3 == -1 && i1 == -1 && i4 != i1) || (i4 == -1 && i1 == -1 && i2 != i3))
-            {
-                return true;
-            }
-            else if((i1 == -1 && i2 != i3 && i3 != i4) || (i2 == -1 && i1 != i3 && i3 != i4) || (i3 == -1 && i1 != i2 && i2 != i4) || (i4 == -1 && i1 != i2 && i2 != i3))
-            {
-                return true;
-            }
-            else if(i1 == i2 && i2 == i3 && i3 == i4 && i1 == i4)
-            {
-                return true;
-            }
-            else { return false; }
-
-
-
-            if (i1 == -1 && i2 == -1 && i3 == -1 && i4 == -1)
-            {
-                return true;
-            }
-            else if (i1 == -1 && i2 == -1 && i3 != i4)
-            {
-                return true;
-            }
-            else if (i2 == -1 && i3 == -1 && i1 != i4)
-            {
-                return true;
-            }
-            else if (i3 == -1 && i4 == -1 && i1 != i2)
-            {
-                return true;
-            }
-            else if (i2 == -1 && i4 == -1 && i3 != i1)
-            {
-                return true;
-            }
-            else if (i3 == -1 && i1 == -1 && i4 != i2)
-            {
-                return true;
-            }
-            else if (i4 == -1 && i1 == -1 && i2 != i3)
-            {
-                return true;
-            }
-            else if (i1 == -1 && i2 != i3 && i3 != i4)
-            {
-                return true;
-            }
-            else if (i2 == -1 && i1 != i3 && i3 != i4)
-            {
-                return true;
-            }
-            else if (i3 == -1 && i1 != i2 && i2 != i4)
-            {
-                return true;
-            }
-            else if (i4 == -1 && i1 != i2 && i2 != i3)
-            {
-                return true;
-            }
-            else if (i1 == i2 && i2 == i3 && i3 == i4)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-            
-
-        }*/
-
 
         public static bool ComprobarAceptarDieta(System.Windows.Forms.ComboBox[] comboBoxes)
         {
@@ -272,39 +162,46 @@ namespace NutriWise.Clases
         }
         public static string SeleccionarPDF(Usuario user)
         {
-            int id = user.Id;
+            string rutaMadre = Directory.GetCurrentDirectory();
+            string oneLevel = Directory.GetParent(rutaMadre).FullName;
+            string twoLevel = Directory.GetParent(oneLevel).FullName;
+
+            string carpetaMadre = Path.Combine(twoLevel, "Resources");
+            string carpetaDietas = Path.Combine(carpetaMadre, "dietas");
+
+            int id = user.IdDieta;
             switch (id)
             {
                 case 1:
-                    return "Ruta 1 dieta";
+                    return Path.Combine(carpetaDietas, "Sin_bajarPeso.pdf");
                 case 2:
-                    return "Ruta 2 dieta";
+                    return Path.Combine(carpetaDietas, "Sin_comerSano.pdf");
                 case 3:
-                    return "Ruta 3 dieta";
+                    return Path.Combine(carpetaDietas, "Sin_Volumen.pdf");
                 case 4:
-                    return "Ruta 4 dieta";
+                    return Path.Combine(carpetaDietas, "Gluten_bajarPeso.pdf");
                 case 5:
-                    return "Ruta 5 dieta";
+                    return Path.Combine(carpetaDietas, "Gluten_comerSano.pdf");
                 case 6:
-                    return "Ruta 6 dieta";
+                    return Path.Combine(carpetaDietas, "Gluten_Volumen.pdf");
                 case 7:
-                    return "Ruta 7 dieta";
+                    return Path.Combine(carpetaDietas, "Lactosa_bajarPeso.pdf");
                 case 8:
-                    return "Ruta 8 dieta";
+                    return Path.Combine(carpetaDietas, "Lactosa_comerSano.pdf");
                 case 9:
-                    return "Ruta 9 dieta";
+                    return Path.Combine(carpetaDietas, "Lactosa_Volumen.pdf");
                 case 10:
-                    return "Ruta 10 dieta";
+                    return Path.Combine(carpetaDietas, "Vegetariana_bajarPeso.pdf");
                 case 11:
-                    return "Ruta 11 dieta";
+                    return Path.Combine(carpetaDietas, "Vegetariana_comerSano.pdf");
                 case 12:
-                    return "Ruta 12 dieta";
+                    return Path.Combine(carpetaDietas, "Vegetariana_Volumen.pdf");
                 case 13:
-                    return "Ruta 13 dieta";
+                    return Path.Combine(carpetaDietas, "Vegana_bajarPeso.pdf");
                 case 14:
-                    return "Ruta 14 dieta";
+                    return Path.Combine(carpetaDietas, "Vegana_comerSano.pdf");
                 case 15:
-                    return "Ruta 15 dieta";
+                    return Path.Combine(carpetaDietas, "Vegana_Volumen.pdf");
                 default:
                     return "";
             }
@@ -331,8 +228,37 @@ namespace NutriWise.Clases
                         retorno += "    -" + provisional[j].Nombre + "              ";
                     }
                 }
-                retorno += "\n \n";
+                retorno += "\n ";
             }
+            return retorno;
+
+        }
+        public static string FormatearListaCompraCorreo(Dietas dietaActual)
+        {
+            string retorno = "<center><p>";
+            List<Platos> p1 = dietaActual.Platos;
+            List<Alimentos> lista = new List<Alimentos>();
+            for (int i = 0; i < p1.Count; i++)
+            {
+                List<Alimentos> provisional = p1[i].ListaAlimentos;
+                retorno += "<pre>";
+                for (int j = 0; j < provisional.Count; j++)
+                {
+                    bool compro = false;
+                    for (int k = 0; k < lista.Count; k++)
+                    {
+                        if (provisional[j].Nombre == lista[k].Nombre) compro = true;
+                    }
+                    if (!compro)
+                    {
+                        lista.Add(provisional[j]);
+
+                        retorno += "    - " + provisional[j].Nombre + "              ";
+                    }
+                }
+                retorno += "</pre><br>";
+            }
+            retorno += "</p></center>";
             return retorno;
 
         }

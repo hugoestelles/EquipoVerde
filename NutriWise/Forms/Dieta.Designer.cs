@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNombreDieta = new System.Windows.Forms.Label();
             this.dgvDieta = new System.Windows.Forms.DataGridView();
             this.dia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.desayuno = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,16 +38,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblNombreDieta
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(99, 43);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(730, 52);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "En volumen e intolerante a la lactosa";
+            this.lblNombreDieta.AutoSize = true;
+            this.lblNombreDieta.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreDieta.Location = new System.Drawing.Point(224, 38);
+            this.lblNombreDieta.Name = "lblNombreDieta";
+            this.lblNombreDieta.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblNombreDieta.Size = new System.Drawing.Size(27, 41);
+            this.lblNombreDieta.TabIndex = 0;
+            this.lblNombreDieta.Text = "|";
             // 
             // dgvDieta
             // 
@@ -65,8 +65,8 @@
             this.comida,
             this.cena});
             this.dgvDieta.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.dgvDieta.Location = new System.Drawing.Point(27, 171);
-            this.dgvDieta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvDieta.Location = new System.Drawing.Point(20, 139);
+            this.dgvDieta.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDieta.Name = "dgvDieta";
             this.dgvDieta.ReadOnly = true;
             this.dgvDieta.RowHeadersVisible = false;
@@ -75,7 +75,7 @@
             this.dgvDieta.RowTemplate.Height = 24;
             this.dgvDieta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvDieta.ShowEditingIcon = false;
-            this.dgvDieta.Size = new System.Drawing.Size(933, 201);
+            this.dgvDieta.Size = new System.Drawing.Size(700, 163);
             this.dgvDieta.TabIndex = 1;
             // 
             // dia
@@ -121,10 +121,10 @@
             this.btnEnviarDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.btnEnviarDieta.Image = global::NutriWise.Properties.Resources.enviarCorreo;
             this.btnEnviarDieta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnviarDieta.Location = new System.Drawing.Point(393, 473);
-            this.btnEnviarDieta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEnviarDieta.Location = new System.Drawing.Point(295, 384);
+            this.btnEnviarDieta.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnviarDieta.Name = "btnEnviarDieta";
-            this.btnEnviarDieta.Size = new System.Drawing.Size(181, 49);
+            this.btnEnviarDieta.Size = new System.Drawing.Size(136, 40);
             this.btnEnviarDieta.TabIndex = 21;
             this.btnEnviarDieta.Text = "Enviar";
             this.btnEnviarDieta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -133,15 +133,14 @@
             // 
             // Dieta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
             this.Controls.Add(this.btnEnviarDieta);
             this.Controls.Add(this.dgvDieta);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.lblNombreDieta);
             this.Name = "Dieta";
-            this.Size = new System.Drawing.Size(1001, 570);
+            this.Size = new System.Drawing.Size(751, 463);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,7 +149,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNombreDieta;
         private System.Windows.Forms.DataGridView dgvDieta;
         private System.Windows.Forms.DataGridViewTextBoxColumn dia;
         private System.Windows.Forms.DataGridViewTextBoxColumn desayuno;

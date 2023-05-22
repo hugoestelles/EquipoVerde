@@ -52,7 +52,20 @@ namespace NutriWise
 
         private void btnEditar_Click(object sender, System.EventArgs e)
         {
+            if(Usuario.DietaActual.Id == 0 || Usuario.DietaActual.Id > 15)
+            {
+                MessageBox.Show("Lo sentimos, su dieta aun no está disponible para mandar por correo :(\n Intentelo más tarde.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Utiles.EnviarDieta(Usuario.UsuarioActual, Utiles.SeleccionarPDF(Usuario.UsuarioActual));
+                MessageBox.Show("Dieta enviada por correo con exito!","Información",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
+        }
+        public void ActualizarNombre()
+        {
+            lblNombreDieta.Text = Usuario.DietaActual.Nombre;
         }
     }
 }

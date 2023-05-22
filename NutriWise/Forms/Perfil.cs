@@ -1,4 +1,5 @@
 ﻿using NutriWise.Clases;
+using System;
 using System.Windows.Forms;
 
 namespace NutriWise
@@ -52,6 +53,35 @@ namespace NutriWise
             cmbObjetivo.Enabled = false;
             cmbObjetivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnAceptar.Visible = false;
+            if (txtNombre.Text == "" || txtApellido.Text == "" || nudAltura.Value == 0 || nudPeso.Value == 0 || txtMail.Text == "" || cmbIntolerancias.SelectedIndex == -1 || nudActividad.Value == 0 || cmbObjetivo.SelectedIndex == -1)
+            {
+                MessageBox.Show("Error, alguno de los campos esta vacio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                try
+                {
+                    if (ConexionBD.Conexion != null) 
+                    {
+                        ConexionBD.AbrirConexion();
+                        ActualizarDatosUsuario();
+                        ConexionBD.CerrarConexion();
+                    }
+                    else MessageBox.Show("No existe conexión a la Base de Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ConexionBD.CerrarConexion();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"{ex}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ConexionBD.CerrarConexion();
+                }
+                finally
+                {
+                    ConexionBD.CerrarConexion();
+                }
+            }
+
         }
         public void CambioColorPerdfil()
         {
@@ -64,10 +94,23 @@ namespace NutriWise
             nudActividad.BackColor = this.BackColor;
             cmbObjetivo.BackColor = this.BackColor;
         }
-
+        public void MostrarDatosUsuario()
+        {
+            Usuario us = Usuario.UsuarioActual;
+            txtMail.Text = us.Correo;
+            txtNombre.Text = us.Nombre;
+            txtApellido.Text = us.Apellidos;
+            nudAltura.Value = us.Altura;
+            nudPeso.Value = us.Peso;
+            cmbIntolerancias.SelectedIndex = us.Intolerancia;
+            nudActividad.Value = us.Actividad;
+            cmbObjetivo.SelectedIndex = us.Objetivo;
+        }
         public void ActualizarDatosUsuario()
         {
             Usuario us = Usuario.UsuarioActual;
+            us.ActualizarInfo(txtNombre.Text, txtApellido.Text, nudAltura.Value, nudPeso.Value, txtMail.Text, cmbIntolerancias.SelectedIndex, (int)nudActividad.Value, cmbObjetivo.SelectedIndex, Usuario.DietaActual.Id);
+            Usuario.UsuarioActual = us;
             txtMail.Text = us.Correo;
             txtNombre.Text = us.Nombre;
             txtApellido.Text = us.Apellidos;

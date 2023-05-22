@@ -157,14 +157,14 @@ namespace NutriWise
                 dieta1.Visible = true;
                 cambioColor();
                 btnTitulo.Text = ("Dieta");
-
+                dieta1.ActualizarNombre();
                 try
                 {
                     if (ConexionBD.Conexion != null)
                     {
                         ConexionBD.CerrarConexion();
                         ConexionBD.AbrirConexion();
-                        //dieta1.CargarDataGrid();
+                        dieta1.CargarDataGrid();
                         //string ruta = Utiles.SeleccionarPDF(Usuario.UsuarioActual);
                         //Utiles.EnviarDieta(Usuario.UsuarioActual,ruta);
                         ConexionBD.CerrarConexion();
@@ -227,7 +227,27 @@ namespace NutriWise
                 perfil1.Visible = true;
                 cambioColor();
                 btnTitulo.Text = ("Perfil");
-                perfil1.ActualizarDatosUsuario();
+                try
+                {
+                    if(ConexionBD.Conexion != null)
+                    {
+                        ConexionBD.AbrirConexion() ;
+                        perfil1.MostrarDatosUsuario();
+                        ConexionBD.CerrarConexion() ;
+                    }
+                    else MessageBox.Show("No existe conexión a la Base de Datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ConexionBD.CerrarConexion();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"{ex}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ConexionBD.CerrarConexion();
+                }
+                finally
+                {
+                    ConexionBD.CerrarConexion();
+                }
             }
         }
 
