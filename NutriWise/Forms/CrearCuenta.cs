@@ -42,11 +42,13 @@ namespace NutriWise
                                     // Crea una nueva instancia del formulario Form2
                                     Menu form4 = new Menu();
 
+                                    Inicio_Sesion inicio_Sesion = new Inicio_Sesion();
+
                                     // Esconde el formulario
                                     this.Hide();
 
                                     // Muestra el nuevo formulario
-                                    form4.ShowDialog();
+                                    inicio_Sesion.ShowDialog();
 
                                     // Cierra el formulario
                                     this.Close();

@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using NutriWise.Clases;
+using System.Windows.Forms;
 
 namespace NutriWise
 {
@@ -64,6 +65,17 @@ namespace NutriWise
             cmbObjetivo.BackColor = this.BackColor;
         }
 
-
+        public void ActualizarDatosUsuario()
+        {
+            Usuario us = Usuario.UsuarioActual;
+            txtMail.Text = us.Correo;
+            txtNombre.Text = us.Nombre;
+            txtApellido.Text = us.Apellidos;
+            nudAltura.Value = us.Altura;
+            nudPeso.Value = us.Peso;
+            cmbIntolerancias.SelectedIndex = us.Intolerancia;
+            nudActividad.Value = us.Actividad;
+            cmbObjetivo.SelectedIndex = us.Objetivo;
+        }
     }
 }

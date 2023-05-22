@@ -227,6 +227,7 @@ namespace NutriWise
                 perfil1.Visible = true;
                 cambioColor();
                 btnTitulo.Text = ("Perfil");
+                perfil1.ActualizarDatosUsuario();
             }
         }
 

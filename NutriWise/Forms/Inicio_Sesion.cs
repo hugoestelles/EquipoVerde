@@ -18,6 +18,7 @@ namespace NutriWise
             {
                 using (MySqlConnection conect = ConexionBD.Conexion)
                 {
+                    ConexionBD.CerrarConexion();
                     ConexionBD.AbrirConexion();
                     string correo = txtMail.Text;
                     string contra = txtContraseña.Text;
