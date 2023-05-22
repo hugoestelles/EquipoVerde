@@ -538,6 +538,7 @@ namespace NutriWise
                             if (!a.ComprobarExistencia())
                             { 
                                 a.AgregarAlimento();
+                                MessageBox.Show($"{a.Nombre} agregado con exito a la base de datos.","Información",MessageBoxButtons.OK,MessageBoxIcon.Information);
                             }
                             else
                             {

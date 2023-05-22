@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.lblListaCompra = new System.Windows.Forms.Label();
+            this.btnEnviarListaCompra = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblListaCompra
@@ -42,11 +43,28 @@
             this.lblListaCompra.TabIndex = 0;
             this.lblListaCompra.Text = "Lista de la compra";
             // 
+            // btnEnviarListaCompra
+            // 
+            this.btnEnviarListaCompra.BackColor = System.Drawing.Color.Gold;
+            this.btnEnviarListaCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnviarListaCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnEnviarListaCompra.Image = global::NutriWise.Properties.Resources.enviarCorreo;
+            this.btnEnviarListaCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEnviarListaCompra.Location = new System.Drawing.Point(409, 486);
+            this.btnEnviarListaCompra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEnviarListaCompra.Name = "btnEnviarListaCompra";
+            this.btnEnviarListaCompra.Size = new System.Drawing.Size(181, 49);
+            this.btnEnviarListaCompra.TabIndex = 22;
+            this.btnEnviarListaCompra.Text = "Enviar";
+            this.btnEnviarListaCompra.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEnviarListaCompra.UseVisualStyleBackColor = false;
+            // 
             // ListaCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
+            this.Controls.Add(this.btnEnviarListaCompra);
             this.Controls.Add(this.lblListaCompra);
             this.Name = "ListaCompra";
             this.Size = new System.Drawing.Size(1001, 570);
@@ -58,5 +76,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblListaCompra;
+        private System.Windows.Forms.Button btnEnviarListaCompra;
     }
 }

@@ -34,7 +34,7 @@
             this.desayuno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cena = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEnviar = new System.Windows.Forms.Button();
+            this.btnEnviarDieta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,9 +42,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(74, 35);
+            this.label1.Location = new System.Drawing.Point(99, 43);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(583, 41);
+            this.label1.Size = new System.Drawing.Size(730, 52);
             this.label1.TabIndex = 0;
             this.label1.Text = "En volumen e intolerante a la lactosa";
             // 
@@ -64,8 +65,8 @@
             this.comida,
             this.cena});
             this.dgvDieta.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.dgvDieta.Location = new System.Drawing.Point(20, 139);
-            this.dgvDieta.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvDieta.Location = new System.Drawing.Point(27, 171);
+            this.dgvDieta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDieta.Name = "dgvDieta";
             this.dgvDieta.ReadOnly = true;
             this.dgvDieta.RowHeadersVisible = false;
@@ -74,13 +75,14 @@
             this.dgvDieta.RowTemplate.Height = 24;
             this.dgvDieta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvDieta.ShowEditingIcon = false;
-            this.dgvDieta.Size = new System.Drawing.Size(700, 163);
+            this.dgvDieta.Size = new System.Drawing.Size(933, 201);
             this.dgvDieta.TabIndex = 1;
             // 
             // dia
             // 
             this.dia.FillWeight = 71.06599F;
             this.dia.HeaderText = "";
+            this.dia.MinimumWidth = 6;
             this.dia.Name = "dia";
             this.dia.ReadOnly = true;
             this.dia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -89,6 +91,7 @@
             // 
             this.desayuno.FillWeight = 109.6447F;
             this.desayuno.HeaderText = "Desayuno";
+            this.desayuno.MinimumWidth = 6;
             this.desayuno.Name = "desayuno";
             this.desayuno.ReadOnly = true;
             this.desayuno.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -97,6 +100,7 @@
             // 
             this.comida.FillWeight = 109.6447F;
             this.comida.HeaderText = "Comida";
+            this.comida.MinimumWidth = 6;
             this.comida.Name = "comida";
             this.comida.ReadOnly = true;
             this.comida.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -105,37 +109,39 @@
             // 
             this.cena.FillWeight = 109.6447F;
             this.cena.HeaderText = "Cena";
+            this.cena.MinimumWidth = 6;
             this.cena.Name = "cena";
             this.cena.ReadOnly = true;
             this.cena.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // btnEnviar
+            // btnEnviarDieta
             // 
-            this.btnEnviar.BackColor = System.Drawing.Color.Gold;
-            this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btnEnviar.Image = global::NutriWise.Properties.Resources.enviarCorreo;
-            this.btnEnviar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnviar.Location = new System.Drawing.Point(295, 384);
-            this.btnEnviar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(136, 40);
-            this.btnEnviar.TabIndex = 21;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEnviar.UseVisualStyleBackColor = false;
-            this.btnEnviar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.btnEnviarDieta.BackColor = System.Drawing.Color.Gold;
+            this.btnEnviarDieta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnviarDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnEnviarDieta.Image = global::NutriWise.Properties.Resources.enviarCorreo;
+            this.btnEnviarDieta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEnviarDieta.Location = new System.Drawing.Point(393, 473);
+            this.btnEnviarDieta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEnviarDieta.Name = "btnEnviarDieta";
+            this.btnEnviarDieta.Size = new System.Drawing.Size(181, 49);
+            this.btnEnviarDieta.TabIndex = 21;
+            this.btnEnviarDieta.Text = "Enviar";
+            this.btnEnviarDieta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEnviarDieta.UseVisualStyleBackColor = false;
+            this.btnEnviarDieta.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // Dieta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.Controls.Add(this.btnEnviar);
+            this.Controls.Add(this.btnEnviarDieta);
             this.Controls.Add(this.dgvDieta);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Dieta";
-            this.Size = new System.Drawing.Size(751, 463);
+            this.Size = new System.Drawing.Size(1001, 570);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,6 +156,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn desayuno;
         private System.Windows.Forms.DataGridViewTextBoxColumn comida;
         private System.Windows.Forms.DataGridViewTextBoxColumn cena;
-        private System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.Button btnEnviarDieta;
     }
 }
