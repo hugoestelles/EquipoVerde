@@ -20,24 +20,62 @@ namespace NutriWise
         }
 
         #region Validaciones
-        private void ValidarAgregarDieta()
+        private bool ValidarAgregarDieta()
         {
             errorDatos.Clear();
+            bool correcto = true;
 
             if (txtNomDieta.Text == "")
             {
+                correcto = false;
                 errorDatos.SetError(txtNomDieta, "Ingresa nombre");
             }
 
             if (cmbAdminDietObj.SelectedIndex == -1)
             {
+                correcto = false;
                 errorDatos.SetError(cmbAdminDietObj, "Selecciona objetivo");
             }
 
             if (cmbAdminDietInto.SelectedIndex == -1)
             {
+                correcto = false;
                 errorDatos.SetError(cmbAdminDietInto, "Selecciona intolerancia");
             }
+
+            return correcto;
+        }
+
+        private bool ValidarAgregarPlato()
+        {
+            errorDatos.Clear();
+            bool correcto = true;
+
+            if (txtNomPlato.Text == "")
+            {
+                correcto = false;
+                errorDatos.SetError(txtNomPlato, "Ingresa nombre");
+            }
+
+            if (cmbAdminPlatosObj.SelectedIndex == -1)
+            {
+                correcto = false;
+                errorDatos.SetError(cmbAdminPlatosObj, "Selecciona objetivo");
+            }
+
+            if (cmbAdminPlatosInto.SelectedIndex == -1)
+            {
+                correcto = false;
+                errorDatos.SetError(cmbAdminPlatosInto, "Selecciona intolerancia");
+            }
+
+            if (cmbAdminPlatosTipo.SelectedIndex == -1)
+            {
+                correcto = false;
+                errorDatos.SetError(cmbAdminPlatosTipo, "Selecciona tipo");
+            }
+
+            return correcto;
         }
         #endregion
 
@@ -100,6 +138,7 @@ namespace NutriWise
 
         private void mnuPlatoAgregar_Click(object sender, EventArgs e)
         {
+            errorDatos.Clear();
             grbPlato.Visible = true;
             grbPlato.BringToFront();
             grbDieta.Visible = false;
@@ -253,7 +292,7 @@ namespace NutriWise
                 if (ConexionBD.Conexion != null)
                 {
                     ConexionBD.AbrirConexion();
-                    if (txtNomPlato.Text == "" || cmbAdminPlatosInto.SelectedIndex == -1 || cmbAdminPlatosObj.SelectedIndex == -1 || cmbAdminPlatosTipo.SelectedIndex == -1)
+                    if (!ValidarAgregarPlato())
                     {
                         MessageBox.Show("Datos del plato incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -352,8 +391,7 @@ namespace NutriWise
 
         private void btnDietaAceptar_Click(object sender, EventArgs e)
         {
-            ValidarAgregarDieta();
-            if (txtNomDieta.Text == "" || cmbAdminDietObj.SelectedIndex == -1 || cmbAdminDietInto.SelectedIndex == -1)
+            if (!ValidarAgregarDieta())
             {
                 MessageBox.Show("Debes ingresar un nombre y seleccionar un tipo de objetivo y de intolerancia.", "Datos incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

@@ -641,6 +641,7 @@
             this.btnAgregarIngre.TabIndex = 68;
             this.btnAgregarIngre.Text = "Añadir Ingredientes";
             this.btnAgregarIngre.UseVisualStyleBackColor = true;
+            this.btnAgregarIngre.Click += new System.EventHandler(this.mnuAgregarIngrediente_Click);
             // 
             // cmbAdminPlatosTipo
             // 
