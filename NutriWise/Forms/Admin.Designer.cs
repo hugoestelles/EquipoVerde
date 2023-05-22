@@ -309,7 +309,7 @@
             this.mnuUsuario.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuEliminarUsuario});
             this.mnuUsuario.Name = "mnuUsuario";
-            this.mnuUsuario.Size = new System.Drawing.Size(180, 22);
+            this.mnuUsuario.Size = new System.Drawing.Size(134, 22);
             this.mnuUsuario.Text = "Usuario";
             // 
             // mnuEliminarUsuario
@@ -324,13 +324,13 @@
             this.mnuIngrediente.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuAgregarIngrediente});
             this.mnuIngrediente.Name = "mnuIngrediente";
-            this.mnuIngrediente.Size = new System.Drawing.Size(180, 22);
+            this.mnuIngrediente.Size = new System.Drawing.Size(134, 22);
             this.mnuIngrediente.Text = "Ingrediente";
             // 
             // mnuAgregarIngrediente
             // 
             this.mnuAgregarIngrediente.Name = "mnuAgregarIngrediente";
-            this.mnuAgregarIngrediente.Size = new System.Drawing.Size(180, 22);
+            this.mnuAgregarIngrediente.Size = new System.Drawing.Size(116, 22);
             this.mnuAgregarIngrediente.Text = "Agregar";
             this.mnuAgregarIngrediente.Click += new System.EventHandler(this.mnuAgregarIngrediente_Click);
             // 
@@ -339,13 +339,13 @@
             this.mnuPlato.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuPlatoAgregar});
             this.mnuPlato.Name = "mnuPlato";
-            this.mnuPlato.Size = new System.Drawing.Size(180, 22);
+            this.mnuPlato.Size = new System.Drawing.Size(134, 22);
             this.mnuPlato.Text = "Plato";
             // 
             // mnuPlatoAgregar
             // 
             this.mnuPlatoAgregar.Name = "mnuPlatoAgregar";
-            this.mnuPlatoAgregar.Size = new System.Drawing.Size(180, 22);
+            this.mnuPlatoAgregar.Size = new System.Drawing.Size(116, 22);
             this.mnuPlatoAgregar.Text = "Agregar";
             this.mnuPlatoAgregar.Click += new System.EventHandler(this.mnuPlatoAgregar_Click);
             // 
@@ -354,13 +354,13 @@
             this.mnuDieta.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuDietaAgregar});
             this.mnuDieta.Name = "mnuDieta";
-            this.mnuDieta.Size = new System.Drawing.Size(180, 22);
+            this.mnuDieta.Size = new System.Drawing.Size(134, 22);
             this.mnuDieta.Text = "Dieta";
             // 
             // mnuDietaAgregar
             // 
             this.mnuDietaAgregar.Name = "mnuDietaAgregar";
-            this.mnuDietaAgregar.Size = new System.Drawing.Size(180, 22);
+            this.mnuDietaAgregar.Size = new System.Drawing.Size(116, 22);
             this.mnuDietaAgregar.Text = "Agregar";
             this.mnuDietaAgregar.Click += new System.EventHandler(this.mnuDietaAgregar_Click);
             // 
@@ -539,44 +539,64 @@
             // nudCantIngre4
             // 
             this.nudCantIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantIngre4.Location = new System.Drawing.Point(796, 387);
+            this.nudCantIngre4.Location = new System.Drawing.Point(785, 387);
             this.nudCantIngre4.Margin = new System.Windows.Forms.Padding(2);
+            this.nudCantIngre4.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nudCantIngre4.Name = "nudCantIngre4";
-            this.nudCantIngre4.Size = new System.Drawing.Size(50, 26);
+            this.nudCantIngre4.Size = new System.Drawing.Size(70, 26);
             this.nudCantIngre4.TabIndex = 76;
             // 
             // nudCantIngre3
             // 
             this.nudCantIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantIngre3.Location = new System.Drawing.Point(584, 387);
+            this.nudCantIngre3.Location = new System.Drawing.Point(573, 387);
             this.nudCantIngre3.Margin = new System.Windows.Forms.Padding(2);
+            this.nudCantIngre3.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nudCantIngre3.Name = "nudCantIngre3";
-            this.nudCantIngre3.Size = new System.Drawing.Size(50, 26);
+            this.nudCantIngre3.Size = new System.Drawing.Size(70, 26);
             this.nudCantIngre3.TabIndex = 75;
             // 
             // nudCantIngre2
             // 
             this.nudCantIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantIngre2.Location = new System.Drawing.Point(395, 386);
+            this.nudCantIngre2.Location = new System.Drawing.Point(384, 387);
             this.nudCantIngre2.Margin = new System.Windows.Forms.Padding(2);
+            this.nudCantIngre2.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nudCantIngre2.Name = "nudCantIngre2";
-            this.nudCantIngre2.Size = new System.Drawing.Size(50, 26);
+            this.nudCantIngre2.Size = new System.Drawing.Size(70, 26);
             this.nudCantIngre2.TabIndex = 74;
             // 
             // nudCantIngre1
             // 
             this.nudCantIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCantIngre1.Location = new System.Drawing.Point(184, 389);
+            this.nudCantIngre1.Location = new System.Drawing.Point(176, 389);
             this.nudCantIngre1.Margin = new System.Windows.Forms.Padding(2);
+            this.nudCantIngre1.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nudCantIngre1.Name = "nudCantIngre1";
-            this.nudCantIngre1.Size = new System.Drawing.Size(50, 26);
+            this.nudCantIngre1.Size = new System.Drawing.Size(70, 26);
             this.nudCantIngre1.TabIndex = 73;
             // 
             // lblCantIngre4
             // 
             this.lblCantIngre4.AutoSize = true;
             this.lblCantIngre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantIngre4.Location = new System.Drawing.Point(711, 391);
+            this.lblCantIngre4.Location = new System.Drawing.Point(703, 391);
             this.lblCantIngre4.Name = "lblCantIngre4";
             this.lblCantIngre4.Size = new System.Drawing.Size(77, 20);
             this.lblCantIngre4.TabIndex = 72;
@@ -586,7 +606,7 @@
             // 
             this.lblCantIngre3.AutoSize = true;
             this.lblCantIngre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantIngre3.Location = new System.Drawing.Point(499, 389);
+            this.lblCantIngre3.Location = new System.Drawing.Point(491, 389);
             this.lblCantIngre3.Name = "lblCantIngre3";
             this.lblCantIngre3.Size = new System.Drawing.Size(77, 20);
             this.lblCantIngre3.TabIndex = 71;
@@ -596,7 +616,7 @@
             // 
             this.lblCantIngre2.AutoSize = true;
             this.lblCantIngre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantIngre2.Location = new System.Drawing.Point(310, 391);
+            this.lblCantIngre2.Location = new System.Drawing.Point(302, 391);
             this.lblCantIngre2.Name = "lblCantIngre2";
             this.lblCantIngre2.Size = new System.Drawing.Size(77, 20);
             this.lblCantIngre2.TabIndex = 70;
@@ -606,7 +626,7 @@
             // 
             this.lblCantIngre1.AutoSize = true;
             this.lblCantIngre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantIngre1.Location = new System.Drawing.Point(99, 391);
+            this.lblCantIngre1.Location = new System.Drawing.Point(91, 391);
             this.lblCantIngre1.Name = "lblCantIngre1";
             this.lblCantIngre1.Size = new System.Drawing.Size(77, 20);
             this.lblCantIngre1.TabIndex = 69;
@@ -1702,11 +1722,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1025, 624);
             this.Controls.Add(this.mnuAdmin);
-            this.Controls.Add(this.grbIngredientes);
             this.Controls.Add(this.grbPlato);
             this.Controls.Add(this.grbInfo);
             this.Controls.Add(this.grbDieta);
             this.Controls.Add(this.grbEliminarUsu);
+            this.Controls.Add(this.grbIngredientes);
             this.MainMenuStrip = this.mnuAdmin;
             this.Name = "Admin";
             this.Text = "Admin";

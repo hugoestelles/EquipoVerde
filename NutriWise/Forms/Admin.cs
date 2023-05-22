@@ -253,12 +253,73 @@ namespace NutriWise
                 if (ConexionBD.Conexion != null)
                 {
                     ConexionBD.AbrirConexion();
-
+                    if (txtNomPlato.Text == "" || cmbAdminPlatosInto.SelectedIndex == -1 || cmbAdminPlatosObj.SelectedIndex == -1 || cmbAdminPlatosTipo.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Datos del plato incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        int[] ind = new int[4] { cmbIngre1.SelectedIndex, cmbIngre2.SelectedIndex, cmbIngre3.SelectedIndex, cmbIngre4.SelectedIndex };
+                        if (ind[0] == -1 || ind[1] == -1 || ind[2] == -1 || ind[3] == -1)
+                        {
+                            MessageBox.Show("Debe selccionar 4 ingredientes por plato.","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            HashSet<int> elementosVistos = new HashSet<int>();
+                            for (int i = 0; i < ind.Length; i++)
+                            {
+                                if (elementosVistos.Contains(ind[i]))
+                                {
+                                    MessageBox.Show("No puede repetirse ningun alimento.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                                }
+                                else
+                                {
+                                    elementosVistos.Add(ind[i]);
+                                    list.Add(Alimentos.ObtenerDatosAlimento(nombres[i]));
+                                }
+                            }
+                        }
+                        Platos p1 = new Platos(txtNomPlato.Text, cmbAdminPlatosTipo.SelectedIndex, cmbAdminPlatosObj.SelectedIndex, cmbAdminPlatosInto.SelectedIndex);
+                        if (!p1.ComprobarExistencia())
+                        {
+                            p1.ListaAlimentos = list;
+                            p1.ListaCantidades = new int[4] { (int)nudCantIngre1.Value, (int)nudCantIngre2.Value, (int)nudCantIngre3.Value, (int)nudCantIngre4.Value };
+                            if (list.Count<4 || p1.ListaCantidades.Contains(0))
+                            {
+                                MessageBox.Show("Error:\nLos platos deben tener 4 ingredientes.\nLos platos una cantidad mayor que 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            else
+                            {
+                                if (p1.AgregarPlato() == 1)
+                                {
+                                    MessageBox.Show("Plato introducido en la base de datos correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    if (p1.BuscarID())
+                                    {
+                                        for (int i = 0; i < p1.ListaAlimentos.Count; i++)
+                                        {
+                                            p1.ListaAlimentos[i].BuscarID();
+                                        }
+                                        if (p1.InsertarAliPlato()) MessageBox.Show("AliPlato introducido en la base de datos correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        else MessageBox.Show("Error: \nAliPlato introducido en la base de datos incorrectamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Error: \nPlato introducido en la base de datos incorrectamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error: \nYa hay un plato con ese nombre en la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
                     ConexionBD.CerrarConexion();
                 }
                 else
                 {
-
+                    MessageBox.Show("Error al conectar con la base de datos.", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -406,7 +467,7 @@ namespace NutriWise
         }
         private void ResetPlatos()
         {
-            /*txtNomPlato.Text = string.Empty;
+            txtNomPlato.Text = string.Empty;
             cmbAdminPlatosInto.SelectedIndex = -1;
             cmbAdminPlatosObj.SelectedIndex = -1;
             cmbAdminPlatosTipo.SelectedIndex = -1;
@@ -414,19 +475,10 @@ namespace NutriWise
             cmbIngre2.SelectedIndex = -1;
             cmbIngre3.SelectedIndex = -1;
             cmbIngre4.SelectedIndex = -1;
-            txtAgregarIngre1.Text = string.Empty;
-            txtAgregarIngre2.Text = string.Empty;
-            txtAgregarIngre3.Text = string.Empty;
-            txtAgregarIngre4.Text = string.Empty;
-            txtValorN1.Text = string.Empty;
-            txtValorN2.Text = string.Empty;
-            txtValorN3.Text = string.Empty;
-            txtValorN4.Text = string.Empty;
-            nudCantidadN1.Value= 0;
-            nudCantidadN2.Value= 0;
-            nudCantidadN3.Value= 0;
-            nudCantidadN4.Value= 0;*/
-
+            nudCantIngre1.Value= 0;
+            nudCantIngre2.Value= 0;
+            nudCantIngre3.Value= 0;
+            nudCantIngre4.Value= 0;
         }
 
 
@@ -455,11 +507,12 @@ namespace NutriWise
                             }
                         } 
                     }
+                    CargarAlimentos();
                     ConexionBD.CerrarConexion();
                 }
                 else
                 {
-
+                    MessageBox.Show("Error al conectar con la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
