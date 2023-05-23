@@ -150,7 +150,7 @@ namespace NutriWise
 
         private void btnDieta_Click(object sender, EventArgs e)
         {
-            if (!donativos)
+            if (!dieta)
             {
                 CambiarMenu();
                 dieta = true;
