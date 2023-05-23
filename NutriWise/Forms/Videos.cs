@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NutriWise.RecursosLocalizables;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,8 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 
 namespace NutriWise.Forms
 {
@@ -51,6 +54,13 @@ namespace NutriWise.Forms
             Process.Start("https://www.youtube.com/watch?v=q-sAjWopVPI");
         }
 
+        private void AplicarIdioma() { }
+
+        public void EstablecerCultura(string cultura)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
+        }
     }
 
 }

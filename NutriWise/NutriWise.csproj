@@ -171,6 +171,11 @@
     <Compile Include="Forms\Valoraciones.Designer.cs">
       <DependentUpon>Valoraciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="RecursosLocalizables\StringRecursos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringRecursos.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +216,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Valoraciones.resx">
       <DependentUpon>Valoraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecursosLocalizables\StringRecursos.EN-GB.resx" />
+    <EmbeddedResource Include="RecursosLocalizables\StringRecursos.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringRecursos.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

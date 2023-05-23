@@ -1,6 +1,9 @@
 ﻿using NutriWise.Clases;
 using System;
 using System.Windows.Forms;
+using NutriWise.RecursosLocalizables;
+using System.Globalization;
+using System.Threading;
 
 namespace NutriWise
 {
@@ -25,6 +28,19 @@ namespace NutriWise
             }
             catch (Exception) { MessageBox.Show("Error al conectar con la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             finally { ConexionBD.CerrarConexion(); }
+        }
+
+        private void AplicarIdioma()
+        {
+            lblDonacion.Text = StringRecursos.donacion;
+            lblCredenciales.Text = StringRecursos.Credenciales;
+            lblCantidad.Text = StringRecursos.Cantidad;
+            btnDonacion.Text = StringRecursos.Donar;
+        }
+        public void EstablecerCultura(string cultura)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
         }
     }
 }

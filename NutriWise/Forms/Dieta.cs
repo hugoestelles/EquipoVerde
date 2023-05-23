@@ -1,6 +1,9 @@
 ﻿using NutriWise.Clases;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using NutriWise.RecursosLocalizables;
+using System.Globalization;
+using System.Threading;
 
 namespace NutriWise
 {
@@ -66,6 +69,19 @@ namespace NutriWise
         public void ActualizarNombre()
         {
             lblNombreDieta.Text = Usuario.DietaActual.Nombre;
+        }
+
+        public void EstablecerCultura(string cultura)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
+
+        }
+        private void AplicarIdioma()
+        {
+            lblNombreDieta.Text = StringRecursos.descripcion;
+            btnEnviarDieta.Text = StringRecursos.enviar;
+
         }
     }
 }

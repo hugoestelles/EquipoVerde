@@ -1,4 +1,5 @@
-﻿using NutriWise.Clases;
+﻿using NutriWise.RecursosLocalizables;
+using NutriWise.Clases;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 
 namespace NutriWise
 {
@@ -28,6 +31,12 @@ namespace NutriWise
         bool videos = false;
         bool ayuda = true;
         bool mantenimiento = false;
+        private string titulo;
+        private string donativos11;
+        private string no_existir;
+        public static string PerfilTitulo { get; set; }
+        public static string ValoracionesTitulo { get; set; }
+        public static string VideosTitulo { get; set; }
 
         private void pctCerrar_Click(object sender, EventArgs e)
         {
@@ -156,7 +165,7 @@ namespace NutriWise
                 dieta = true;
                 dieta1.Visible = true;
                 cambioColor();
-                btnTitulo.Text = ("Dieta");
+                btnTitulo.Text = (StringRecursos.DietaTitulo);
                 dieta1.ActualizarNombre();
                 try
                 {
@@ -192,7 +201,7 @@ namespace NutriWise
                 lista = true;
                 listaCompra1.Visible = true;
                 cambioColor();
-                btnTitulo.Text = ("Lista");
+                btnTitulo.Text = (StringRecursos.ListaTitulo);
                 try
                 {
                     if (ConexionBD.Conexion != null)
@@ -226,7 +235,7 @@ namespace NutriWise
                 perfil = true;
                 perfil1.Visible = true;
                 cambioColor();
-                btnTitulo.Text = ("Perfil");
+                btnTitulo.Text = (StringRecursos.PerfilTitulo);
                 try
                 {
                     if(ConexionBD.Conexion != null)
@@ -259,7 +268,7 @@ namespace NutriWise
                 valoraciones = true;
                 valoraciones1.Visible = true;
                 cambioColor();
-                btnTitulo.Text = ("Valoraciones");
+                btnTitulo.Text = (StringRecursos.ValoracionesTitulo);
             }
         }
         private void btnVideos_Click(object sender, EventArgs e)
@@ -270,7 +279,7 @@ namespace NutriWise
                 videos = true;
                 videos1.Visible = true;
                 cambioColor();
-                btnTitulo.Text = ("Videos");
+                btnTitulo.Text = (StringRecursos.VideosTitulo);
             }
         }
 
@@ -282,7 +291,7 @@ namespace NutriWise
                 ayuda = true;
                 ayuda1.Visible = true;
                 cambioColor();
-                btnTitulo.Text = ("Ayuda");
+                btnTitulo.Text = (StringRecursos.AyudaTitulo);
             }
         }
 
@@ -318,7 +327,7 @@ namespace NutriWise
             mantenimiento = true;
             cambioColor();
 
-            Admin form5 = new Admin();
+            Admin form5 = new Admin(Thread.CurrentThread.CurrentUICulture.Name);
 
             form5.ShowDialog();
         }
@@ -358,5 +367,57 @@ namespace NutriWise
             btnMantenimiento.BackColor = Color.PaleGreen;
         }
 
+        private void AplicarIdioma()
+        {
+            btnDieta.Text = StringRecursos.Dieta;
+            btnPerfil.Text = StringRecursos.Perfil;
+            btnValoraciones.Text = StringRecursos.Valoraciones;
+            btnDonativos.Text = StringRecursos.Donativos;
+            btnListaCompra.Text = StringRecursos.ListaCompra;
+            btnVideos.Text = StringRecursos.Videos;
+            btnAyuda.Text = StringRecursos.Ayuda;
+            btnMantenimiento.Text = StringRecursos.mantenimiento;
+
+
+        }
+
+        private void EstablecerCultura(string cultura)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
+        }
+
+        private void pctIngles_Click(object sender, EventArgs e)
+        {
+            perfil1.EstablecerCultura("EN-GB");
+            donativos1.EstablecerCultura("EN-GB");
+            dieta1.EstablecerCultura("EN-GB");
+            ayuda1.EstablecerCultura("EN-GB");
+            valoraciones1.EstablecerCultura("EN-GB");
+            videos1.EstablecerCultura("EN-GB");
+            EstablecerCultura("EN-GB");
+        }
+
+        private void pctEspalñol_Click(object sender, EventArgs e)
+        {
+            perfil1.EstablecerCultura("ES-ES");
+            donativos1.EstablecerCultura("ES-ES");
+            dieta1.EstablecerCultura("ES-ES");
+            ayuda1.EstablecerCultura("ES-ES");
+            valoraciones1.EstablecerCultura("ES-ES");
+            videos1.EstablecerCultura("ES-ES");
+            EstablecerCultura("ES-ES");
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            perfil1.EstablecerCultura("ES-ES");
+            donativos1.EstablecerCultura("ES-ES");
+            dieta1.EstablecerCultura("ES-ES");
+            ayuda1.EstablecerCultura("ES-ES");
+            valoraciones1.EstablecerCultura("ES-ES");
+            videos1.EstablecerCultura("ES-ES");
+            EstablecerCultura("ES-ES");
+        }
     }
 }

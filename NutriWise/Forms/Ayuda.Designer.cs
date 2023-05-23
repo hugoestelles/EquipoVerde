@@ -37,7 +37,6 @@
             // 
             // lblAyuda
             // 
-            this.lblAyuda.AutoSize = true;
             this.lblAyuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(219)))), ((int)(((byte)(63)))));
             this.lblAyuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAyuda.Location = new System.Drawing.Point(177, 37);
@@ -80,7 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctAyuda)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

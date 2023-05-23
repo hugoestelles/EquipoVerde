@@ -1,6 +1,9 @@
-﻿using NutriWise.Clases;
+﻿using System.Windows.Forms;
+using NutriWise.RecursosLocalizables;
+using System.Globalization;
+using System.Threading;
 using System;
-using System.Windows.Forms;
+using NutriWise.Clases;
 
 namespace NutriWise
 {
@@ -119,6 +122,34 @@ namespace NutriWise
             cmbIntolerancias.SelectedIndex = us.Intolerancia;
             nudActividad.Value = us.Actividad;
             cmbObjetivo.SelectedIndex = us.Objetivo;
+        }
+
+        private void AplicarIdioma()
+        {
+            lblNomb.Text = StringRecursos.Nombre;
+            lblApell.Text = StringRecursos.Apellidos;
+            lblAlt.Text = StringRecursos.Altura;
+            lblPes.Text = StringRecursos.Peso;
+            lblCorreo.Text = StringRecursos.Correo;
+            lblTole.Text = StringRecursos.Tolerancias1;
+            lblAct.Text = StringRecursos.ActividadFisica;
+            lblObj.Text = StringRecursos.Objetivo;
+            btnEditar.Text = StringRecursos.editar;
+            btnAceptar.Text = StringRecursos.cambiosaceptar;
+            cmbObjetivo.Items.Add(StringRecursos.volumen);
+            cmbObjetivo.Items.Add(StringRecursos.comersano);
+            cmbObjetivo.Items.Add(StringRecursos.definicion);
+            lblActividad.Text = StringRecursos.dias;
+            cmbIntolerancias.Items.Add(StringRecursos.lactosa);
+            cmbIntolerancias.Items.Add(StringRecursos.gluten);
+            cmbIntolerancias.Items.Add(StringRecursos.vegano);
+            cmbIntolerancias.Items.Add(StringRecursos.vegetariano);
+            cmbIntolerancias.Items.Add(StringRecursos.sinintolerancias);
+        }
+        public void EstablecerCultura(string cultura)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NutriWise.RecursosLocalizables;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,15 +10,58 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using NutriWise.Clases;
+using System.Globalization;
+using System.Threading;
 
 namespace NutriWise
 {
     public partial class Admin : Form
     {
-        public Admin()
+        public Admin(string cultura)
         {
             InitializeComponent();
+            EstablecerCultura(cultura);
         }
+
+        private string borrado;
+        private string eliminacion;
+        private string correcto;
+        private string no_encontrado;
+        private string erroneo;
+        private string ingresa;
+        private string error_eliminar;
+        private string desear;
+        private string buscar;
+        private string correo_no_especificado;
+        private string error_busqueda;
+        private string error_platillo;
+        private string no_platos;
+        private string insuficiente;
+        private string usuarioeliminar1;
+        private string conexion_error1;
+        private string alimento1;
+        private string error3;
+        private string errordatos;
+        private string error_conexion;
+        private string agregardieta;
+        private string dieta_añadida;
+        private string repetirplato0;
+        private string platosrepetidos;
+        private string ingredientes4;
+        private string repetiraliento;
+        private string mayorque0;
+        private string minimo1;
+        private string datos_incorrectos;
+        private string nombre_objetivo;
+        private string platos_insu2;
+        private string platos_insu;
+        private string plato_existente;
+        private string plato_incorrecto;
+        private string error_aliplato;
+        private string aiplato;
+        private string informacion;
+        private string correctamente;
+        private string ningunoselec;
 
         #region Validaciones
         private bool ValidarAgregarDieta()
@@ -301,7 +345,7 @@ namespace NutriWise
                         int[] ind = new int[4] { cmbIngre1.SelectedIndex, cmbIngre2.SelectedIndex, cmbIngre3.SelectedIndex, cmbIngre4.SelectedIndex };
                         if (ind[0] == -1 || ind[1] == -1 || ind[2] == -1 || ind[3] == -1)
                         {
-                            MessageBox.Show("Debe selccionar 4 ingredientes por plato.","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Debe seleccionar 4 ingredientes por plato.", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
@@ -310,7 +354,7 @@ namespace NutriWise
                             {
                                 if (elementosVistos.Contains(ind[i]))
                                 {
-                                    MessageBox.Show("No puede repetirse ningun alimento.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                                    MessageBox.Show("No puede repetirse ningun alimento.", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                                 }
                                 else
                                 {
@@ -340,7 +384,7 @@ namespace NutriWise
                                             p1.ListaAlimentos[i].BuscarID();
                                         }
                                         if (p1.InsertarAliPlato()) MessageBox.Show("AliPlato introducido en la base de datos correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                        else MessageBox.Show("Error: \nAliPlato introducido en la base de datos incorrectamente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                        else MessageBox.Show(error_aliplato, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     }
                                 }
                                 else
@@ -542,7 +586,7 @@ namespace NutriWise
                             }
                             else
                             {
-                                MessageBox.Show("Ya hay un alimento con ese nombre en la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(alimento1, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         } 
                     }
@@ -551,7 +595,7 @@ namespace NutriWise
                 }
                 else
                 {
-                    MessageBox.Show("Error al conectar con la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(errordatos, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -594,6 +638,171 @@ namespace NutriWise
             grbPlato.Visible = false;
             grbIngredientes.Visible = true;
             grbIngredientes.BringToFront();
+        }
+
+        private void AplicarIdioma()
+        {
+            operacionesToolStripMenuItem.Text = StringRecursos.operar;
+            mnuUsuario.Text = StringRecursos.usuario;
+            mnuEliminarUsuario.Text = StringRecursos.usuario_eliminar;
+            mnuPlato.Text = StringRecursos.plato;
+            mnuPlatoAgregar.Text = StringRecursos.plato_agregar;
+            mnuDieta.Text = StringRecursos.dietita;
+            mnuDietaAgregar.Text = StringRecursos.dieta_agregar;
+            borrado = StringRecursos.borradito;
+            eliminacion = StringRecursos.eliminacion;
+            correcto = StringRecursos.eliminacion_correcta;
+            no_encontrado = StringRecursos.no_encontradito;
+            erroneo = StringRecursos.erroneocito;
+            ingresa = StringRecursos.correo_ingresa;
+            error_eliminar = StringRecursos.usuario_eliminar1;
+            desear = StringRecursos.desear;
+            buscar = StringRecursos.search;
+            correo_no_especificado = StringRecursos.falta_especificar;
+            error_busqueda = StringRecursos.busqueda;
+            grbPlato.Text = StringRecursos.agregarplatillo;
+            lblNomPlato.Text = StringRecursos.nombreplatillo;
+            lblIngre1.Text = StringRecursos.ingre1;
+            lblIngre2.Text = StringRecursos.ingre2;
+            lblIngre3.Text = StringRecursos.ingre3;
+            lblIngre4.Text = StringRecursos.ingre4;
+            lblIngre1.Text = StringRecursos.agregar1;
+            lblIngre2.Text = StringRecursos.agregar2;
+            lblIngre3.Text = StringRecursos.agregar3;
+            lblIngre4.Text = StringRecursos.agregar4;
+            lblValorN1.Text = StringRecursos.valorN1;
+            lblValorN2.Text = StringRecursos.valorN2;
+            lblValorN3.Text = StringRecursos.valorN3;
+            lblValorN4.Text = StringRecursos.valorN4;
+            btnPlatoAceptar.Text = StringRecursos.PlatoAceptar;
+            btnPlatoReset.Text = StringRecursos.PlatoReset;
+            btnPlatoVolver.Text = StringRecursos.PlatoVolver;
+            grbDieta.Text = StringRecursos.agregardietita;
+            lblNomDieta.Text = StringRecursos.Nombre;
+            lblPlato1.Text = StringRecursos.plato1;
+            lblPlato2.Text = StringRecursos.plato2;
+            lblPlato3.Text = StringRecursos.plato3;
+            lblPlato4.Text = StringRecursos.plato4;
+            lblPlato5.Text = StringRecursos.plato5;
+            lblPlato6.Text = StringRecursos.plato6;
+            lblPlato7.Text = StringRecursos.plato7;
+            lblPlato8.Text = StringRecursos.plato8;
+            lblPlato9.Text = StringRecursos.plato9;
+            lblPlato10.Text = StringRecursos.plato10;
+            lblPlato11.Text = StringRecursos.plato11;
+            lblPlato12.Text = StringRecursos.plato12;
+            lblPlato13.Text = StringRecursos.plato13;
+            lblPlato14.Text = StringRecursos.plato14;
+            lblPlato15.Text = StringRecursos.plato15;
+            lblPlato16.Text = StringRecursos.plato16;
+            lblPlato17.Text = StringRecursos.plato17;
+            lblPlato18.Text = StringRecursos.plato18;
+            lblPlato19.Text = StringRecursos.plato19;
+            lblPlato20.Text = StringRecursos.plato20;
+            lblPlato21.Text = StringRecursos.plato21;
+            btnDietaVolver.Text = StringRecursos.PlatoVolver;
+            btnDietaAceptar.Text = StringRecursos.PlatoAceptar;
+            grbEliminarUsu.Text = StringRecursos.elimi_usu;
+            lblElimUsuInfo.Text = StringRecursos.elim_info;
+            btnBuscarUsu.Text = StringRecursos.buscar;
+            lblElimNombreR1.Text = StringRecursos.Nombre;
+            lblElimApe1.Text = StringRecursos.Apellidos;
+            lblElimCorreo1.Text = StringRecursos.elim_correo;
+            lblElimNombreR2.Text = StringRecursos.Nombre1;
+            lblElimApe2.Text = StringRecursos.Apellidos;
+            lblElimCorreo2.Text = StringRecursos.Correo1;
+            btnAdminEliminar.Text = StringRecursos.usuario_eliminar;
+            btnElimVolver.Text = StringRecursos.PlatoVolver;
+            lblAdminInfo.Text = StringRecursos.info_admin;
+            lblAdminReloj.Text = StringRecursos.reloj_admin;
+            lblAdminFecha.Text = StringRecursos.fecha_admin;
+            btnAdminSalir.Text = StringRecursos.salir_admin;
+            btnAdminCerrar.Text = StringRecursos.cerrar_admin;
+            btnElimVolver.Text = StringRecursos.volver_elim;
+            error_platillo = StringRecursos.error_platillo;
+            no_platos = StringRecursos.no_platos;
+            insuficiente = StringRecursos.insuficiente;
+            error_conexion = StringRecursos.error_conexion;
+            error3 = StringRecursos.error3;
+            alimento1 = StringRecursos.alimento1;
+            errordatos = StringRecursos.errordatos;
+            agregardieta = StringRecursos.agregardieta;
+            dieta_añadida = StringRecursos.dieta_añadida;
+            repetirplato0 = StringRecursos._0repetir;
+            repetirplato0 = StringRecursos.repetirplato;
+            ingredientes4 = StringRecursos.ingredientes4;
+            repetiraliento = StringRecursos.repetiralimento;
+            mayorque0 = StringRecursos.mayorque0;
+            correctamente = StringRecursos.correctamente;
+            informacion = StringRecursos.informacion;
+            aiplato = StringRecursos.Aliplato;
+            error_aliplato = StringRecursos.error_aliplato;
+            plato_existente = StringRecursos.plato_existente;
+            plato_incorrecto = StringRecursos.plato_incorrecto;
+            minimo1 = StringRecursos.minimo1;
+            ningunoselec = StringRecursos.ningunoselec;
+            nombre_objetivo = StringRecursos.nombre_objetivo;
+            datos_incorrectos = StringRecursos.datos_incorrectos;
+            platos_insu = StringRecursos.platos_insu;
+            platos_insu2 = StringRecursos.platos_insu2;
+            lblPlatosTipo.Text = StringRecursos.Tipo;
+            label1.Text = StringRecursos.into;
+            label2.Text = StringRecursos.obj;
+            lblCantIngre1.Text = StringRecursos.cant;
+            lblCantIngre2.Text = StringRecursos.cant;
+            lblCantIngre3.Text = StringRecursos.cant;
+            lblCantIngre4.Text = StringRecursos.cant;
+            btnAgregarIngre.Text = StringRecursos.ingre;
+            lblAdminObj.Text = StringRecursos.Objetivo;
+            lblAdminInto.Text = StringRecursos.into;
+            btnDietaBuscar.Text = StringRecursos.search;
+            grbIngredientes.Text = StringRecursos.AgregarIng;
+            lblIng1.Text = StringRecursos.lblIng1;
+            lblIng2.Text = StringRecursos.lblIng2;
+            lblIng3.Text = StringRecursos.lblIng3;
+            lblIng4.Text = StringRecursos.lblIng4;
+            btnRestIngre.Text = StringRecursos.btnRestIngre;
+            btnAceptarIngre.Text = StringRecursos.btnaceptarIngre;
+            btnVolverIngre.Text = StringRecursos.btnVolverIngre;
+            cmbAdminPlatosInto.Items.Add(StringRecursos.cmbAdminPlatosInto);
+            cmbAdminPlatosInto.Items.Add(StringRecursos.cmbAdminPlatosInto21);
+            cmbAdminPlatosInto.Items.Add(StringRecursos.cmbAdminPlatosInto11);
+            cmbAdminPlatosInto.Items.Add(StringRecursos.cmbAdminPlatosInto31);
+            cmbAdminPlatosInto.Items.Add(StringRecursos.cmbAdminPlatosInto41);
+            cmbAdminPlatosTipo.Items.Add(StringRecursos.cmbAdminPlatosTipo);
+            cmbAdminPlatosTipo.Items.Add(StringRecursos.cmbAdminPlatosTipo11);
+            cmbAdminPlatosTipo.Items.Add(StringRecursos.cmbAdminPlatosTipo21);
+            cmbAdminPlatosObj.Items.Add(StringRecursos.cmbAdminPlatosObj);
+            cmbAdminPlatosObj.Items.Add(StringRecursos.cmbAdminPlatosObj11);
+            cmbAdminPlatosObj.Items.Add(StringRecursos.cmbAdminPlatosObj21);
+            cmbIngre1.Items.Add(StringRecursos.cmbIngre111);
+            cmbIngre1.Items.Add(StringRecursos.cmbIngre121);
+            cmbIngre2.Items.Add(StringRecursos.cmbIngre111);
+            cmbIngre2.Items.Add(StringRecursos.cmbIngre111);
+            cmbIngre3.Items.Add(StringRecursos.cmbIngre111);
+            cmbIngre3.Items.Add(StringRecursos.cmbIngre111);
+            cmbIngre4.Items.Add(StringRecursos.cmbIngre111);
+            cmbIngre4.Items.Add(StringRecursos.cmbIngre111);
+            mnuIngrediente.Text = StringRecursos.ingrediente;
+            mnuAgregarIngrediente.Text = StringRecursos.agregar;
+            lblNomIngre1.Text = StringRecursos.Nombre;
+            lblNomIngre2.Text = StringRecursos.Nombre;
+            lblNomIngre3.Text = StringRecursos.Nombre;
+            lblNomIngre4.Text = StringRecursos.Nombre;
+            cmbAdminDietObj.Items.Add(StringRecursos.cmbAdminPlatosObj);
+            cmbAdminDietObj.Items.Add(StringRecursos.cmbAdminPlatosObj11);
+            cmbAdminDietObj.Items.Add(StringRecursos.cmbAdminPlatosObj21);
+            cmbAdminDietInto.Items.Add(StringRecursos.cmbAdminPlatosInto);
+            cmbAdminDietInto.Items.Add(StringRecursos.cmbAdminPlatosInto21);
+            cmbAdminDietInto.Items.Add(StringRecursos.cmbAdminPlatosInto11);
+            cmbAdminDietInto.Items.Add(StringRecursos.cmbAdminPlatosInto31);
+            cmbAdminDietInto.Items.Add(StringRecursos.cmbAdminPlatosInto41);
+        }
+
+        private void EstablecerCultura(string cultura)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
         }
     }
 }

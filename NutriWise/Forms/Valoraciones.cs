@@ -2,6 +2,9 @@
 using NutriWise.Clases;
 using System;
 using System.Windows.Forms;
+using NutriWise.RecursosLocalizables;
+using System.Globalization;
+using System.Threading;
 
 namespace NutriWise
 {
@@ -11,7 +14,12 @@ namespace NutriWise
         {
             InitializeComponent();
         }
+
         int estrella = 0;
+        private string valoracion_exito;
+        private string valoracion_enviada;
+        private string error_valoracion;
+
         private void btnEnviar_Click(object sender, System.EventArgs e)
         {
             
@@ -192,13 +200,18 @@ namespace NutriWise
             }
         }
 
-
+        private void AplicarIdioma()
+        {
+            valoracion_exito = StringRecursos.Valoraciónenviadaconéxito;
+            label1.Text = StringRecursos.Lasvaloracionessonanonimas;
+            btnEnviar.Text = StringRecursos.enviar;
+            lblAgradecimiento.Text = StringRecursos.Agradecimiento;
+        }
+        public void EstablecerCultura(string cultura)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
+        }
     }
-
-
-
-
-
-
 }
 

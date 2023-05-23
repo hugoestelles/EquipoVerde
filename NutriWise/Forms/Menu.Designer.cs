@@ -84,7 +84,7 @@
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Margin = new System.Windows.Forms.Padding(0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(289, 606);
+            this.pnlMenu.Size = new System.Drawing.Size(361, 758);
             this.pnlMenu.TabIndex = 0;
             // 
             // btnMantenimiento
@@ -95,12 +95,12 @@
             this.btnMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.btnMantenimiento.Image = global::NutriWise.Properties.Resources.IconoMantenimiento;
             this.btnMantenimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMantenimiento.Location = new System.Drawing.Point(-1, 521);
+            this.btnMantenimiento.Location = new System.Drawing.Point(-1, 651);
+            this.btnMantenimiento.Margin = new System.Windows.Forms.Padding(4);
             this.btnMantenimiento.Name = "btnMantenimiento";
-            this.btnMantenimiento.Size = new System.Drawing.Size(288, 61);
+            this.btnMantenimiento.Size = new System.Drawing.Size(360, 76);
             this.btnMantenimiento.TabIndex = 13;
             this.btnMantenimiento.Text = "        Mantenimiento";
-            this.btnMantenimiento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMantenimiento.UseVisualStyleBackColor = true;
             this.btnMantenimiento.Click += new System.EventHandler(this.btnMantenimiento_Click);
             // 
@@ -112,12 +112,12 @@
             this.btnDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDieta.Image = global::NutriWise.Properties.Resources.IconoDieta;
             this.btnDieta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDieta.Location = new System.Drawing.Point(0, 115);
+            this.btnDieta.Location = new System.Drawing.Point(0, 144);
+            this.btnDieta.Margin = new System.Windows.Forms.Padding(4);
             this.btnDieta.Name = "btnDieta";
-            this.btnDieta.Size = new System.Drawing.Size(290, 61);
+            this.btnDieta.Size = new System.Drawing.Size(362, 76);
             this.btnDieta.TabIndex = 12;
             this.btnDieta.Text = "        Dieta";
-            this.btnDieta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDieta.UseVisualStyleBackColor = true;
             this.btnDieta.Click += new System.EventHandler(this.btnDieta_Click);
             // 
@@ -129,12 +129,12 @@
             this.btnAyuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.btnAyuda.Image = global::NutriWise.Properties.Resources.IconoAyuda;
             this.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAyuda.Location = new System.Drawing.Point(-1, 467);
+            this.btnAyuda.Location = new System.Drawing.Point(-1, 584);
+            this.btnAyuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(293, 61);
+            this.btnAyuda.Size = new System.Drawing.Size(366, 76);
             this.btnAyuda.TabIndex = 11;
             this.btnAyuda.Text = "        Ayuda";
-            this.btnAyuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAyuda.UseVisualStyleBackColor = true;
             this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
@@ -147,12 +147,12 @@
             this.btnVideos.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnVideos.Image = global::NutriWise.Properties.Resources.IconoVideo;
             this.btnVideos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVideos.Location = new System.Drawing.Point(-1, 408);
+            this.btnVideos.Location = new System.Drawing.Point(-1, 510);
+            this.btnVideos.Margin = new System.Windows.Forms.Padding(4);
             this.btnVideos.Name = "btnVideos";
-            this.btnVideos.Size = new System.Drawing.Size(290, 61);
+            this.btnVideos.Size = new System.Drawing.Size(362, 76);
             this.btnVideos.TabIndex = 10;
             this.btnVideos.Text = "        Videos";
-            this.btnVideos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVideos.UseVisualStyleBackColor = true;
             this.btnVideos.Click += new System.EventHandler(this.btnVideos_Click);
             // 
@@ -164,12 +164,12 @@
             this.btnListaCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.btnListaCompra.Image = global::NutriWise.Properties.Resources.IconoLista;
             this.btnListaCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListaCompra.Location = new System.Drawing.Point(-1, 350);
+            this.btnListaCompra.Location = new System.Drawing.Point(-1, 438);
+            this.btnListaCompra.Margin = new System.Windows.Forms.Padding(4);
             this.btnListaCompra.Name = "btnListaCompra";
-            this.btnListaCompra.Size = new System.Drawing.Size(290, 61);
+            this.btnListaCompra.Size = new System.Drawing.Size(362, 76);
             this.btnListaCompra.TabIndex = 9;
             this.btnListaCompra.Text = "        Lista de la compra";
-            this.btnListaCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnListaCompra.UseVisualStyleBackColor = true;
             this.btnListaCompra.Click += new System.EventHandler(this.btnListaCompra_Click);
             // 
@@ -181,12 +181,12 @@
             this.btnDonativos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.btnDonativos.Image = global::NutriWise.Properties.Resources.IconoDonaciones;
             this.btnDonativos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonativos.Location = new System.Drawing.Point(-1, 290);
+            this.btnDonativos.Location = new System.Drawing.Point(-1, 362);
+            this.btnDonativos.Margin = new System.Windows.Forms.Padding(4);
             this.btnDonativos.Name = "btnDonativos";
-            this.btnDonativos.Size = new System.Drawing.Size(290, 61);
+            this.btnDonativos.Size = new System.Drawing.Size(362, 76);
             this.btnDonativos.TabIndex = 8;
             this.btnDonativos.Text = "        Donativos";
-            this.btnDonativos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonativos.UseVisualStyleBackColor = true;
             this.btnDonativos.Click += new System.EventHandler(this.btnDonativos_Click);
             // 
@@ -198,12 +198,12 @@
             this.btnValoraciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.btnValoraciones.Image = global::NutriWise.Properties.Resources.IconoValoraciones;
             this.btnValoraciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnValoraciones.Location = new System.Drawing.Point(0, 232);
+            this.btnValoraciones.Location = new System.Drawing.Point(0, 290);
+            this.btnValoraciones.Margin = new System.Windows.Forms.Padding(4);
             this.btnValoraciones.Name = "btnValoraciones";
-            this.btnValoraciones.Size = new System.Drawing.Size(290, 61);
+            this.btnValoraciones.Size = new System.Drawing.Size(362, 76);
             this.btnValoraciones.TabIndex = 7;
             this.btnValoraciones.Text = "        Valoraciones";
-            this.btnValoraciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnValoraciones.UseVisualStyleBackColor = true;
             this.btnValoraciones.Click += new System.EventHandler(this.btnValoraciones_Click);
             // 
@@ -215,21 +215,22 @@
             this.btnPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.btnPerfil.Image = global::NutriWise.Properties.Resources.IconoPerfil;
             this.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPerfil.Location = new System.Drawing.Point(0, 174);
+            this.btnPerfil.Location = new System.Drawing.Point(0, 218);
+            this.btnPerfil.Margin = new System.Windows.Forms.Padding(4);
             this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(290, 61);
+            this.btnPerfil.Size = new System.Drawing.Size(362, 76);
             this.btnPerfil.TabIndex = 6;
             this.btnPerfil.Text = "        Perfil";
-            this.btnPerfil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPerfil.UseVisualStyleBackColor = true;
             this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // pctLogo
             // 
             this.pctLogo.Image = global::NutriWise.Properties.Resources._meal_89750_2;
-            this.pctLogo.Location = new System.Drawing.Point(78, 12);
+            this.pctLogo.Location = new System.Drawing.Point(98, 15);
+            this.pctLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pctLogo.Name = "pctLogo";
-            this.pctLogo.Size = new System.Drawing.Size(103, 97);
+            this.pctLogo.Size = new System.Drawing.Size(129, 121);
             this.pctLogo.TabIndex = 1;
             this.pctLogo.TabStop = false;
             // 
@@ -240,10 +241,10 @@
             this.pnlAjustes.Controls.Add(this.pctClaro);
             this.pnlAjustes.Controls.Add(this.pctOscuro);
             this.pnlAjustes.Controls.Add(this.pctDegradadoAjustes);
-            this.pnlAjustes.Location = new System.Drawing.Point(630, 0);
-            this.pnlAjustes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlAjustes.Location = new System.Drawing.Point(788, 0);
+            this.pnlAjustes.Margin = new System.Windows.Forms.Padding(2);
             this.pnlAjustes.Name = "pnlAjustes";
-            this.pnlAjustes.Size = new System.Drawing.Size(260, 126);
+            this.pnlAjustes.Size = new System.Drawing.Size(325, 158);
             this.pnlAjustes.TabIndex = 15;
             this.pnlAjustes.Visible = false;
             // 
@@ -252,36 +253,38 @@
             this.pctIngles.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctIngles.BackgroundImage")));
             this.pctIngles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctIngles.Image = global::NutriWise.Properties.Resources.Ingles;
-            this.pctIngles.Location = new System.Drawing.Point(13, 16);
-            this.pctIngles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctIngles.Location = new System.Drawing.Point(16, 20);
+            this.pctIngles.Margin = new System.Windows.Forms.Padding(2);
             this.pctIngles.Name = "pctIngles";
-            this.pctIngles.Size = new System.Drawing.Size(48, 48);
+            this.pctIngles.Size = new System.Drawing.Size(60, 60);
             this.pctIngles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctIngles.TabIndex = 23;
             this.pctIngles.TabStop = false;
+            this.pctIngles.Click += new System.EventHandler(this.pctIngles_Click);
             // 
             // pctEspalñol
             // 
             this.pctEspalñol.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctEspalñol.BackgroundImage")));
             this.pctEspalñol.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctEspalñol.Image = global::NutriWise.Properties.Resources.Español;
-            this.pctEspalñol.Location = new System.Drawing.Point(75, 16);
-            this.pctEspalñol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctEspalñol.Location = new System.Drawing.Point(94, 20);
+            this.pctEspalñol.Margin = new System.Windows.Forms.Padding(2);
             this.pctEspalñol.Name = "pctEspalñol";
-            this.pctEspalñol.Size = new System.Drawing.Size(48, 48);
+            this.pctEspalñol.Size = new System.Drawing.Size(60, 60);
             this.pctEspalñol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctEspalñol.TabIndex = 22;
             this.pctEspalñol.TabStop = false;
+            this.pctEspalñol.Click += new System.EventHandler(this.pctEspalñol_Click);
             // 
             // pctClaro
             // 
             this.pctClaro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctClaro.BackgroundImage")));
             this.pctClaro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctClaro.Image = global::NutriWise.Properties.Resources.sol;
-            this.pctClaro.Location = new System.Drawing.Point(195, 12);
-            this.pctClaro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctClaro.Location = new System.Drawing.Point(244, 15);
+            this.pctClaro.Margin = new System.Windows.Forms.Padding(2);
             this.pctClaro.Name = "pctClaro";
-            this.pctClaro.Size = new System.Drawing.Size(57, 57);
+            this.pctClaro.Size = new System.Drawing.Size(71, 71);
             this.pctClaro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctClaro.TabIndex = 20;
             this.pctClaro.TabStop = false;
@@ -292,10 +295,10 @@
             this.pctOscuro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctOscuro.BackgroundImage")));
             this.pctOscuro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctOscuro.Image = global::NutriWise.Properties.Resources.luna;
-            this.pctOscuro.Location = new System.Drawing.Point(137, 16);
-            this.pctOscuro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctOscuro.Location = new System.Drawing.Point(171, 20);
+            this.pctOscuro.Margin = new System.Windows.Forms.Padding(2);
             this.pctOscuro.Name = "pctOscuro";
-            this.pctOscuro.Size = new System.Drawing.Size(48, 48);
+            this.pctOscuro.Size = new System.Drawing.Size(60, 60);
             this.pctOscuro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctOscuro.TabIndex = 21;
             this.pctOscuro.TabStop = false;
@@ -308,72 +311,73 @@
             this.pctDegradadoAjustes.ImageLocation = "";
             this.pctDegradadoAjustes.InitialImage = global::NutriWise.Properties.Resources.Ajustes;
             this.pctDegradadoAjustes.Location = new System.Drawing.Point(0, 0);
+            this.pctDegradadoAjustes.Margin = new System.Windows.Forms.Padding(4);
             this.pctDegradadoAjustes.Name = "pctDegradadoAjustes";
-            this.pctDegradadoAjustes.Size = new System.Drawing.Size(269, 126);
+            this.pctDegradadoAjustes.Size = new System.Drawing.Size(336, 158);
             this.pctDegradadoAjustes.TabIndex = 15;
             this.pctDegradadoAjustes.TabStop = false;
             // 
             // videos1
             // 
             this.videos1.BackColor = System.Drawing.Color.Ivory;
-            this.videos1.Location = new System.Drawing.Point(290, 129);
-            this.videos1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.videos1.Location = new System.Drawing.Point(362, 161);
+            this.videos1.Margin = new System.Windows.Forms.Padding(2);
             this.videos1.Name = "videos1";
-            this.videos1.Size = new System.Drawing.Size(744, 470);
+            this.videos1.Size = new System.Drawing.Size(930, 588);
             this.videos1.TabIndex = 20;
             // 
             // perfil1
             // 
             this.perfil1.BackColor = System.Drawing.Color.Ivory;
-            this.perfil1.Location = new System.Drawing.Point(295, 136);
+            this.perfil1.Location = new System.Drawing.Point(369, 170);
             this.perfil1.Margin = new System.Windows.Forms.Padding(0);
             this.perfil1.Name = "perfil1";
-            this.perfil1.Size = new System.Drawing.Size(738, 458);
+            this.perfil1.Size = new System.Drawing.Size(922, 572);
             this.perfil1.TabIndex = 12;
             // 
             // dieta1
             // 
             this.dieta1.BackColor = System.Drawing.Color.Ivory;
-            this.dieta1.Location = new System.Drawing.Point(295, 126);
+            this.dieta1.Location = new System.Drawing.Point(369, 158);
             this.dieta1.Margin = new System.Windows.Forms.Padding(0);
             this.dieta1.Name = "dieta1";
-            this.dieta1.Size = new System.Drawing.Size(738, 467);
+            this.dieta1.Size = new System.Drawing.Size(922, 584);
             this.dieta1.TabIndex = 13;
             // 
             // valoraciones1
             // 
             this.valoraciones1.BackColor = System.Drawing.Color.Ivory;
-            this.valoraciones1.Location = new System.Drawing.Point(290, 121);
+            this.valoraciones1.Location = new System.Drawing.Point(362, 151);
             this.valoraciones1.Margin = new System.Windows.Forms.Padding(0);
             this.valoraciones1.Name = "valoraciones1";
-            this.valoraciones1.Size = new System.Drawing.Size(743, 478);
+            this.valoraciones1.Size = new System.Drawing.Size(929, 598);
             this.valoraciones1.TabIndex = 16;
             // 
             // donativos1
             // 
             this.donativos1.BackColor = System.Drawing.Color.Ivory;
-            this.donativos1.Location = new System.Drawing.Point(290, 129);
+            this.donativos1.Location = new System.Drawing.Point(362, 161);
             this.donativos1.Margin = new System.Windows.Forms.Padding(0);
             this.donativos1.Name = "donativos1";
-            this.donativos1.Size = new System.Drawing.Size(743, 465);
+            this.donativos1.Size = new System.Drawing.Size(929, 581);
             this.donativos1.TabIndex = 17;
             // 
             // listaCompra1
             // 
             this.listaCompra1.BackColor = System.Drawing.Color.Ivory;
-            this.listaCompra1.Location = new System.Drawing.Point(290, 126);
+            this.listaCompra1.Location = new System.Drawing.Point(362, 158);
             this.listaCompra1.Margin = new System.Windows.Forms.Padding(0);
             this.listaCompra1.Name = "listaCompra1";
-            this.listaCompra1.Size = new System.Drawing.Size(743, 467);
+            this.listaCompra1.Size = new System.Drawing.Size(929, 584);
             this.listaCompra1.TabIndex = 18;
             // 
             // ayuda1
             // 
             this.ayuda1.BackColor = System.Drawing.Color.Ivory;
-            this.ayuda1.Location = new System.Drawing.Point(290, 129);
+            this.ayuda1.Location = new System.Drawing.Point(362, 161);
             this.ayuda1.Margin = new System.Windows.Forms.Padding(0);
             this.ayuda1.Name = "ayuda1";
-            this.ayuda1.Size = new System.Drawing.Size(744, 465);
+            this.ayuda1.Size = new System.Drawing.Size(930, 581);
             this.ayuda1.TabIndex = 19;
             // 
             // pctAjustes
@@ -383,10 +387,10 @@
             this.pctAjustes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctAjustes.Image = global::NutriWise.Properties.Resources.Ajustes;
             this.pctAjustes.ImageLocation = "";
-            this.pctAjustes.Location = new System.Drawing.Point(902, 7);
+            this.pctAjustes.Location = new System.Drawing.Point(1128, 9);
             this.pctAjustes.Margin = new System.Windows.Forms.Padding(0);
             this.pctAjustes.Name = "pctAjustes";
-            this.pctAjustes.Size = new System.Drawing.Size(57, 57);
+            this.pctAjustes.Size = new System.Drawing.Size(71, 71);
             this.pctAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctAjustes.TabIndex = 8;
             this.pctAjustes.TabStop = false;
@@ -397,10 +401,10 @@
             this.pctCerrar.BackgroundImage = global::NutriWise.Properties.Resources.Rectangle;
             this.pctCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctCerrar.Image = global::NutriWise.Properties.Resources.X;
-            this.pctCerrar.Location = new System.Drawing.Point(971, 7);
+            this.pctCerrar.Location = new System.Drawing.Point(1214, 9);
             this.pctCerrar.Margin = new System.Windows.Forms.Padding(0);
             this.pctCerrar.Name = "pctCerrar";
-            this.pctCerrar.Size = new System.Drawing.Size(57, 57);
+            this.pctCerrar.Size = new System.Drawing.Size(71, 71);
             this.pctCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctCerrar.TabIndex = 9;
             this.pctCerrar.TabStop = false;
@@ -412,10 +416,10 @@
             this.pctDegradado.ErrorImage = null;
             this.pctDegradado.ImageLocation = "";
             this.pctDegradado.InitialImage = global::NutriWise.Properties.Resources.Ajustes;
-            this.pctDegradado.Location = new System.Drawing.Point(283, 0);
+            this.pctDegradado.Location = new System.Drawing.Point(354, 0);
             this.pctDegradado.Margin = new System.Windows.Forms.Padding(0);
             this.pctDegradado.Name = "pctDegradado";
-            this.pctDegradado.Size = new System.Drawing.Size(781, 126);
+            this.pctDegradado.Size = new System.Drawing.Size(976, 158);
             this.pctDegradado.TabIndex = 4;
             this.pctDegradado.TabStop = false;
             // 
@@ -426,21 +430,22 @@
             this.btnTitulo.FlatAppearance.BorderSize = 0;
             this.btnTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTitulo.Location = new System.Drawing.Point(290, 0);
+            this.btnTitulo.Location = new System.Drawing.Point(362, 0);
+            this.btnTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.btnTitulo.Name = "btnTitulo";
-            this.btnTitulo.Size = new System.Drawing.Size(335, 126);
+            this.btnTitulo.Size = new System.Drawing.Size(419, 158);
             this.btnTitulo.TabIndex = 21;
             this.btnTitulo.Text = "Ayuda";
             this.btnTitulo.UseVisualStyleBackColor = true;
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Ivory;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1035, 601);
+            this.ClientSize = new System.Drawing.Size(1294, 751);
             this.Controls.Add(this.btnTitulo);
             this.Controls.Add(this.pnlAjustes);
             this.Controls.Add(this.pctAjustes);
@@ -456,9 +461,11 @@
             this.Controls.Add(this.listaCompra1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pefil";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.pnlMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             this.pnlAjustes.ResumeLayout(false);

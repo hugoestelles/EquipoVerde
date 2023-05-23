@@ -753,3 +753,7 @@ C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\Equi
 C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
 C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
 C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.EN-GB.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\EN-GB\NutriWise.resources.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\EN-GB\NutriWise.resources.dll
