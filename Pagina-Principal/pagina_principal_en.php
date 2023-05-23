@@ -264,9 +264,9 @@
                     ¡El equipo de desarrolladores de NutriWise!
                 </div>
             </div>
-            <div class="cont-img-grupal">
+            <!-- <div class="cont-img-grupal">
                 <img src="img/R.jpg" alt="foto grupal" class="img-grupal">
-            </div>
+            </div> -->
                 <div class="cont-imagenes">
                 <div class="team-member">
                     <img src="img/Oscar.jpeg" class="img-persona" alt="Foto del compañero 1">
