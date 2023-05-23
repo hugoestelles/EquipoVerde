@@ -415,7 +415,7 @@ button[type="submit"]:hover {
 
 #valoraciones-page{
   display: none;
-  margin-left: 14vw;
+  margin-left: 3vw;
 }
 #donaciones-page {
   display: none;
@@ -674,6 +674,6 @@ tbody tr:hover {
 }
 
 #informacion-page {
-  margin-left: 14vw;
+  margin-left: 3vw;
   width: 80%;
 }
