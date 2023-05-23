@@ -15,10 +15,16 @@ namespace NutriWise
         {
             DateTime fecha = DateTime.Now;
             Usuario user = Usuario.UsuarioActual;
-            //// Falta el nombre del usuario 
             Donativo donacion = new Donativo((double)nudCantidad.Value, fecha, user.Nombre, user.Id);
 
-            donacion.Donar();
+            try
+            {
+                if (ConexionBD.Conexion != null) ConexionBD.AbrirConexion();
+                donacion.Donar();
+                MessageBox.Show("Su donación de " + donacion.Cant + " euros se ha llevado a cabo.", "Donación realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception) { MessageBox.Show("Error al conectar con la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            finally { ConexionBD.CerrarConexion(); }
         }
     }
 }
