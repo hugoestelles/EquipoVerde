@@ -525,7 +525,7 @@ namespace NutriWise
 
         private void EliminarCargaPlatos()
         {
-            ComboBox[] comboBoxes = new ComboBox[] { cmbPlato1, cmbPlato2, cmbPlato3, cmbPlato4, cmbPlato5, cmbPlato6, cmbPlato7, cmbPlato8, cmbPlato9, cmbPlato10, cmbPlato11, cmbPlato12, cmbPlato13, cmbPlato14, cmbPlato15, cmbPlato16, cmbPlato17, cmbPlato18, cmbPlato19, cmbPlato20, cmbPlato21 };
+            ComboBox[] comboBoxes = new ComboBox[] { cmbPlato1, cmbPlato2, cmbPlato3, cmbPlato4, cmbPlato5, cmbPlato6, cmbPlato7, cmbPlato8, cmbPlato9, cmbPlato10, cmbPlato11, cmbPlato12, cmbPlato13, cmbPlato14, cmbPlato15, cmbPlato16, cmbPlato17, cmbPlato18, cmbPlato19, cmbPlato20, cmbPlato21, cmbAdminDietObj, cmbAdminDietInto };
             foreach (ComboBox cmb in comboBoxes)
             {
                 cmb.Items.Clear();
@@ -776,39 +776,12 @@ namespace NutriWise
             btnRestIngre.Text = StringRecursos.btnRestIngre;
             btnAceptarIngre.Text = StringRecursos.btnaceptarIngre;
             btnVolverIngre.Text = StringRecursos.btnVolverIngre;
-            cmbAdminPlatosInto.Items.Add(StringRecursos.cmbAdminPlatosInto);
-            cmbAdminPlatosInto.Items.Add(StringRecursos.cmbAdminPlatosInto21);
-            cmbAdminPlatosInto.Items.Add(StringRecursos.cmbAdminPlatosInto11);
-            cmbAdminPlatosInto.Items.Add(StringRecursos.cmbAdminPlatosInto31);
-            cmbAdminPlatosInto.Items.Add(StringRecursos.cmbAdminPlatosInto41);
-            cmbAdminPlatosTipo.Items.Add(StringRecursos.cmbAdminPlatosTipo);
-            cmbAdminPlatosTipo.Items.Add(StringRecursos.cmbAdminPlatosTipo11);
-            cmbAdminPlatosTipo.Items.Add(StringRecursos.cmbAdminPlatosTipo21);
-            cmbAdminPlatosObj.Items.Add(StringRecursos.cmbAdminPlatosObj);
-            cmbAdminPlatosObj.Items.Add(StringRecursos.cmbAdminPlatosObj11);
-            cmbAdminPlatosObj.Items.Add(StringRecursos.cmbAdminPlatosObj21);
-            cmbIngre1.Items.Add(StringRecursos.cmbIngre111);
-            cmbIngre1.Items.Add(StringRecursos.cmbIngre121);
-            cmbIngre2.Items.Add(StringRecursos.cmbIngre111);
-            cmbIngre2.Items.Add(StringRecursos.cmbIngre111);
-            cmbIngre3.Items.Add(StringRecursos.cmbIngre111);
-            cmbIngre3.Items.Add(StringRecursos.cmbIngre111);
-            cmbIngre4.Items.Add(StringRecursos.cmbIngre111);
-            cmbIngre4.Items.Add(StringRecursos.cmbIngre111);
             mnuIngrediente.Text = StringRecursos.ingrediente;
             mnuAgregarIngrediente.Text = StringRecursos.agregar;
             lblNomIngre1.Text = StringRecursos.Nombre;
             lblNomIngre2.Text = StringRecursos.Nombre;
             lblNomIngre3.Text = StringRecursos.Nombre;
             lblNomIngre4.Text = StringRecursos.Nombre;
-            cmbAdminDietObj.Items.Add(StringRecursos.cmbAdminPlatosObj);
-            cmbAdminDietObj.Items.Add(StringRecursos.cmbAdminPlatosObj11);
-            cmbAdminDietObj.Items.Add(StringRecursos.cmbAdminPlatosObj21);
-            cmbAdminDietInto.Items.Add(StringRecursos.cmbAdminPlatosInto);
-            cmbAdminDietInto.Items.Add(StringRecursos.cmbAdminPlatosInto21);
-            cmbAdminDietInto.Items.Add(StringRecursos.cmbAdminPlatosInto11);
-            cmbAdminDietInto.Items.Add(StringRecursos.cmbAdminPlatosInto31);
-            cmbAdminDietInto.Items.Add(StringRecursos.cmbAdminPlatosInto41);
         }
 
         private void EstablecerCultura(string cultura)
