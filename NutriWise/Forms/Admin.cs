@@ -486,7 +486,7 @@ namespace NutriWise
 
         private void CargarPlatos()
         {
-            string consulta = string.Format("SELECT nombre FROM platos WHERE objetivo={0} AND intolerancia={1};", cmbAdminDietObj.SelectedIndex, cmbAdminDietInto.SelectedIndex);
+            string consulta = string.Format("SELECT nombre FROM platos WHERE objetivo={0} AND intolerancia={1} AND idDieta=0;", cmbAdminDietObj.SelectedIndex, cmbAdminDietInto.SelectedIndex);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
 
             try

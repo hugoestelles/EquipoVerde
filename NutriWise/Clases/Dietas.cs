@@ -202,7 +202,7 @@ namespace NutriWise
         /// <returns>La cantidad de platos específicos.</returns>
         public static bool CantPlatosEspecificos(int obj, int into)
         {
-            string consulta = string.Format("SELECT COUNT(*) FROM platos WHERE objetivo={0} AND intolerancia={1};", obj, into);
+            string consulta = string.Format("SELECT COUNT(*) FROM platos WHERE objetivo={0} AND intolerancia={1} AND idDieta=0;", obj, into);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 
