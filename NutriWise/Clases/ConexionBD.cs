@@ -21,10 +21,10 @@ namespace NutriWise
                     if (instancia == null)
                     {
                         instancia = new MySqlConnection();
-                        string server = "server=database-pi.cusxbcc1yr4p.us-east-1.rds.amazonaws.com;";
+                        string server = "server=piequipoverde.cusxbcc1yr4p.us-east-1.rds.amazonaws.com;";
                         string database = "database=nutriwise;";
-                        string usuario = "uid=admin;";
-                        string password = "pwd=12345678;";
+                        string usuario = "uid=NWequipoverdeDAM;";
+                        string password = "pwd=VerdeHoja1239d1394RHODAJ;";
                         instancia.ConnectionString = server + database + usuario + password;
                     }
                     return instancia;
