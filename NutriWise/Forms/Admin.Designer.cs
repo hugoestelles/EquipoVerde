@@ -1861,11 +1861,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1367, 768);
             this.Controls.Add(this.mnuAdmin);
+            this.Controls.Add(this.grbPlato);
+            this.Controls.Add(this.grbInfo);
             this.Controls.Add(this.grbDieta);
             this.Controls.Add(this.grbEliminarUsu);
             this.Controls.Add(this.grbIngredientes);
-            this.Controls.Add(this.grbPlato);
-            this.Controls.Add(this.grbInfo);
             this.MainMenuStrip = this.mnuAdmin;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin";

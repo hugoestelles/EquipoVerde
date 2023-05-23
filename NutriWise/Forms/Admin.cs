@@ -266,6 +266,7 @@ namespace NutriWise
         private void btnPlatoVolver_Click(object sender, EventArgs e)
         {
             grbPlato.Visible = false;
+            EliminarCargaIngredientes();
             ResetPlatos();
         }
 
@@ -531,16 +532,18 @@ namespace NutriWise
                 cmb.Items.Clear();
                 cmb.Text = "";
             }
+            txtNomDieta.Text = "";
         }
 
         private void EliminarCargaIngredientes()
         {
-            ComboBox[] comboBoxes = new ComboBox[] { cmbIngre1, cmbIngre2, cmbIngre3, cmbIngre4 };
+            ComboBox[] comboBoxes = new ComboBox[] { cmbIngre1, cmbIngre2, cmbIngre3, cmbIngre4, cmbAdminPlatosObj, cmbAdminPlatosInto, cmbAdminPlatosTipo };
             foreach (ComboBox cmb in comboBoxes)
             {
                 cmb.Items.Clear();
                 cmb.Text = "";
             }
+            txtNomPlato.Text = "";
         }
 
         private void CargarAlimentos()
