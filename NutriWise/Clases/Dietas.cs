@@ -74,6 +74,10 @@ namespace NutriWise
             return lista;
         }
 
+        /// <summary>
+        /// Función que cuenta los alimentos
+        /// </summary>
+        /// <returns>te devuelve un número dependiendo de la cantidad de alimentos que tenga</returns>
         public int ContarAlimentos()
         {
             ConexionBD.AbrirConexion();
@@ -97,6 +101,10 @@ namespace NutriWise
             return retorno;
         }
 
+        /// <summary>
+        /// Esta función es para obtener todos los datos de la dieta con el id que le pasas en el metodo
+        /// </summary>
+        /// <param name="idDieta">le pasas el id de la dieta que va a buscar</param>
         public void ObtenerDatosDieta(int idDieta)
         {
 
@@ -304,6 +312,10 @@ namespace NutriWise
             return retorno;
         }
 
+        /// <summary>
+        /// La función te busca el id máximo de dietas
+        /// </summary>
+        /// <returns>y te retorna lo que encuentra o -1</returns>
         public static int BuscarMaximoID()
         {
             int id = -1;

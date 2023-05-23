@@ -89,6 +89,11 @@ namespace NutriWise
             return retorno;
         }
 
+        /// <summary>
+        /// Función para obtener los datos de alimento
+        /// </summary>
+        /// <param></param>
+        /// <returns> retorna al que es un nuevo alimento o null</returns>
         public static Alimentos ObtenerDatosAlimento(string nombre)
         {
             Alimentos a1;
@@ -108,6 +113,11 @@ namespace NutriWise
                 return null;
             }
         }
+
+        /// <summary>
+        /// La función busca el id.
+        /// </summary>
+        /// <returns>ve si tiene id y retorna true o folse</returns>
         public bool BuscarID()
         {
             string consulta = String.Format("SELECT * FROM alimentos WHERE nombre = '{0}';", this.Nombre);

@@ -36,6 +36,11 @@ namespace NutriWise
             intolerancia= into;
         }
         public Platos() { }
+
+        /// <summary>
+        /// Esta función comprueba la existencia del plato.
+        /// </summary>
+        /// <returns>devuelve true si lo encuentra o false si no</returns>
         public bool ComprobarExistencia()
         {
             string consulta = String.Format("SELECT * FROM platos WHERE nombre = '{0}';", this.nombre);
@@ -208,6 +213,11 @@ namespace NutriWise
             }
             return retorno;
         }
+
+        /// <summary>
+        /// La función busca el id del plato.
+        /// </summary>
+        /// <returns>retorna true si lo encuentra y false si no</returns>
         public bool BuscarID()
         {
             string consulta = String.Format("SELECT * FROM platos WHERE nombre = '{0}';", this.Nombre);

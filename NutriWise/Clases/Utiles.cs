@@ -19,7 +19,7 @@ namespace NutriWise.Clases
     static class Utiles
     {
         /// <summary>
-        /// Funcion para enviar un correo de bienvenida al usario.
+        /// Envía un correo de bienvenida al usario.
         /// </summary>
         /// <param name="user">Usuario al que se lo queremos mandar.</param>
         public static void EnviarCorreoBienvenida(Usuario user)
@@ -65,7 +65,7 @@ namespace NutriWise.Clases
         }
 
         /// <summary>
-        /// Envia la lista de la compra al usuario.
+        /// Envía la lista de la compra al usuario.
         /// </summary>
         /// <param name="user">El usuario a quién se la tiene que enviar.</param>
         /// <param name="lista">Los alimentos que contiene la lista.</param>
@@ -98,6 +98,12 @@ namespace NutriWise.Clases
             {
             }
         }
+
+        /// <summary>
+        /// Envía la dieta al usuario.
+        /// </summary>
+        /// <param name="user">El usuario a quién se la tiene que enviar.</param>
+        /// <param name="ruta">La ruta con el pdf de la dieta que tiene que enviar.</param>
         public static void EnviarDieta(Usuario user, string ruta)
         {
             
@@ -134,6 +140,11 @@ namespace NutriWise.Clases
             }
         }
 
+        /// <summary>
+        /// Comprueba si alguno de los platos de la dieta se repite.
+        /// </summary>
+        /// <param name="comboBoxes">Los platos a recibir.</param>
+        /// <returns>Si se repite alguno o no.</returns>
         public static bool ComprobarAceptarDieta(System.Windows.Forms.ComboBox[] comboBoxes)
         {
             for (int i = 0; i < comboBoxes.Length; i++)
@@ -145,6 +156,11 @@ namespace NutriWise.Clases
             }
             return true;
         }
+
+        /// <summary>
+        /// Carga el usuario que ha iniciado sesión.
+        /// </summary>
+        /// <returns>El usuario actual.</returns>
         public static Usuario CargarUsuarioActual()
         {
             Usuario user = Usuario.BuscarUsuario(Usuario.UsuarioActual.Correo);
@@ -160,6 +176,12 @@ namespace NutriWise.Clases
             Usuario.DietaActual= d1;
             return user;
         }
+
+        /// <summary>
+        /// Selecciona uno de los pdf dependiendo de la dieta del usuario.
+        /// </summary>
+        /// <param name="user">Obtiene el usuario para saber cuál es su dieta.</param>
+        /// <returns>El pdf correspondiente a la dieta del usuario.</returns>
         public static string SeleccionarPDF(Usuario user)
         {
             string rutaMadre = Directory.GetCurrentDirectory();
@@ -206,6 +228,7 @@ namespace NutriWise.Clases
                     return "";
             }
         }
+
         public static string FormatearListaCompra(Dietas dietaActual)
         {
             string retorno = "";
