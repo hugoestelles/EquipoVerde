@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="0repetir" xml:space="preserve">
+    <value>No se puede repetir ningún plato.</value>
+  </data>
+  <data name="Actividad" xml:space="preserve">
+    <value>Actividad fisica</value>
+  </data>
+  <data name="actividadcrear" xml:space="preserve">
+    <value>Dias a la semana</value>
+  </data>
+  <data name="ActividadFisica" xml:space="preserve">
+    <value>Actividad fisica x semana</value>
+  </data>
+  <data name="Agradecimiento" xml:space="preserve">
+    <value>Agradecemos tus opiniones ♥</value>
+  </data>
+  <data name="agregar" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="agregar1" xml:space="preserve">
+    <value>Añadir Ingrediente Nuevo:</value>
+  </data>
+  <data name="agregar2" xml:space="preserve">
+    <value>Añadir Ingrediente Nuevo:</value>
+  </data>
+  <data name="agregar3" xml:space="preserve">
+    <value>Añadir Ingrediente Nuevo:</value>
+  </data>
+  <data name="agregar4" xml:space="preserve">
+    <value>Añadir Ingrediente Nuevo:</value>
+  </data>
+  <data name="agregardieta" xml:space="preserve">
+    <value>La dieta ha sido agregada.</value>
+  </data>
+  <data name="agregardietita" xml:space="preserve">
+    <value>Agregar Dieta:</value>
+  </data>
+  <data name="AgregarIng" xml:space="preserve">
+    <value>AgregarIngredientes:</value>
+  </data>
+  <data name="agregarplatillo" xml:space="preserve">
+    <value>Agregar Platos:</value>
+  </data>
+  <data name="Alergias/tolerancias" xml:space="preserve">
+    <value>Alergias/tolerancias</value>
+  </data>
+  <data name="alimento1" xml:space="preserve">
+    <value>Ya hay un alimento con ese nombre en la base de datos.</value>
+  </data>
+  <data name="Aliplato" xml:space="preserve">
+    <value>AliPlato introducido en la base de datos correctamente.</value>
+  </data>
+  <data name="Altura" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="Apellido1" xml:space="preserve">
+    <value>(Apellidos)</value>
+  </data>
+  <data name="Apellidos" xml:space="preserve">
+    <value>Apellidos</value>
+  </data>
+  <data name="Ayuda" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="AyudaTitulo" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="Bienvenida" xml:space="preserve">
+    <value>Bienvenido a NutriWise!</value>
+  </data>
+  <data name="Bienvenida1" xml:space="preserve">
+    <value>Bienvenido</value>
+  </data>
+  <data name="borradito" xml:space="preserve">
+    <value>Borrado de registro seleccionado. ¿Continuar?</value>
+  </data>
+  <data name="btnaceptarIngre" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="btnRestIngre" xml:space="preserve">
+    <value>Restablecer</value>
+  </data>
+  <data name="btnVolverIngre" xml:space="preserve">
+    <value>Volver</value>
+  </data>
+  <data name="buscar" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="busqueda" xml:space="preserve">
+    <value>Error al buscar el usuario:</value>
+  </data>
+  <data name="cambiosaceptar" xml:space="preserve">
+    <value>Aceptar Cambios</value>
+  </data>
+  <data name="cant" xml:space="preserve">
+    <value>Cantidad:</value>
+  </data>
+  <data name="Cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="cerrar_admin" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="Claveincorrecta" xml:space="preserve">
+    <value>Clave incorrecta</value>
+  </data>
+  <data name="cmbAdminPlatosInto" xml:space="preserve">
+    <value>Lactosa</value>
+  </data>
+  <data name="cmbAdminPlatosInto11" xml:space="preserve">
+    <value>Gluten</value>
+  </data>
+  <data name="cmbAdminPlatosInto21" xml:space="preserve">
+    <value>Vegano</value>
+  </data>
+  <data name="cmbAdminPlatosInto31" xml:space="preserve">
+    <value>Vegetariano</value>
+  </data>
+  <data name="cmbAdminPlatosInto41" xml:space="preserve">
+    <value>Sin Intolerancia</value>
+  </data>
+  <data name="cmbAdminPlatosObj" xml:space="preserve">
+    <value>Volumen</value>
+  </data>
+  <data name="cmbAdminPlatosObj11" xml:space="preserve">
+    <value>Definicion</value>
+  </data>
+  <data name="cmbAdminPlatosObj21" xml:space="preserve">
+    <value>Comer Sano</value>
+  </data>
+  <data name="cmbAdminPlatosTipo" xml:space="preserve">
+    <value>Desayuno</value>
+  </data>
+  <data name="cmbAdminPlatosTipo11" xml:space="preserve">
+    <value>Comida</value>
+  </data>
+  <data name="cmbAdminPlatosTipo21" xml:space="preserve">
+    <value>Cena</value>
+  </data>
+  <data name="cmbIngre111" xml:space="preserve">
+    <value>Prueba</value>
+  </data>
+  <data name="cmbIngre121" xml:space="preserve">
+    <value>Prueba 1</value>
+  </data>
+  <data name="cmbIngre21" xml:space="preserve">
+    <value>Prueba 1</value>
+  </data>
+  <data name="cmbIngre211" xml:space="preserve">
+    <value>Prueba</value>
+  </data>
+  <data name="cmbIngre311" xml:space="preserve">
+    <value>Prueba</value>
+  </data>
+  <data name="cmbIngre312" xml:space="preserve">
+    <value>Prueba 1</value>
+  </data>
+  <data name="cmbIngre4" xml:space="preserve">
+    <value>Prueba</value>
+  </data>
+  <data name="cmbIngre41" xml:space="preserve">
+    <value>Prueba 1</value>
+  </data>
+  <data name="comersano" xml:space="preserve">
+    <value>Comer Sano</value>
+  </data>
+  <data name="Confirmar" xml:space="preserve">
+    <value>Confirmar Contraseña</value>
+  </data>
+  <data name="Contraseña" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="Contraseñas no coinciden" xml:space="preserve">
+    <value>Contraseñas no coinciden.</value>
+  </data>
+  <data name="correctamente" xml:space="preserve">
+    <value>Plato introducido en la base de datos correctamente.</value>
+  </data>
+  <data name="Correo" xml:space="preserve">
+    <value>Correo</value>
+  </data>
+  <data name="Correo1" xml:space="preserve">
+    <value>(Correo)</value>
+  </data>
+  <data name="Correoincorrecto" xml:space="preserve">
+    <value>Correo incorrecto</value>
+  </data>
+  <data name="Correointroducidoerróneo1" xml:space="preserve">
+    <value>Correo introducido erróneo.</value>
+  </data>
+  <data name="Correoyaenusointroduzcaotro" xml:space="preserve">
+    <value>Correo ya en uso, introduzca otro</value>
+  </data>
+  <data name="correo_ingresa" xml:space="preserve">
+    <value>Ingrese un correo</value>
+  </data>
+  <data name="crear" xml:space="preserve">
+    <value>Crear cuenta</value>
+  </data>
+  <data name="Credenciales" xml:space="preserve">
+    <value>Porfavor introduzca sus credenciales</value>
+  </data>
+  <data name="datos_incorrectos" xml:space="preserve">
+    <value>Datos incorrectos</value>
+  </data>
+  <data name="definicion" xml:space="preserve">
+    <value>Definición</value>
+  </data>
+  <data name="descripcion" xml:space="preserve">
+    <value>En volumen e intolerante a la lactosa</value>
+  </data>
+  <data name="desear" xml:space="preserve">
+    <value>Desea buscar el registro seleccionado. ¿Continuar?</value>
+  </data>
+  <data name="dias" xml:space="preserve">
+    <value>dias</value>
+  </data>
+  <data name="Dieta" xml:space="preserve">
+    <value>Dieta</value>
+  </data>
+  <data name="DietaTitulo" xml:space="preserve">
+    <value>Dieta</value>
+  </data>
+  <data name="dieta_agregar" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="dieta_añadida" xml:space="preserve">
+    <value>Dieta agregada</value>
+  </data>
+  <data name="dietita" xml:space="preserve">
+    <value>Dieta</value>
+  </data>
+  <data name="donacion" xml:space="preserve">
+    <value>Donación</value>
+  </data>
+  <data name="Donación" xml:space="preserve">
+    <value>Donación</value>
+  </data>
+  <data name="Donar" xml:space="preserve">
+    <value>Donar</value>
+  </data>
+  <data name="Donativos" xml:space="preserve">
+    <value>Donativos</value>
+  </data>
+  <data name="editar" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Elcorreointroducidoeserróneo" xml:space="preserve">
+    <value>El correo introducido es erróneo</value>
+  </data>
+  <data name="Elcorreointroducidonoexiste" xml:space="preserve">
+    <value>El correo introducido no existe</value>
+  </data>
+  <data name="eliminacion" xml:space="preserve">
+    <value>Eliminación</value>
+  </data>
+  <data name="eliminacion_correcta" xml:space="preserve">
+    <value>El usuario se eliminó correctamente.</value>
+  </data>
+  <data name="elimi_usu" xml:space="preserve">
+    <value>Eliminación de Usuarios:</value>
+  </data>
+  <data name="elim_correo" xml:space="preserve">
+    <value>Correo Electrónico:</value>
+  </data>
+  <data name="elim_info" xml:space="preserve">
+    <value>Introduzca el correo electrónico del usuario
+que desea eliminar:</value>
+  </data>
+  <data name="enviar" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="erroneocito" xml:space="preserve">
+    <value>Correo introducido erróneo</value>
+  </data>
+  <data name="error3" xml:space="preserve">
+    <value>Error conexión</value>
+  </data>
+  <data name="Erroralenviarlavaloración" xml:space="preserve">
+    <value>Error al enviar la valoración</value>
+  </data>
+  <data name="errordatos" xml:space="preserve">
+    <value>Error al conectar con la base de datos.</value>
+  </data>
+  <data name="error_aliplato" xml:space="preserve">
+    <value>Error: \nAliPlato introducido en la base de datos incorrectamente.</value>
+  </data>
+  <data name="error_conexion" xml:space="preserve">
+    <value>No se ha podido establecer conexión.</value>
+  </data>
+  <data name="error_platillo" xml:space="preserve">
+    <value>Datos del plato incorrectos.</value>
+  </data>
+  <data name="falta_especificar" xml:space="preserve">
+    <value>No se encontró ningún usuario con el correo especificado.</value>
+  </data>
+  <data name="fecha_admin" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="gluten" xml:space="preserve">
+    <value>Gluten</value>
+  </data>
+  <data name="informacion" xml:space="preserve">
+    <value>Información</value>
+  </data>
+  <data name="info_admin" xml:space="preserve">
+    <value>Bienvenido Usuario (USER)</value>
+  </data>
+  <data name="ingre" xml:space="preserve">
+    <value>Añadir Ingredientes</value>
+  </data>
+  <data name="ingre1" xml:space="preserve">
+    <value>Ingrediente 1</value>
+  </data>
+  <data name="ingre2" xml:space="preserve">
+    <value>Ingrediente 2</value>
+  </data>
+  <data name="ingre3" xml:space="preserve">
+    <value>Ingrediente 3</value>
+  </data>
+  <data name="ingre4" xml:space="preserve">
+    <value>Ingrediente 4</value>
+  </data>
+  <data name="ingrediente" xml:space="preserve">
+    <value>Ingrediente</value>
+  </data>
+  <data name="ingredientes4" xml:space="preserve">
+    <value>Debe selccionar 4 ingredientes por plato.</value>
+  </data>
+  <data name="Ingrese un correo" xml:space="preserve">
+    <value>Ingrese un correo.</value>
+  </data>
+  <data name="Iniciodesesióncorrecto" xml:space="preserve">
+    <value>Inicio de sesión correcto</value>
+  </data>
+  <data name="insuficiente" xml:space="preserve">
+    <value>Platos insuficientes</value>
+  </data>
+  <data name="into" xml:space="preserve">
+    <value>Intolerancias:</value>
+  </data>
+  <data name="Laclaveintroducidaesincorrecta" xml:space="preserve">
+    <value>Laclaveintroducidaesincorrecta</value>
+  </data>
+  <data name="lactosa" xml:space="preserve">
+    <value>Lactosa</value>
+  </data>
+  <data name="Lasvaloracionessonanonimas" xml:space="preserve">
+    <value>Las valoraciones son anonimas</value>
+  </data>
+  <data name="lblIng1" xml:space="preserve">
+    <value>Ingrediente 1</value>
+  </data>
+  <data name="lblIng2" xml:space="preserve">
+    <value>Ingrediente 2</value>
+  </data>
+  <data name="lblIng3" xml:space="preserve">
+    <value>Ingrediente 3</value>
+  </data>
+  <data name="lblIng4" xml:space="preserve">
+    <value>Ingrediente 4</value>
+  </data>
+  <data name="ListaCompra" xml:space="preserve">
+    <value>Lista de la compra</value>
+  </data>
+  <data name="ListaTitulo" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="mantenimiento" xml:space="preserve">
+    <value>Mantenimiento</value>
+  </data>
+  <data name="mayorque0" xml:space="preserve">
+    <value>Error:\nLos platos deben tener 4 ingredientes.\nLos platos una cantidad mayor que 0.</value>
+  </data>
+  <data name="mensaje" xml:space="preserve">
+    <value>Jaja Pringao</value>
+  </data>
+  <data name="MensajePringao" xml:space="preserve">
+    <value>Jaja Pringao</value>
+  </data>
+  <data name="MenuAyuda" xml:space="preserve">
+    <value>Si tiene algún problema contacte  con el siguiente correo: nutriwiseinformacion@gmail.com O llame al número: 696942069</value>
+  </data>
+  <data name="minimo1" xml:space="preserve">
+    <value>Debes ingresar como mínimo 1 plato.</value>
+  </data>
+  <data name="ninguna" xml:space="preserve">
+    <value>Ninguna</value>
+  </data>
+  <data name="ningunoselec" xml:space="preserve">
+    <value>Ningún plato seleccionado</value>
+  </data>
+  <data name="nocuenta" xml:space="preserve">
+    <value>¿No tienes cuenta?</value>
+  </data>
+  <data name="Nombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Nombre1" xml:space="preserve">
+    <value>(Nombre)</value>
+  </data>
+  <data name="nombredietilla" xml:space="preserve">
+    <value>Nombre de la Dieta:</value>
+  </data>
+  <data name="nombreplatillo" xml:space="preserve">
+    <value>Nombre del Plato:</value>
+  </data>
+  <data name="nombre_objetivo" xml:space="preserve">
+    <value>Debes ingresar un nombre y seleccionar un tipo de objetivo y de intolerancia.</value>
+  </data>
+  <data name="no_encontradito" xml:space="preserve">
+    <value>No se encontró ningún usuario con el correo especificado.</value>
+  </data>
+  <data name="no_existir" xml:space="preserve">
+    <value>No existe conexión a la Base de Datos</value>
+  </data>
+  <data name="no_platos" xml:space="preserve">
+    <value>No hay platos suficientes para crear una dieta.</value>
+  </data>
+  <data name="obj" xml:space="preserve">
+    <value>Objetivo:</value>
+  </data>
+  <data name="Objetivo" xml:space="preserve">
+    <value>Objetivo</value>
+  </data>
+  <data name="olvidar" xml:space="preserve">
+    <value>He olvidado mi contraseña</value>
+  </data>
+  <data name="operar" xml:space="preserve">
+    <value>Operaciones</value>
+  </data>
+  <data name="para1" xml:space="preserve">
+    <value>para gente en definición</value>
+  </data>
+  <data name="para2" xml:space="preserve">
+    <value>para celiacos</value>
+  </data>
+  <data name="Perfil" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="PerfilTitulo" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="Peso" xml:space="preserve">
+    <value>Peso</value>
+  </data>
+  <data name="plato" xml:space="preserve">
+    <value>Plato</value>
+  </data>
+  <data name="plato1" xml:space="preserve">
+    <value>Plato 1:</value>
+  </data>
+  <data name="plato10" xml:space="preserve">
+    <value>Plato 10:</value>
+  </data>
+  <data name="plato11" xml:space="preserve">
+    <value>Plato 11:</value>
+  </data>
+  <data name="plato12" xml:space="preserve">
+    <value>Plato 12:</value>
+  </data>
+  <data name="plato13" xml:space="preserve">
+    <value>Plato 13:</value>
+  </data>
+  <data name="plato14" xml:space="preserve">
+    <value>Plato 14:</value>
+  </data>
+  <data name="plato15" xml:space="preserve">
+    <value>Plato 15:</value>
+  </data>
+  <data name="plato16" xml:space="preserve">
+    <value>Plato 16:</value>
+  </data>
+  <data name="plato17" xml:space="preserve">
+    <value>Plato 17:</value>
+  </data>
+  <data name="plato18" xml:space="preserve">
+    <value>Plato 18:</value>
+  </data>
+  <data name="plato19" xml:space="preserve">
+    <value>Plato 19:</value>
+  </data>
+  <data name="plato2" xml:space="preserve">
+    <value>Plato 2:</value>
+  </data>
+  <data name="plato20" xml:space="preserve">
+    <value>Plato 20:</value>
+  </data>
+  <data name="plato21" xml:space="preserve">
+    <value>Plato 21:</value>
+  </data>
+  <data name="plato3" xml:space="preserve">
+    <value>Plato 3:</value>
+  </data>
+  <data name="plato4" xml:space="preserve">
+    <value>Plato 4:</value>
+  </data>
+  <data name="plato5" xml:space="preserve">
+    <value>Plato 5:</value>
+  </data>
+  <data name="plato6" xml:space="preserve">
+    <value>Plato 6:</value>
+  </data>
+  <data name="plato7" xml:space="preserve">
+    <value>Plato 7:</value>
+  </data>
+  <data name="plato8" xml:space="preserve">
+    <value>Plato 8:</value>
+  </data>
+  <data name="plato9" xml:space="preserve">
+    <value>Plato 9:</value>
+  </data>
+  <data name="PlatoAceptar" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="PlatoReset" xml:space="preserve">
+    <value>Restablecer</value>
+  </data>
+  <data name="platos_insu" xml:space="preserve">
+    <value>No hay platos suficientes para crear una dieta.</value>
+  </data>
+  <data name="platos_insu2" xml:space="preserve">
+    <value>Platos insuficientes</value>
+  </data>
+  <data name="PlatoVolver" xml:space="preserve">
+    <value>Volver</value>
+  </data>
+  <data name="plato_agregar" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="plato_existente" xml:space="preserve">
+    <value>Error: \nYa hay un plato con ese nombre en la base de datos.</value>
+  </data>
+  <data name="plato_incorrecto" xml:space="preserve">
+    <value>Error: \nPlato introducido en la base de datos incorrectamente.</value>
+  </data>
+  <data name="Receta" xml:space="preserve">
+    <value>Receta</value>
+  </data>
+  <data name="Registrarse" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
+  <data name="reloj_admin" xml:space="preserve">
+    <value>Hora</value>
+  </data>
+  <data name="repetiralimento" xml:space="preserve">
+    <value>No puede repetirse ningun alimento.</value>
+  </data>
+  <data name="repetirplato" xml:space="preserve">
+    <value>Platos repetidos</value>
+  </data>
+  <data name="salir_admin" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="Semana" xml:space="preserve">
+    <value>Dias a la semana</value>
+  </data>
+  <data name="sesion1" xml:space="preserve">
+    <value>Inicio de sesión</value>
+  </data>
+  <data name="sesion2" xml:space="preserve">
+    <value>Iniciar Sesion</value>
+  </data>
+  <data name="sinintolerancias" xml:space="preserve">
+    <value>Sin Intolerancias</value>
+  </data>
+  <data name="Tipo" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="TipoObjetivo" xml:space="preserve">
+    <value>Volumen</value>
+  </data>
+  <data name="titulo" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="Tolerancias" xml:space="preserve">
+    <value>Lactosa</value>
+  </data>
+  <data name="Tolerancias1" xml:space="preserve">
+    <value>Tolerancias</value>
+  </data>
+  <data name="usuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="Usuarioinexistente" xml:space="preserve">
+    <value>Usuario inexistente</value>
+  </data>
+  <data name="usuario_eliminar" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="usuario_eliminar1" xml:space="preserve">
+    <value>Error al eliminar el usuario:</value>
+  </data>
+  <data name="Valoraciones" xml:space="preserve">
+    <value>Valoraciones</value>
+  </data>
+  <data name="ValoracionesTitulo" xml:space="preserve">
+    <value>Valoraciones</value>
+  </data>
+  <data name="Valoraciónenviada" xml:space="preserve">
+    <value>Valoración enviada</value>
+  </data>
+  <data name="Valoraciónenviadaconéxito" xml:space="preserve">
+    <value>Valoración enviada con éxito</value>
+  </data>
+  <data name="valorN1" xml:space="preserve">
+    <value>Añadir Valor Nutricional:</value>
+  </data>
+  <data name="valorN2" xml:space="preserve">
+    <value>Añadir Valor Nutricional:</value>
+  </data>
+  <data name="valorN3" xml:space="preserve">
+    <value>Añadir Valor Nutricional:</value>
+  </data>
+  <data name="valorN4" xml:space="preserve">
+    <value>Añadir Valor Nutricional:</value>
+  </data>
+  <data name="vegano" xml:space="preserve">
+    <value>Vegano</value>
+  </data>
+  <data name="vegetariano" xml:space="preserve">
+    <value>Vegetariano</value>
+  </data>
+  <data name="Videos" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="VideosTitulo" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="volumen" xml:space="preserve">
+    <value>Volumen</value>
+  </data>
+  <data name="volver_elim" xml:space="preserve">
+    <value>Volver</value>
+  </data>
+</root>
