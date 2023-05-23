@@ -82,7 +82,7 @@
                 </a></li>
                 <li><a id="equipo">
                         <span class="icon"><i class="fa-solid fa-users"></i></span>
-                        <span class="title">Team</span>
+                        <span class="title">Equipo Desarrollador</span>
                 </a></li>
                 <li><a id="contacto">
                         <span class="icon"><i class="fa-solid fa-mailbox"></i></span>
