@@ -158,9 +158,6 @@ body{
   /* background-color: #007bff; */
 }
 
-#informacion-page {
-  margin-left: 14vw;
-}
 
 .wrapper .main_container .message-container {
   display: flex;
@@ -418,6 +415,7 @@ button[type="submit"]:hover {
 
 #valoraciones-page{
   display: none;
+  margin-left: 14vw;
 }
 #donaciones-page {
   display: none;
@@ -673,4 +671,9 @@ tbody tr:hover {
   font-size: 15px;
   font-weight: bold;
   color: #757575;
+}
+
+#informacion-page {
+  margin-left: 14vw;
+  width: 80%;
 }
