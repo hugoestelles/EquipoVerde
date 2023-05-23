@@ -277,19 +277,19 @@
                     <h2>Hugo</h2>
                 </div>
                 <div class="team-member">
-                    <img src="img/Jesus.jpg" class="img-persona" alt="Foto del compañero 3">
+                    <img src="img/Jesus.jpeg" class="img-persona" alt="Foto del compañero 3">
                     <h2>Jesús</h2>
                 </div>
                 <div class="team-member">
-                    <img src="img/David.jpg" class="img-persona" alt="Foto del compañero 4">
+                    <img src="img/David.jpeg" class="img-persona" alt="Foto del compañero 4">
                     <h2>David</h2>
                 </div>
                 <div class="team-member">
-                    <img src="img/Alejandro.jpg" class="img-persona" alt="Foto del compañero 5">
+                    <img src="img/Alejandro.jpeg" class="img-persona" alt="Foto del compañero 5">
                     <h2>Alejandro</h2>
                 </div>
                 <div class="team-member">
-                    <img src="img/Ruben.jpg" class="img-persona" alt="Foto del compañero 6">
+                    <img src="img/Ruben.jpeg" class="img-persona" alt="Foto del compañero 6">
                     <h2>Rubén</h2>
                 </div>
                 </div>
