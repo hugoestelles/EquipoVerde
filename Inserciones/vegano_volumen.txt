@@ -1,0 +1,273 @@
+Lunes 
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('Leche de almendras', 250),
+('Plátano', 100),
+('Mantequilla de almendras', 30),
+('Semillas de chía', 15),
+('Tofu', 150),
+('Arroz integral cocido', 200),
+('Espinacas frescas', 60),
+('Mantequilla de nueces', 20),
+('Lentejas cocidas', 200),
+('Mezcla de lechuga y espinacas', 60);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES
+('Dieta ejemplo 5', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Batido de proteínas vegano', 5),
+('Tofu a la plancha', 5),
+('Arroz integral', 5),
+('Espinacas salteadas', 5),
+('Batido de plátano y nueces', 5),
+('Lentejas estofadas', 5),
+('Ensalada verde', 5);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(44 ,17 ,250),
+(45 ,17 ,100),
+(46 ,17 ,30),
+(47 ,17 ,15),
+(48 ,18 ,150),
+(49 ,19 ,200),
+(50 ,20 ,60),
+(45 ,21 ,100),
+(44 ,21 ,250),
+(51 ,21 ,20),
+(52 ,22 ,200),
+(53 ,23 ,60);
+
+
+Martes
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('Avena', 80),
+('Leche de almendras', 250),
+('Plátano', 100),
+('Quinoa cocida', 185),
+('Brócoli', 100),
+('Zanahorias', 100),
+('Champiñones', 100),
+('Yogur vegano', 200),
+('Nueces picadas', 15),
+('Hamburguesa vegana', 150);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES
+('Dieta ejemplo 6', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Avena con frutas', 6),
+('Quinoa con verduras', 6),
+('Yogur vegano con nueces', 6),
+('Hamburguesa vegana', 6);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(54 ,24 ,80),
+(55 ,24 ,250),
+(56 ,24 ,100),
+(57 ,25 ,185),
+(58 ,25 ,100),
+(59 ,25 ,100),
+(60 ,25 ,100),
+(61 ,26 ,200),
+(62 ,26 ,15),
+(63 ,27 ,150);
+
+Miercoles 
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('Pan integral', 80),
+('Aguacate', 150),
+('Fideos de arroz cocidos', 100),
+('Tofu', 150),
+('Zanahorias en juliana', 100),
+('Leche de almendras', 250),
+('Proteína en polvo vegana', 20),
+('Plátano', 100),
+('Mantequilla de almendras', 15),
+('Garbanzos cocidos', 170),
+('Verduras mixtas', 120);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES
+('Dieta ejemplo 7', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Tostadas de aguacate', 7),
+('Fideos de arroz con tofu', 7),
+('Batido de proteínas vegano', 7),
+('Ensalada de garbanzos', 7);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(64 ,28 ,80),
+(65 ,28 ,150),
+(66 ,29 ,100),
+(67 ,29 ,150),
+(68 ,29 ,100),
+(69 ,30 ,250),
+(70 ,30 ,20),
+(71 ,30 ,100),
+(72 ,30 ,15),
+(73 ,31 ,170),
+(74 ,31 ,120);
+
+
+Jueves
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('Leche de almendras', 250),
+('Proteína en polvo vegana sabor vainilla', 20),
+('Bayas mixtas congeladas', 150),
+('Tortilla de trigo integral', 40),
+('Frijoles negros', 150),
+('Aguacate', 100),
+('Pico de gallo', 50),
+('Manzana', 150),
+('Mantequilla de cacahuete', 20),
+('Tempeh', 150),
+('Verduras mixtas', 120);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES
+('Dieta ejemplo 8', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Batido de proteínas y bayas', 8),
+('Burrito vegano', 8),
+('Manzana con mantequilla de cacahuete', 8),
+('Salteado de tempeh', 8);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(75 ,32 ,250),
+(76 ,32 ,20),
+(77 ,32 ,150),
+(78 ,33 ,40),
+(79 ,33 ,150),
+(80 ,33 ,100),
+(81 ,33 ,50),
+(82 ,34 ,150),
+(83 ,34 ,20),
+(84 ,35 ,150),
+(85 ,35 ,120);
+
+Viernes
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('Yogur vegano', 200),
+('Granola sin azúcar', 30),
+('Semillas de chía', 15),
+('Quinoa cocida', 185),
+('Aguacate', 150),
+('Tomates cherry', 100),
+('Espinacas frescas', 60),
+('Plátano', 100),
+('Leche de almendras', 250),
+('Mantequilla de almendras', 20),
+('Tofu', 150),
+('Vegetales mixtos', 120),
+('Arroz integral cocido', 200);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES
+('Dieta ejemplo 9', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Yogur vegano con granola', 9),
+('Ensalada de quinoa y aguacate', 9),
+('Batido de plátano y mantequilla de almendras', 9),
+('Stir-fry de tofu y vegetales', 9);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(86 ,36 ,200),
+(87 ,36 ,30),
+(88 ,36 ,15),
+(89 ,37 ,185),
+(90 ,37 ,150),
+(91 ,37 ,100),
+(92 ,37 ,60),
+(93 ,38 ,100),
+(94 ,38 ,250),
+(95 ,38 ,20),
+(96 ,39 ,150),
+(97 ,39 ,120),
+(98 ,39 ,200);
+
+
+Sabado
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('Avena', 50),
+('Plátano', 100),
+('Nueces picadas', 20),
+('Leche de almendras sin azúcar', 200),
+('Hummus', 50),
+('Tortilla de trigo integral', 40),
+('Lechuga', 50),
+('Zanahoria rallada', 50),
+('Proteína vegana en polvo', 20),
+('Leche de soja sin azúcar', 200),
+('Garbanzos cocidos', 200),
+('Espinacas', 50),
+('Cebolla', 50),
+('Tomate', 50);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES
+('Dieta ejemplo 13', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Tazón de avena con plátano y nueces', 13),
+('Wraps de hummus y vegetales', 13),
+('Batido de proteínas vegano', 13),
+('Curry de garbanzos y espinacas', 13);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(133 ,52 ,50),
+(134 ,52 ,100),
+(135 ,52 ,20),
+(136 ,52 ,200),
+(137 ,53 ,50),
+(138 ,53 ,40),
+(139 ,53 ,50),
+(140 ,53 ,50),
+(141 ,54 ,20),
+(142 ,54 ,200),
+(143 ,55 ,200),
+(144 ,55 ,50),
+(145 ,55 ,50),
+(146 ,55 ,50);
+
+Domingo
+
+INSERT INTO alimentos (nombre, valorNutricio) VALUES
+('Espinacas', 50),
+('Plátano', 100),
+('Leche de almendras sin azúcar', 200),
+('Lentejas cocidas', 100),
+('Aguacate', 50),
+('Tomate', 50),
+('Lechuga', 50),
+('Apio', 100),
+('Hummus', 50),
+('Calabaza', 200),
+('Zanahoria', 100),
+('Cebolla', 50);
+
+INSERT INTO dietas (nombre, objetivoUsu) VALUES
+('Dieta ejemplo 18', 1);
+
+INSERT INTO platos (nombre, idDieta) VALUES
+('Batido verde de espinacas y plátano', 18),
+('Ensalada de lentejas y aguacate', 18),
+('Palitos de apio y hummus', 18),
+('Sopa de calabaza y zanahoria', 18);
+
+INSERT INTO aliPlato (idAlimentos, idPlatos, cantida) VALUES
+(197 ,72 ,50),
+(198 ,72 ,100),
+(199 ,72 ,200),
+(200 ,73 ,100),
+(201 ,73 ,50),
+(202 ,73 ,50),
+(203 ,73 ,50),
+(204 ,74 ,100),
+(205 ,74 ,50),
+(206 ,75 ,200),
+(207 ,75 ,100);
