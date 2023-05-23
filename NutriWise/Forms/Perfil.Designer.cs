@@ -50,12 +50,10 @@
             this.nudActividad = new System.Windows.Forms.NumericUpDown();
             this.cmbObjetivo = new System.Windows.Forms.ComboBox();
             this.pctPerfil = new System.Windows.Forms.PictureBox();
-            this.pctTenedor = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudAltura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPeso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudActividad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctTenedor)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNomb
@@ -366,17 +364,6 @@
             this.pctPerfil.TabIndex = 17;
             this.pctPerfil.TabStop = false;
             // 
-            // pctTenedor
-            // 
-            this.pctTenedor.Image = global::NutriWise.Properties.Resources.image_44;
-            this.pctTenedor.Location = new System.Drawing.Point(565, 313);
-            this.pctTenedor.Margin = new System.Windows.Forms.Padding(4);
-            this.pctTenedor.Name = "pctTenedor";
-            this.pctTenedor.Size = new System.Drawing.Size(420, 241);
-            this.pctTenedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctTenedor.TabIndex = 0;
-            this.pctTenedor.TabStop = false;
-            // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -401,7 +388,6 @@
             this.Controls.Add(this.lblAlt);
             this.Controls.Add(this.lblApell);
             this.Controls.Add(this.lblNomb);
-            this.Controls.Add(this.pctTenedor);
             this.Controls.Add(this.nudAltura);
             this.Controls.Add(this.nudPeso);
             this.Controls.Add(this.nudActividad);
@@ -412,15 +398,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudPeso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudActividad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctTenedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pctTenedor;
         private System.Windows.Forms.Label lblNomb;
         private System.Windows.Forms.Label lblApell;
         private System.Windows.Forms.Label lblAltura;

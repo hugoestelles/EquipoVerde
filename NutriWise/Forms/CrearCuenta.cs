@@ -38,6 +38,7 @@ namespace NutriWise
                                 {
                                     Usuario u1 = new Usuario(txtMail.Text, txtContraseña.Text, txtNombre.Text, txtApellido.Text, nudAltura.Value, nudPeso.Value, cmbIntolerancias.SelectedIndex, nudActividad.Value, cmbObjetivo.SelectedIndex);
                                     u1.AgregarUsuario(Usuario.BuscarDieta(cmbObjetivo.SelectedIndex, cmbIntolerancias.SelectedIndex));
+                                    Utiles.EnviarCorreoBienvenida(u1);
 
                                     // Crea una nueva instancia del formulario Form2
                                     Menu form4 = new Menu();

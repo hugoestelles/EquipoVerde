@@ -34,8 +34,6 @@ namespace NutriWise
                                 Usuario user = Usuario.BuscarUsuario(correo);
                                 Usuario.UsuarioActual = user;
                                 Usuario.UsuarioActual = Utiles.CargarUsuarioActual();
-                                MessageBox.Show(Usuario.DietaActual.Nombre);
-                                //MessageBox.Show("Bienvenido " + user.Nombre + " " + user.Apellidos, "Inicio de sesión correcto");
                                 ConexionBD.CerrarConexion();
 
                                 // Crea una nueva instancia del formulario Form2
