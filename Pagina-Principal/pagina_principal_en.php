@@ -66,7 +66,7 @@
             <ul>
                 <li><a id="informacion">
                             <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
-                            <span class="title">Information</span>
+                            <span class="title">Información</span>
                 </a></li>
                 <li><a id="dietas">
                         <span class="icon"><i class="fa-solid fa-salad"></i></span>
@@ -78,15 +78,15 @@
                     </a></li>
                 <li><a id="donaciones">
                         <span class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></span>
-                        <span class="title">Donations</span>
+                        <span class="title">Donaciones</span>
                 </a></li>
                 <li><a id="equipo">
                         <span class="icon"><i class="fa-solid fa-users"></i></span>
-                        <span class="title">Equipo Desarrollador</span>
+                        <span class="title">Equipo</span>
                 </a></li>
                 <li><a id="contacto">
                         <span class="icon"><i class="fa-solid fa-mailbox"></i></span>
-                        <span class="title">Contactos</span>
+                        <span class="title">Contacto</span>
                 </a></li>
 
             </ul>
