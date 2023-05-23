@@ -95,10 +95,10 @@
             this.btnMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.btnMantenimiento.Image = global::NutriWise.Properties.Resources.IconoMantenimiento;
             this.btnMantenimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMantenimiento.Location = new System.Drawing.Point(-1, 651);
+            this.btnMantenimiento.Location = new System.Drawing.Point(-1, 653);
             this.btnMantenimiento.Margin = new System.Windows.Forms.Padding(4);
             this.btnMantenimiento.Name = "btnMantenimiento";
-            this.btnMantenimiento.Size = new System.Drawing.Size(360, 76);
+            this.btnMantenimiento.Size = new System.Drawing.Size(366, 76);
             this.btnMantenimiento.TabIndex = 13;
             this.btnMantenimiento.Text = "        Mantenimiento";
             this.btnMantenimiento.UseVisualStyleBackColor = true;

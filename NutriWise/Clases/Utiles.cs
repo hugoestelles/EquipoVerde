@@ -89,11 +89,9 @@ namespace NutriWise.Clases
             try
             {
                 smtp.Send(correo);
-                // MessageBox.Show("Correo enviado con éxito");
             }
             catch (Exception)
             {
-                // MessageBox.Show("Error al enviar el correo: " + ex.Message);
             }
         }
         public static void EnviarDieta(Usuario user, string ruta)

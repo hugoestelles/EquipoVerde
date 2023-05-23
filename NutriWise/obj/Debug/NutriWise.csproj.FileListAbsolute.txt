@@ -757,3 +757,7 @@ C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWis
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.EN-GB.resources
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\EN-GB\NutriWise.resources.dll
 C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\EN-GB\NutriWise.resources.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\EN-GB\NutriWise.resources.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.EN-GB.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\EN-GB\NutriWise.resources.dll

@@ -21,7 +21,9 @@ namespace NutriWise
         {
             InitializeComponent();
             btnAyuda.BackColor = Color.Ivory;
-        }
+            if (!Usuario.UsuarioActual.Administrador)
+            { btnMantenimiento.Visible = false; }
+            }
 
         bool dieta = false;
         bool perfil = false;
