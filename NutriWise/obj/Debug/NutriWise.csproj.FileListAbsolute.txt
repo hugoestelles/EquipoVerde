@@ -761,3 +761,7 @@ C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\EN-GB\NutriWise.resource
 C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.resources
 C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.EN-GB.resources
 C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\EN-GB\NutriWise.resources.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\EN-GB\NutriWise.resources.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.EN-GB.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\EN-GB\NutriWise.resources.dll
