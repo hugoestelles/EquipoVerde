@@ -112,6 +112,10 @@ namespace NutriWise
         public void ActualizarDatosUsuario()
         {
             Usuario us = Usuario.UsuarioActual;
+            int id = Usuario.BuscarDieta(cmbObjetivo.SelectedIndex, cmbIntolerancias.SelectedIndex);
+            Dietas d1 = new Dietas();
+            d1.ObtenerDatosDieta(id);
+            Usuario.DietaActual = d1;
             us.ActualizarInfo(txtNombre.Text, txtApellido.Text, nudAltura.Value, nudPeso.Value, txtMail.Text, cmbIntolerancias.SelectedIndex, (int)nudActividad.Value, cmbObjetivo.SelectedIndex, Usuario.DietaActual.Id);
             Usuario.UsuarioActual = us;
             txtMail.Text = us.Correo;
