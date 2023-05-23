@@ -39,8 +39,6 @@
             this.lblActividad = new System.Windows.Forms.Label();
             this.lblAct = new System.Windows.Forms.Label();
             this.lblObj = new System.Windows.Forms.Label();
-            this.pctPerfil = new System.Windows.Forms.PictureBox();
-            this.pctTenedor = new System.Windows.Forms.PictureBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
@@ -51,11 +49,13 @@
             this.cmbIntolerancias = new System.Windows.Forms.ComboBox();
             this.nudActividad = new System.Windows.Forms.NumericUpDown();
             this.cmbObjetivo = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pctPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctTenedor)).BeginInit();
+            this.pctPerfil = new System.Windows.Forms.PictureBox();
+            this.pctTenedor = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudAltura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPeso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudActividad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctTenedor)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNomb
@@ -189,28 +189,6 @@
             this.lblObj.Size = new System.Drawing.Size(122, 31);
             this.lblObj.TabIndex = 15;
             this.lblObj.Text = "Objetivo:";
-            // 
-            // pctPerfil
-            // 
-            this.pctPerfil.Image = global::NutriWise.Properties.Resources.Usuario;
-            this.pctPerfil.Location = new System.Drawing.Point(780, 4);
-            this.pctPerfil.Margin = new System.Windows.Forms.Padding(4);
-            this.pctPerfil.Name = "pctPerfil";
-            this.pctPerfil.Size = new System.Drawing.Size(205, 238);
-            this.pctPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctPerfil.TabIndex = 17;
-            this.pctPerfil.TabStop = false;
-            // 
-            // pctTenedor
-            // 
-            this.pctTenedor.Image = global::NutriWise.Properties.Resources.image_44;
-            this.pctTenedor.Location = new System.Drawing.Point(565, 313);
-            this.pctTenedor.Margin = new System.Windows.Forms.Padding(4);
-            this.pctTenedor.Name = "pctTenedor";
-            this.pctTenedor.Size = new System.Drawing.Size(420, 241);
-            this.pctTenedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctTenedor.TabIndex = 0;
-            this.pctTenedor.TabStop = false;
             // 
             // txtNombre
             // 
@@ -377,6 +355,28 @@
             this.cmbObjetivo.TabIndex = 38;
             this.cmbObjetivo.Text = "Definicion";
             // 
+            // pctPerfil
+            // 
+            this.pctPerfil.Image = global::NutriWise.Properties.Resources._1216577_human_account_business_person_profile_icon;
+            this.pctPerfil.Location = new System.Drawing.Point(721, 18);
+            this.pctPerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.pctPerfil.Name = "pctPerfil";
+            this.pctPerfil.Size = new System.Drawing.Size(214, 205);
+            this.pctPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctPerfil.TabIndex = 17;
+            this.pctPerfil.TabStop = false;
+            // 
+            // pctTenedor
+            // 
+            this.pctTenedor.Image = global::NutriWise.Properties.Resources.image_44;
+            this.pctTenedor.Location = new System.Drawing.Point(565, 313);
+            this.pctTenedor.Margin = new System.Windows.Forms.Padding(4);
+            this.pctTenedor.Name = "pctTenedor";
+            this.pctTenedor.Size = new System.Drawing.Size(420, 241);
+            this.pctTenedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctTenedor.TabIndex = 0;
+            this.pctTenedor.TabStop = false;
+            // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -408,11 +408,11 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Perfil";
             this.Size = new System.Drawing.Size(1001, 570);
-            ((System.ComponentModel.ISupportInitialize)(this.pctPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctTenedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAltura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPeso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudActividad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctTenedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

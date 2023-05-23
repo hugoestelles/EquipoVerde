@@ -95,11 +95,6 @@ namespace NutriWise
             this.Close();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Jaja Pringao");
-        }
-
         private void pctContraseña_Click(object sender, EventArgs e)
         {
             if (txtContraseña.PasswordChar == '♥')

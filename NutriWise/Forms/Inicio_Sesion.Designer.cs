@@ -136,7 +136,6 @@
             this.lblOlvidado.Size = new System.Drawing.Size(184, 18);
             this.lblOlvidado.TabIndex = 10;
             this.lblOlvidado.Text = "He olvidado mi contraseña";
-            this.lblOlvidado.Click += new System.EventHandler(this.label6_Click);
             // 
             // txtContraseña
             // 

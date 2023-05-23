@@ -370,5 +370,8 @@
   <ItemGroup>
     <None Include="Resources\enviarCorreo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1216577_human_account_business_person_profile_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,6 +63,16 @@ namespace NutriWise.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1216577_human_account_business_person_profile_icon {
+            get {
+                object obj = ResourceManager.GetObject("1216577_human_account_business_person_profile_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _meal_89750_2 {
             get {
                 object obj = ResourceManager.GetObject("-meal_89750 2", resourceCulture);
