@@ -269,27 +269,27 @@
             </div>
                 <div class="cont-imagenes">
                 <div class="team-member">
-                    <img src="img/bob.jpg" class="img-persona" alt="Foto del compañero 1">
+                    <img src="img/Oscar.jpeg" class="img-persona" alt="Foto del compañero 1">
                     <h2>Óscar</h2>
                 </div>
                 <div class="team-member">
-                    <img src="img/bob.jpg" class="img-persona" alt="Foto del compañero 2">
+                    <img src="img/Hugo.jpeg" class="img-persona" alt="Foto del compañero 2">
                     <h2>Hugo</h2>
                 </div>
                 <div class="team-member">
-                    <img src="img/bob.jpg" class="img-persona" alt="Foto del compañero 3">
+                    <img src="img/Jesus.jpg" class="img-persona" alt="Foto del compañero 3">
                     <h2>Jesús</h2>
                 </div>
                 <div class="team-member">
-                    <img src="img/bob.jpg" class="img-persona" alt="Foto del compañero 4">
+                    <img src="img/David.jpg" class="img-persona" alt="Foto del compañero 4">
                     <h2>David</h2>
                 </div>
                 <div class="team-member">
-                    <img src="img/bob.jpg" class="img-persona" alt="Foto del compañero 5">
+                    <img src="img/Alejandro.jpg" class="img-persona" alt="Foto del compañero 5">
                     <h2>Alejandro</h2>
                 </div>
                 <div class="team-member">
-                    <img src="img/bob.jpg" class="img-persona" alt="Foto del compañero 6">
+                    <img src="img/Ruben.jpg" class="img-persona" alt="Foto del compañero 6">
                     <h2>Rubén</h2>
                 </div>
                 </div>
