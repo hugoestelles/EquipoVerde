@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS usuario (
 	CREATE TABLE IF NOT EXISTS alimentos(
 	idAlimento INT AUTO_INCREMENT,
 	nombre VARCHAR(20) NOT NULL,
-	valorNutricio DECIMAL(2) NOT NULL,
+	valorNutricio DECIMAL(3) NOT NULL,
 	PRIMARY KEY (idAlimento));
 	
 	CREATE TABLE IF NOT EXISTS platos(
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS usuario (
 	
 	CREATE TABLE IF NOT EXISTS donativos(
 	idDonativo INT AUTO_INCREMENT,
-	cantidad DECIMAL(2) NOT NULL,
+	cantidad DECIMAL(4) NOT NULL,
 	fechaDonativo DATETIME NOT NULL,
 	idUsuari INT NOT NULL,
 	nombre VARCHAR(40) NOT NULL,
