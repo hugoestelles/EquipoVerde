@@ -307,7 +307,7 @@ namespace NutriWise.Clases
         private int ActualizarEnBD(int idDieta)
         {
             int retorno;
-            string consulta = String.Format("UPDATE usuario SET correo = @correo, nombre = @nom, apellidos = @ape, altura = @alt, peso = @peso,  tipoIntolencia = @intolerancia, cantActividad = @act, objetivo = @obj, idDieta = @dieta WHERE idUsuario = @user;");
+            string consulta = String.Format("UPDATE usuario SET correo = @correo, nombre = @nom, apellidos = @ape, altura = @alt, peso = @peso,  tipoIntolerancia = @intolerancia, cantActividad = @act, objetivo = @obj, idDieta = @dieta WHERE idUsuario = @user;");
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.Parameters.AddWithValue("@correo", this.correo);
             comando.Parameters.AddWithValue("@nom", this.nombre);
