@@ -183,6 +183,7 @@ namespace NutriWise
         private void mnuPlatoAgregar_Click(object sender, EventArgs e)
         {
             errorDatos.Clear();
+            EliminarCargaIngredientes();
             grbPlato.Visible = true;
             grbPlato.BringToFront();
             grbDieta.Visible = false;
@@ -190,7 +191,7 @@ namespace NutriWise
             grbEliminarUsu.Visible = false;
             try
             {
-                if(ConexionBD.Conexion != null)
+                if (ConexionBD.Conexion != null)
                 {
                     ConexionBD.AbrirConexion();
                     CargarAlimentos();
@@ -227,14 +228,14 @@ namespace NutriWise
         {
             grbPlato.Visible = false;
             grbDieta.Visible = false;
-            grbIngredientes.Visible=false;
+            grbIngredientes.Visible = false;
             grbEliminarUsu.Visible = true;
             grbEliminarUsu.BringToFront();
         }
 
         private void timerAdmin_Tick(object sender, EventArgs e)
         {
-           lblAdminReloj.Text = DateTime.Now.ToString("hh:mm:ss");
+            lblAdminReloj.Text = DateTime.Now.ToString("hh:mm:ss");
             lblAdminFecha.Text = DateTime.Now.ToString("d");
         }
 
@@ -345,7 +346,7 @@ namespace NutriWise
                         int[] ind = new int[4] { cmbIngre1.SelectedIndex, cmbIngre2.SelectedIndex, cmbIngre3.SelectedIndex, cmbIngre4.SelectedIndex };
                         if (ind[0] == -1 || ind[1] == -1 || ind[2] == -1 || ind[3] == -1)
                         {
-                            MessageBox.Show("Debe seleccionar 4 ingredientes por plato.", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Debe seleccionar 4 ingredientes por plato.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
@@ -354,7 +355,7 @@ namespace NutriWise
                             {
                                 if (elementosVistos.Contains(ind[i]))
                                 {
-                                    MessageBox.Show("No puede repetirse ningun alimento.", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                                    MessageBox.Show("No puede repetirse ningun alimento.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                                 else
                                 {
@@ -368,7 +369,7 @@ namespace NutriWise
                         {
                             p1.ListaAlimentos = list;
                             p1.ListaCantidades = new int[4] { (int)nudCantIngre1.Value, (int)nudCantIngre2.Value, (int)nudCantIngre3.Value, (int)nudCantIngre4.Value };
-                            if (list.Count<4 || p1.ListaCantidades.Contains(0))
+                            if (list.Count < 4 || p1.ListaCantidades.Contains(0))
                             {
                                 MessageBox.Show("Error:\nLos platos deben tener 4 ingredientes.\nLos platos una cantidad mayor que 0.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
@@ -402,7 +403,7 @@ namespace NutriWise
                 }
                 else
                 {
-                    MessageBox.Show("Error al conectar con la base de datos.", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Error al conectar con la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -531,6 +532,17 @@ namespace NutriWise
                 cmb.Text = "";
             }
         }
+
+        private void EliminarCargaIngredientes()
+        {
+            ComboBox[] comboBoxes = new ComboBox[] { cmbIngre1, cmbIngre2, cmbIngre3, cmbIngre4 };
+            foreach (ComboBox cmb in comboBoxes)
+            {
+                cmb.Items.Clear();
+                cmb.Text = "";
+            }
+        }
+
         private void CargarAlimentos()
         {
             List<Alimentos> list = Alimentos.ListarAlimentos();
@@ -557,17 +569,17 @@ namespace NutriWise
             cmbIngre2.SelectedIndex = -1;
             cmbIngre3.SelectedIndex = -1;
             cmbIngre4.SelectedIndex = -1;
-            nudCantIngre1.Value= 0;
-            nudCantIngre2.Value= 0;
-            nudCantIngre3.Value= 0;
-            nudCantIngre4.Value= 0;
+            nudCantIngre1.Value = 0;
+            nudCantIngre2.Value = 0;
+            nudCantIngre3.Value = 0;
+            nudCantIngre4.Value = 0;
         }
 
 
         private void btnAceptarIngre_Click(object sender, EventArgs e)
         {
-            string[] nombres = new string[4] {txtNomIngre1.Text, txtNomIngre2.Text, txtNomIngre3.Text, txtNomIngre4.Text};
-            decimal[] valoresNutri = new decimal[4] {nudVN1.Value, nudVN2.Value, nudVN3.Value, nudVN4.Value };
+            string[] nombres = new string[4] { txtNomIngre1.Text, txtNomIngre2.Text, txtNomIngre3.Text, txtNomIngre4.Text };
+            decimal[] valoresNutri = new decimal[4] { nudVN1.Value, nudVN2.Value, nudVN3.Value, nudVN4.Value };
             try
             {
                 if (ConexionBD.Conexion != null)
@@ -575,20 +587,20 @@ namespace NutriWise
                     ConexionBD.AbrirConexion();
                     for (int i = 0; i < nombres.Length; i++)
                     {
-                        if (nombres[i] != "" && valoresNutri[i] != 0) 
+                        if (nombres[i] != "" && valoresNutri[i] != 0)
                         {
-                            
+
                             Alimentos a = new Alimentos(nombres[i], (double)valoresNutri[i]);
                             if (!a.ComprobarExistencia())
-                            { 
+                            {
                                 a.AgregarAlimento();
-                                MessageBox.Show($"{a.Nombre} agregado con exito a la base de datos.","Información",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                                MessageBox.Show($"{a.Nombre} agregado con exito a la base de datos.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                             else
                             {
                                 MessageBox.Show(alimento1, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
-                        } 
+                        }
                     }
                     CargarAlimentos();
                     ConexionBD.CerrarConexion();
@@ -625,10 +637,10 @@ namespace NutriWise
             txtNomIngre3.Text = String.Empty;
             txtNomIngre4.Text = String.Empty;
 
-            nudVN1.Value= 0;
-            nudVN2.Value= 0;
-            nudVN3.Value= 0;
-            nudVN4.Value= 0;
+            nudVN1.Value = 0;
+            nudVN2.Value = 0;
+            nudVN3.Value = 0;
+            nudVN4.Value = 0;
         }
 
         private void mnuAgregarIngrediente_Click(object sender, EventArgs e)
