@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS usuario (
 	apellidos VARCHAR(50) NOT NULL,
 	altura DECIMAL(2) NOT NULL,
 	peso DECIMAL(2) NOT NULL,
-	tipoIntolencia INT NOT NULL,
+	tipoIntolerancia INT NOT NULL,
 	cantActividad INT NOT NULL,
 	objetivo INT NOT NULL,
 	administrador BOOL NOT NULL,
@@ -60,6 +60,7 @@ CREATE TABLE IF NOT EXISTS usuario (
 	cantidad DECIMAL(2) NOT NULL,
 	fechaDonativo DATETIME NOT NULL,
 	idUsuari INT NOT NULL,
+	nombre VARCHAR(40) NOT NULL,
 	PRIMARY KEY(idDonativo),
 	FOREIGN KEY(idUsuari) REFERENCES usuario(idUsuario));
 	
