@@ -58,13 +58,17 @@ namespace NutriWise.Clases
             try
             {
                 smtp.Send(correo);
-                // MessageBox.Show("Correo enviado con éxito");
             }
             catch (Exception)
             {
-                // MessageBox.Show("Error al enviar el correo: " + ex.Message);
             }
         }
+
+        /// <summary>
+        /// Envia la lista de la compra al usuario.
+        /// </summary>
+        /// <param name="user">El usuario a quién se la tiene que enviar.</param>
+        /// <param name="lista">Los alimentos que contiene la lista.</param>
         public static void EnviarListaCompra(Usuario user, string lista)
         {
             MailMessage correo = new MailMessage();
@@ -124,11 +128,9 @@ namespace NutriWise.Clases
             try
             {
                 smtp.Send(correo);
-                // MessageBox.Show("Correo enviado con éxito");
             }
             catch (Exception)
             {
-                // MessageBox.Show("Error al enviar el correo: " + ex.Message);
             }
         }
 

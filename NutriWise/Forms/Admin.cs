@@ -537,7 +537,7 @@ namespace NutriWise
 
         private void EliminarCargaIngredientes()
         {
-            ComboBox[] comboBoxes = new ComboBox[] { cmbIngre1, cmbIngre2, cmbIngre3, cmbIngre4, cmbAdminPlatosObj, cmbAdminPlatosInto, cmbAdminPlatosTipo };
+            ComboBox[] comboBoxes = new ComboBox[] { cmbIngre1, cmbIngre2, cmbIngre3, cmbIngre4 };
             foreach (ComboBox cmb in comboBoxes)
             {
                 cmb.Items.Clear();
