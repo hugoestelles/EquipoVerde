@@ -1,7 +1,7 @@
 <?php 
-    $servidor = "database-pi.cusxbcc1yr4p.us-east-1.rds.amazonaws.com"; // database-pi.cusxbcc1yr4p.us-east-1.rds.amazonaws.com
-    $usuario = "admin";
-    $password = "12345678";
+    $servidor = "piequipoverde.cusxbcc1yr4p.us-east-1.rds.amazonaws.com"; // database-pi.cusxbcc1yr4p.us-east-1.rds.amazonaws.com
+    $usuario = "NWequipoverdeDAM";
+    $password = "VerdeHoja1239d1394RHODAJ";
     $db = "nutriwise";
     $conexion = mysqli_connect($servidor, $usuario, $password, $db);
     if (!$conexion) {
