@@ -63,7 +63,7 @@ namespace NutriWise
         {
             int retorno;
             string consulta = string.Format("INSERT INTO platos (nombre,idDieta,tipo,Objetivo,Intolerancia) VALUES " +
-                "(@nom,@tip,@idDieta,@obj,@into);");
+                "(@nom,@idDieta,@tip,@obj,@into);");
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.Parameters.AddWithValue("@idDieta", 0);

@@ -374,7 +374,7 @@ namespace NutriWise
                             }
                             else
                             {
-                                if (p1.AgregarPlato() == 1)
+                                if (p1.AgregarPlato() > 0)
                                 {
                                     MessageBox.Show("Plato introducido en la base de datos correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     if (p1.BuscarID())
@@ -384,7 +384,7 @@ namespace NutriWise
                                             p1.ListaAlimentos[i].BuscarID();
                                         }
                                         if (p1.InsertarAliPlato()) MessageBox.Show("AliPlato introducido en la base de datos correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                        else MessageBox.Show(error_aliplato, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                        else MessageBox.Show("No se ha podido crear la relación entre el plato y los alimentos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     }
                                 }
                                 else
