@@ -526,13 +526,13 @@ namespace NutriWise
 
         private void EliminarCargaPlatos()
         {
-            ComboBox[] comboBoxes = new ComboBox[] { cmbPlato1, cmbPlato2, cmbPlato3, cmbPlato4, cmbPlato5, cmbPlato6, cmbPlato7, cmbPlato8, cmbPlato9, cmbPlato10, cmbPlato11, cmbPlato12, cmbPlato13, cmbPlato14, cmbPlato15, cmbPlato16, cmbPlato17, cmbPlato18, cmbPlato19, cmbPlato20, cmbPlato21, cmbAdminDietObj, cmbAdminDietInto };
+            ComboBox[] comboBoxes = new ComboBox[] { cmbPlato1, cmbPlato2, cmbPlato3, cmbPlato4, cmbPlato5, cmbPlato6, cmbPlato7, cmbPlato8, cmbPlato9, cmbPlato10, cmbPlato11, cmbPlato12, cmbPlato13, cmbPlato14, cmbPlato15, cmbPlato16, cmbPlato17, cmbPlato18, cmbPlato19, cmbPlato20, cmbPlato21};
             foreach (ComboBox cmb in comboBoxes)
             {
                 cmb.Items.Clear();
                 cmb.Text = "";
             }
-            txtNomDieta.Text = "";
+            
         }
 
         private void EliminarCargaIngredientes()
