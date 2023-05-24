@@ -291,6 +291,19 @@ namespace NutriWise.Clases
 
             }
         }
+        /// <summary>
+        /// Funcion para actualizar los datos del usuario.
+        /// </summary>
+        /// <param name="nom">Nombre</param>
+        /// <param name="ape">Apellido</param>
+        /// <param name="alt">Altura</param>
+        /// <param name="pes">Peso</param>
+        /// <param name="correo">E-mail</param>
+        /// <param name="into">Intolerancia</param>
+        /// <param name="act">Actividad fisica</param>
+        /// <param name="obj">Objetivo</param>
+        /// <param name="idDieta">Id de la dieta</param>
+        /// <returns>1 si va tod bien , 0 si hay algun error</returns>
         public int ActualizarInfo(string nom, string ape, decimal alt, decimal pes, string correo, int into, int act, int obj, int idDieta)
         {
             this.nombre = nom;
@@ -304,6 +317,11 @@ namespace NutriWise.Clases
             int compro = ActualizarEnBD(idDieta);
             return compro;
         }
+        /// <summary>
+        /// Funcion para actualizar los datos del usuario en la base de datos.
+        /// </summary>
+        /// <param name="idDieta">Id de la dieta</param>
+        /// <returns>El numero de filas afectadas</returns>
         private int ActualizarEnBD(int idDieta)
         {
             int retorno;
@@ -322,7 +340,11 @@ namespace NutriWise.Clases
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
-
+        /// <summary>
+        /// Funcion para obtener el tipo de la dieta en funcion a su indice.
+        /// </summary>
+        /// <param name="indice">Indice de la dieta</param>
+        /// <returns>String con el nombre de la dieta</returns>
         private static string TipoDieta(int indice)
         {
             switch (indice)

@@ -228,7 +228,11 @@ namespace NutriWise.Clases
                     return "";
             }
         }
-
+        /// <summary>
+        /// Funcion para darle el formato correcto a la lista de la compra.
+        /// </summary>
+        /// <param name="dietaActual">Dieta del usuario actual.</param>
+        /// <returns>Un string con la lista de la compra con el formato correcto.</returns>
         public static string FormatearListaCompra(Dietas dietaActual)
         {
             string retorno = "";
@@ -249,13 +253,18 @@ namespace NutriWise.Clases
                         lista.Add(provisional[j]);
                         
                         retorno += "    -" + provisional[j].Nombre + "              ";
+                        if(lista.Count % 4 == 0)retorno += "\n ";
                     }
                 }
-                retorno += "\n ";
             }
             return retorno;
 
         }
+        /// <summary>
+        /// Funcion para formatear la lista de la compra para mandarla por correo.
+        /// </summary>
+        /// <param name="dietaActual">Id de la dieta del usuario actual.</param>
+        /// <returns>Un string con la lista de la compra formateada.</returns>
         public static string FormatearListaCompraCorreo(Dietas dietaActual)
         {
             string retorno = "<center><p>";
