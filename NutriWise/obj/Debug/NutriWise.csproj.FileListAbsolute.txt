@@ -1,0 +1,820 @@
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\oscar\OneDrive\Documentos\basura\NutriWise\obj\Debug\NutriWise.Perfil.resources
+D:\NutriWise\bin\Debug\NutriWise.exe.config
+D:\NutriWise\bin\Debug\NutriWise.exe
+D:\NutriWise\bin\Debug\NutriWise.pdb
+D:\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+D:\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+D:\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+D:\NutriWise\obj\Debug\NutriWise.Inicio.resources
+D:\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+D:\NutriWise\obj\Debug\NutriWise.Perfil.resources
+D:\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+D:\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+D:\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+D:\NutriWise\obj\Debug\NutriWise.exe
+D:\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\oscar\source\repos\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+E:\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+E:\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+E:\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+E:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+D:\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+D:\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+D:\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+D:\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\osmeal\Documents\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+E:\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+E:\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+E:\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.exe
+E:\EquipoVerde-src\EquipoVerde-src\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\rumiro\Desktop\pi\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\rumiro\Desktop\EquipoVerde\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\huesga\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\jueves_18\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\osmeal\Desktop\EquipoVerdeNew\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\sabado\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\oscar\OneDrive\Escritorio\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\domingo\2\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\altove\Desktop\proyectazo\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\lunes\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.EN-GB.resources
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\EN-GB\NutriWise.resources.dll
+C:\Users\darota\Documents\ASIGNATURAS\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\EN-GB\NutriWise.resources.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\bin\Debug\EN-GB\NutriWise.resources.dll
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.EN-GB.resources
+C:\Users\osmeal\Desktop\EquipoVerde\NutriWise\obj\Debug\EN-GB\NutriWise.resources.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\bin\Debug\EN-GB\NutriWise.resources.dll
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.EN-GB.resources
+D:\01- FLORIDA\1º DAM\0- PROYECTO INTEGRADO\EquipoVerde\NutriWise\obj\Debug\EN-GB\NutriWise.resources.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe.config
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\NutriWise.exe
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\NutriWise.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\EN-GB\NutriWise.resources.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\itextsharp.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\MySql.Data.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.Buffers.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.Memory.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.pdb
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\Google.Protobuf.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\itextsharp.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\MySql.Data.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.Buffers.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.Memory.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Admin.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.CrearCuenta.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Dieta.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Donativos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Inicio_Sesion.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Menu.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Perfil.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Forms.Videos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Properties.Resources.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.ListaCompra.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Ayuda.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.Valoraciones.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.RecursosLocalizables.StringRecursos.EN-GB.resources
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.GenerateResource.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\EN-GB\NutriWise.resources.dll
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.csproj.CopyComplete
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.exe
+C:\Users\Hugo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Hugo\EquipoVerde\definitivo\3\EquipoVerde\NutriWise\obj\Debug\NutriWise.pdb
